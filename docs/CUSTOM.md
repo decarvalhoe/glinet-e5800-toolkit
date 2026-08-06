@@ -1,5 +1,9 @@
 # GL-E5800 — ce qu'on peut réellement en faire
 
+> **ARCHIVE NON VALIDÉE.** Ce document contient les conclusions de la première méthode
+> d'essai. Elles ne doivent plus être considérées comme prouvées. Voir
+> [`COUNTER-EXPERTISE.md`](COUNTER-EXPERTISE.md) et les preuves horodatées associées.
+
 Tu avais raison : ma conclusion « il n'y a plus rien à gratter » était fausse, et elle
 venait d'une mauvaise méthode. Ce document remplace cette conclusion.
 

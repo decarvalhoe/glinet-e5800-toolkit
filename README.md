@@ -1,21 +1,19 @@
 # GL-E5800 (Mudi 7) — outils et rétro-ingénierie
 
-Notes de terrain, outils et résultats mesurés sur un **GL.iNet GL-E5800 (Mudi 7)**,
-firmware **4.8.5**, OpenWrt 23.05.4, modem Quectel RG650V.
+Notes de terrain et outils pour un **GL.iNet GL-E5800 (Mudi 7)**, firmware **4.8.5**.
 
-Tout ce qui est ici a été **exécuté et vérifié sur l'appareil**, pas recopié de la
-documentation. Les résultats négatifs sont documentés au même titre que les positifs :
-ce sont eux qui font gagner du temps.
+> **Contre-expertise en cours.** Les conclusions historiques de ce dépôt sont placées
+> en quarantaine : elles ne disposent pas toutes de journaux bruts ni d'un protocole
+> reproductible. Ne pas les traiter comme des faits. La nouvelle baseline indépendante,
+> les limites de sûreté et les possibilités USB/Ethernet sont dans
+> [`docs/COUNTER-EXPERTISE.md`](docs/COUNTER-EXPERTISE.md).
 
 ---
 
-**English TL;DR** — Field notes and tooling for the GL.iNet GL-E5800 (Mudi 7), firmware 4.8.5.
-Contains: a **dependency-free Python client** for the GL.iNet JSON-RPC API (pure-stdlib
-sha256-crypt, works on Windows); a **live API index of 304 methods across 48 modules**
-extracted from the router's own web UI — the public index is 3 years stale and misses 157
-of them; the full `ubus -v list` dump; and measured findings, including several
-**negative results** that save others the trouble. Docs are in French, but the JSON
-indexes, scripts and log excerpts are language-neutral.
+**English TL;DR** — Field notes and tooling for GL.iNet GL-E5800 firmware 4.8.5.
+Historical performance and compatibility claims are quarantined pending independent
+reproduction. Start with `docs/COUNTER-EXPERTISE.md`; sanitized, timestamped evidence is
+under `evidence/`.
 
 ---
 
@@ -34,15 +32,18 @@ tools/
 etc/hotplug.d/iface/
   99-sqm-modem             réattache SQM quand le l3_device du modem change
 docs/
+  COUNTER-EXPERTISE.md     nouvelle baseline, preuves et feuille de route sûre
+  EXPERIMENT-PROTOCOL.md   règles de mesure, barrières et critères d'arrêt
   DIAGNOSTIC.md            relevés radio/Wi-Fi + résultats négatifs
   CUSTOM.md                surface de personnalisation réelle, paquets, méthode
   SQM.md                   installation et réglage CAKE, avec mesures A/B
 ```
 
-## Le point le plus utile : l'index API public est faux
+## Hypothèse historique : index API public incomplet
 
-L'index de référence qui circule (extrait de `python-glinet`) date de ~2023. Sur le
-firmware 4.8.5, il manque **157 méthodes sur 304** et **19 modules entiers**.
+La première analyse affirmait que l'index extrait de `python-glinet` datait de ~2023 et
+qu'il lui manquait **157 méthodes sur 304** et **19 modules entiers**. Ces nombres sont
+conservés comme résultat historique, pas encore reproduit par la contre-expertise.
 
 Le piège qui fait perdre des heures : un appel à une méthode inexistante renvoie
 `-32601 Method not found`. On en déduit naturellement que **le module** n'existe pas.
@@ -64,7 +65,10 @@ Modules absents de l'index public : `tailscale`, `zerotier`, `tor`, `mptun`, `km
 `black_white_list`, `mvas`, `local-access`, `luci`, `vpn-client`, `wg_client`,
 `ovpn_client`.
 
-## Résultats négatifs (testés, pas supposés)
+## Résultats historiques à reproduire
+
+Le tableau suivant provient des essais initiaux. Il est conservé pour traçabilité, mais
+**aucune ligne n'est validée par la contre-expertise actuelle**.
 
 | Piste | Résultat |
 |---|---|
@@ -75,10 +79,11 @@ Modules absents de l'index public : `tailscale`, `zerotier`, `tor`, `mptun`, `km
 | IPv6 | contexte PDP `IPV4V6` mais l'opérateur n'alloue aucun préfixe v6 — rien à corriger côté routeur |
 | CAKE en egress | **~40 % de débit montant perdu** sur `rmnet_data1` (qdisc `mq` à 32 files `rmnet_sch`) |
 
-Le verrouillage de tour, lui, **existe** sur ce modèle malgré ce qu'affirme la
-documentation officielle (`modem.set_cell_tower`) — voir [`docs/CUSTOM.md`](docs/CUSTOM.md).
+La première analyse affirmait aussi que le verrouillage de tour répondait via
+`modem.set_cell_tower`. Cette affirmation n'est pas encore reproduite — voir
+[`docs/CUSTOM.md`](docs/CUSTOM.md).
 
-## Résultat positif : SQM/CAKE en entrée seule
+## Résultat SQM historique, non encore reproduit
 
 Latence mesurée par temps de connexion TCP (l'ICMP est filtré par l'opérateur),
 12 échantillons, charge = 3 téléchargements parallèles de 60 Mo :
@@ -94,10 +99,10 @@ matériel impose : l'entrée passe par un IFB classique où CAKE fonctionne norm
 la sortie s'applique directement sur le multi-queue propriétaire Qualcomm où il
 s'effondre. Détails et test A/B dans [`docs/SQM.md`](docs/SQM.md).
 
-## Le client CLI
+## Client CLI historique, à revalider
 
-Aucune dépendance — `sha256-crypt` est réimplémenté en stdlib pur, parce que Python n'a
-pas de module `crypt` sur Windows. Vérifié bit pour bit contre `openssl passwd -1/-5/-6`.
+Le client annonce n'utiliser aucune dépendance et réimplémente `sha256-crypt` en stdlib.
+Son exactitude et ses exemples doivent être retestés avant usage sur le routeur.
 
 ```bash
 export GLINET_PASSWORD='...'          # ou saisie interactive
@@ -122,7 +127,7 @@ POST http://192.168.8.1/rpc
 Attention : les noms de modules RPC utilisent des **tirets** (`wg-client`, `custom-dns`,
 `nas-web`), pas des underscores.
 
-## Surface de personnalisation
+## Surface de personnalisation historique, à valider paquet par paquet
 
 ```
 /overlay          2,7 Go libres
@@ -130,8 +135,8 @@ architecture      aarch64_cortex-a53   (architecture OpenWrt standard)
 paquets dispo     9667                 (dépôts GL.iNet seuls)
 ```
 
-Les dépôts **officiels OpenWrt 23.05.4** pour cette architecture répondent HTTP 200, donc
-ajoutables. Disponibles immédiatement et vérifiés : `dockerd` 27.0.3, `podman`,
+L'analyse historique constatait que des dépôts OpenWrt 23.05.4 répondaient HTTP 200. Cela
+ne prouve ni compatibilité ABI, ni fonctionnement. `opkg list` annonçait notamment `dockerd` 27.0.3, `podman`,
 `tailscale`, `zerotier`, `crowdsec`, `banip`, `sqm-scripts`, `netdata`, `smartdns`,
 `collectd`, et 103 paquets `luci-app-*`. LuCI est déjà installé, sur les ports 8080/8443.
 

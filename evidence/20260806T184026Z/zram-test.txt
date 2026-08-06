@@ -1,0 +1,28 @@
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+=== metadata ===
+collected_at=2026-08-06T18:18:18Z
+size_mb=64
+=== precondition ===
+              total        used        free      shared  buff/cache   available
+Mem:           1598         416         355          20         827        1098
+Swap:             0           0           0
+Filename				Type		Size		Used		Priority
+algorithm_before=lzo [lzo-rle] lz4 lz4hc 842 zstd
+Setting up swapspace version 1, size = 67104768 bytes
+=== active ===
+              total        used        free      shared  buff/cache   available
+Mem:           1598         417         354          20         827        1098
+Swap:            64           0          64
+Filename				Type		Size		Used		Priority
+/dev/zram0                              partition	65532		0		100
+algorithm_active=lzo lzo-rle [lz4] lz4hc 842 zstd
+disksize=67108864
+mm_stat=    4096       43     4096        0     4096        0        0        0        0
+=== postcondition ===
+              total        used        free      shared  buff/cache   available
+Mem:           1598         418         353          20         827        1096
+Swap:             0           0           0
+Filename				Type		Size		Used		Priority
+disksize=0

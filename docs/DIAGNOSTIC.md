@@ -1,5 +1,9 @@
 # GL-E5800 — état relevé le 2026-08-06
 
+> **ARCHIVE NON VALIDÉE.** Les mesures et conclusions ci-dessous sont des hypothèses à
+> reproduire. Elles ne sont pas utilisées comme preuves dans la nouvelle contre-expertise.
+> Voir [`COUNTER-EXPERTISE.md`](COUNTER-EXPERTISE.md).
+
 Matériel : GL-E5800, firmware 4.8.5 (2026-06-01), OpenWrt 23.05.4, ARMv8 4 cœurs, région DE.
 Modem : **Quectel RG650V** (bus `cpu`, port AT `/dev/smd9`, 2 slots + eSIM slot 2).
 SIM active : **slot 2**, MCC 228 / MNC 02, opérateur **yallo**, APN `internet`. Slot 1 vide.
