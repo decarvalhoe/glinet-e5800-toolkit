@@ -1,0 +1,36 @@
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+Thu Aug  6 20:51:01 UTC 2026
+1719d16aedaa0c54ee37420f0576fddf9c312f9b9cd768ebab3a7b23a1b040c3  /etc/config/sqm
+package sqm
+
+config queue 'eth1'
+	option enabled '0'
+	option interface 'eth1'
+	option download '85000'
+	option upload '10000'
+	option qdisc 'cake'
+	option script 'piece_of_cake.qos'
+	option qdisc_advanced '0'
+	option ingress_ecn 'ECN'
+	option egress_ecn 'ECN'
+	option qdisc_really_really_advanced '0'
+	option itarget 'auto'
+	option etarget 'auto'
+	option linklayer 'none'
+
+config queue 'modem'
+	option interface 'rmnet_data1'
+	option enabled '1'
+	option qdisc 'cake'
+	option script 'piece_of_cake.qos'
+	option linklayer 'none'
+	option download '45000'
+	option upload '0'
+	option qdisc_advanced '1'
+	option iqdisc_opts 'nat dual-dsthost ingress autorate-ingress'
+	option eqdisc_opts 'nat dual-srchost'
+	option verbosity '5'
+
+qdisc cake 802a: root refcnt 2 bandwidth 391680bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0

@@ -1,0 +1,4 @@
+collected_at=2026-08-06T21:03:06Z
+collector=tools/collect-safe-baseline.sh
+host=[IPv4]
+safety=read-only; sole-uplink protected

@@ -1,0 +1,394 @@
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+=== utc ===
+Thu Aug  6 20:35:18 UTC 2026
+=== qdisc ===
+qdisc noqueue 0: dev lo root refcnt 2
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc mq 0: dev eth0 root
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev eth0 parent :2 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev eth0 parent :1 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc mq 0: dev rmnet_ipa0 root
+ Sent 995794974 bytes 4101588 pkt (dropped 9, overlimits 0 requeues 407)
+ backlog 0b 0p requeues 407
+qdisc pfifo_fast 0: dev rmnet_ipa0 parent :4 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_ipa0 parent :3 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_ipa0 parent :2 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_ipa0 parent :1 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 995794974 bytes 4101588 pkt (dropped 9, overlimits 0 requeues 407)
+ backlog 0b 0p requeues 407
+qdisc mq 0: dev wlan0 root
+ Sent 7203242 bytes 16609 pkt (dropped 0, overlimits 0 requeues 1)
+ backlog 0b 0p requeues 1
+qdisc pfifo_fast 0: dev wlan0 parent :11 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 108685 bytes 2001 pkt (dropped 0, overlimits 0 requeues 1)
+ backlog 0b 0p requeues 1
+qdisc pfifo_fast 0: dev wlan0 parent :10 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan0 parent :f bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan0 parent :e bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan0 parent :d bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan0 parent :c bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 877495 bytes 1993 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan0 parent :b bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 2953155 bytes 3552 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan0 parent :a bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 815657 bytes 1731 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan0 parent :9 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 2420441 bytes 6895 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan0 parent :8 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 2630 bytes 10 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan0 parent :7 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 484 bytes 5 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan0 parent :6 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan0 parent :5 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 1585 bytes 9 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan0 parent :4 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan0 parent :3 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan0 parent :2 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan0 parent :1 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 23110 bytes 413 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc mq 0: dev wlan1 root
+ Sent 5364162223 bytes 5697235 pkt (dropped 0, overlimits 0 requeues 37)
+ backlog 0b 0p requeues 37
+qdisc pfifo_fast 0: dev wlan1 parent :11 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 215616 bytes 4838 pkt (dropped 0, overlimits 0 requeues 3)
+ backlog 0b 0p requeues 3
+qdisc pfifo_fast 0: dev wlan1 parent :10 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 9853 bytes 104 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan1 parent :f bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 10107 bytes 76 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan1 parent :e bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 10960 bytes 77 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan1 parent :d bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 11793 bytes 77 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan1 parent :c bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 1202559613 bytes 1352871 pkt (dropped 0, overlimits 0 requeues 11)
+ backlog 0b 0p requeues 11
+qdisc pfifo_fast 0: dev wlan1 parent :b bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 1087864248 bytes 1256181 pkt (dropped 0, overlimits 0 requeues 10)
+ backlog 0b 0p requeues 10
+qdisc pfifo_fast 0: dev wlan1 parent :a bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 1102904758 bytes 1258435 pkt (dropped 0, overlimits 0 requeues 4)
+ backlog 0b 0p requeues 4
+qdisc pfifo_fast 0: dev wlan1 parent :9 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 1967589938 bytes 1820506 pkt (dropped 0, overlimits 0 requeues 9)
+ backlog 0b 0p requeues 9
+qdisc pfifo_fast 0: dev wlan1 parent :8 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 629511 bytes 614 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan1 parent :7 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 734894 bytes 1094 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan1 parent :6 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 750178 bytes 710 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan1 parent :5 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 744382 bytes 797 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan1 parent :4 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 58119 bytes 422 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan1 parent :3 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 26636 bytes 179 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan1 parent :2 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 14935 bytes 88 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan1 parent :1 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 26682 bytes 166 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc mq 0: dev wlan4 root
+ Sent 684 bytes 2 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan4 parent :11 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 684 bytes 2 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan4 parent :10 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan4 parent :f bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan4 parent :e bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan4 parent :d bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan4 parent :c bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan4 parent :b bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan4 parent :a bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan4 parent :9 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan4 parent :8 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan4 parent :7 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan4 parent :6 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan4 parent :5 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan4 parent :4 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan4 parent :3 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan4 parent :2 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan4 parent :1 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc noqueue 0: dev br-guest root refcnt 2
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc noqueue 0: dev br-lan root refcnt 2
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc mq 0: dev rmnet_data1 root
+ Sent 743136619 bytes 3679972 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :1f bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :1e bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :1d bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :1c bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :1b bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :1a bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :19 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :18 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :17 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :16 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :15 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :14 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :13 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :12 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :11 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :10 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 741933544 bytes 3664021 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :f bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :e bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :d bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :c bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :b bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :a bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :9 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :8 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :7 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :6 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :5 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :4 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :3 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :2 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :1 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 1203075 bytes 15951 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc ingress ffff: dev rmnet_data1 parent ffff:fff1 ----------------
+ Sent 4668904127 bytes 5164785 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc cake 802a: dev ifb4rmnet_data1 root refcnt 2 bandwidth 892024bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 4634605498 bytes 5140292 pkt (dropped 24493, overlimits 4459402 requeues 0)
+ backlog 0b 0p requeues 0
+ memory used: 2881373b of 4Mb
+ capacity estimate: 951496bit
+ min/max network layer size:           21 /    1500
+ min/max overhead-adjusted size:       21 /    1500
+ average network hdr offset:            0
+
+                  Tin 0
+  thresh      892024bit
+  target         20.4ms
+  interval        115ms
+  pk_delay        151ms
+  av_delay         40ms
+  sp_delay       15.1ms
+  backlog            0b
+  pkts          5164785
+  bytes      4668904127
+  way_inds      1130140
+  way_miss        44952
+  way_cols            0
+  drops           24493
+  marks              15
+  ack_drop            0
+  sp_flows            0
+  bk_flows            1
+  un_flows            0
+  max_len          1500
+  quantum           300
+
+qdisc pfifo_fast 0: dev eth1 root refcnt 2 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+=== ifb link ===
+78: ifb4rmnet_data1: <BROADCAST,NOARP,UP,LOWER_UP> mtu 1500 qdisc cake state UNKNOWN mode DEFAULT group default qlen 32
+    link/ether [MAC] brd [MAC]
+    RX:  bytes packets errors dropped  missed   mcast
+    4634605498 5140292      0       0       0       0
+    TX:  bytes packets errors dropped carrier collsns
+    4634605498 5140292      0       0       0       0
+=== sqm uci ===
+sqm.eth1=queue
+sqm.eth1.enabled='0'
+sqm.eth1.interface='eth1'
+sqm.eth1.download='85000'
+sqm.eth1.upload='10000'
+sqm.eth1.qdisc='cake'
+sqm.eth1.script='piece_of_cake.qos'
+sqm.eth1.qdisc_advanced='0'
+sqm.eth1.ingress_ecn='ECN'
+sqm.eth1.egress_ecn='ECN'
+sqm.eth1.qdisc_really_really_advanced='0'
+sqm.eth1.itarget='auto'
+sqm.eth1.etarget='auto'
+sqm.eth1.linklayer='none'
+sqm.modem=queue
+sqm.modem.interface='rmnet_data1'
+sqm.modem.enabled='1'
+sqm.modem.qdisc='cake'
+sqm.modem.script='piece_of_cake.qos'
+sqm.modem.linklayer='none'
+sqm.modem.download='45000'
+sqm.modem.upload='0'
+sqm.modem.qdisc_advanced='1'
+sqm.modem.iqdisc_opts='nat dual-dsthost ingress autorate-ingress'
+sqm.modem.eqdisc_opts='nat dual-srchost'
+sqm.modem.verbosity='5'
+=== qos uci ===
+qos.general=qos
+qos.general.enable='0'
+qos.general.model='cake'
+qos.general.upload='1000'
+qos.general.download='1000'
+qos.general.sum='0'
+qos.@wan[0]=wan
+qos.@wan[0].upload='1000'
+qos.@wan[0].download='1000'
+qos.@wwan[0]=wwan
+qos.@wwan[0].upload='1000'
+qos.@wwan[0].download='1000'
+qos.@tethering[0]=tethering
+qos.@tethering[0].upload='1000'
+qos.@tethering[0].download='1000'
+qos.@modem[0]=modem
+qos.@modem[0].upload='1000'
+qos.@modem[0].download='1000'
+=== relevant processes ===
+22712 root     ash -c printf "=== utc ===\n"; date -u; printf "=== qdisc ===\n"; tc -s qdisc show; printf "=== ifb link ===\n"; ip -s link show ifb4rmnet_data1 2>/dev/null || true; printf "=== sqm uci ===\n"; uci show sqm 2>/dev/null || true; printf "=== qos uci ===\n"; uci show qos 2>/dev/null || true; printf "=== relevant processes ===\n"; ps w | grep -E "[s]qm|[c]ake|[a]utorate|[q]os|[i]fb" || true; printf "=== relevant services ===\n"; for s in sqm qos kmwan; do [ -x /etc/init.d/$s ] && { printf "%s enabled=" "$s"; /etc/init.d/$s enabled >/dev/null 2>&1 && echo yes || echo no; }; done; printf "=== autorate references ===\n"; grep -R "autorate-ingress" /etc/config /etc/init.d /usr/lib/sqm /usr/bin /usr/sbin 2>/dev/null | head -n 80 || true; printf "=== default and modem state ===\n"; ip route show default; ubus call network.interface.modem_cpu status; printf "=== load ===\n"; uptime; free -m; printf "=== softnet ===\n"; cat /proc/net/softnet_stat
+=== relevant services ===
+sqm enabled=yes
+kmwan enabled=yes
+=== autorate references ===
+/etc/config/sqm:	option iqdisc_opts 'nat dual-dsthost ingress autorate-ingress'

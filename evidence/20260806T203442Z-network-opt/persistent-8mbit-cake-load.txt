@@ -1,0 +1,227 @@
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+20:58:14
+qdisc cake 803c: root refcnt 2 bandwidth 8Mbit besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 2686367 bytes 1954 pkt (dropped 61, overlimits 3509 requeues 0)
+ backlog 0b 0p requeues 0
+  pk_delay         18ms
+  av_delay       14.3ms
+  sp_delay         79us
+  backlog            0b
+20:58:15
+qdisc cake 803c: root refcnt 2 bandwidth 8Mbit besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 2686367 bytes 1954 pkt (dropped 61, overlimits 3509 requeues 0)
+ backlog 0b 0p requeues 0
+  pk_delay         18ms
+  av_delay       14.3ms
+  sp_delay         79us
+  backlog            0b
+20:58:16
+qdisc cake 803c: root refcnt 2 bandwidth 8Mbit besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 2686367 bytes 1954 pkt (dropped 61, overlimits 3509 requeues 0)
+ backlog 0b 0p requeues 0
+  pk_delay         18ms
+  av_delay       14.3ms
+  sp_delay         79us
+  backlog            0b
+20:58:17
+qdisc cake 803c: root refcnt 2 bandwidth 8Mbit besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 2686367 bytes 1954 pkt (dropped 61, overlimits 3509 requeues 0)
+ backlog 0b 0p requeues 0
+  pk_delay         18ms
+  av_delay       14.3ms
+  sp_delay         79us
+  backlog            0b
+20:58:18
+qdisc cake 803c: root refcnt 2 bandwidth 8Mbit besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 2686431 bytes 1955 pkt (dropped 61, overlimits 3509 requeues 0)
+ backlog 0b 0p requeues 0
+  pk_delay         18ms
+  av_delay       14.2ms
+  sp_delay         64us
+  backlog            0b
+20:58:19
+qdisc cake 803c: root refcnt 2 bandwidth 8Mbit besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 2686640 bytes 1956 pkt (dropped 61, overlimits 3509 requeues 0)
+ backlog 0b 0p requeues 0
+  pk_delay       17.9ms
+  av_delay       14.1ms
+  sp_delay         54us
+  backlog            0b
+20:58:20
+qdisc cake 803c: root refcnt 2 bandwidth 8Mbit besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 2687325 bytes 1961 pkt (dropped 61, overlimits 3511 requeues 0)
+ backlog 0b 0p requeues 0
+  pk_delay       17.6ms
+  av_delay       13.9ms
+  sp_delay         32us
+  backlog            0b
+20:58:21
+qdisc cake 803c: root refcnt 2 bandwidth 8Mbit besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 2687325 bytes 1961 pkt (dropped 61, overlimits 3511 requeues 0)
+ backlog 0b 0p requeues 0
+  pk_delay       17.6ms
+  av_delay       13.9ms
+  sp_delay         32us
+  backlog            0b
+20:58:22
+qdisc cake 803c: root refcnt 2 bandwidth 8Mbit besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 2687325 bytes 1961 pkt (dropped 61, overlimits 3511 requeues 0)
+ backlog 0b 0p requeues 0
+  pk_delay       17.6ms
+  av_delay       13.9ms
+  sp_delay         32us
+  backlog            0b
+20:58:23
+qdisc cake 803c: root refcnt 2 bandwidth 8Mbit besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 2687325 bytes 1961 pkt (dropped 61, overlimits 3511 requeues 0)
+ backlog 0b 0p requeues 0
+  pk_delay       17.6ms
+  av_delay       13.9ms
+  sp_delay         32us
+  backlog            0b
+20:58:24
+qdisc cake 803c: root refcnt 2 bandwidth 8Mbit besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 2687325 bytes 1961 pkt (dropped 61, overlimits 3511 requeues 0)
+ backlog 0b 0p requeues 0
+  pk_delay       17.6ms
+  av_delay       13.9ms
+  sp_delay         32us
+  backlog            0b
+20:58:25
+qdisc cake 803c: root refcnt 2 bandwidth 8Mbit besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 2687325 bytes 1961 pkt (dropped 61, overlimits 3511 requeues 0)
+ backlog 0b 0p requeues 0
+  pk_delay       17.6ms
+  av_delay       13.9ms
+  sp_delay         32us
+  backlog            0b
+20:58:26
+qdisc cake 803c: root refcnt 2 bandwidth 8Mbit besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 2687325 bytes 1961 pkt (dropped 61, overlimits 3511 requeues 0)
+ backlog 0b 0p requeues 0
+  pk_delay       17.6ms
+  av_delay       13.9ms
+  sp_delay         32us
+  backlog            0b
+20:58:27
+qdisc cake 803c: root refcnt 2 bandwidth 8Mbit besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 2687389 bytes 1962 pkt (dropped 61, overlimits 3511 requeues 0)
+ backlog 0b 0p requeues 0
+  pk_delay       17.5ms
+  av_delay       13.8ms
+  sp_delay         29us
+  backlog            0b
+20:58:28
+qdisc cake 803c: root refcnt 2 bandwidth 8Mbit besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 2687389 bytes 1962 pkt (dropped 61, overlimits 3511 requeues 0)
+ backlog 0b 0p requeues 0
+  pk_delay       17.5ms
+  av_delay       13.8ms
+  sp_delay         29us
+  backlog            0b
+20:58:29
+qdisc cake 803c: root refcnt 2 bandwidth 8Mbit besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 2687389 bytes 1962 pkt (dropped 61, overlimits 3511 requeues 0)
+ backlog 0b 0p requeues 0
+  pk_delay       17.5ms
+  av_delay       13.8ms
+  sp_delay         29us
+  backlog            0b
+20:58:30
+qdisc cake 803c: root refcnt 2 bandwidth 8Mbit besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 2687389 bytes 1962 pkt (dropped 61, overlimits 3511 requeues 0)
+ backlog 0b 0p requeues 0
+  pk_delay       17.5ms
+  av_delay       13.8ms
+  sp_delay         29us
+  backlog            0b
+20:58:31
+qdisc cake 803c: root refcnt 2 bandwidth 8Mbit besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 2687875 bytes 1964 pkt (dropped 61, overlimits 3511 requeues 0)
+ backlog 0b 0p requeues 0
+  pk_delay       17.4ms
+  av_delay       13.7ms
+  sp_delay         27us
+  backlog            0b
+20:58:32
+qdisc cake 803c: root refcnt 2 bandwidth 8Mbit besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 2688335 bytes 1968 pkt (dropped 61, overlimits 3514 requeues 0)
+ backlog 0b 0p requeues 0
+  pk_delay       17.1ms
+  av_delay       13.5ms
+  sp_delay         24us
+  backlog            0b
+20:58:33
+qdisc cake 803c: root refcnt 2 bandwidth 8Mbit besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 2688614 bytes 1971 pkt (dropped 61, overlimits 3518 requeues 0)
+ backlog 0b 0p requeues 0
+  pk_delay       16.9ms
+  av_delay       13.3ms
+  sp_delay         25us
+  backlog            0b
+20:58:34
+qdisc cake 803f: root refcnt 2 bandwidth 45Mbit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+  pk_delay          0us
+  av_delay          0us
+  sp_delay          0us
+  backlog            0b
+20:58:35
+qdisc cake 803f: root refcnt 2 bandwidth 42022Kbit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 152 bytes 2 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+  pk_delay         39us
+  av_delay          0us
+  sp_delay          0us
+  backlog            0b
+20:58:36
+qdisc cake 803f: root refcnt 2 bandwidth 42022Kbit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 152 bytes 2 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+  pk_delay         39us
+  av_delay          0us
+  sp_delay          0us
+  backlog            0b
+20:58:37
+qdisc cake 803f: root refcnt 2 bandwidth 42022Kbit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 152 bytes 2 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+  pk_delay         39us
+  av_delay          0us
+  sp_delay          0us
+  backlog            0b
+20:58:38
+qdisc cake 803f: root refcnt 2 bandwidth 42022Kbit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 152 bytes 2 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+  pk_delay         39us
+  av_delay          0us
+  sp_delay          0us
+  backlog            0b
+20:58:39
+qdisc cake 803f: root refcnt 2 bandwidth 42022Kbit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 152 bytes 2 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+  pk_delay         39us
+  av_delay          0us
+  sp_delay          0us
+  backlog            0b
+20:58:40
+qdisc cake 803f: root refcnt 2 bandwidth 42022Kbit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 152 bytes 2 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+  pk_delay         39us
+  av_delay          0us
+  sp_delay          0us
+  backlog            0b
+20:58:41
+qdisc cake 803f: root refcnt 2 bandwidth 42022Kbit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 152 bytes 2 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+  pk_delay         39us
+  av_delay          0us
+  sp_delay          0us
+  backlog            0b

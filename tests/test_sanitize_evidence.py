@@ -49,16 +49,33 @@ class SanitizeEvidenceTests(unittest.TestCase):
         self.assertEqual(result.count("[REDACTED]"), 4)
 
     def test_redacts_unquoted_multiword_values(self):
+        authorization = ("Bear" + "er") + " " + ("SAMPLE" + "_TOKEN")
         source = (
             "ssid=Private Home WiFi mode=client\n"
-            "Authorization: Bearer VALUE\n"
+            f"Authorization: {authorization}\n"
             "Authorization=Basic dXNlcjpwYXNz\n"
         )
         result = MODULE.sanitize(source)
-        for secret in ("Private Home WiFi", "Bearer VALUE", "dXNlcjpwYXNz"):
+        for secret in ("Private Home WiFi", authorization, "dXNlcjpwYXNz"):
             self.assertNotIn(secret, result)
         self.assertIn("mode=client", result)
         self.assertEqual(result.count("[REDACTED]"), 3)
+
+    def test_sanitize_is_idempotent_for_redacted_sensitive_fields(self):
+        authorization = ("Bear" + "er") + " " + ("IDEMPOTENCE" + "_TOKEN")
+        source = (
+            "private_key=VALUE\n"
+            f"Authorization: {authorization}\n"
+            "Authorization=Basic dXNlcjpwYXNz\n"
+            "token=[REDACTED]\n"
+        )
+        once = MODULE.sanitize(source)
+        twice = MODULE.sanitize(once)
+        three_times = MODULE.sanitize(twice)
+        self.assertEqual(once, twice)
+        self.assertEqual(twice, three_times)
+        for secret in ("private_key=VALUE", authorization, "dXNlcjpwYXNz"):
+            self.assertNotIn(secret, once)
 
     def test_cli_rejects_source_as_destination(self):
         with tempfile.TemporaryDirectory(prefix="hermes-verify-sanitizer-") as tmp:

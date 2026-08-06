@@ -1,0 +1,1257 @@
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+=== links ===
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback [MAC] brd [MAC] promiscuity 0 minmtu 0 maxmtu 0 addrgenmode eui64 numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535
+    RX:  bytes packets errors dropped  missed   mcast
+       6827999   61017      0       0       0       0
+    TX:  bytes packets errors dropped carrier collsns
+       6827999   61017      0       0       0       0
+2: dummy0: <BROADCAST,NOARP> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether [MAC] brd [MAC] promiscuity 0 minmtu 0 maxmtu 0
+    dummy addrgenmode eui64 numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535
+    RX:  bytes packets errors dropped  missed   mcast
+             0       0      0       0       0       0
+    TX:  bytes packets errors dropped carrier collsns
+             0       0      0       0       0       0
+3: ifb0: <BROADCAST,NOARP> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 32
+    link/ether [MAC] brd [MAC] promiscuity 0 minmtu 0 maxmtu 0
+    ifb addrgenmode eui64 numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535
+    RX:  bytes packets errors dropped  missed   mcast
+             0       0      0       0       0       0
+    TX:  bytes packets errors dropped carrier collsns
+             0       0      0       0       0       0
+4: ifb1: <BROADCAST,NOARP> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 32
+    link/ether [MAC] brd [MAC] promiscuity 0 minmtu 0 maxmtu 0
+    ifb addrgenmode eui64 numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535
+    RX:  bytes packets errors dropped  missed   mcast
+             0       0      0       0       0       0
+    TX:  bytes packets errors dropped carrier collsns
+             0       0      0       0       0       0
+5: tunl0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ipip [IPv4] brd [IPv4] promiscuity 0 minmtu 0 maxmtu 0
+    ipip any remote any local any ttl inherit nopmtudisc addrgenmode eui64 numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535
+    RX:  bytes packets errors dropped  missed   mcast
+             0       0      0       0       0       0
+    TX:  bytes packets errors dropped carrier collsns
+             0       0      0       0       0       0
+6: gre0@NONE: <NOARP> mtu 1476 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/gre [IPv4] brd [IPv4] promiscuity 0 minmtu 0 maxmtu 0
+    gre remote any local any ttl inherit nopmtudisc addrgenmode eui64 numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535
+    RX:  bytes packets errors dropped  missed   mcast
+             0       0      0       0       0       0
+    TX:  bytes packets errors dropped carrier collsns
+             0       0      0       0       0       0
+7: gretap0@NONE: <BROADCAST,MULTICAST> mtu 1462 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether [MAC] brd [MAC] promiscuity 0 minmtu 68 maxmtu 0
+    gretap remote any local any ttl inherit nopmtudisc addrgenmode eui64 numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535
+    RX:  bytes packets errors dropped  missed   mcast
+             0       0      0       0       0       0
+    TX:  bytes packets errors dropped carrier collsns
+             0       0      0       0       0       0
+8: erspan0@NONE: <BROADCAST,MULTICAST> mtu 1450 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether [MAC] brd [MAC] promiscuity 0 minmtu 68 maxmtu 0
+    erspan remote any local any ttl inherit nopmtudisc okey [IPv4] erspan_index 0 erspan_ver 1 addrgenmode eui64 numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535
+    RX:  bytes packets errors dropped  missed   mcast
+             0       0      0       0       0       0
+    TX:  bytes packets errors dropped carrier collsns
+             0       0      0       0       0       0
+9: ip_vti0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ipip [IPv4] brd [IPv4] promiscuity 0 minmtu 0 maxmtu 0
+    vti remote any local any addrgenmode eui64 numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535
+    RX:  bytes packets errors dropped  missed   mcast
+             0       0      0       0       0       0
+    TX:  bytes packets errors dropped carrier collsns
+             0       0      0       0       0       0
+10: ip6_vti0@NONE: <NOARP> mtu 1364 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/tunnel6 [IPv6] brd [IPv6] permaddr [IPv6] promiscuity 0 minmtu 68 maxmtu 65495
+    vti6 remote any local any addrgenmode eui64 numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535
+    RX:  bytes packets errors dropped  missed   mcast
+             0       0      0       0       0       0
+    TX:  bytes packets errors dropped carrier collsns
+             0       0      0       0       0       0
+11: ip6tnl0@NONE: <NOARP> mtu 1452 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/tunnel6 [IPv6] brd [IPv6] permaddr [IPv6] promiscuity 0 minmtu 68 maxmtu 65535
+    ip6tnl ip6ip6 remote any local any hoplimit inherit encaplimit 0 tclass 0x00 flowlabel 0x00000 addrgenmode eui64 numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535
+    RX:  bytes packets errors dropped  missed   mcast
+             0       0      0       0       0       0
+    TX:  bytes packets errors dropped carrier collsns
+             0       0      0       0       0       0
+12: ip6gre0@NONE: <NOARP> mtu 1448 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/gre6 [IPv6] brd [IPv6] permaddr [IPv6] promiscuity 0 minmtu 0 maxmtu 0
+    ip6gre remote any local any hoplimit inherit encaplimit 0 tclass 0x00 flowlabel 0x00000 addrgenmode eui64 numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535
+    RX:  bytes packets errors dropped  missed   mcast
+             0       0      0       0       0       0
+    TX:  bytes packets errors dropped carrier collsns
+             0       0      0       0       0       0
+13: eth0: <BROADCAST,MULTICAST> mtu 1500 qdisc mq master br-lan state DOWN mode DEFAULT group default qlen 1000
+    link/ether [MAC] brd [MAC] permaddr [MAC] promiscuity 1 minmtu 46 maxmtu 9000
+    bridge_slave state disabled priority 32 cost 100 hairpin off guard off root_block off fastleave off learning on flood on port_id 0x8001 port_no 0x1 designated_port 32769 designated_cost 0 designated_bridge 7fff.[MAC] designated_root 7fff.[MAC] hold_timer    0.00 message_age_timer    0.00 forward_delay_timer    0.00 topology_change_ack 0 config_pending 0 proxy_arp off proxy_arp_wifi off mcast_router 1 mcast_fast_leave off mcast_flood on bcast_flood on mcast_to_unicast off neigh_suppress off group_fwd_mask 0 group_fwd_mask_str 0x0 vlan_tunnel off isolated off addrgenmode eui64 numtxqueues 8 numrxqueues 8 gso_max_size 65536 gso_max_segs 65535 parentbus platform parentdev 22fc0000.qcom,emac1
+    RX:  bytes packets errors dropped  missed   mcast
+             0       0      0       0       0       0
+    TX:  bytes packets errors dropped carrier collsns
+             0       0      0       0       0       0
+14: rmnet_ipa0: <UP,LOWER_UP> mtu 9216 qdisc mq state UNKNOWN mode DEFAULT group default qlen 1000
+    link/[519]  promiscuity 0 minmtu 68 maxmtu 1500 addrgenmode eui64 numtxqueues 4 numrxqueues 4 gso_max_size 64000 gso_max_segs 65535 parentbus platform parentdev 3e00000.qcom,ipa
+    RX:  bytes packets errors dropped  missed   mcast
+    1132802770  905805      0       0       0       0
+    TX:  bytes packets errors dropped carrier collsns
+     999701742 4113762      0       0       0       0
+16: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/sit [IPv4] brd [IPv4] promiscuity 0 minmtu 1280 maxmtu 65555
+    sit ip6ip remote any local any ttl 64 nopmtudisc 6rd-prefix [IPv6] addrgenmode eui64 numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535
+    RX:  bytes packets errors dropped  missed   mcast
+             0       0      0       0       0       0
+    TX:  bytes packets errors dropped carrier collsns
+             0       0      0       0       0       0
+17: wlan0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq master br-lan state UP mode DEFAULT group default qlen 3000
+    link/ether [MAC] brd [MAC] permaddr [MAC] promiscuity 1 minmtu 68 maxmtu 1500
+    bridge_slave state forwarding priority 32 cost 100 hairpin off guard off root_block off fastleave off learning on flood on port_id 0x8003 port_no 0x3 designated_port 32771 designated_cost 0 designated_bridge 7fff.[MAC] designated_root 7fff.[MAC] hold_timer    0.00 message_age_timer    0.00 forward_delay_timer    0.00 topology_change_ack 0 config_pending 0 proxy_arp off proxy_arp_wifi off mcast_router 1 mcast_fast_leave off mcast_flood on bcast_flood on mcast_to_unicast off neigh_suppress off group_fwd_mask 0 group_fwd_mask_str 0x0 vlan_tunnel off isolated off addrgenmode eui64 numtxqueues 17 numrxqueues 5 gso_max_size 65536 gso_max_segs 65535 parentbus pci parentdev 0000:01:00.0
+    RX:  bytes packets errors dropped  missed   mcast
+       1544975    6823      0       0       0       0
+    TX:  bytes packets errors dropped carrier collsns
+       7177927   16677      0     174       0       0
+18: wlan1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq master br-lan state UP mode DEFAULT group default qlen 3000
+    link/ether [MAC] brd [MAC] permaddr [MAC] promiscuity 1 minmtu 68 maxmtu 1500
+    bridge_slave state forwarding priority 32 cost 100 hairpin off guard off root_block off fastleave off learning on flood on port_id 0x8002 port_no 0x2 designated_port 32770 designated_cost 0 designated_bridge 7fff.[MAC] designated_root 7fff.[MAC] hold_timer    0.00 message_age_timer    0.00 forward_delay_timer    0.00 topology_change_ack 0 config_pending 0 proxy_arp off proxy_arp_wifi off mcast_router 1 mcast_fast_leave off mcast_flood on bcast_flood on mcast_to_unicast off neigh_suppress off group_fwd_mask 0 group_fwd_mask_str 0x0 vlan_tunnel off isolated off addrgenmode eui64 numtxqueues 17 numrxqueues 5 gso_max_size 65536 gso_max_segs 65535 parentbus pci parentdev 0000:01:00.0
+    RX:  bytes packets errors dropped  missed   mcast
+     922030632 3989812      0       0       0       0
+    TX:  bytes packets errors dropped carrier collsns
+    5375143009 5696554      0     194       0       0
+19: wlan4: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq master br-guest state UP mode DEFAULT group default qlen 3000
+    link/ether [MAC] brd [MAC] permaddr [MAC] promiscuity 1 minmtu 68 maxmtu 1500
+    bridge_slave state forwarding priority 32 cost 100 hairpin off guard off root_block off fastleave off learning on flood on port_id 0x8001 port_no 0x1 designated_port 32769 designated_cost 0 designated_bridge 7fff.[MAC] designated_root 7fff.[MAC] hold_timer    0.00 message_age_timer    0.00 forward_delay_timer    0.00 topology_change_ack 0 config_pending 0 proxy_arp off proxy_arp_wifi off mcast_router 1 mcast_fast_leave off mcast_flood on bcast_flood on mcast_to_unicast off neigh_suppress off group_fwd_mask 0 group_fwd_mask_str 0x0 vlan_tunnel off isolated off addrgenmode eui64 numtxqueues 17 numrxqueues 5 gso_max_size 65536 gso_max_segs 65535 parentbus pci parentdev 0000:01:00.0
+    RX:  bytes packets errors dropped  missed   mcast
+             0       0      0       0       0       0
+    TX:  bytes packets errors dropped carrier collsns
+           684       2      0       0       0       0
+20: br-guest: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000
+    link/ether [MAC] brd [MAC] promiscuity 0 minmtu 68 maxmtu 65535
+    bridge forward_delay 800 hello_time 100 max_age 1000 ageing_time 30000 stp_state 0 priority 32767 vlan_filtering 0 vlan_protocol 802.1Q bridge_id 7fff.[MAC] designated_root 7fff.[MAC] root_port 0 root_path_cost 0 topology_change 0 topology_change_detected 0 hello_timer    0.00 tcn_timer    0.00 topology_change_timer    0.00 gc_timer  285.35 vlan_default_pvid 1 vlan_stats_enabled 0 vlan_stats_per_port 0 group_fwd_mask 0 group_address [MAC] mcast_snooping 0 no_linklocal_learn 0 mcast_vlan_snooping 0 mcast_router 1 mcast_query_use_ifaddr 0 mcast_querier 1 mcast_hash_elasticity 16 mcast_hash_max 512 mcast_last_member_count 2 mcast_startup_query_count 2 mcast_last_member_interval 100 mcast_membership_interval 26000 mcast_querier_interval 25500 mcast_query_interval 12500 mcast_query_response_interval 1000 mcast_startup_query_interval 3124 mcast_stats_enabled 0 mcast_igmp_version 2 mcast_mld_version 1 nf_call_iptables 0 nf_call_ip6tables 0 nf_call_arptables 0 addrgenmode eui64 numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535
+    RX:  bytes packets errors dropped  missed   mcast
+             0       0      0       0       0       0
+    TX:  bytes packets errors dropped carrier collsns
+           684       2      0       0       0       0
+21: br-lan: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000
+    link/ether [MAC] brd [MAC] promiscuity 0 minmtu 68 maxmtu 65535
+    bridge forward_delay 800 hello_time 100 max_age 1000 ageing_time 30000 stp_state 0 priority 32767 vlan_filtering 0 vlan_protocol 802.1Q bridge_id 7fff.[MAC] designated_root 7fff.[MAC] root_port 0 root_path_cost 0 topology_change 0 topology_change_detected 0 hello_timer    0.00 tcn_timer    0.00 topology_change_timer    0.00 gc_timer   69.77 vlan_default_pvid 0 vlan_stats_enabled 0 vlan_stats_per_port 0 group_fwd_mask 0 group_address [MAC] mcast_snooping 0 no_linklocal_learn 0 mcast_vlan_snooping 0 mcast_router 1 mcast_query_use_ifaddr 0 mcast_querier 0 mcast_hash_elasticity 16 mcast_hash_max 512 mcast_last_member_count 2 mcast_startup_query_count 2 mcast_last_member_interval 100 mcast_membership_interval 26000 mcast_querier_interval 25500 mcast_query_interval 12500 mcast_query_response_interval 1000 mcast_startup_query_interval 3124 mcast_stats_enabled 0 mcast_igmp_version 2 mcast_mld_version 1 nf_call_iptables 0 nf_call_ip6tables 0 nf_call_arptables 0 addrgenmode eui64 numtxqueues 1 numrxqueues 1 gso_max_size 16354 gso_max_segs 65535
+    RX:  bytes packets errors dropped  missed   mcast
+      37725820  491159      0       0       0    7246
+    TX:  bytes packets errors dropped carrier collsns
+    5452585288 5885234      0       0       0       0
+23: rmnet_data0@rmnet_ipa0: <NOARP> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/[519]  promiscuity 0 minmtu 0 maxmtu 0
+    rmnet mux_id 1 addrgenmode eui64 numtxqueues 31 numrxqueues 1 gso_max_size 64000 gso_max_segs 65535
+    RX:  bytes packets errors dropped  missed   mcast
+            84       1      0       0       0       0
+    TX:  bytes packets errors dropped carrier collsns
+            84       1      0       0       0       0
+24: rmnet_data1@rmnet_ipa0: <NOARP,UP,LOWER_UP> mtu 1500 qdisc mq state UNKNOWN mode DEFAULT group default qlen 1000
+    link/[519]  promiscuity 0 minmtu 0 maxmtu 0
+    rmnet mux_id 2 addrgenmode eui64 numtxqueues 31 numrxqueues 1 gso_max_size 64000 gso_max_segs 65535
+    RX:  bytes packets errors dropped  missed   mcast
+    5396908185 5814464      0     679       0       0
+    TX:  bytes packets errors dropped carrier collsns
+     966714202 4111301      0       0       0       0
+25: rmnet_data2@rmnet_ipa0: <NOARP> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/[519]  promiscuity 0 minmtu 0 maxmtu 0
+    rmnet mux_id 3 addrgenmode eui64 numtxqueues 31 numrxqueues 1 gso_max_size 64000 gso_max_segs 65535
+    RX:  bytes packets errors dropped  missed   mcast
+             0       0      0       0       0       0
+    TX:  bytes packets errors dropped carrier collsns
+             0       0      0       0       0       0
+26: rmnet_data3@rmnet_ipa0: <NOARP> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/[519]  promiscuity 0 minmtu 0 maxmtu 0
+    rmnet mux_id 4 addrgenmode eui64 numtxqueues 31 numrxqueues 1 gso_max_size 64000 gso_max_segs 65535
+    RX:  bytes packets errors dropped  missed   mcast
+             0       0      0       0       0       0
+    TX:  bytes packets errors dropped carrier collsns
+             0       0      0       0       0       0
+27: rmnet_data4@rmnet_ipa0: <NOARP> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/[519]  promiscuity 0 minmtu 0 maxmtu 0
+    rmnet mux_id 5 addrgenmode eui64 numtxqueues 31 numrxqueues 1 gso_max_size 64000 gso_max_segs 65535
+    RX:  bytes packets errors dropped  missed   mcast
+             0       0      0       0       0       0
+    TX:  bytes packets errors dropped carrier collsns
+             0       0      0       0       0       0
+28: rmnet_data5@rmnet_ipa0: <NOARP> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/[519]  promiscuity 0 minmtu 0 maxmtu 0
+    rmnet mux_id 6 addrgenmode eui64 numtxqueues 31 numrxqueues 1 gso_max_size 64000 gso_max_segs 65535
+    RX:  bytes packets errors dropped  missed   mcast
+             0       0      0       0       0       0
+    TX:  bytes packets errors dropped carrier collsns
+             0       0      0       0       0       0
+29: rmnet_data15@rmnet_ipa0: <NOARP> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/[519]  promiscuity 0 minmtu 0 maxmtu 0
+    rmnet mux_id 16 addrgenmode eui64 numtxqueues 31 numrxqueues 1 gso_max_size 64000 gso_max_segs 65535
+    RX:  bytes packets errors dropped  missed   mcast
+             0       0      0       0       0       0
+    TX:  bytes packets errors dropped carrier collsns
+             0       0      0       0       0       0
+30: rmnet_data16@rmnet_ipa0: <NOARP> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/[519]  promiscuity 0 minmtu 0 maxmtu 0
+    rmnet mux_id 17 addrgenmode eui64 numtxqueues 31 numrxqueues 1 gso_max_size 64000 gso_max_segs 65535
+    RX:  bytes packets errors dropped  missed   mcast
+             0       0      0       0       0       0
+    TX:  bytes packets errors dropped carrier collsns
+             0       0      0       0       0       0
+80: eth1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast master br-lan state DOWN mode DEFAULT group default qlen 1000
+    link/ether [MAC] brd [MAC] promiscuity 1 minmtu 68 maxmtu 9194
+    bridge_slave state disabled priority 32 cost 100 hairpin off guard off root_block off fastleave off learning on flood on port_id 0x8004 port_no 0x4 designated_port 32772 designated_cost 0 designated_bridge 7fff.[MAC] designated_root 7fff.[MAC] hold_timer    0.00 message_age_timer    0.00 forward_delay_timer    0.00 topology_change_ack 0 config_pending 0 proxy_arp off proxy_arp_wifi off mcast_router 1 mcast_fast_leave off mcast_flood on bcast_flood on mcast_to_unicast off neigh_suppress off group_fwd_mask 0 group_fwd_mask_str 0x0 vlan_tunnel off isolated off addrgenmode eui64 numtxqueues 1 numrxqueues 1 gso_max_size 16354 gso_max_segs 65535 parentbus usb parentdev 2-1.3:1.0
+    RX:  bytes packets errors dropped  missed   mcast
+             0       0      0       0       0       0
+    TX:  bytes packets errors dropped carrier collsns
+             0       0      0       0       0       0
+119: ifb4rmnet_data1: <BROADCAST,NOARP,UP,LOWER_UP> mtu 1500 qdisc cake state UNKNOWN mode DEFAULT group default qlen 32
+    link/ether [MAC] brd [MAC] promiscuity 0 minmtu 0 maxmtu 0
+    ifb addrgenmode eui64 numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535
+    RX:  bytes packets errors dropped  missed   mcast
+       1223435     870      0       0       0       0
+    TX:  bytes packets errors dropped carrier collsns
+       1223435     870      0       0       0       0
+=== addresses ===
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback [MAC] brd [MAC]
+    inet [IPv4] scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 [IPv6] scope host
+       valid_lft forever preferred_lft forever
+2: dummy0: <BROADCAST,NOARP> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether [MAC] brd [MAC]
+3: ifb0: <BROADCAST,NOARP> mtu 1500 qdisc noop state DOWN group default qlen 32
+    link/ether [MAC] brd [MAC]
+4: ifb1: <BROADCAST,NOARP> mtu 1500 qdisc noop state DOWN group default qlen 32
+    link/ether [MAC] brd [MAC]
+5: tunl0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/ipip [IPv4] brd [IPv4]
+6: gre0@NONE: <NOARP> mtu 1476 qdisc noop state DOWN group default qlen 1000
+    link/gre [IPv4] brd [IPv4]
+7: gretap0@NONE: <BROADCAST,MULTICAST> mtu 1462 qdisc noop state DOWN group default qlen 1000
+    link/ether [MAC] brd [MAC]
+8: erspan0@NONE: <BROADCAST,MULTICAST> mtu 1450 qdisc noop state DOWN group default qlen 1000
+    link/ether [MAC] brd [MAC]
+9: ip_vti0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/ipip [IPv4] brd [IPv4]
+10: ip6_vti0@NONE: <NOARP> mtu 1364 qdisc noop state DOWN group default qlen 1000
+    link/tunnel6 [IPv6] brd [IPv6] permaddr [IPv6]
+11: ip6tnl0@NONE: <NOARP> mtu 1452 qdisc noop state DOWN group default qlen 1000
+    link/tunnel6 [IPv6] brd [IPv6] permaddr [IPv6]
+12: ip6gre0@NONE: <NOARP> mtu 1448 qdisc noop state DOWN group default qlen 1000
+    link/gre6 [IPv6] brd [IPv6] permaddr [IPv6]
+13: eth0: <BROADCAST,MULTICAST> mtu 1500 qdisc mq master br-lan state DOWN group default qlen 1000
+    link/ether [MAC] brd [MAC] permaddr [MAC]
+    inet [IPv4] brd [IPv4] scope global eth0
+       valid_lft forever preferred_lft forever
+14: rmnet_ipa0: <UP,LOWER_UP> mtu 9216 qdisc mq state UNKNOWN group default qlen 1000
+    link/[519]
+16: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit [IPv4] brd [IPv4]
+17: wlan0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq master br-lan state UP group default qlen 3000
+    link/ether [MAC] brd [MAC] permaddr [MAC]
+    inet [IPv4] brd [IPv4] scope global wlan0
+       valid_lft forever preferred_lft forever
+18: wlan1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq master br-lan state UP group default qlen 3000
+    link/ether [MAC] brd [MAC] permaddr [MAC]
+    inet [IPv4] brd [IPv4] scope global wlan1
+       valid_lft forever preferred_lft forever
+19: wlan4: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq master br-guest state UP group default qlen 3000
+    link/ether [MAC] brd [MAC] permaddr [MAC]
+20: br-guest: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether [MAC] brd [MAC]
+    inet [IPv4] brd [IPv4] scope global br-guest
+       valid_lft forever preferred_lft forever
+21: br-lan: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether [MAC] brd [MAC]
+    inet [IPv4] brd [IPv4] scope global br-lan
+       valid_lft forever preferred_lft forever
+23: rmnet_data0@rmnet_ipa0: <NOARP> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/[519]
+24: rmnet_data1@rmnet_ipa0: <NOARP,UP,LOWER_UP> mtu 1500 qdisc mq state UNKNOWN group default qlen 1000
+    link/[519]
+    inet [IPv4] scope global rmnet_data1
+       valid_lft forever preferred_lft forever
+25: rmnet_data2@rmnet_ipa0: <NOARP> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/[519]
+26: rmnet_data3@rmnet_ipa0: <NOARP> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/[519]
+27: rmnet_data4@rmnet_ipa0: <NOARP> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/[519]
+28: rmnet_data5@rmnet_ipa0: <NOARP> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/[519]
+29: rmnet_data15@rmnet_ipa0: <NOARP> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/[519]
+30: rmnet_data16@rmnet_ipa0: <NOARP> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/[519]
+80: eth1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast master br-lan state DOWN group default qlen 1000
+    link/ether [MAC] brd [MAC]
+119: ifb4rmnet_data1: <BROADCAST,NOARP,UP,LOWER_UP> mtu 1500 qdisc cake state UNKNOWN group default qlen 32
+    link/ether [MAC] brd [MAC]
+=== routes ===
+[IPv4] dev wlan0 table 9910 proto kernel scope link src [IPv4]
+[IPv4] dev wlan1 table 9910 proto kernel scope link src [IPv4]
+[IPv4] dev br-lan table 9910 proto kernel scope link src [IPv4]
+[IPv4] dev br-guest table 9910 proto kernel scope link src [IPv4]
+default via [IPv4] dev rmnet_data1 proto static src [IPv4] metric 40 mtu 1500
+[IPv4] dev rmnet_data1 proto kernel scope link src [IPv4]
+[IPv4] dev wlan0 proto kernel scope link src [IPv4]
+[IPv4] dev wlan1 proto kernel scope link src [IPv4]
+[IPv4] dev br-lan proto kernel scope link src [IPv4]
+[IPv4] dev br-guest proto kernel scope link src [IPv4]
+[IPv4] dev rmnet_data1 proto static scope link metric 40
+[IPv4] dev rmnet_data1 proto static scope link metric 40
+local [IPv4] dev rmnet_data1 table local proto kernel scope host src [IPv4]
+broadcast [IPv4] dev rmnet_data1 table local proto kernel scope link src [IPv4]
+local [IPv4] dev lo table local proto kernel scope host src [IPv4]
+local [IPv4] dev lo table local proto kernel scope host src [IPv4]
+broadcast [IPv4] dev lo table local proto kernel scope link src [IPv4]
+local [IPv4] dev eth0 table local proto kernel scope host src [IPv4]
+local [IPv4] dev wlan0 table local proto kernel scope host src [IPv4]
+broadcast [IPv4] dev wlan0 table local proto kernel scope link src [IPv4]
+local [IPv4] dev wlan1 table local proto kernel scope host src [IPv4]
+broadcast [IPv4] dev wlan1 table local proto kernel scope link src [IPv4]
+local [IPv4] dev br-lan table local proto kernel scope host src [IPv4]
+broadcast [IPv4] dev br-lan table local proto kernel scope link src [IPv4]
+local [IPv4] dev br-guest table local proto kernel scope host src [IPv4]
+broadcast [IPv4] dev br-guest table local proto kernel scope link src [IPv4]
+unreachable [IPv6] dev lo proto static metric 2147483647 pref medium
+local [IPv6] dev lo table local proto kernel metric 0 pref medium
+=== modem interface status ===
+{
+	"up": true,
+	"pending": false,
+	"available": true,
+	"autostart": false,
+	"dynamic": false,
+	"uptime": 14990,
+	"l3_device": "rmnet_data1",
+	"proto": "rmnet",
+	"updated": [
+		"addresses",
+		"routes"
+	],
+	"metric": 40,
+	"dns_metric": 0,
+	"delegation": true,
+	"ipv4-address": [
+		{
+			"address": "[IPv4]",
+			"mask": 30
+		}
+	],
+	"ipv6-address": [
+
+	],
+	"ipv6-prefix": [
+
+	],
+	"ipv6-prefix-assignment": [
+
+	],
+	"route": [
+		{
+			"target": "[IPv4]",
+			"mask": 32,
+			"nexthop": "[IPv4]",
+			"source": "[IPv4]"
+		},
+		{
+			"target": "[IPv4]",
+			"mask": 32,
+			"nexthop": "[IPv4]",
+			"source": "[IPv4]"
+		},
+		{
+			"target": "[IPv4]",
+			"mask": 0,
+			"nexthop": "[IPv4]",
+			"mtu": 1500,
+			"source": "[IPv4]"
+		}
+	],
+	"dns-server": [
+		"[IPv4]",
+		"[IPv4]"
+	],
+	"dns-search": [
+
+	],
+	"neighbors": [
+
+	],
+	"inactive": {
+		"ipv4-address": [
+
+		],
+		"ipv6-address": [
+
+		],
+		"route": [
+
+		],
+		"dns-server": [
+
+		],
+		"dns-search": [
+
+		],
+		"neighbors": [
+
+		]
+	},
+	"data": {
+
+	}
+}
+=== qdisc ===
+qdisc noqueue 0: dev lo root refcnt 2
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc mq 0: dev eth0 root
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev eth0 parent :2 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev eth0 parent :1 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc mq 0: dev rmnet_ipa0 root
+ Sent 999701742 bytes 4113762 pkt (dropped 9, overlimits 0 requeues 407)
+ backlog 0b 0p requeues 407
+qdisc pfifo_fast 0: dev rmnet_ipa0 parent :4 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_ipa0 parent :3 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_ipa0 parent :2 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_ipa0 parent :1 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 999701742 bytes 4113762 pkt (dropped 9, overlimits 0 requeues 407)
+ backlog 0b 0p requeues 407
+qdisc mq 0: dev wlan0 root
+ Sent 7247356 bytes 16955 pkt (dropped 0, overlimits 0 requeues 1)
+ backlog 0b 0p requeues 1
+qdisc pfifo_fast 0: dev wlan0 parent :11 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 110533 bytes 2045 pkt (dropped 0, overlimits 0 requeues 1)
+ backlog 0b 0p requeues 1
+qdisc pfifo_fast 0: dev wlan0 parent :10 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan0 parent :f bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan0 parent :e bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan0 parent :d bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan0 parent :c bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 877495 bytes 1993 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan0 parent :b bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 2953155 bytes 3552 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan0 parent :a bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 815657 bytes 1731 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan0 parent :9 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 2462707 bytes 7197 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan0 parent :8 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 2630 bytes 10 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan0 parent :7 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 484 bytes 5 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan0 parent :6 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan0 parent :5 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 1585 bytes 9 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan0 parent :4 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan0 parent :3 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan0 parent :2 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan0 parent :1 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 23110 bytes 413 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc mq 0: dev wlan1 root
+ Sent 5377550585 bytes 5711144 pkt (dropped 0, overlimits 0 requeues 37)
+ backlog 0b 0p requeues 37
+qdisc pfifo_fast 0: dev wlan1 parent :11 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 224184 bytes 5042 pkt (dropped 0, overlimits 0 requeues 3)
+ backlog 0b 0p requeues 3
+qdisc pfifo_fast 0: dev wlan1 parent :10 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 9853 bytes 104 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan1 parent :f bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 10107 bytes 76 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan1 parent :e bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 10960 bytes 77 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan1 parent :d bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 11793 bytes 77 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan1 parent :c bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 1203952049 bytes 1354410 pkt (dropped 0, overlimits 0 requeues 11)
+ backlog 0b 0p requeues 11
+qdisc pfifo_fast 0: dev wlan1 parent :b bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 1094626363 bytes 1262066 pkt (dropped 0, overlimits 0 requeues 10)
+ backlog 0b 0p requeues 10
+qdisc pfifo_fast 0: dev wlan1 parent :a bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 1107709687 bytes 1263601 pkt (dropped 0, overlimits 0 requeues 4)
+ backlog 0b 0p requeues 4
+qdisc pfifo_fast 0: dev wlan1 parent :9 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 1968010252 bytes 1821621 pkt (dropped 0, overlimits 0 requeues 9)
+ backlog 0b 0p requeues 9
+qdisc pfifo_fast 0: dev wlan1 parent :8 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 629511 bytes 614 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan1 parent :7 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 734894 bytes 1094 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan1 parent :6 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 750178 bytes 710 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan1 parent :5 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 744382 bytes 797 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan1 parent :4 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 58119 bytes 422 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan1 parent :3 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 26636 bytes 179 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan1 parent :2 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 14935 bytes 88 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan1 parent :1 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 26682 bytes 166 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc mq 0: dev wlan4 root
+ Sent 684 bytes 2 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan4 parent :11 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 684 bytes 2 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan4 parent :10 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan4 parent :f bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan4 parent :e bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan4 parent :d bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan4 parent :c bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan4 parent :b bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan4 parent :a bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan4 parent :9 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan4 parent :8 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan4 parent :7 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan4 parent :6 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan4 parent :5 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan4 parent :4 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan4 parent :3 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan4 parent :2 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev wlan4 parent :1 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc noqueue 0: dev br-guest root refcnt 2
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc noqueue 0: dev br-lan root refcnt 2
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc mq 0: dev rmnet_data1 root
+ Sent 746925203 bytes 3691468 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :1f bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :1e bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :1d bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :1c bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :1b bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :1a bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :19 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :18 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :17 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :16 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :15 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :14 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :13 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :12 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :11 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :10 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 745660491 bytes 3674781 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :f bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :e bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :d bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :c bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :b bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :a bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :9 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :8 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :7 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :6 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :5 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :4 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :3 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :2 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev rmnet_data1 parent :1 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 1264712 bytes 16687 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc ingress ffff: dev rmnet_data1 parent ffff:fff1 ----------------
+ Sent 1235243 bytes 878 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc pfifo_fast 0: dev eth1 root refcnt 2 bands 3 priomap 1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+qdisc cake 8048: dev ifb4rmnet_data1 root refcnt 2 bandwidth 5Mbit besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 1223435 bytes 870 pkt (dropped 8, overlimits 1608 requeues 0)
+ backlog 0b 0p requeues 0
+ memory used: 63568b of 4Mb
+ capacity estimate: 5Mbit
+ min/max network layer size:           28 /    1476
+ min/max overhead-adjusted size:       28 /    1476
+ average network hdr offset:            0
+
+                  Tin 0
+  thresh          5Mbit
+  target            5ms
+  interval        100ms
+  pk_delay       25.3ms
+  av_delay       13.3ms
+  sp_delay         40us
+  backlog            0b
+  pkts              878
+  bytes         1235243
+  way_inds            0
+  way_miss           22
+  way_cols            0
+  drops               8
+  marks               0
+  ack_drop            0
+  sp_flows            4
+  bk_flows            1
+  un_flows            0
+  max_len          1476
+  quantum           300
+
+=== fastpath signals ===
+table inet fw4 {
+	flowtable ft {
+		hook ingress priority filter
+		devices = { eth0, eth1, wlan0, wlan1, wlan4 }
+		counter
+	}
+}
+tcp      6 src=[IPv4] dst=[IPv4] sport=52792 dport=443 packets=119 bytes=13764 src=[IPv4] dst=[IPv4] sport=443 dport=52792 packets=121 bytes=9798 [OFFLOAD] mark=0 use=2
+tcp      6 src=[IPv4] dst=[IPv4] sport=49337 dport=443 packets=200 bytes=19340 src=[IPv4] dst=[IPv4] sport=443 dport=49337 packets=146 bytes=25882 [OFFLOAD] mark=0 use=2
+=== Qualcomm IPA bounded counters ===
+--- /sys/kernel/debug/ipa/stats ---
+sw_tx=172431
+hw_tx=4113762
+tx_queue_fail=0
+tx_non_linear=3242
+tx_compl=4286193
+wan_rx=0
+stat_compl=0
+lan_aggr_close=0
+wan_aggr_close=0
+act_clnt=2
+con_clnt_bmap=0x704a7a06
+wan_rx_empty=0
+wan_rx_empty_coal=0
+wan_repl_rx_empty=0
+rmnet_ll_rx_empty=0
+rmnet_ll_repl_rx_empty=0
+lan_rx_empty=0
+lan_repl_rx_empty=0
+flow_enable=0
+flow_disable=0
+rx_page_drop_cnt=0
+lower_order=0
+rmnet_notifier_enabled=0
+num_buff_above_thresh_for_def_pipe_notified=0
+num_buff_below_thresh_for_def_pipe_notified=0
+num_buff_above_thresh_for_coal_pipe_notified=0
+num_buff_below_thresh_for_coal_pipe_notified=0
+num_buff_above_thresh_for_ll_pipe_notified=0
+num_buff_below_thresh_for_ll_pipe_notified=0
+num_free_page_task_scheduled=0
+pipe_setup_fail_cnt=0
+ttl_count=0
+ipsec_enacp_excp=0
+ipsec_decap_excp=0
+lan_rx_excp[0:IPAHAL_PKT_STATUS_EXCEPTION_NONE]=108220
+lan_rx_excp[1:IPAHAL_PKT_STATUS_EXCEPTION_DEAGGR]=0
+lan_rx_excp[2:IPAHAL_PKT_STATUS_EXCEPTION_IPTYPE]=5466
+lan_rx_excp[3:IPAHAL_PKT_STATUS_EXCEPTION_PACKET_LENGTH]=0
+lan_rx_excp[4:IPAHAL_PKT_STATUS_EXCEPTION_PACKET_THRESHOLD]=0
+lan_rx_excp[5:IPAHAL_PKT_STATUS_EXCEPTION_TTL]=0
+lan_rx_excp[6:IPAHAL_PKT_STATUS_EXCEPTION_FRAG_RULE_MISS]=0
+lan_rx_excp[7:IPAHAL_PKT_STATUS_EXCEPTION_IPV4_CHECKSUM]=0
+lan_rx_excp[8:IPAHAL_PKT_STATUS_EXCEPTION_SW_FILT]=193989
+lan_rx_excp[9:IPAHAL_PKT_STATUS_EXCEPTION_NAT]=3939547
+lan_rx_excp[10:IPAHAL_PKT_STATUS_EXCEPTION_IPV6CT]=0
+lan_rx_excp[11:IPAHAL_PKT_STATUS_EXCEPTION_UCP]=0
+lan_rx_excp[12:IPAHAL_PKT_STATUS_EXCEPTION_INVALID_PIPE]=0
+lan_rx_excp[13:IPAHAL_PKT_STATUS_EXCEPTION_RQOS]=0
+lan_rx_excp[14:IPAHAL_PKT_STATUS_EXCEPTION_DECAPS]=0
+lan_rx_excp[15:IPAHAL_PKT_STATUS_EXCEPTION_EXCEED_MTU]=0
+lan_rx_excp[16:IPAHAL_PKT_STATUS_EXCEPTION_HDRI]=0
+lan_rx_excp[17:IPAHAL_PKT_STATUS_EXCEPTION_CSUM]=0
+--- /sys/kernel/debug/ipa/hw_stats/tethering ---
+IPA_CLIENT_A5_WLAN_AMPDU_PROD->IPA_CLIENT_Q6_WAN_CONS:
+num_ipv4_bytes=0
+num_ipv6_bytes=0
+num_ipv4_pkts=0
+num_ipv6_pkts=0
+
+IPA_CLIENT_A5_WLAN_AMPDU_PROD->IPA_CLIENT_Q6_UL_NLO_DATA_CONS:
+num_ipv4_bytes=44384234
+num_ipv6_bytes=0
+num_ipv4_pkts=260114
+num_ipv6_pkts=0
+
+IPA_CLIENT_USB_PROD->IPA_CLIENT_Q6_WAN_CONS:
+num_ipv4_bytes=2493
+num_ipv6_bytes=0
+num_ipv4_pkts=33
+num_ipv6_pkts=0
+
+IPA_CLIENT_USB_PROD->IPA_CLIENT_Q6_UL_NLO_DATA_CONS:
+num_ipv4_bytes=8813656
+num_ipv6_bytes=0
+num_ipv4_pkts=58812
+num_ipv6_pkts=0
+
+IPA_CLIENT_ETHERNET_PROD->IPA_CLIENT_Q6_WAN_CONS:
+num_ipv4_bytes=0
+num_ipv6_bytes=0
+num_ipv4_pkts=0
+num_ipv6_pkts=0
+
+IPA_CLIENT_ETHERNET_PROD->IPA_CLIENT_Q6_UL_NLO_DATA_CONS:
+num_ipv4_bytes=0
+num_ipv6_bytes=0
+num_ipv4_pkts=0
+num_ipv6_pkts=0
+
+IPA_CLIENT_Q6_WAN_PROD->IPA_CLIENT_WLAN2_CONS:
+num_ipv4_bytes=0
+num_ipv6_bytes=0
+num_ipv4_pkts=0
+num_ipv6_pkts=0
+
+IPA_CLIENT_Q6_WAN_PROD->IPA_CLIENT_USB_CONS:
+num_ipv4_bytes=0
+num_ipv6_bytes=0
+num_ipv4_pkts=0
+num_ipv6_pkts=0
+
+IPA_CLIENT_Q6_WAN_PROD->IPA_CLIENT_ETHERNET_CONS:
+num_ipv4_bytes=0
+num_ipv6_bytes=0
+num_ipv4_pkts=0
+num_ipv6_pkts=0
+
+IPA_CLIENT_Q6_WAN_PROD->IPA_CLIENT_AQC_ETHERNET_CONS:
+num_ipv4_bytes=0
+num_ipv6_bytes=0
+num_ipv4_pkts=0
+num_ipv6_pkts=0
+
+IPA_CLIENT_Q6_WAN_PROD->IPA_CLIENT_RTK_ETHERNET_CONS:
+num_ipv4_bytes=0
+num_ipv6_bytes=0
+num_ipv4_pkts=0
+num_ipv6_pkts=0
+
+IPA_CLIENT_Q6_WAN_PROD->IPA_CLIENT_ETHERNET2_CONS:
+num_ipv4_bytes=0
+num_ipv6_bytes=0
+num_ipv4_pkts=0
+num_ipv6_pkts=0
+
+IPA_CLIENT_Q6_WAN_PROD->IPA_CLIENT_ETHERNET_LOW_LAT_CONS:
+num_ipv4_bytes=0
+num_ipv6_bytes=0
+num_ipv4_pkts=0
+num_ipv6_pkts=0
+
+IPA_CLIENT_Q6_DL_NLO_DATA_PROD->IPA_CLIENT_WLAN2_CONS:
+num_ipv4_bytes=65140521
+num_ipv6_bytes=0
+num_ipv4_pkts=221745
+num_ipv6_pkts=0
+
+IPA_CLIENT_Q6_DL_NLO_DATA_PROD->IPA_CLIENT_USB_CONS:
+num_ipv4_bytes=11455119
+num_ipv6_bytes=0
+num_ipv4_pkts=81445
+num_ipv6_pkts=0
+
+IPA_CLIENT_Q6_DL_NLO_DATA_PROD->IPA_CLIENT_ETHERNET_CONS:
+num_ipv4_bytes=0
+num_ipv6_bytes=0
+num_ipv4_pkts=0
+num_ipv6_pkts=0
+
+IPA_CLIENT_Q6_DL_NLO_DATA_PROD->IPA_CLIENT_AQC_ETHERNET_CONS:
+num_ipv4_bytes=0
+num_ipv6_bytes=0
+num_ipv4_pkts=0
+num_ipv6_pkts=0
+
+IPA_CLIENT_Q6_DL_NLO_DATA_PROD->IPA_CLIENT_RTK_ETHERNET_CONS:
+num_ipv4_bytes=0
+num_ipv6_bytes=0
+num_ipv4_pkts=0
+num_ipv6_pkts=0
+
+IPA_CLIENT_Q6_DL_NLO_DATA_PROD->IPA_CLIENT_ETHERNET2_CONS:
+num_ipv4_bytes=0
+num_ipv6_bytes=0
+num_ipv4_pkts=0
+num_ipv6_pkts=0
+
+IPA_CLIENT_Q6_DL_NLO_DATA_PROD->IPA_CLIENT_ETHERNET_LOW_LAT_CONS:
+num_ipv4_bytes=0
+num_ipv6_bytes=0
+num_ipv4_pkts=0
+num_ipv6_pkts=0
+
+IPA_CLIENT_AQC_ETHERNET_PROD->IPA_CLIENT_Q6_WAN_CONS:
+num_ipv4_bytes=0
+num_ipv6_bytes=0
+num_ipv4_pkts=0
+num_ipv6_pkts=0
+
+IPA_CLIENT_AQC_ETHERNET_PROD->IPA_CLIENT_Q6_UL_NLO_DATA_CONS:
+num_ipv4_bytes=0
+num_ipv6_bytes=0
+num_ipv4_pkts=0
+num_ipv6_pkts=0
+
+IPA_CLIENT_RTK_ETHERNET_PROD->IPA_CLIENT_Q6_WAN_CONS:
+num_ipv4_bytes=0
+num_ipv6_bytes=0
+num_ipv4_pkts=0
+num_ipv6_pkts=0
+
+IPA_CLIENT_RTK_ETHERNET_PROD->IPA_CLIENT_Q6_UL_NLO_DATA_CONS:
+num_ipv4_bytes=0
+num_ipv6_bytes=0
+num_ipv4_pkts=0
+num_ipv6_pkts=0
+
+IPA_CLIENT_ETHERNET2_PROD->IPA_CLIENT_Q6_WAN_CONS:
+num_ipv4_bytes=0
+num_ipv6_bytes=0
+num_ipv4_pkts=0
+num_ipv6_pkts=0
+
+IPA_CLIENT_ETHERNET2_PROD->IPA_CLIENT_Q6_UL_NLO_DATA_CONS:
+num_ipv4_bytes=0
+num_ipv6_bytes=0
+num_ipv4_pkts=0
+num_ipv6_pkts=0
+
+IPA_CLIENT_Q6_DL_NLO_LL_DATA_PROD->IPA_CLIENT_WLAN2_CONS:
+num_ipv4_bytes=0
+num_ipv6_bytes=0
+num_ipv4_pkts=0
+num_ipv6_pkts=0
+
+IPA_CLIENT_Q6_DL_NLO_LL_DATA_PROD->IPA_CLIENT_USB_CONS:
+num_ipv4_bytes=0
+num_ipv6_bytes=0
+num_ipv4_pkts=0
+num_ipv6_pkts=0
+
+IPA_CLIENT_Q6_DL_NLO_LL_DATA_PROD->IPA_CLIENT_ETHERNET_CONS:
+num_ipv4_bytes=0
+num_ipv6_bytes=0
+num_ipv4_pkts=0
+num_ipv6_pkts=0
+
+IPA_CLIENT_Q6_DL_NLO_LL_DATA_PROD->IPA_CLIENT_AQC_ETHERNET_CONS:
+num_ipv4_bytes=0
+num_ipv6_bytes=0
+num_ipv4_pkts=0
+num_ipv6_pkts=0
+
+IPA_CLIENT_Q6_DL_NLO_LL_DATA_PROD->IPA_CLIENT_RTK_ETHERNET_CONS:
+num_ipv4_bytes=0
+num_ipv6_bytes=0
+num_ipv4_pkts=0
+num_ipv6_pkts=0
+
+IPA_CLIENT_Q6_DL_NLO_LL_DATA_PROD->IPA_CLIENT_ETHERNET2_CONS:
+num_ipv4_bytes=0
+num_ipv6_bytes=0
+num_ipv4_pkts=0
+num_ipv6_pkts=0
+
+IPA_CLIENT_Q6_DL_NLO_LL_DATA_PROD->IPA_CLIENT_ETHERNET_LOW_LAT_CONS:
+num_ipv4_bytes=0
+num_ipv6_ 5379 root     {QCMAP_Connectio} /sbin/ujail -t 5 -n QCMAP_ConnectionManager -U radio -G radio -C /etc/capabilities/QCMAP_ConnectionManager.json -- /usr/bin/QCMAP_ConnectionManager /etc/data/mobileap_cfg.xml d
+ 5382 radio    /usr/bin/QCMAP_ConnectionManager /etc/data/mobileap_cfg.xml d
+ 6752 radio    /usr/bin/ipacmdiag
+17492 root     {ipa_lnx_agent} /sbin/ujail -t 5 -n ipa_lnx_agent -U radio -G radio -C /etc/capabilities/ipa_lnx_agent.json -- /usr/bin/ipa_lnx_agent
+17501 radio    /usr/bin/ipa_lnx_agent
+17752 root     {ethagent} /sbin/ujail -t 5 -n ethagent -U radio -G radio -C /etc/capabilities/ethagent.json -- /usr/bin/ethagent
+17762 radio    /usr/bin/ethagent
+=== interrupts ===
+           CPU0       CPU1       CPU2       CPU3
+ 11:    6945073    7217551    7101974    8165242     GICv3  27 Level     arch_timer
+ 13:          0          0          0          0     GICv3  38 Level     arch_mem_timer
+ 15:          0          0          0          0     GICv3 962 Edge      qcom-scm
+ 18:     170343     257628     256282     117490     GICv3  37 Level     apps_rsc-drv-2
+ 19:      33251      41445      42752      32693     GICv3 289 Level     19091000.qcom,bwmon-ddr
+ 20:          0          0          0          0     GICv3 293 Edge      pcie_crm
+ 21:          0          0          0          0     GICv3 284 Level     sps
+ 22:          0          0          0          0     GICv3  62 Level     dcvsh-irq-0
+ 23:      71636      89959     113065      54725     GICv3 242 Level     mmc0
+ 24:       1246       2024       2069       1665     GICv3 259 Level     8804000.sdhci
+ 25:       1848       2010       1856       1574     GICv3  23 Level     arm-pmu
+ 27:      61193      97459      80047      42645     GICv3 273 Level     ipcc_0
+ 28:          0          0          0          0     GICv3 282 Edge      q6v5 wdog
+ 29:          0          0          0          0     GICv3  16 Level     KRYO L1-L2 ECC FAULTIRQ
+ 30:          0          0          0          0     GICv3  67 Level     KRYO L3-SCU ECC FAULTIRQ
+ 31:          3          0          0          0     GICv3 172 Edge      int_global_int
+ 33:          0          0          0          0     GICv3 431 Level     llcc_ecc
+ 34:         17        120          0          0     GICv3 346 Level     ipa
+ 35:    1736751     419196     665778     258564     GICv3 340 Level     gsi
+ 37:          0          0          0          0     GICv3 366 Edge      24048000.tmc
+ 38:          0          0          0          0     GICv3 421 Edge      2404f000.tmc
+ 67:          0          0          0          0     GICv3 162 Level     pwr_event_irq
+ 80:          0          0          0          0     GICv3  97 Level     arm-smmu global fault
+ 81:          0          0          0          0     GICv3 100 Level     arm-smmu-context-fault
+ 82:          0          0          0          0     GICv3 101 Level     arm-smmu-context-fault
+ 83:          0          0          0          0     GICv3 102 Level     arm-smmu-context-fault
+ 84:          0          0          0          0     GICv3 103 Level     arm-smmu-context-fault
+ 85:          0          0          0          0     GICv3 104 Level     arm-smmu-context-fault
+ 86:          0          0          0          0     GICv3 105 Level     arm-smmu-context-fault
+ 87:          0          0          0          0     GICv3 126 Level     arm-smmu-context-fault
+ 88:          0          0          0          0     GICv3 127 Level     arm-smmu-context-fault
+ 89:          0          0          0          0     GICv3 128 Level     arm-smmu-context-fault
+ 90:          0          0          0          0     GICv3 129 Level     arm-smmu-context-fault
+ 91:          0          0          0          0     GICv3 130 Level     arm-smmu-context-fault
+ 92:          0          0          0          0     GICv3 131 Level     arm-smmu-context-fault
+ 93:          0          0          0          0     GICv3 132 Level     arm-smmu-context-fault
+113:          2          0          0          2     GICv3 205 Level     c271000.thermal-sensor
+114:          0          0          0          0     GICv3 365 Level     c271000.thermal-sensor
+116:          0          0          0          0     GICv3  32 Edge      apps_wdog_bark
+119:         85          0          0          0      ipcc   0 Edge      aoss-qmp
+120:        169         21         12          0     GICv3 370 Level     qcom_geni_serial_uart0
+121:          0          0          0          0     GICv3 372 Level     msm_serial_geni0
+122:        401       4728          0       1375     GICv3 369 Level     i2c_geni
+123:       1160       1183        903          0     GICv3 371 Level     i2c_geni
+124:    1283797    2045456    1707648    3863849     GICv3 374 Level     i2c_geni
+125:       2352        800        326      10951     GICv3 375 Level     i2c_geni
+126:       4617       9405       1991       9962     GICv3 376 Level     spi_geni
+127:          3          0          2          0      ipcc 131074 Edge      qcom,smp2p-modem
+128:          0          0          0          0       PDC   6 Level     eud_irq
+129:          0          0          0          0       PDC  20 Edge      c271000.thermal-sensor
+130:          3          0          0          0      ipcc 1507328 Edge      qcom,qmp-tme
+131:          0          0          0          0     smp2p   0 Edge      q6v5 fatal
+132:          0          0          1          0     smp2p   1 Edge      q6v5 ready
+133:          0          0          1          0     smp2p   2 Edge      q6v5 handover
+134:          0          0          0          0     smp2p   3 Edge      q6v5 stop
+135:          0          0          0          0     smp2p   7 Edge      q6v5 shutdown-ack
+137:         12          0          0          0  pmic_arb 20381698 Edge      pmic_pwrkey
+138:          0          0          0          0  pmic_arb 20316162 Edge      pmic_resin
+139:          2          0          0          0   msmgpio  42 Edge      msm_pcie_wake
+140:          0          0          0          0  pmic_arb 102825988 Edge      pm8xxx_rtc_alarm
+141:        396          0          0          0  pmic_arb 151060490 Edge      adc-sdam0
+142:          0          0          0          0  pmic_arb 152109067 Edge      adc-sdam1
+144:         20          0          0          0  pmic_arb 290455575 Edge      c42d000.qcom,spmi:qcom,pmx75@1:qcom,pmd-vbus-det@1500
+146:          2          0          0          0   msmgpio 109 Edge      emac_phy_intr
+147:          0          0          0          0  pmic_arb 118554630 Edge      regulator-ocp
+148:          0          0          0          0   msmgpio  55 Edge      hs_uart_wakeup
+149:    1321209          0          0          0   msmgpio  98 Edge      TE_GPIO
+150:       1050          0          0          0   msmgpio  78 Edge      chsc_cap_touch
+151:         14          0          0          0   msmgpio  19 Edge      2-006f
+152:       4914          0          0          0   msmgpio  79 Edge      sgm41542S-irq
+153:          0          0          0          0   msmgpio  89 Edge      cw2217-irq
+154:          2          0          0          0       PDC  10 Edge      dp_hs_phy_irq
+155:          2          0          0          0       PDC   9 Edge      dm_hs_phy_irq
+156:          2          0          0          0       PDC  17 Level     ss_phy_irq
+157:     119441     181364     184205      64718     GICv3 165 Level     xhci-hcd:usb1
+158:          0          0          0          0   msmgpio  91 Edge      soc:gpio_keys
+159:         59          0          0          0   msmgpio  85 Edge      aw_interrupt_int_n
+160:        309          0          0          0   msmgpio 115 Edge      aw_interrupt_int_n
+162:          0          0          0          0     smp2p   0 Edge      ipa_smp2p_clk_vote
+164:          4          0          0          0  gic_msm_pci_msi 524288 Edge      bhi
+165:        192         62         38        122  gic_msm_pci_msi 524289 Edge      mhi, mhi
+166:        211         26         11         69  gic_msm_pci_msi 524290 Edge      mhi
+167:          4          0          0          0  gic_msm_pci_msi 524291 Edge      pci0_wlan_ce_0
+168:         18         13         14         15  gic_msm_pci_msi 524292 Edge      pci0_wlan_ce_1
+169:     128068      63493      82378      58381  gic_msm_pci_msi 524293 Edge      pci0_wlan_ce_2
+170:      10805       7449       9494       5590  gic_msm_pci_msi 524294 Edge      pci0_wlan_ce_3
+171:          6          0          0          0  gic_msm_pci_msi 524295 Edge      pci0_wlan_ce_4
+172:          0          0          0          0  gic_msm_pci_msi 524296 Edge      pci0_wlan_ce_5
+173:          0          0          0          0  gic_msm_pci_msi 524297 Edge      pci0_wlan_ce_6
+174:     253549     261609     297984     236043  gic_msm_pci_msi 524298 Edge      pci0_wlan_ce_7
+175:          0          0          0          0  gic_msm_pci_msi 524299 Edge      pci0_wlan_ce_8
+177:          0          0          0          0  gic_msm_pci_msi 524301 Edge      wlan_wake_irq
+178:     267949     309156     441174     385114  gic_msm_pci_msi 524302 Edge      pci0_wlan_grp_dp_0
+179:          0          0          0          0  gic_msm_pci_msi 524303 Edge      pci0_wlan_grp_dp_1
+180:          0          0          0          0  gic_msm_pci_msi 524304 Edge      pci0_wlan_grp_dp_2
+183:          0          0          0          0  gic_msm_pci_msi 524307 Edge      pci0_wlan_grp_dp_5
+184:         27          0          0        134  gic_msm_pci_msi 524308 Edge      pci0_wlan_grp_dp_6
+185:          0          0          0          0  gic_msm_pci_msi 524309 Edge      pci0_wlan_grp_dp_7
+187:          0          0          0          0  gic_msm_pci_msi 524311 Edge      pci0_wlan_grp_dp_9
+188:          0          0          0          0  gic_msm_pci_msi 524312 Edge      pci0_wlan_grp_dp_10
+189:          0          0          0          0  gic_msm_pci_msi 524313 Edge      pci0_wlan_grp_dp_11
+191:         67         71        109        117  gic_msm_pci_msi 524315 Edge      pci0_wlan_grp_dp_13
+192:        462        391        512        478  gic_msm_pci_msi 524316 Edge      pci0_wlan_grp_dp_14
+193:          0          0          0          0  gic_msm_pci_msi 524317 Edge      pci0_wlan_grp_dp_15
+194:          0          0          0          0  gic_msm_pci_msi 524318 Edge      pci0_wlan_grp_dp_16
+195:          0          2          2          0  gic_msm_pci_msi 524319 Edge      pci0_wlan_grp_dp_17
+196:      62861     100051      82299      43743      ipcc 131075 Edge      glink-native-modem
+197:         46          0          0          0   msmgpio  97 Edge      aw_sar1_irq
+198:        522          0          0          0   msmgpio  95 Edge      aw_sar0_irq
+IPI0:    162809     135681     141590     136977       Rescheduling interrupts
+IPI1:   6146576    4808004    4793250    5233750       Function call interrupts
+IPI2:         0          0          0          0       CPU stop interrupts
+IPI3:         0          0          0          0       CPU stop (for crash dump) interrupts
+IPI4:         0          0          0          0       Timer broadcast interrupts
+IPI5:       730        728       1179        677       IRQ work interrupts
+IPI6:         0          0          0          0       CPU wake-up interrupts
+Err:          0
+=== softnet ===
+00308ef5 00000000 000003c4 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+00638668 000002a7 0000012b 00000000 00000000 00000000 00000000 00000000 00000000 00094ff5 00000000 00000000 00000001
+005b8eb9 00000000 000002f2 00000000 00000000 00000000 00000000 00000000 00000000 000898c5 00000000 00000000 00000002
+00153c73 00000000 000000cd 00000000 00000000 00000000 00000000 00000000 00000000 000c59c5 00000000 00000000 00000003
+=== RPS/XPS masks ===
+/sys/class/net/rmnet_data1/queues/rx-0/rps_cpus=6
+/sys/class/net/rmnet_data1/queues/rx-0/rps_flow_cnt=0
+/sys/class/net/rmnet_data1/queues/tx-0/xps_cpus=0
+/sys/class/net/rmnet_data1/queues/tx-1/xps_cpus=0
+/sys/class/net/rmnet_data1/queues/tx-10/xps_cpus=0
+/sys/class/net/rmnet_data1/queues/tx-11/xps_cpus=0
+/sys/class/net/rmnet_data1/queues/tx-12/xps_cpus=0
+/sys/class/net/rmnet_data1/queues/tx-13/xps_cpus=0
+/sys/class/net/rmnet_data1/queues/tx-14/xps_cpus=0
+/sys/class/net/rmnet_data1/queues/tx-15/xps_cpus=0
+/sys/class/net/rmnet_data1/queues/tx-16/xps_cpus=0
+/sys/class/net/rmnet_data1/queues/tx-17/xps_cpus=0
+/sys/class/net/rmnet_data1/queues/tx-18/xps_cpus=0
+/sys/class/net/rmnet_data1/queues/tx-19/xps_cpus=0
+/sys/class/net/rmnet_data1/queues/tx-2/xps_cpus=0
+/sys/class/net/rmnet_data1/queues/tx-20/xps_cpus=0
+/sys/class/net/rmnet_data1/queues/tx-21/xps_cpus=0
+/sys/class/net/rmnet_data1/queues/tx-22/xps_cpus=0
+/sys/class/net/rmnet_data1/queues/tx-23/xps_cpus=0
+/sys/class/net/rmnet_data1/queues/tx-24/xps_cpus=0
+/sys/class/net/rmnet_data1/queues/tx-25/xps_cpus=0
+/sys/class/net/rmnet_data1/queues/tx-26/xps_cpus=0
+/sys/class/net/rmnet_data1/queues/tx-27/xps_cpus=0
+/sys/class/net/rmnet_data1/queues/tx-28/xps_cpus=0
+/sys/class/net/rmnet_data1/queues/tx-29/xps_cpus=0
+/sys/class/net/rmnet_data1/queues/tx-3/xps_cpus=0
+/sys/class/net/rmnet_data1/queues/tx-30/xps_cpus=0
+/sys/class/net/rmnet_data1/queues/tx-4/xps_cpus=0
+/sys/class/net/rmnet_data1/queues/tx-5/xps_cpus=0
+/sys/class/net/rmnet_data1/queues/tx-6/xps_cpus=0
+/sys/class/net/rmnet_data1/queues/tx-7/xps_cpus=0
+/sys/class/net/rmnet_data1/queues/tx-8/xps_cpus=0
+/sys/class/net/rmnet_data1/queues/tx-9/xps_cpus=0
+/sys/class/net/eth1/queues/rx-0/rps_cpus=0
+/sys/class/net/eth1/queues/rx-0/rps_flow_cnt=0
+/sys/class/net/eth1/queues/tx-0/xps_cpus=
+/sys/class/net/wlan0/queues/rx-0/rps_cpus=0
+/sys/class/net/wlan0/queues/rx-1/rps_cpus=0
+/sys/class/net/wlan0/queues/rx-2/rps_cpus=0
+/sys/class/net/wlan0/queues/rx-3/rps_cpus=0
+/sys/class/net/wlan0/queues/rx-4/rps_cpus=0
+/sys/class/net/wlan0/queues/rx-0/rps_flow_cnt=0
+/sys/class/net/wlan0/queues/rx-1/rps_flow_cnt=0
+/sys/class/net/wlan0/queues/rx-2/rps_flow_cnt=0
+/sys/class/net/wlan0/queues/rx-3/rps_flow_cnt=0
+/sys/class/net/wlan0/queues/rx-4/rps_flow_cnt=0
+/sys/class/net/wlan0/queues/tx-0/xps_cpus=0
+/sys/class/net/wlan0/queues/tx-1/xps_cpus=0
+/sys/class/net/wlan0/queues/tx-10/xps_cpus=0
+/sys/class/net/wlan0/queues/tx-11/xps_cpus=0
+/sys/class/net/wlan0/queues/tx-12/xps_cpus=0
+/sys/class/net/wlan0/queues/tx-13/xps_cpus=0
+/sys/class/net/wlan0/queues/tx-14/xps_cpus=0
+/sys/class/net/wlan0/queues/tx-15/xps_cpus=0
+/sys/class/net/wlan0/queues/tx-16/xps_cpus=0
+/sys/class/net/wlan0/queues/tx-2/xps_cpus=0
+/sys/class/net/wlan0/queues/tx-3/xps_cpus=0
+/sys/class/net/wlan0/queues/tx-4/xps_cpus=0
+/sys/class/net/wlan0/queues/tx-5/xps_cpus=0
+/sys/class/net/wlan0/queues/tx-6/xps_cpus=0
+/sys/class/net/wlan0/queues/tx-7/xps_cpus=0
+/sys/class/net/wlan0/queues/tx-8/xps_cpus=0
+/sys/class/net/wlan0/queues/tx-9/xps_cpus=0
+/sys/class/net/wlan1/queues/rx-0/rps_cpus=0
+/sys/class/net/wlan1/queues/rx-1/rps_cpus=0
+/sys/class/net/wlan1/queues/rx-2/rps_cpus=0
+/sys/class/net/wlan1/queues/rx-3/rps_cpus=0
+/sys/class/net/wlan1/queues/rx-4/rps_cpus=0
+/sys/class/net/wlan1/queues/rx-0/rps_flow_cnt=0
+/sys/class/net/wlan1/queues/rx-1/rps_flow_cnt=0
+/sys/class/net/wlan1/queues/rx-2/rps_flow_cnt=0
+/sys/class/net/wlan1/queues/rx-3/rps_flow_cnt=0
+/sys/class/net/wlan1/queues/rx-4/rps_flow_cnt=0
+/sys/class/net/wlan1/queues/tx-0/xps_cpus=0
+/sys/class/net/wlan1/queues/tx-1/xps_cpus=0
+/sys/class/net/wlan1/queues/tx-10/xps_cpus=0
+/sys/class/net/wlan1/queues/tx-11/xps_cpus=0
+/sys/class/net/wlan1/queues/tx-12/xps_cpus=0
+/sys/class/net/wlan1/queues/tx-13/xps_cpus=0
+/sys/class/net/wlan1/queues/tx-14/xps_cpus=0
+/sys/class/net/wlan1/queues/tx-15/xps_cpus=0
+/sys/class/net/wlan1/queues/tx-16/xps_cpus=0
+/sys/class/net/wlan1/queues/tx-2/xps_cpus=0
+/sys/class/net/wlan1/queues/tx-3/xps_cpus=0
+/sys/class/net/wlan1/queues/tx-4/xps_cpus=0
+/sys/class/net/wlan1/queues/tx-5/xps_cpus=0
+/sys/class/net/wlan1/queues/tx-6/xps_cpus=0
+/sys/class/net/wlan1/queues/tx-7/xps_cpus=0
+/sys/class/net/wlan1/queues/tx-8/xps_cpus=0
+/sys/class/net/wlan1/queues/tx-9/xps_cpus=0
+=== conntrack count/max ===
+55
+65536
+=== firewall zone policies only ===
+firewall.@defaults[0].input='REJECT'
+firewall.@defaults[0].output='ACCEPT'
+firewall.@defaults[0].forward='REJECT'
+firewall.@zone[0]=zone
+firewall.@zone[0].name='lan'
+firewall.@zone[0].network='lan'
+firewall.@zone[0].input='ACCEPT'
+firewall.@zone[0].output='ACCEPT'
+firewall.@zone[0].forward='ACCEPT'
+firewall.@zone[1]=zone
+firewall.@zone[1].name='wan'
+firewall.@zone[1].network='wan' 'wan6' 'wwan' 'usbwan' 'modem_cpu_6' 'modem_cpu'
+firewall.@zone[1].input='DROP'
+firewall.@zone[1].output='ACCEPT'
+firewall.@zone[1].forward='REJECT'
+firewall.@rule[0].name='Allow-DHCP-Renew'
+firewall.@rule[1].name='Allow-IGMP'
+firewall.@rule[2].name='Allow-DHCPv6'
+firewall.@rule[3].name='Allow-MLD'
+firewall.@rule[4].name='Allow-ICMPv6-Input'
+firewall.@rule[5].name='Allow-ICMPv6-Forward'
+firewall.@rule[6].name='Allow-IPSec-ESP'
+firewall.@rule[7].name='Allow-ISAKMP'
+firewall.@zone[2]=zone
+firewall.@zone[2].name='guest'
+firewall.@zone[2].network='guest'
+firewall.@zone[2].forward='REJECT'
+firewall.@zone[2].output='ACCEPT'
+firewall.@zone[2].input='REJECT'
+firewall.@rule[8].name='Allow-DHCP'
+firewall.@rule[9].name='Allow-DNS'
+firewall.@zone[3]=zone
+firewall.@zone[3].name='wan_all'
+firewall.@zone[3].input='REJECT'
+firewall.@zone[3].output='ACCEPT'
+firewall.@zone[3].forward='REJECT'
+firewall.@zone[3].network='modem_cpu_6' 'wan' 'wan_v6' 'modem_cpu'
+firewall.port3456.name='Block External Port 3456'
