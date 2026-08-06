@@ -1,0 +1,40 @@
+=== utc ===
+exit_code=0
+2026-08-06T19:04:20Z
+
+=== zram-runtime-postcondition ===
+exit_code=0
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+algorithm=lzo [lzo-rle] lz4 lz4hc 842 zstd
+disksize=0
+swaps:
+Filename				Type		Size		Used		Priority
+wan_up=true
+
+=== router-ping ===
+exit_code=0
+PING [IPv4] ([IPv4]) 56(84) bytes of data.
+64 bytes from [IPv4]: icmp_seq=1 ttl=64 time=4.66 ms
+64 bytes from [IPv4]: icmp_seq=2 ttl=64 time=2.75 ms
+64 bytes from [IPv4]: icmp_seq=3 ttl=64 time=4.57 ms
+
+--- [IPv4] ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2004ms
+rtt min/avg/max/mdev = 2.749/3.993/4.660/0.880 ms
+
+=== internet-ping ===
+exit_code=0
+PING [IPv4] ([IPv4]) 56(84) bytes of data.
+64 bytes from [IPv4]: icmp_seq=1 ttl=56 time=31.8 ms
+64 bytes from [IPv4]: icmp_seq=2 ttl=56 time=16.8 ms
+64 bytes from [IPv4]: icmp_seq=3 ttl=56 time=20.1 ms
+
+--- [IPv4] ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 16.773/22.901/31.787/6.432 ms
+
+=== https ===
+exit_code=0
+http=200 connect=0.073722 total=2.279082

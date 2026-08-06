@@ -3,3 +3,4 @@ __pycache__/
 .glinet_session
 *.bin
 *.log
+.evidence-private/

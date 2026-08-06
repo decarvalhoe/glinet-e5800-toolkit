@@ -1,0 +1,29 @@
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+=== benchmark metadata ===
+collected_at=2026-08-06T18:10:09Z
+mount=/tmp/mountd/disk1_part1 size_mb=64 filesystem=vfat
+=== precondition ===
+Filesystem                Size      Used Available Use% Mounted on
+/dev/sdc1                28.6G    215.5M     28.4G   1% /tmp/mountd/disk1_part1
+              total        used        free      shared  buff/cache   available
+Mem:           1598         418         354          19         826        1097
+Swap:             0           0           0
+=== direct sequential write ===
+64+0 records in
+64+0 records out
+67108864 bytes (64.0MB) copied, 33.808962 seconds, 1.9MB/s
+=== direct sequential read, pass 1 ===
+64+0 records in
+64+0 records out
+67108864 bytes (64.0MB) copied, 0.557890 seconds, 114.7MB/s
+=== direct sequential read, pass 2 ===
+64+0 records in
+64+0 records out
+67108864 bytes (64.0MB) copied, 0.528089 seconds, 121.2MB/s
+=== allocation and errors ===
+-rwxrwxrwx    1 system   system    67108864 Aug  6 20:10 /tmp/mountd/disk1_part1/.counter-expertise-io-test.20203
+=== postcondition ===
+Filesystem                Size      Used Available Use% Mounted on
+/dev/sdc1                28.6G    215.5M     28.4G   1% /tmp/mountd/disk1_part1

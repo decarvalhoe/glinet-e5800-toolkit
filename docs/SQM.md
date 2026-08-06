@@ -1,5 +1,10 @@
 # SQM / CAKE sur GL-E5800 — installé et réglé le 2026-08-06
 
+> **ARCHIVE NON VALIDÉE.** Le qdisc courant est observable, mais les gains A/B ci-dessous
+> n'ont pas encore été reproduits avec sorties brutes et protocole contrôlé. Aucun test
+> WAN saturant ne sera relancé tant que le routeur reste l'unique accès Internet. Voir
+> [`COUNTER-EXPERTISE.md`](COUNTER-EXPERTISE.md).
+
 ## Configuration retenue : shaping en ENTRÉE seulement
 
 ```
