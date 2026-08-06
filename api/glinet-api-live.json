@@ -1,0 +1,546 @@
+[
+ {
+  "mod": "adguardhome",
+  "methods": [
+   "get_config",
+   "set_config"
+  ]
+ },
+ {
+  "mod": "bark",
+  "methods": [
+   "get_config",
+   "get_status",
+   "logout",
+   "set_config"
+  ]
+ },
+ {
+  "mod": "black_white_list",
+  "methods": [
+   "get_config",
+   "set_config",
+   "set_single_mac"
+  ]
+ },
+ {
+  "mod": "cable",
+  "methods": [
+   "get_config",
+   "get_ports_config",
+   "get_ports_status",
+   "get_status",
+   "init_status",
+   "set_config",
+   "set_port_config",
+   "wan_proto_detect"
+  ]
+ },
+ {
+  "mod": "clients",
+  "methods": [
+   "clean_traffic",
+   "get_list",
+   "remove_offline",
+   "set_info"
+  ]
+ },
+ {
+  "mod": "cloud",
+  "methods": [
+   "get_config",
+   "set_config",
+   "unbind"
+  ]
+ },
+ {
+  "mod": "ddns",
+  "methods": [
+   "get_config",
+   "get_status",
+   "set_config"
+  ]
+ },
+ {
+  "mod": "dns",
+  "methods": [
+   "get_config",
+   "get_host",
+   "get_info",
+   "set_config",
+   "set_host"
+  ]
+ },
+ {
+  "mod": "edgerouter",
+  "methods": [
+   "get_config",
+   "get_status",
+   "set_config"
+  ]
+ },
+ {
+  "mod": "fan",
+  "methods": [
+   "get_config",
+   "get_status",
+   "set_config"
+  ]
+ },
+ {
+  "mod": "firewall",
+  "methods": [
+   "add_port_forward",
+   "add_rule",
+   "get_dmz",
+   "get_port_forward_list",
+   "get_rule_list",
+   "get_wan_access",
+   "get_zone_list",
+   "order_port_forward",
+   "remove_port_forward",
+   "remove_rule",
+   "set_dmz",
+   "set_port_forward",
+   "set_rule",
+   "set_wan_access"
+  ]
+ },
+ {
+  "mod": "igmp",
+  "methods": [
+   "get_config",
+   "set_config"
+  ]
+ },
+ {
+  "mod": "ipv6",
+  "methods": [
+   "get_ipv6",
+   "set_ipv6"
+  ]
+ },
+ {
+  "mod": "kmwan",
+  "methods": [
+   "get_config",
+   "get_sensitivity",
+   "get_status",
+   "set_config",
+   "set_interface",
+   "set_sensitivity"
+  ]
+ },
+ {
+  "mod": "lan",
+  "methods": [
+   "add_static_bind",
+   "get_config_list",
+   "get_static_bind_list",
+   "get_wan_info",
+   "remove_static_bind",
+   "set_config",
+   "set_static_bind"
+  ]
+ },
+ {
+  "mod": "led",
+  "methods": [
+   "get_config",
+   "set_config"
+  ]
+ },
+ {
+  "mod": "local-access",
+  "methods": [
+   "get_config",
+   "set_config"
+  ]
+ },
+ {
+  "mod": "logread",
+  "methods": [
+   "export_logs",
+   "get_config",
+   "get_crash_log",
+   "get_esim_log",
+   "get_kernel_log",
+   "get_module_name",
+   "get_nginx_log",
+   "get_system_log",
+   "remove_crash_log",
+   "set_config"
+  ]
+ },
+ {
+  "mod": "lpm",
+  "methods": [
+   "get_config",
+   "get_status",
+   "set_config"
+  ]
+ },
+ {
+  "mod": "luci",
+  "methods": [
+   "get_status",
+   "install_luci",
+   "uninstall_luci"
+  ]
+ },
+ {
+  "mod": "modem",
+  "methods": [
+   "disconnect",
+   "get_cell_tower",
+   "get_debug_msg",
+   "get_operator_config",
+   "get_signals",
+   "get_sim_config",
+   "get_slot_config",
+   "get_slot_failover_config",
+   "get_sms_list",
+   "get_traffic_config",
+   "remove_sms",
+   "scan_cell_tower",
+   "scan_operator_list",
+   "send_at_command",
+   "send_sms",
+   "set_3gpp_rel",
+   "set_cell_tower",
+   "set_connect",
+   "set_operator_config",
+   "set_sim_config",
+   "set_sim_pin_code",
+   "set_slot_failover_config",
+   "set_sms",
+   "set_traffic_config"
+  ]
+ },
+ {
+  "mod": "mptun",
+  "methods": [
+   "get_config",
+   "get_token",
+   "set_config"
+  ]
+ },
+ {
+  "mod": "mvas",
+  "methods": [
+   "disconnect_slot_net",
+   "get_connect_info",
+   "set_connect_slot_net",
+   "switch_sim_slot"
+  ]
+ },
+ {
+  "mod": "netmode",
+  "methods": [
+   "get_mode",
+   "set_mode"
+  ]
+ },
+ {
+  "mod": "network",
+  "methods": [
+   "check_wan_cable",
+   "get_advance_config",
+   "get_arp_list",
+   "get_available_address_list",
+   "get_netnat_config",
+   "set_advance_config",
+   "set_netnat_config"
+  ]
+ },
+ {
+  "mod": "otg",
+  "methods": [
+   "get_config",
+   "set_config"
+  ]
+ },
+ {
+  "mod": "ovpn-client",
+  "methods": [
+   "add_config",
+   "add_group",
+   "check_config",
+   "clear_config_list",
+   "clear_user_pass",
+   "confirm_config",
+   "get_config_list",
+   "get_group_list",
+   "get_recommend_config",
+   "get_third_config",
+   "remove_config",
+   "remove_group",
+   "set_config",
+   "set_group"
+  ]
+ },
+ {
+  "mod": "ovpn-server",
+  "methods": [
+   "add_user",
+   "export_config",
+   "generate_certificate",
+   "get_config",
+   "get_setting",
+   "get_user_list",
+   "remove_user",
+   "set_config",
+   "set_setting"
+  ]
+ },
+ {
+  "mod": "ovpn_client",
+  "methods": [
+   "set_config_name"
+  ]
+ },
+ {
+  "mod": "parental-control",
+  "methods": [
+   "add_group",
+   "add_rule",
+   "check_blacklist_online",
+   "get_app_list",
+   "get_brief",
+   "get_config",
+   "get_mode",
+   "get_status",
+   "remove_group",
+   "remove_rule",
+   "set_brief",
+   "set_config",
+   "set_group",
+   "set_mode",
+   "set_rule"
+  ]
+ },
+ {
+  "mod": "plugins",
+  "methods": [
+   "get_config",
+   "get_list",
+   "get_package_info",
+   "get_repository_status",
+   "install_package",
+   "remove_package",
+   "set_config",
+   "update_repository"
+  ]
+ },
+ {
+  "mod": "qos",
+  "methods": [
+   "remove_speed_limit_rule",
+   "set_speed_limit_rule"
+  ]
+ },
+ {
+  "mod": "repeater",
+  "methods": [
+   "connect",
+   "disconnect",
+   "enter_bare_mode",
+   "exit_bare_mode",
+   "get_channel_prompt",
+   "get_config",
+   "get_saved_ap_list",
+   "remove_saved_ap",
+   "scan",
+   "set_channel_prompt",
+   "set_config"
+  ]
+ },
+ {
+  "mod": "screen",
+  "methods": [
+   "get_config",
+   "get_screen_parameter",
+   "get_unlock_attempts",
+   "reset_unlock_attempts",
+   "set_config"
+  ]
+ },
+ {
+  "mod": "sms-forward",
+  "methods": [
+   "get_config",
+   "set_email",
+   "set_phone_number"
+  ]
+ },
+ {
+  "mod": "system",
+  "methods": [
+   "get_info",
+   "get_load",
+   "get_status",
+   "get_timezone_config",
+   "get_usb_config",
+   "get_usb_info",
+   "reboot",
+   "reset_firmware",
+   "set_password",
+   "set_timezone_config",
+   "set_usb_config"
+  ]
+ },
+ {
+  "mod": "tailscale",
+  "methods": [
+   "get_auth_url",
+   "get_config",
+   "get_exit_node_list",
+   "get_status",
+   "logout",
+   "set_config"
+  ]
+ },
+ {
+  "mod": "tethering",
+  "methods": [
+   "disconnect",
+   "get_config",
+   "get_status",
+   "set_connect"
+  ]
+ },
+ {
+  "mod": "timer",
+  "methods": [
+   "get_led",
+   "get_reboot",
+   "get_screen",
+   "get_wifi",
+   "set_led",
+   "set_reboot",
+   "set_screen",
+   "set_wifi"
+  ]
+ },
+ {
+  "mod": "tor",
+  "methods": [
+   "get_config",
+   "get_status",
+   "set_config"
+  ]
+ },
+ {
+  "mod": "ui",
+  "methods": [
+   "get_menu_list",
+   "get_remote_langs",
+   "set_inited_internet",
+   "set_lang",
+   "update_langs"
+  ]
+ },
+ {
+  "mod": "upgrade",
+  "methods": [
+   "check_cellular_local",
+   "check_cellular_online",
+   "check_firmware_local",
+   "check_firmware_online",
+   "get_cellular_upgrade_status",
+   "get_online_upgrade_status",
+   "reset_cellular_upgrade_status",
+   "set_config",
+   "upgrade_local",
+   "upgrade_online"
+  ]
+ },
+ {
+  "mod": "vpn-client",
+  "methods": [
+   "add_tunnel",
+   "check_domain_online",
+   "get_all_config_list",
+   "get_connection_methods",
+   "get_status",
+   "get_tunnel",
+   "get_vpn_using_status",
+   "order_tunnel",
+   "remove_tunnel",
+   "set_default_tunnel",
+   "set_global_mode",
+   "set_options",
+   "set_single_mac",
+   "set_tap_s2s",
+   "set_tunnel",
+   "start_random_client",
+   "stop"
+  ]
+ },
+ {
+  "mod": "wg-client",
+  "methods": [
+   "add_config",
+   "add_group",
+   "check_config",
+   "clear_config_list",
+   "clear_user_pass",
+   "confirm_config",
+   "get_config_list",
+   "get_group_list",
+   "remove_config",
+   "remove_group",
+   "set_config",
+   "set_group"
+  ]
+ },
+ {
+  "mod": "wg-server",
+  "methods": [
+   "add_peer",
+   "generate_key",
+   "generate_peer",
+   "generate_publickey",
+   "get_config",
+   "get_peer_list",
+   "get_setting",
+   "remove_peer",
+   "set_config",
+   "set_peer",
+   "set_setting",
+   "start",
+   "stop"
+  ]
+ },
+ {
+  "mod": "wg_client",
+  "methods": [
+   "create_provider_account",
+   "gen_key",
+   "get_max_client",
+   "get_provider_user_info",
+   "update_provider_config"
+  ]
+ },
+ {
+  "mod": "wifi",
+  "methods": [
+   "get_config",
+   "get_environment_config",
+   "get_mlo_config",
+   "get_status",
+   "set_config",
+   "set_environment_config",
+   "set_mlo_config",
+   "set_txpower"
+  ]
+ },
+ {
+  "mod": "zerotier",
+  "methods": [
+   "get_config",
+   "get_status",
+   "set_config"
+  ]
+ }
+]

@@ -1,0 +1,51 @@
+#!/bin/sh
+# Reattache SQM au bon l3_device quand modem_cpu (re)monte.
+# Le l3_device du modem (rmnet_dataN) peut changer d'une negociation a l'autre ;
+# sans ca, SQM reste attache a un device disparu et ne filtre plus rien, en silence.
+# Emplacement : /etc/hotplug.d/iface/99-sqm-modem
+
+[ "$INTERFACE" = "modem_cpu" ] || exit 0
+[ "$ACTION" = "ifup" ] || exit 0
+
+# Respecte une desactivation volontaire : si SQM est desactive dans uci, on ne touche a rien.
+[ "$(uci -q get sqm.modem.enabled)" = "1" ] || exit 0
+
+(
+    # Detache : hotplug doit rendre la main vite. Le delai laisse le device se stabiliser.
+    sleep 5
+
+    DEV=$(ubus call network.interface.modem_cpu status 2>/dev/null \
+          | grep -o '"l3_device": "[^"]*"' | cut -d'"' -f4)
+
+    if [ -z "$DEV" ]; then
+        logger -t sqm-hotplug "l3_device introuvable pour modem_cpu, abandon"
+        exit 0
+    fi
+
+    CUR=$(uci -q get sqm.modem.interface)
+    NEED=0
+
+    if [ "$CUR" != "$DEV" ]; then
+        uci set sqm.modem.interface="$DEV"
+        uci commit sqm
+        logger -t sqm-hotplug "l3_device change: '$CUR' -> '$DEV', config mise a jour"
+        NEED=1
+    elif ! tc qdisc show dev "ifb4$DEV" 2>/dev/null | grep -q cake; then
+        logger -t sqm-hotplug "cake absent sur ifb4$DEV, reattachement"
+        NEED=1
+    fi
+
+    [ "$NEED" = "1" ] || exit 0
+
+    /etc/init.d/sqm stop  >/dev/null 2>&1
+    /etc/init.d/sqm start >/dev/null 2>&1
+    sleep 2
+
+    if tc qdisc show dev "ifb4$DEV" 2>/dev/null | grep -q cake; then
+        logger -t sqm-hotplug "SQM actif sur $DEV"
+    else
+        logger -t sqm-hotplug "ECHEC: SQM non attache sur $DEV apres redemarrage"
+    fi
+) &
+
+exit 0

@@ -1,0 +1,1880 @@
+[
+ {
+  "mod": "acl",
+  "method": "add_acl",
+  "desp": "Add permission",
+  "params": "group:string, scope:string, entry:string, perm:string"
+ },
+ {
+  "mod": "acl",
+  "method": "add_group",
+  "desp": "Add permission group",
+  "params": "group:string"
+ },
+ {
+  "mod": "acl",
+  "method": "add_user",
+  "desp": "Add a user to a permission group",
+  "params": "group:string, username:string"
+ },
+ {
+  "mod": "acl",
+  "method": "get_acl_list",
+  "desp": "Get all permissions of a certain group",
+  "params": "group:string"
+ },
+ {
+  "mod": "acl",
+  "method": "get_group_list",
+  "desp": "Get permission group list",
+  "params": ""
+ },
+ {
+  "mod": "acl",
+  "method": "remove_acl",
+  "desp": "Get all permissions of a certain group",
+  "params": "group:string, scope:string, entry:string"
+ },
+ {
+  "mod": "acl",
+  "method": "remove_group",
+  "desp": "Delete permission group",
+  "params": "group:string"
+ },
+ {
+  "mod": "acl",
+  "method": "remove_user",
+  "desp": "Delete user",
+  "params": "username:string"
+ },
+ {
+  "mod": "adguardhome",
+  "method": "get_config",
+  "desp": "Query current configuration",
+  "params": ""
+ },
+ {
+  "mod": "adguardhome",
+  "method": "set_config",
+  "desp": "Set",
+  "params": "enabled:bool"
+ },
+ {
+  "mod": "cable",
+  "method": "change_interface",
+  "desp": "Set wan port mode",
+  "params": "mode:number"
+ },
+ {
+  "mod": "cable",
+  "method": "get_config",
+  "desp": "Get the wan port config",
+  "params": ""
+ },
+ {
+  "mod": "cable",
+  "method": "get_status",
+  "desp": "Get the wan port status",
+  "params": ""
+ },
+ {
+  "mod": "cable",
+  "method": "set_config",
+  "desp": "Set the WAN port access mode.",
+  "params": "?ipv6:object, ?ipv4:object, protocol:string, ?username:string, ?password:string, ?ipv6.ip:string, ?ipv6.gateway:string, ?ipv4.ip:string, ?ipv4.netmask:string, ?ipv4.gateway:string, ?ipv6.dns:array, ?ipv4.dns:array"
+ },
+ {
+  "mod": "clients",
+  "method": "block_client",
+  "desp": "Set client's blacklist attribute",
+  "params": "mac:string, block:bool"
+ },
+ {
+  "mod": "clients",
+  "method": "get_list",
+  "desp": "Get device list",
+  "params": ""
+ },
+ {
+  "mod": "clients",
+  "method": "get_status",
+  "desp": "Get client online total status",
+  "params": ""
+ },
+ {
+  "mod": "clients",
+  "method": "remove_offline",
+  "desp": "Delete offline clients",
+  "params": "mac:string"
+ },
+ {
+  "mod": "clients",
+  "method": "set_info",
+  "desp": "Set name",
+  "params": "mac:string, ?clients.alias:string, ?clients.class:string"
+ },
+ {
+  "mod": "cloud",
+  "method": "get_config",
+  "desp": "get cloud conf",
+  "params": ""
+ },
+ {
+  "mod": "cloud",
+  "method": "set_config",
+  "desp": "set cloud conf",
+  "params": "serverzone:string, cloud_enable:bool, rtty_ssh:bool, rtty_web:bool"
+ },
+ {
+  "mod": "cloud",
+  "method": "unbind",
+  "desp": "unbind device",
+  "params": ""
+ },
+ {
+  "mod": "cloud-batch-manage",
+  "method": "bind_info",
+  "desp": "set cloud bind info",
+  "params": "username:string, email:string, bindtime:string"
+ },
+ {
+  "mod": "cloud-batch-manage",
+  "method": "designated_customer",
+  "desp": "set customer info",
+  "params": "server_name:string, server_url:string"
+ },
+ {
+  "mod": "cloud-batch-manage",
+  "method": "get_2b_config",
+  "desp": "get 2b config",
+  "params": ""
+ },
+ {
+  "mod": "cloud-batch-manage",
+  "method": "get_batch_config",
+  "desp": "get batch config",
+  "params": ""
+ },
+ {
+  "mod": "cloud-batch-manage",
+  "method": "send_router_info",
+  "desp": "device send router info",
+  "params": ""
+ },
+ {
+  "mod": "cloud-batch-manage",
+  "method": "set_2b_config",
+  "desp": "set 2b config",
+  "params": "?lan_ip:string, ?autoupdate_firmeare_path:string, ?autoupdate_time:string, ?password:string, ?system_timezone:string, ?hostname:string, ?auto_timezone:string, ?server_name:string, ?server_url:string, ?language:string, ?image_url:string, ?customer_name:string, ?help_url:string, ?ssid_2g:string, ?channel_2g:string, ?txpower_2g:string, ?htmode_2g:string, ?encrytion_2g:string, ?key_2g:string, ?guest_2g_ssid:string, ?guest_2g_encrytion:string, ?guest_2g_key:string, ?ssid_5g:string, ?channel_5g:string, ?txpower_5g:string, ?htmode_5g:string, ?encrytion_5g:string, ?key_5g:string, ?guest_5g_ssid:string, ?guest_5g_encrytion:string, ?guest_5g_key:string, ?reboot_flag:string, ?private_disabled:string, ?private_controller:string, ?guest_controller:string, ?mode:string, ?ssl_id:string, ?private_wired:string, ?private_datapath_id:string, ?private_datapath_desc:string, ?private_ipaddr:string, ?private_netmask:string, ?private_dhcp_lease:string, ?private_wlans:string, ?guest_wired:string, ?guest_datapath_id:string, ?guest_datapath_desc:string, ?guest_ipaddr:string, ?guest_netmask:string, ?guest_dhcp_lease:string, ?guest_wlans:string, ?autoupdate_enable:bool, ?disable_2g:bool, ?hidden_2g:bool, ?guest_2g_disable:bool, ?disable_5g:bool, ?hidden_5g:bool, ?guest_5g_disable:bool, ?guest_disabled:bool"
+ },
+ {
+  "mod": "cloud-batch-manage",
+  "method": "set_batch_config",
+  "desp": "set batch config",
+  "params": "?wan_proto:string, ?wan_username:string, ?wan_password:string, ?wan_ipaddr:string, ?wan_gateway:string, ?wan_netmask:string, ?wan_dns:string, ?ssid_2g:string, ?channel_2g:string, ?txpower_2g:string, ?htmode_2g:string, ?encrytion_2g:string, ?key_2g:string, ?guest_2g_ssid:string, ?guest_2g_encrytion:string, ?guest_2g_key:string, ?ssid_5g:string, ?channel_5g:string, ?txpower_5g:string, ?htmode_5g:string, ?encrytion_5g:string, ?key_5g:string, ?guest_5g_ssid:string, ?guest_5g_encrytion:string, ?guest_5g_key:string, ?probe_data_path1:string, ?probe_data_path2:string, ?probe_max_lines:string, ?probe_interval:string, ?probe_json:string, ?probe_virmac:string, ?probe_type:string, ?probe_tcpurl:string, ?probe_filter:string, ?probe_sflag:string, ?probe_protocol:string, ?probe_channel:string, ?probe_channel5g:string, ?probe_induce:string, ?lan_ip:string, ?guest_lan_ip:string, ?autoupdate_firmware_path:string, ?autoupdate_time:string, ?password:string, ?system_timezone:string, ?auto_timezone:string, ?reboot_flag:bool, ?disable_2g:bool, ?hidden_2g:bool, ?guest_2g_disable:bool, ?disable_5g:bool, ?hidden_5g:bool, ?guest_5g_disable:bool, ?autoupdate_enable:bool"
+ },
+ {
+  "mod": "custom-dns",
+  "method": "get_info",
+  "desp": "Get dns setting info",
+  "params": ""
+ },
+ {
+  "mod": "custom-dns",
+  "method": "set_info",
+  "desp": "Set custom dns setting",
+  "params": "?dns1:string, ?dns2:string, ?dns_name:string, ?nextdns_id:string, ?proxy_server:string, ?force_dns:bool, ?auto_dns:bool, ?manual_dns:bool, ?cloudflare_dns:bool, ?dnscrypt_proxy:bool, ?quad9_dns:bool, ?rebind_protection:bool"
+ },
+ {
+  "mod": "ddns",
+  "method": "get_config",
+  "desp": "Get the ddns cloud control status of the router.",
+  "params": ""
+ },
+ {
+  "mod": "ddns",
+  "method": "get_status",
+  "desp": "get ddns status.",
+  "params": ""
+ },
+ {
+  "mod": "ddns",
+  "method": "set_config",
+  "desp": "Set the ddns cloud control status of the router.",
+  "params": "enable_ddns:bool, enable_ssh_access:bool, enable_http_access:bool, enable_https_access:bool"
+ },
+ {
+  "mod": "diag",
+  "method": "ping",
+  "desp": "Network detection",
+  "params": "addr:string"
+ },
+ {
+  "mod": "diag",
+  "method": "traceroute",
+  "desp": "Trace network path",
+  "params": "addr:string"
+ },
+ {
+  "mod": "dlna",
+  "method": "get_config",
+  "desp": "get samba conf",
+  "params": ""
+ },
+ {
+  "mod": "dlna",
+  "method": "set_config",
+  "desp": "set dlna conf",
+  "params": "path:string, enabled:bool"
+ },
+ {
+  "mod": "dns",
+  "method": "get_config",
+  "desp": "Get DNS configuration",
+  "params": ""
+ },
+ {
+  "mod": "dns",
+  "method": "get_host",
+  "desp": "Get host file content",
+  "params": ""
+ },
+ {
+  "mod": "dns",
+  "method": "get_info",
+  "desp": "Get DNS information",
+  "params": ""
+ },
+ {
+  "mod": "dns",
+  "method": "set_config",
+  "desp": "Set DNS",
+  "params": "mode:string, ?proto:string, ?nextdns_id:string, force_dns:bool, rebind_protection:bool, ?server:array"
+ },
+ {
+  "mod": "dns",
+  "method": "set_host",
+  "desp": "Set host file",
+  "params": "content:string"
+ },
+ {
+  "mod": "dns",
+  "method": "set_info",
+  "desp": "Set DNS",
+  "params": "mode:string, proto:string, ?nextdns_id:string, force_dns:bool, rebind_protection:bool, server:array"
+ },
+ {
+  "mod": "edgerouter",
+  "method": "get_config",
+  "desp": "Get configurations related to the bypass router",
+  "params": ""
+ },
+ {
+  "mod": "edgerouter",
+  "method": "scan",
+  "desp": "Scan the list of devices in the local area network",
+  "params": ""
+ },
+ {
+  "mod": "edgerouter",
+  "method": "set_config",
+  "desp": "Set configurations related to bypass router mode",
+  "params": "enable:bool, force_dns:bool, mode:number"
+ },
+ {
+  "mod": "edgerouter",
+  "method": "set_devices",
+  "desp": "Set devices whose traffic passes through the bypass router",
+  "params": "devices:array"
+ },
+ {
+  "mod": "edgerouter",
+  "method": "status",
+  "desp": "Get the status of device traffic in the local area network passing through the bypass router",
+  "params": ""
+ },
+ {
+  "mod": "fan",
+  "method": "get_status",
+  "desp": "Get status of fan.",
+  "params": "get_speed:bool"
+ },
+ {
+  "mod": "fan",
+  "method": "set_status",
+  "desp": "Set led status.",
+  "params": "test_fan:bool, test_time:number"
+ },
+ {
+  "mod": "firewall",
+  "method": "add_port_forward",
+  "desp": "Add port forwarding",
+  "params": "?name:string, ?proto:string, src:string, src_dport:string, dest:string, dest_ip:string, ?enabled:bool, dest_port:number"
+ },
+ {
+  "mod": "firewall",
+  "method": "add_rule",
+  "desp": "Add firewall rule: Open port(src=\"wan\", proto=\"tcp\" dest_port=80, target=\"ACCEPT\", enabled=true)",
+  "params": "?name:string, ?src:string, ?src_ip:string, ?src_mac:string, ?proto:string, ?dest:string, ?dest_ip:string, target:string, ?enabled:bool, ?src_port:number, ?dest_port:number"
+ },
+ {
+  "mod": "firewall",
+  "method": "get_dmz",
+  "desp": "Get DMZ configuration",
+  "params": ""
+ },
+ {
+  "mod": "firewall",
+  "method": "get_port_forward_list",
+  "desp": "Get all port forwarding configurations",
+  "params": ""
+ },
+ {
+  "mod": "firewall",
+  "method": "get_rule_list",
+  "desp": "Get all firewall rules",
+  "params": ""
+ },
+ {
+  "mod": "firewall",
+  "method": "get_zone_list",
+  "desp": "Get all firewall zones",
+  "params": ""
+ },
+ {
+  "mod": "firewall",
+  "method": "remove_port_forward",
+  "desp": "Delete port forwarding",
+  "params": "id:string, ?all:bool"
+ },
+ {
+  "mod": "firewall",
+  "method": "remove_rule",
+  "desp": "Delete firewall rule",
+  "params": "?id:string, ?all:bool"
+ },
+ {
+  "mod": "firewall",
+  "method": "set_dmz",
+  "desp": "Get DMZ configuration",
+  "params": "?dest_ip:string, enabled:bool"
+ },
+ {
+  "mod": "firewall",
+  "method": "set_port_forward",
+  "desp": "Modify port forwarding",
+  "params": "?name:string, ?proto:string, src:string, src_dport:string, dest:string, dest_ip:string, id:string, enabled:bool, dest_port:number"
+ },
+ {
+  "mod": "firewall",
+  "method": "set_rule",
+  "desp": "Modify firewall rule",
+  "params": "?name:string, ?src:string, ?src_ip:string, ?src_mac:string, ?proto:string, ?dest:string, ?dest_ip:string, ?target:string, id:string, ?enabled:bool, ?src_port:number, ?dest_port:number"
+ },
+ {
+  "mod": "igmp",
+  "method": "get",
+  "desp": "Get IGMP configuration",
+  "params": ""
+ },
+ {
+  "mod": "igmp",
+  "method": "set",
+  "desp": "Set IGMP",
+  "params": "enable:bool, version:number"
+ },
+ {
+  "mod": "ipv6",
+  "method": "get_ipv6",
+  "desp": "Get IPv6 configuration information",
+  "params": ""
+ },
+ {
+  "mod": "ipv6",
+  "method": "set_ipv6",
+  "desp": "Set IPv6",
+  "params": "lan_mode:string, lan_ip:string, lan_dns1:string, lan_dns2:string, enable:bool, lan_dns_mode:bool"
+ },
+ {
+  "mod": "lan",
+  "method": "add_static_bind",
+  "desp": "Set static IP binding",
+  "params": "mac:string, ip:string, ?name:string"
+ },
+ {
+  "mod": "lan",
+  "method": "get_config_list",
+  "desp": "Get lan or guest ip information",
+  "params": ""
+ },
+ {
+  "mod": "lan",
+  "method": "get_static_bind_list",
+  "desp": "Get the information list of all current static IP binding entries",
+  "params": ""
+ },
+ {
+  "mod": "lan",
+  "method": "remove_static_bind",
+  "desp": "Delete a static IP binding or delete all static IP bindings",
+  "params": "mac:string, mode:number"
+ },
+ {
+  "mod": "lan",
+  "method": "set_config",
+  "desp": "Set the IP address of the LAN.",
+  "params": "interface:string, ip:string, start:string, end:string, netmask:string"
+ },
+ {
+  "mod": "lan",
+  "method": "set_static_bind",
+  "desp": "Modify static IP binding",
+  "params": "mac:string, ip:string, name:string"
+ },
+ {
+  "mod": "led",
+  "method": "get_config",
+  "desp": "Get config of LED.",
+  "params": ""
+ },
+ {
+  "mod": "led",
+  "method": "set_config",
+  "desp": "Set led config.",
+  "params": "turnon_hour:string, turnon_min:string, turnoff_hour:string, turnoff_min:string, led_enable:bool, timer_enable:bool"
+ },
+ {
+  "mod": "logread",
+  "method": "export_logs",
+  "desp": "Export logs",
+  "params": ""
+ },
+ {
+  "mod": "logread",
+  "method": "get_config",
+  "desp": "Read log configuration [The record_size parameter is for setting the crash log function, enable and path parameters are for setting the local log saving function. Here, two situations share one interface]",
+  "params": "?record_size:number"
+ },
+ {
+  "mod": "logread",
+  "method": "get_crash_log",
+  "desp": "Get crash log [crash log], default return all logs if no parameters",
+  "params": "?mode:number, ?log_number:number"
+ },
+ {
+  "mod": "logread",
+  "method": "get_kernel_log",
+  "desp": "Get kernel log",
+  "params": ""
+ },
+ {
+  "mod": "logread",
+  "method": "get_system_log",
+  "desp": "Get system log",
+  "params": "?module:string, ?lines:number"
+ },
+ {
+  "mod": "logread",
+  "method": "get_uboot_log",
+  "desp": "Get uboot log",
+  "params": ""
+ },
+ {
+  "mod": "logread",
+  "method": "remove_crash_log",
+  "desp": "Delete crash log",
+  "params": ""
+ },
+ {
+  "mod": "logread",
+  "method": "set_config",
+  "desp": "Configure logs [The record_size parameter is for setting the crash log function, enable and path parameters are for setting the local log saving function. Here, two situations share one interface, pass parameters as needed]",
+  "params": "?path:string, enable:bool, ?record_size:number"
+ },
+ {
+  "mod": "macclone",
+  "method": "get_mac",
+  "desp": "Get the configuration information of mac",
+  "params": ""
+ },
+ {
+  "mod": "macclone",
+  "method": "set_mac",
+  "desp": "Get the configuration information of mac",
+  "params": "mac:string"
+ },
+ {
+  "mod": "modem",
+  "method": "disconnect",
+  "desp": "Disconnect network connection",
+  "params": "bus:string"
+ },
+ {
+  "mod": "modem",
+  "method": "get_cells_info",
+  "desp": "Get cellular network information",
+  "params": "bus:string"
+ },
+ {
+  "mod": "modem",
+  "method": "get_config",
+  "desp": "Read the current configuration of the modem",
+  "params": "bus:string"
+ },
+ {
+  "mod": "modem",
+  "method": "get_debug_msg",
+  "desp": "Get debug information of the modem",
+  "params": "bus:string"
+ },
+ {
+  "mod": "modem",
+  "method": "get_info",
+  "desp": "Get the modems hardware information",
+  "params": ""
+ },
+ {
+  "mod": "modem",
+  "method": "get_sms_list",
+  "desp": "Get SMS list",
+  "params": ""
+ },
+ {
+  "mod": "modem",
+  "method": "get_status",
+  "desp": "Get the modems status",
+  "params": ""
+ },
+ {
+  "mod": "modem",
+  "method": "get_traffic_config",
+  "desp": "Set automatic saving of traffic statistics data",
+  "params": "bus:string"
+ },
+ {
+  "mod": "modem",
+  "method": "reboot_modem",
+  "desp": "Reboot modem",
+  "params": "bus:string, ?hw_reboot:bool"
+ },
+ {
+  "mod": "modem",
+  "method": "remove_sms",
+  "desp": "Delete SMS",
+  "params": "?name:string, scope:number"
+ },
+ {
+  "mod": "modem",
+  "method": "reset_traffic_count",
+  "desp": "Clear traffic statistics data",
+  "params": "bus:string"
+ },
+ {
+  "mod": "modem",
+  "method": "send_at_command",
+  "desp": "Send AT command to modem",
+  "params": "bus:string, port:string, command:string"
+ },
+ {
+  "mod": "modem",
+  "method": "send_sms",
+  "desp": "Send SMS",
+  "params": "bus:string, phone_number:string, body:string, timeout:number"
+ },
+ {
+  "mod": "modem",
+  "method": "set_auto_connect",
+  "desp": "Auto connect to the network",
+  "params": "bus:string"
+ },
+ {
+  "mod": "modem",
+  "method": "set_connect",
+  "desp": "Set the modem's dial-up configuration and connect",
+  "params": "config:object, bus:string, config.protocol:string, config.device:string, ?config.apn:string, ?config.service:string, ?config.auth:string, ?config.username:string, ?config.password:string, ?config.dial_number:string, ?config.pin_code:string, ?config.ttl:number"
+ },
+ {
+  "mod": "modem",
+  "method": "set_sms",
+  "desp": "Set SMS status",
+  "params": "?name:string, status:number"
+ },
+ {
+  "mod": "modem",
+  "method": "set_traffic_auto_save",
+  "desp": "Set automatic saving of traffic statistics data",
+  "params": "bus:string, enable:bool"
+ },
+ {
+  "mod": "nas-web",
+  "method": "add_share",
+  "desp": "add one share",
+  "params": "file:string, proto:string, users.name:string, users:array, readonly:number, public:number, users.readonly:number"
+ },
+ {
+  "mod": "nas-web",
+  "method": "add_user",
+  "desp": "add samba share user",
+  "params": "name:string, password:string"
+ },
+ {
+  "mod": "nas-web",
+  "method": "eject_disk",
+  "desp": "eject one disk",
+  "params": "dev_name:string"
+ },
+ {
+  "mod": "nas-web",
+  "method": "get_disk_list",
+  "desp": "get nas disk info",
+  "params": ""
+ },
+ {
+  "mod": "nas-web",
+  "method": "get_file_list",
+  "desp": "get file list",
+  "params": ""
+ },
+ {
+  "mod": "nas-web",
+  "method": "get_nas_ser",
+  "desp": "get nas service info",
+  "params": ""
+ },
+ {
+  "mod": "nas-web",
+  "method": "get_proto_config",
+  "desp": "get nas proto conf",
+  "params": ""
+ },
+ {
+  "mod": "nas-web",
+  "method": "get_share_list",
+  "desp": "get share list",
+  "params": ""
+ },
+ {
+  "mod": "nas-web",
+  "method": "get_status",
+  "desp": "get nas service info",
+  "params": ""
+ },
+ {
+  "mod": "nas-web",
+  "method": "get_user_list",
+  "desp": "get share user list",
+  "params": ""
+ },
+ {
+  "mod": "nas-web",
+  "method": "remove_share",
+  "desp": "remove one share",
+  "params": "share_id:string"
+ },
+ {
+  "mod": "nas-web",
+  "method": "remove_user",
+  "desp": "remove samba share user",
+  "params": "name:string, ?all:string"
+ },
+ {
+  "mod": "nas-web",
+  "method": "set_nas_ser",
+  "desp": "set nas ser",
+  "params": "enable:number"
+ },
+ {
+  "mod": "nas-web",
+  "method": "set_proto_config",
+  "desp": "set nas proto conf",
+  "params": "name:string, ?media_dir:string, enable:bool, wan_access:bool, ?ssl_enable:bool, port:number"
+ },
+ {
+  "mod": "nas-web",
+  "method": "set_share",
+  "desp": "set share",
+  "params": "share_id:string, proto:string, users.name:string, users:array, readonly:number, public:number, users.readonly:number"
+ },
+ {
+  "mod": "nas-web",
+  "method": "set_user_pwd",
+  "desp": "set samba share user pwd",
+  "params": "name:string, password:string"
+ },
+ {
+  "mod": "nas-web",
+  "method": "start",
+  "desp": "start nas ser",
+  "params": ""
+ },
+ {
+  "mod": "netmode",
+  "method": "get_mode",
+  "desp": "Query current network mode",
+  "params": ""
+ },
+ {
+  "mod": "netmode",
+  "method": "set_mode",
+  "desp": "Set network mode",
+  "params": "mode:string, ?ssid:string, ?identity:string, ?key:string"
+ },
+ {
+  "mod": "network",
+  "method": "check_wan_cable",
+  "desp": "Get whether cable WAN is connected, whether MAC clone is enabled",
+  "params": ""
+ },
+ {
+  "mod": "network",
+  "method": "get_arp_list",
+  "desp": "Get ARP table",
+  "params": ""
+ },
+ {
+  "mod": "network",
+  "method": "get_dhcp_leases",
+  "desp": "Get DHCP lease list",
+  "params": ""
+ },
+ {
+  "mod": "network",
+  "method": "routes",
+  "desp": "Get active IPv4 routing table",
+  "params": ""
+ },
+ {
+  "mod": "network",
+  "method": "routes6",
+  "desp": "Get active IPv6 routing table",
+  "params": ""
+ },
+ {
+  "mod": "ovpn-client",
+  "method": "add_config",
+  "desp": "add ovpn client config",
+  "params": "name:string, mode:string, proto:string, remote:string, ?verb:string, ?auth:string, ?cipher:string, ?ca:string, ?ta:string, ?cert:string, ?key:string, ?username:string, ?password:string, random_remote:bool, ?lzo:bool, ?hmac:bool, group_id:number, client_auth:number"
+ },
+ {
+  "mod": "ovpn-client",
+  "method": "add_group",
+  "desp": "add ovpn client group",
+  "params": "group_name:string"
+ },
+ {
+  "mod": "ovpn-client",
+  "method": "add_route",
+  "desp": "add ovpn client custom route",
+  "params": "dest:string, ?gateway:string, ?scope:string, group_id:number, client_id:number, route_flag:number, ?metric:number, ?mtu:number"
+ },
+ {
+  "mod": "ovpn-client",
+  "method": "check_config",
+  "desp": "check uploaded ovpn config's parameter",
+  "params": "filename:string, group_id:number"
+ },
+ {
+  "mod": "ovpn-client",
+  "method": "clear_config_list",
+  "desp": "remove all ovpn client config of a group",
+  "params": "group_id:number"
+ },
+ {
+  "mod": "ovpn-client",
+  "method": "confirm_config",
+  "desp": "confirm ovpn client config",
+  "params": "group_id:number"
+ },
+ {
+  "mod": "ovpn-client",
+  "method": "get_all_config_list",
+  "desp": "get ovpn client config of all group",
+  "params": ""
+ },
+ {
+  "mod": "ovpn-client",
+  "method": "get_config_list",
+  "desp": "get ovpn client config of a group",
+  "params": "group_id:number"
+ },
+ {
+  "mod": "ovpn-client",
+  "method": "get_group_list",
+  "desp": "get ovpn client group list",
+  "params": ""
+ },
+ {
+  "mod": "ovpn-client",
+  "method": "get_recommend_config",
+  "desp": "get recommend config",
+  "params": "?country_id:array, ?servers:array, group_id:number, proto:number"
+ },
+ {
+  "mod": "ovpn-client",
+  "method": "get_route_list",
+  "desp": "get ovpn client custom route list",
+  "params": "group_id:number, client_id:number"
+ },
+ {
+  "mod": "ovpn-client",
+  "method": "get_setting",
+  "desp": "get ovpn client setting",
+  "params": "group_id:number, client_id:number"
+ },
+ {
+  "mod": "ovpn-client",
+  "method": "get_status",
+  "desp": "get ovpn client status",
+  "params": ""
+ },
+ {
+  "mod": "ovpn-client",
+  "method": "get_third_config",
+  "desp": "get third provider's ovpn client config",
+  "params": "username:string, ?password:string, group_id:number"
+ },
+ {
+  "mod": "ovpn-client",
+  "method": "remove_config",
+  "desp": "remove ovpn client config",
+  "params": "group_id:number, client_id:number"
+ },
+ {
+  "mod": "ovpn-client",
+  "method": "remove_group",
+  "desp": "remove ovpn client group",
+  "params": "group_id:number"
+ },
+ {
+  "mod": "ovpn-client",
+  "method": "remove_route",
+  "desp": "remove ovpn client custom route",
+  "params": "group_id:number, client_id:number, route_flag:number, rule_id:number"
+ },
+ {
+  "mod": "ovpn-client",
+  "method": "set_config",
+  "desp": "modify ovpn client config",
+  "params": "name:string, ?mode:string, ?proto:string, ?remote:string, ?verb:string, ?auth:string, ?cipher:string, ?ca:string, ?ta:string, ?cert:string, ?key:string, ?username:string, ?password:string, ?random_remote:bool, ?lzo:bool, ?hmac:bool, group_id:number, client_id:number, ?client_auth:number"
+ },
+ {
+  "mod": "ovpn-client",
+  "method": "set_group",
+  "desp": "modify ovpn client group",
+  "params": "group_name:string, ?username:string, ?password:string, ?askpass:string, group_id:number"
+ },
+ {
+  "mod": "ovpn-client",
+  "method": "set_route",
+  "desp": "set ovpn client custom route",
+  "params": "?dest:string, ?gateway:string, ?scope:string, group_id:number, client_id:number, route_flag:number, rule_id:number, ?metric:number, ?mtu:number"
+ },
+ {
+  "mod": "ovpn-client",
+  "method": "set_setting",
+  "desp": "set ovpn client setting",
+  "params": "?local_access:bool, ?masq:bool, group_id:number, client_id:number, ?default_metric:number, ?mtu:number"
+ },
+ {
+  "mod": "ovpn-client",
+  "method": "start",
+  "desp": "start ovpn client",
+  "params": "group_id:number, client_id:number"
+ },
+ {
+  "mod": "ovpn-client",
+  "method": "stop",
+  "desp": "stop ovpn client",
+  "params": "group_id:number, client_id:number"
+ },
+ {
+  "mod": "ovpn-server",
+  "method": "add_route",
+  "desp": "add ovpn server custom route",
+  "params": "dest:string, ?gateway:string, ?scope:string, route_flag:number, ?metric:number, ?mtu:number"
+ },
+ {
+  "mod": "ovpn-server",
+  "method": "add_user",
+  "desp": "add ovpn user",
+  "params": "username:string, password:string"
+ },
+ {
+  "mod": "ovpn-server",
+  "method": "export_config",
+  "desp": "Export ovpn configuration",
+  "params": "ddns:bool"
+ },
+ {
+  "mod": "ovpn-server",
+  "method": "generate_certificate",
+  "desp": "Generate ovpn cert",
+  "params": "?ca:string, ?dh:string"
+ },
+ {
+  "mod": "ovpn-server",
+  "method": "get_config",
+  "desp": "Get openvpn configuration",
+  "params": ""
+ },
+ {
+  "mod": "ovpn-server",
+  "method": "get_route_list",
+  "desp": "get ovpn server custom route list",
+  "params": ""
+ },
+ {
+  "mod": "ovpn-server",
+  "method": "get_setting",
+  "desp": "get ovpn server setting",
+  "params": ""
+ },
+ {
+  "mod": "ovpn-server",
+  "method": "get_status",
+  "desp": "Get ovpn server status",
+  "params": ""
+ },
+ {
+  "mod": "ovpn-server",
+  "method": "get_user_list",
+  "desp": "get ovpn user list",
+  "params": ""
+ },
+ {
+  "mod": "ovpn-server",
+  "method": "remove_route",
+  "desp": "remove ovpn server custom route",
+  "params": "route_flag:number, rule_id:number"
+ },
+ {
+  "mod": "ovpn-server",
+  "method": "remove_user",
+  "desp": "remove ovpn user",
+  "params": "username:string, password:string"
+ },
+ {
+  "mod": "ovpn-server",
+  "method": "set_config",
+  "desp": "Set ovpn server config",
+  "params": "mode:string, subnetv4:string, mask:string, ?subnetv6:string, proto:string, ?auth:string, ?cipher:string, ?start:string, ?end:string, ?ca:string, ?dh:string, ?ta:string, ?verb:string, ?cert:string, ?key:string, ?tap_address:string, ?tap_mask:string, ?ipv6_enable:bool, ?lzo:bool, ?hmac:bool, ?client_to_client:bool, port:number, ?access_scope:number, ?client_auth:number"
+ },
+ {
+  "mod": "ovpn-server",
+  "method": "set_route",
+  "desp": "set ovpn server custom route",
+  "params": "?dest:string, ?gateway:string, ?scope:string, route_flag:number, rule_id:number, ?metric:number, ?mtu:number"
+ },
+ {
+  "mod": "ovpn-server",
+  "method": "set_setting",
+  "desp": "set ovpn server setting",
+  "params": "?local_access:bool, ?masq:bool, ?mtu:number"
+ },
+ {
+  "mod": "ovpn-server",
+  "method": "start",
+  "desp": "start ovpn server",
+  "params": ""
+ },
+ {
+  "mod": "ovpn-server",
+  "method": "stop",
+  "desp": "Stop ovpn server",
+  "params": ""
+ },
+ {
+  "mod": "plugins",
+  "method": "get_list",
+  "desp": "Get package list",
+  "params": "?search_condition:string, ?search_initials:string, status:number, limit:number, page:number"
+ },
+ {
+  "mod": "plugins",
+  "method": "get_package_info",
+  "desp": "Get detailed information of a single package",
+  "params": "name:string"
+ },
+ {
+  "mod": "plugins",
+  "method": "get_repository_status",
+  "desp": "Get software repository status",
+  "params": ""
+ },
+ {
+  "mod": "plugins",
+  "method": "install_package",
+  "desp": "Install package",
+  "params": "name:array"
+ },
+ {
+  "mod": "plugins",
+  "method": "remove_package",
+  "desp": "Uninstall software package",
+  "params": "name:string, force:bool"
+ },
+ {
+  "mod": "plugins",
+  "method": "update_repository",
+  "desp": "Update software repository",
+  "params": ""
+ },
+ {
+  "mod": "qos",
+  "method": "add_device_group",
+  "desp": "Add client group",
+  "params": "group_name:string, ?clients.mac:string, ?clients.name:string, ?clients:array, priority:number"
+ },
+ {
+  "mod": "qos",
+  "method": "add_speed_limit_rule",
+  "desp": "Add client device speed limit rule",
+  "params": "mac:string, upload:number, download:number"
+ },
+ {
+  "mod": "qos",
+  "method": "delete_device_group",
+  "desp": "Delete client group",
+  "params": "group_id:number"
+ },
+ {
+  "mod": "qos",
+  "method": "delete_speed_limit_rule",
+  "desp": "Delete client device speed limit rule",
+  "params": "mac:string"
+ },
+ {
+  "mod": "qos",
+  "method": "enable_qos",
+  "desp": "Enable or disable QoS function",
+  "params": "enable:bool"
+ },
+ {
+  "mod": "qos",
+  "method": "get_client_list (在点击添加客户端限速规则时调用)",
+  "desp": "Get client list",
+  "params": ""
+ },
+ {
+  "mod": "qos",
+  "method": "get_config",
+  "desp": "Get QoS configuration information",
+  "params": ""
+ },
+ {
+  "mod": "qos",
+  "method": "get_device_group",
+  "desp": "Get client group information",
+  "params": "group_id:number"
+ },
+ {
+  "mod": "qos",
+  "method": "modify_device_group",
+  "desp": "Modify client group information",
+  "params": "group_name:string, clients.mac:string, clients.name:string, clients:array, group_id:number, priority:number"
+ },
+ {
+  "mod": "qos",
+  "method": "modify_speed_limit_rule",
+  "desp": "Modify client device speed limit rule",
+  "params": "mac:string, upload:number, download:number"
+ },
+ {
+  "mod": "qos",
+  "method": "remove_speed_limit_rule",
+  "desp": "Delete client device speed limit rule",
+  "params": "mac:string"
+ },
+ {
+  "mod": "qos",
+  "method": "set_channel_bandwidth_ratio",
+  "desp": "Configure priority channel bandwidth ratio",
+  "params": "upload:array, download:array, upload.priority:number, upload.min:number, upload.max:number, download.priority:number, download.min:number, download.max:number"
+ },
+ {
+  "mod": "qos",
+  "method": "set_model",
+  "desp": "Set QoS mode",
+  "params": "model:string, ?wan_list.name:string, ?cake_model:string, ?wan_list.up:bool, ?wan_list:array, ?wan_list.upload:number, ?wan_list.download:number"
+ },
+ {
+  "mod": "qos",
+  "method": "set_other_client_priority",
+  "desp": "Set priority for other clients",
+  "params": "priority:number"
+ },
+ {
+  "mod": "qos",
+  "method": "set_speed_limit_rule",
+  "desp": "Set client device speed limit rule",
+  "params": "mac:string, upload:number, download:number"
+ },
+ {
+  "mod": "reboot",
+  "method": "get_config",
+  "desp": "Get config of reboot.",
+  "params": "hour:string, min:string, enable:bool, week:array"
+ },
+ {
+  "mod": "reboot",
+  "method": "set_config",
+  "desp": "Set reboot config.",
+  "params": "hour:string, min:string, enable:bool, week:array"
+ },
+ {
+  "mod": "repeater",
+  "method": "connect",
+  "desp": "Connect to AP",
+  "params": "ssid:string, ?identity:string, ?key:string, ?bssid:string, ?protocol:string, ?ip:string, ?netmask:string, ?gateway:string, ?remember:bool, ?manual:bool, ?dns:array"
+ },
+ {
+  "mod": "repeater",
+  "method": "disconnect",
+  "desp": "Disconnect the currently connected WiFi",
+  "params": ""
+ },
+ {
+  "mod": "repeater",
+  "method": "forget",
+  "desp": "Forget a certain AP",
+  "params": "id:string"
+ },
+ {
+  "mod": "repeater",
+  "method": "get_config",
+  "desp": "Get configuration",
+  "params": ""
+ },
+ {
+  "mod": "repeater",
+  "method": "get_saved_ap_list",
+  "desp": "Get saved AP list",
+  "params": ""
+ },
+ {
+  "mod": "repeater",
+  "method": "get_status",
+  "desp": "Get connection status",
+  "params": ""
+ },
+ {
+  "mod": "repeater",
+  "method": "remove_saved_ap",
+  "desp": "Delete a saved AP",
+  "params": "ssid:string"
+ },
+ {
+  "mod": "repeater",
+  "method": "scan",
+  "desp": "Scan AP list",
+  "params": "all_band:bool, dfs:bool"
+ },
+ {
+  "mod": "repeater",
+  "method": "set_config",
+  "desp": "Set",
+  "params": "?lock_band:string, auto:bool, antijam:bool, ?dfs:bool"
+ },
+ {
+  "mod": "rs485",
+  "method": "get_mqtt_config",
+  "desp": "get rs485-mqtt config",
+  "params": ""
+ },
+ {
+  "mod": "rs485",
+  "method": "get_rs485_config",
+  "desp": "get rs485 config",
+  "params": ""
+ },
+ {
+  "mod": "rs485",
+  "method": "get_socket_config",
+  "desp": "get rs485_socket config.",
+  "params": ""
+ },
+ {
+  "mod": "rs485",
+  "method": "glcould_tool",
+  "desp": "Cloud platform RS485 tool",
+  "params": "cmd:string"
+ },
+ {
+  "mod": "rs485",
+  "method": "read_modbus_data",
+  "desp": "read modbus data",
+  "params": "device_id:string, func_code:string, reg_addr_h:string, reg_addr_l:string, reg_len:string"
+ },
+ {
+  "mod": "rs485",
+  "method": "set_mqtt_config",
+  "desp": "set rs485_mqtt config",
+  "params": "address:string, username:string, password:string, clientid:string, publish:string, subscribe:string, autoconn:bool, port:number, timeout:number, interval:number, qos:number, autoconnmaxtime:number, autoconninteval:number"
+ },
+ {
+  "mod": "rs485",
+  "method": "set_rs485_config",
+  "desp": "set rs485 config",
+  "params": "device:string, mode:string, type:string, speed:number, timeout:number"
+ },
+ {
+  "mod": "rs485",
+  "method": "set_socket_config",
+  "desp": "set rs485_cocket config",
+  "params": "address:string, mode:string, port:number, timeout:number"
+ },
+ {
+  "mod": "rs485",
+  "method": "start",
+  "desp": "Start RS485 process",
+  "params": "conn_type:string"
+ },
+ {
+  "mod": "rs485",
+  "method": "status",
+  "desp": "Get RS485 connection status",
+  "params": ""
+ },
+ {
+  "mod": "rs485",
+  "method": "stop",
+  "desp": "Stop RS485 process",
+  "params": ""
+ },
+ {
+  "mod": "rs485",
+  "method": "terminal",
+  "desp": "Terminal tool, used for data reading and writing",
+  "params": "data_w:string, show_send:bool, show_date:bool"
+ },
+ {
+  "mod": "rs485",
+  "method": "write_modbus_data",
+  "desp": "write modbus data",
+  "params": "device_id:string, func_code:string, reg_addr_h:string, reg_addr_l:string, reg_len:string, data_w:string, data_count:string"
+ },
+ {
+  "mod": "rtty",
+  "method": "get_config",
+  "desp": "Query current configuration",
+  "params": ""
+ },
+ {
+  "mod": "rtty",
+  "method": "run",
+  "desp": "Run rtty",
+  "params": "?token:string, host:string, ?ssl:bool, port:number"
+ },
+ {
+  "mod": "rtty",
+  "method": "set_config",
+  "desp": "Set rtty function",
+  "params": "ssh_enable:bool, web_enable:bool"
+ },
+ {
+  "mod": "rtty",
+  "method": "stop",
+  "desp": "Stop rtty",
+  "params": ""
+ },
+ {
+  "mod": "s2s",
+  "method": "enable_echo_server",
+  "desp": "enable echo listening server for testing",
+  "params": "port:string"
+ },
+ {
+  "mod": "s2s",
+  "method": "generate_wg_genkey",
+  "desp": "Generate a new private key and return its public key.",
+  "params": ""
+ },
+ {
+  "mod": "s2s",
+  "method": "get_status",
+  "desp": "Get WireGuard service status.",
+  "params": ""
+ },
+ {
+  "mod": "s2s",
+  "method": "remove_config",
+  "desp": "Delete WireGuard configuration",
+  "params": ""
+ },
+ {
+  "mod": "s2s",
+  "method": "set_config",
+  "desp": "Push the complete WireGuard configuration file.",
+  "params": "interface:object, ?lan_ip:string, ?interface.private_key:string, ?interface.listen_port:string, ?interface.mtu:string, ?interface.metric:string, ?interface.fwmark:string, peer.public_key:string, ?peer.endpoint:string, ?peer.keepalive:string, ?peer.preshared_key:string, ?restart:bool, interface.address:array, peer:array, peer.allowed_ips:array"
+ },
+ {
+  "mod": "s2s",
+  "method": "start_wg",
+  "desp": "Start WireGuard service",
+  "params": ""
+ },
+ {
+  "mod": "s2s",
+  "method": "stop_wg",
+  "desp": "Stop WireGuard service",
+  "params": ""
+ },
+ {
+  "mod": "samba",
+  "method": "get_config",
+  "desp": "get samba conf",
+  "params": ""
+ },
+ {
+  "mod": "samba",
+  "method": "set_config",
+  "desp": "set samba conf",
+  "params": "share_path:string, enable:bool, wan_share:bool, writeable:bool"
+ },
+ {
+  "mod": "switch-button",
+  "method": "get_config",
+  "desp": "Get current configured function",
+  "params": ""
+ },
+ {
+  "mod": "switch-button",
+  "method": "get_funcs",
+  "desp": "Get function list",
+  "params": ""
+ },
+ {
+  "mod": "switch-button",
+  "method": "set_config",
+  "desp": "Get current configured function",
+  "params": "func:string"
+ },
+ {
+  "mod": "system",
+  "method": "add_user",
+  "desp": "Add user",
+  "params": "username:string, ?password:string, ?home:string, ?interpreter:string, ?uid:number, ?gid:number"
+ },
+ {
+  "mod": "system",
+  "method": "disk_info",
+  "desp": "Get disk information (unit: bytes B)",
+  "params": ""
+ },
+ {
+  "mod": "system",
+  "method": "get_httpd_mem_status",
+  "desp": "Get the memory usage of the HTTP server. When testing for memory leaks, this interface can be used to monitor if the API has memory leaks",
+  "params": ""
+ },
+ {
+  "mod": "system",
+  "method": "get_info",
+  "desp": "Get basic device information, including model, firmware version, hardware version, etc.",
+  "params": ""
+ },
+ {
+  "mod": "system",
+  "method": "get_load",
+  "desp": "Get load information",
+  "params": ""
+ },
+ {
+  "mod": "system",
+  "method": "get_percent",
+  "desp": "Get battery level",
+  "params": ""
+ },
+ {
+  "mod": "system",
+  "method": "get_security_policy",
+  "desp": "Get router security policy",
+  "params": ""
+ },
+ {
+  "mod": "system",
+  "method": "get_status",
+  "desp": "Get system network, service, resource usage and other status",
+  "params": ""
+ },
+ {
+  "mod": "system",
+  "method": "get_timezone_config",
+  "desp": "Get the current router's timezone information",
+  "params": ""
+ },
+ {
+  "mod": "system",
+  "method": "get_unixtime",
+  "desp": "Get Unix timestamp",
+  "params": ""
+ },
+ {
+  "mod": "system",
+  "method": "reboot",
+  "desp": "Reboot device",
+  "params": "delay:number"
+ },
+ {
+  "mod": "system",
+  "method": "remove_user",
+  "desp": "Delete user",
+  "params": "username:string"
+ },
+ {
+  "mod": "system",
+  "method": "reset_firmware",
+  "desp": "Reset to factory",
+  "params": ""
+ },
+ {
+  "mod": "system",
+  "method": "set_password",
+  "desp": "Set password",
+  "params": "username:string, ?old_password:string, new_password:string"
+ },
+ {
+  "mod": "system",
+  "method": "set_security_policy",
+  "desp": "Set the router's security policy.",
+  "params": "redirect_https:number, security_rule:number"
+ },
+ {
+  "mod": "system",
+  "method": "set_timezone_config",
+  "desp": "Set router timezone information [for timezones other than UTC, both parameters are required].",
+  "params": "zonename:string, timezone:string, localtime:number"
+ },
+ {
+  "mod": "tethering",
+  "method": "disconnect",
+  "desp": "disconnect tethering.",
+  "params": ""
+ },
+ {
+  "mod": "tethering",
+  "method": "get_status",
+  "desp": "Get tethering info.",
+  "params": ""
+ },
+ {
+  "mod": "tethering",
+  "method": "set_connect",
+  "desp": "connect or disconnect tethering.",
+  "params": "device:string"
+ },
+ {
+  "mod": "ui",
+  "method": "check_initialized",
+  "desp": "Query if initialized",
+  "params": ""
+ },
+ {
+  "mod": "ui",
+  "method": "get_lang",
+  "desp": "Get language",
+  "params": ""
+ },
+ {
+  "mod": "ui",
+  "method": "get_menu_list",
+  "desp": "Get menu list",
+  "params": ""
+ },
+ {
+  "mod": "ui",
+  "method": "init",
+  "desp": "Initialization",
+  "params": "lang:string, username:string, password:string, ?ssid:string, ?encryption_wifi:string, ?password_wifi:string, ?ssid_5g:string, ?encryption_wifi_5g:string, ?password_wifi_5g:string, ?location:string, ?redirect_https:bool, ?security_rule:number"
+ },
+ {
+  "mod": "ui",
+  "method": "load_locales",
+  "desp": "Load translation objects",
+  "params": "locale:string"
+ },
+ {
+  "mod": "ui",
+  "method": "set_lang",
+  "desp": "Get language",
+  "params": "lang:string"
+ },
+ {
+  "mod": "upgrade",
+  "method": "check_firmware_local",
+  "desp": "local firmware verify",
+  "params": ""
+ },
+ {
+  "mod": "upgrade",
+  "method": "check_firmware_online",
+  "desp": "Get firmware information on the server.",
+  "params": ""
+ },
+ {
+  "mod": "upgrade",
+  "method": "get_config",
+  "desp": "Get upgrade configuration.",
+  "params": ""
+ },
+ {
+  "mod": "upgrade",
+  "method": "get_online_upgrade_status",
+  "desp": "Get online upgrade status.",
+  "params": ""
+ },
+ {
+  "mod": "upgrade",
+  "method": "set_config",
+  "desp": "Set upgrade configuration file",
+  "params": "time:string, url:string, auto_upgrade:bool"
+ },
+ {
+  "mod": "upgrade",
+  "method": "upgrade_local",
+  "desp": "Local firmware upgrade.",
+  "params": "mesh:bool, keep_config:bool, keep_package:bool"
+ },
+ {
+  "mod": "upgrade",
+  "method": "upgrade_online",
+  "desp": "Online one-click upgrade",
+  "params": "keep_config:bool, keep_package:bool"
+ },
+ {
+  "mod": "vpn-policy",
+  "method": "get_domain_policy",
+  "desp": "Get domain policy",
+  "params": ""
+ },
+ {
+  "mod": "vpn-policy",
+  "method": "get_global_policy",
+  "desp": "Get global policy",
+  "params": ""
+ },
+ {
+  "mod": "vpn-policy",
+  "method": "get_mac_policy",
+  "desp": "Get MAC policy",
+  "params": ""
+ },
+ {
+  "mod": "vpn-policy",
+  "method": "get_proxy_mode",
+  "desp": "Get VPN proxy mode",
+  "params": ""
+ },
+ {
+  "mod": "vpn-policy",
+  "method": "get_vlan_policy",
+  "desp": "Get VLAN policy",
+  "params": ""
+ },
+ {
+  "mod": "vpn-policy",
+  "method": "set_domain_policy",
+  "desp": "Set domain policy",
+  "params": "domain_list:array, default_policy:number"
+ },
+ {
+  "mod": "vpn-policy",
+  "method": "set_global_policy",
+  "desp": "Set global policy",
+  "params": "kill_switch:number, wan_access:number, service_policy:number"
+ },
+ {
+  "mod": "vpn-policy",
+  "method": "set_mac_policy",
+  "desp": "Set MAC policy",
+  "params": "mac_list:array, default_policy:number"
+ },
+ {
+  "mod": "vpn-policy",
+  "method": "set_proxy_mode",
+  "desp": "Set VPN proxy mode",
+  "params": "mode:number"
+ },
+ {
+  "mod": "vpn-policy",
+  "method": "set_vlan_policy",
+  "desp": "Set VLAN policy",
+  "params": "vlans:array, ?vlans.id:number, ?vlans.vpn:number"
+ },
+ {
+  "mod": "wg-client",
+  "method": "add_config",
+  "desp": "add wireguard client config",
+  "params": "name:string, address_v4:string, ?address_v6:string, private_key:string, allowed_ips:string, end_point:string, public_key:string, ?dns:string, ?preshared_key:string, ?ipv6_enable:bool, presharedkey_enable:bool, group_id:number, ?listen_port:number, ?persistent_keepalive:number, ?mtu:number"
+ },
+ {
+  "mod": "wg-client",
+  "method": "add_group",
+  "desp": "add wireguard client group",
+  "params": "group_name:string"
+ },
+ {
+  "mod": "wg-client",
+  "method": "add_route",
+  "desp": "add wireguard client custom route",
+  "params": "dest:string, ?gateway:string, ?scope:string, group_id:number, peer_id:number, route_flag:number, ?metric:number, ?mtu:number"
+ },
+ {
+  "mod": "wg-client",
+  "method": "check_config",
+  "desp": "Check uploaded wireguard file's parameter",
+  "params": "filename:string, group_id:number"
+ },
+ {
+  "mod": "wg-client",
+  "method": "clear_config_list",
+  "desp": "remove all wireguard client config of a group",
+  "params": "group_id:number"
+ },
+ {
+  "mod": "wg-client",
+  "method": "confirm_config",
+  "desp": "confirm wireguard client config",
+  "params": "group_id:number"
+ },
+ {
+  "mod": "wg-client",
+  "method": "get_all_config_list",
+  "desp": "get wireguard client config list of all groups",
+  "params": ""
+ },
+ {
+  "mod": "wg-client",
+  "method": "get_config_list",
+  "desp": "get wireguard client config list of a group",
+  "params": "group_id:number"
+ },
+ {
+  "mod": "wg-client",
+  "method": "get_group_list",
+  "desp": "get wireguard client group list",
+  "params": ""
+ },
+ {
+  "mod": "wg-client",
+  "method": "get_recommend_config",
+  "desp": "get recommend config",
+  "params": "country_name:array, group_id:number"
+ },
+ {
+  "mod": "wg-client",
+  "method": "get_route_list",
+  "desp": "get wireguard client custom route list",
+  "params": "group_id:number, peer_id:number"
+ },
+ {
+  "mod": "wg-client",
+  "method": "get_setting",
+  "desp": "get wireguard client setting",
+  "params": "group_id:number, peer_id:number"
+ },
+ {
+  "mod": "wg-client",
+  "method": "get_status",
+  "desp": "get the wireguard client status",
+  "params": ""
+ },
+ {
+  "mod": "wg-client",
+  "method": "get_third_config",
+  "desp": "get third provider's client config",
+  "params": "username:string, ?password:string, group_id:number"
+ },
+ {
+  "mod": "wg-client",
+  "method": "remove_config",
+  "desp": "remove wireguard client config",
+  "params": "group_id:number, peer_id:number"
+ },
+ {
+  "mod": "wg-client",
+  "method": "remove_group",
+  "desp": "remove wireguard client group",
+  "params": "group_id:number"
+ },
+ {
+  "mod": "wg-client",
+  "method": "remove_route",
+  "desp": "remove wireguard client custom route",
+  "params": "group_id:number, peer_id:number, route_flag:number, rule_id:number"
+ },
+ {
+  "mod": "wg-client",
+  "method": "set_config",
+  "desp": "modify specific client's config",
+  "params": "name:string, address_v4:string, ?address_v6:string, private_key:string, allowed_ips:string, end_point:string, public_key:string, ?dns:string, ?preshared_key:string, ?ipv6_enable:bool, presharedkey_enable:bool, group_id:number, peer_id:number, ?listen_port:number, ?persistent_keepalive:number, ?mtu:number"
+ },
+ {
+  "mod": "wg-client",
+  "method": "set_group",
+  "desp": "modify wireguard client group",
+  "params": "group_name:string, group_id:number"
+ },
+ {
+  "mod": "wg-client",
+  "method": "set_proxy",
+  "desp": "set wireguard client proxy",
+  "params": "enable:bool"
+ },
+ {
+  "mod": "wg-client",
+  "method": "set_route",
+  "desp": "set wireguard client custom route",
+  "params": "?dest:string, ?gateway:string, ?scope:string, group_id:number, peer_id:number, route_flag:number, rule_id:number, ?metric:number, ?mtu:number"
+ },
+ {
+  "mod": "wg-client",
+  "method": "set_setting",
+  "desp": "set wireguard client setting",
+  "params": "?local_access:bool, ?masq:bool, group_id:number, peer_id:number, ?default_metric:number, ?mtu:number"
+ },
+ {
+  "mod": "wg-client",
+  "method": "start",
+  "desp": "start wireguard client",
+  "params": "group_id:number, peer_id:number"
+ },
+ {
+  "mod": "wg-client",
+  "method": "stop",
+  "desp": "stop wireguard client",
+  "params": ""
+ },
+ {
+  "mod": "wg-server",
+  "method": "add_peer",
+  "desp": "Add new peer",
+  "params": "name:string, ?presharedkey:string, ?dns:string, ?presharedkey_enable:bool, ?allowed_ips:array, ?mtu:number, ?persistent_keepalive:number"
+ },
+ {
+  "mod": "wg-server",
+  "method": "add_route",
+  "desp": "add wireguard server custom route",
+  "params": "dest:string, ?gateway:string, ?scope:string, route_flag:number, ?metric:number, ?mtu:number"
+ },
+ {
+  "mod": "wg-server",
+  "method": "generate_key",
+  "desp": "Generate wireguard server private_key and public_key",
+  "params": ""
+ },
+ {
+  "mod": "wg-server",
+  "method": "generate_peer",
+  "desp": "Generate wireguard peer config",
+  "params": "peer_id:number"
+ },
+ {
+  "mod": "wg-server",
+  "method": "generate_publickey",
+  "desp": "generate wireguard server public key",
+  "params": "private_key:string"
+ },
+ {
+  "mod": "wg-server",
+  "method": "get_config",
+  "desp": "Get the server config",
+  "params": ""
+ },
+ {
+  "mod": "wg-server",
+  "method": "get_peer_list",
+  "desp": "Get the peer list of the wireguard client",
+  "params": ""
+ },
+ {
+  "mod": "wg-server",
+  "method": "get_route_list",
+  "desp": "get wireguard server custom route list",
+  "params": ""
+ },
+ {
+  "mod": "wg-server",
+  "method": "get_setting",
+  "desp": "get wireguard server setting",
+  "params": ""
+ },
+ {
+  "mod": "wg-server",
+  "method": "get_status",
+  "desp": "Get wireguard server status",
+  "params": ""
+ },
+ {
+  "mod": "wg-server",
+  "method": "remove_peer",
+  "desp": "Remove wireguard peer by name",
+  "params": "peer_id:number"
+ },
+ {
+  "mod": "wg-server",
+  "method": "remove_route",
+  "desp": "remove wireguard server custom route",
+  "params": "route_flag:number, rule_id:number"
+ },
+ {
+  "mod": "wg-server",
+  "method": "set_config",
+  "desp": "Set the wireguard server config",
+  "params": "address_v4:string, ?address_v6:string, ?private_key:string, ?ipv6_enable:bool, port:number"
+ },
+ {
+  "mod": "wg-server",
+  "method": "set_peer",
+  "desp": "modify peer config",
+  "params": "name:string, ?presharedkey:string, ?dns:string, presharedkey_enable:bool, ?allowed_ips:array, peer_id:number, ?mtu:number, ?persistent_keepalive:number"
+ },
+ {
+  "mod": "wg-server",
+  "method": "set_route",
+  "desp": "set wireguard server custom route",
+  "params": "?dest:string, ?gateway:string, ?scope:string, route_flag:number, rule_id:number, ?metric:number, ?mtu:number"
+ },
+ {
+  "mod": "wg-server",
+  "method": "set_setting",
+  "desp": "set wireguard server setting",
+  "params": "?local_access:bool, ?masq:bool, ?mtu:number"
+ },
+ {
+  "mod": "wg-server",
+  "method": "start",
+  "desp": "Start the wireguard server",
+  "params": ""
+ },
+ {
+  "mod": "wg-server",
+  "method": "stop",
+  "desp": "Stop wireguard server",
+  "params": ""
+ },
+ {
+  "mod": "wifi",
+  "method": "get_config",
+  "desp": "Get all WiFi configuration information of the system",
+  "params": ""
+ },
+ {
+  "mod": "wifi",
+  "method": "get_status",
+  "desp": "Get WiFi device status",
+  "params": ""
+ },
+ {
+  "mod": "wifi",
+  "method": "set_config",
+  "desp": "Set WiFi parameters",
+  "params": "?device:string, ?hwmode:string, ?htmode:string, ?txpower:string, ?iface_name:string, ?ssid:string, ?encryption:string, ?key:string, ?enabled:bool, ?hidden:bool, ?channel:number"
+ },
+ {
+  "mod": "wifi",
+  "method": "set_txpower",
+  "desp": "Set RF transmit power",
+  "params": "device:string, txpower:string"
+ }
+]
