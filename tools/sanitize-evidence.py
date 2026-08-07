@@ -52,6 +52,15 @@ def sanitize(text: str) -> str:
 
     def redact_field(match: re.Match[str]) -> str:
         value = match.group("value")
+        # The unquoted branch stops before `]`. Preserve our own placeholder
+        # rather than matching `[REDACTED` and appending another closing bracket
+        # on every sanitizer pass.
+        if (
+            value.strip() == "[REDACTED"
+            and match.end() < len(match.string)
+            and match.string[match.end()] == "]"
+        ):
+            return match.group(0)
         if len(value) >= 2 and value[0] in "\"'" and value[-1] == value[0]:
             replacement = f"{value[0]}[REDACTED]{value[0]}"
         else:

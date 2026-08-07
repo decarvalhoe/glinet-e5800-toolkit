@@ -1,0 +1,34 @@
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+Thu Aug  6 20:37:38 UTC 2026
+qdisc cake 802a: root refcnt 2 bandwidth 680640bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 4636206901 bytes 5143305 pkt (dropped 24766, overlimits 4463503 requeues 0)
+ backlog 0b 0p requeues 0
+ memory used: 2881373b of 4Mb
+ capacity estimate: 726016bit
+ min/max network layer size:           21 /    1500
+ min/max overhead-adjusted size:       21 /    1500
+ average network hdr offset:            0
+
+                  Tin 0
+  thresh      680640bit
+  target         26.7ms
+  interval        122ms
+  pk_delay        103ms
+  av_delay         18ms
+  sp_delay         16us
+  backlog            0b
+  pkts          5168071
+  bytes      4670907737
+  way_inds      1130140
+  way_miss        45060
+  way_cols            0
+  drops           24766
+  marks              15
+  ack_drop            0
+  sp_flows            0
+  bk_flows            1
+  un_flows            0
+  max_len          1500
+  quantum           300

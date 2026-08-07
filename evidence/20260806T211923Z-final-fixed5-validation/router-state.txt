@@ -1,0 +1,39 @@
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+Thu Aug  6 21:20:14 UTC 2026
+5000
+nat dual-dsthost ingress
+ebca1000b6f3b4f26a8d15785aef46d3fc22c601a19b7ec73d07e81f0e978265  /etc/config/sqm
+qdisc cake 8048: root refcnt 2 bandwidth 5Mbit besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 2911912 bytes 2460 pkt (dropped 90, overlimits 3869 requeues 0)
+ backlog 0b 0p requeues 0
+ memory used: 111400b of 4Mb
+ capacity estimate: 5Mbit
+ min/max network layer size:           28 /    1500
+ min/max overhead-adjusted size:       28 /    1500
+ average network hdr offset:            0
+
+                  Tin 0
+  thresh          5Mbit
+  target            5ms
+  interval        100ms
+  pk_delay       23.9ms
+  av_delay       16.7ms
+  sp_delay         23us
+  backlog            0b
+  pkts             2550
+  bytes         3044652
+  way_inds            0
+  way_miss          176
+  way_cols            0
+  drops              90
+  marks               0
+  ack_drop            0
+  sp_flows            0
+  bk_flows            1
+  un_flows            0
+  max_len          1500
+  quantum           300
+
+export wan_up=1;

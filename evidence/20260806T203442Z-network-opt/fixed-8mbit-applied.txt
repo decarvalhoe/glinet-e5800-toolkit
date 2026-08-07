@@ -1,0 +1,10 @@
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+SQM: Stopping SQM on rmnet_data1
+SQM: ERROR: cmd_wrapper: tc: FAILURE (2): /sbin/tc qdisc del dev rmnet_data1 root
+SQM: ERROR: cmd_wrapper: tc: LAST ERROR: RTNETLINK answers: No such file or directory
+SQM: Starting SQM script: piece_of_cake.qos on rmnet_data1, in: 45000 Kbps, out: 0 Kbps
+SQM: piece_of_cake.qos was started on rmnet_data1 successfully
+3777
+qdisc cake 8036: root refcnt 2 bandwidth 8Mbit besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0

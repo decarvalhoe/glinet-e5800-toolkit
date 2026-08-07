@@ -1,0 +1,17 @@
+=== route to public IP ===
+[IPv4] via [IPv4] dev eth2 src [IPv4] uid 1000
+    cache
+=== default routes ===
+default via [IPv4] dev eth2 proto kernel metric 25
+default via [IPv4] dev eth1 proto kernel metric 30
+=== router ping ===
+PING [IPv4] ([IPv4]) 56(84) bytes of data.
+64 bytes from [IPv4]: icmp_seq=1 ttl=64 time=4.09 ms
+64 bytes from [IPv4]: icmp_seq=2 ttl=64 time=6.14 ms
+64 bytes from [IPv4]: icmp_seq=3 ttl=64 time=3.11 ms
+
+--- [IPv4] ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+rtt min/avg/max/mdev = 3.111/4.445/6.135/1.259 ms
+=== low-volume HTTPS probe ===
+http=200 connect=0.078729 total=0.532620

@@ -1,0 +1,4 @@
+started_at=2026-08-06T21:19:47.7391552Z
+http=200 bytes=1000000 speed_Bps=474626 total=2.106930
+curl_exit=0
+finished_at=2026-08-06T21:19:49.9072861Z

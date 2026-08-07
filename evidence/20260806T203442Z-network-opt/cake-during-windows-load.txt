@@ -1,0 +1,318 @@
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+20:48:39
+qdisc cake 802a: root refcnt 2 bandwidth 431824bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 4637289436 bytes 5144500 pkt (dropped 24911, overlimits 4464897 requeues 0)
+ backlog 0b 0p requeues 0
+ capacity estimate: 460616bit
+  pk_delay        158ms
+  av_delay       83.1ms
+  sp_delay       27.3ms
+  backlog            0b
+20:48:41
+qdisc cake 802a: root refcnt 2 bandwidth 431824bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 4637289436 bytes 5144500 pkt (dropped 24911, overlimits 4464897 requeues 0)
+ backlog 0b 0p requeues 0
+ capacity estimate: 460616bit
+  pk_delay        158ms
+  av_delay       83.1ms
+  sp_delay       27.3ms
+  backlog            0b
+20:48:42
+qdisc cake 802a: root refcnt 2 bandwidth 431824bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 4637289436 bytes 5144500 pkt (dropped 24911, overlimits 4464897 requeues 0)
+ backlog 0b 0p requeues 0
+ capacity estimate: 460616bit
+  pk_delay        158ms
+  av_delay       83.1ms
+  sp_delay       27.3ms
+  backlog            0b
+20:48:43
+qdisc cake 802a: root refcnt 2 bandwidth 430152bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 4637289548 bytes 5144501 pkt (dropped 24911, overlimits 4464897 requeues 0)
+ backlog 0b 0p requeues 0
+ capacity estimate: 458832bit
+  pk_delay        157ms
+  av_delay       82.7ms
+  sp_delay       20.5ms
+  backlog            0b
+20:48:44
+qdisc cake 802a: root refcnt 2 bandwidth 430152bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 4637289548 bytes 5144501 pkt (dropped 24911, overlimits 4464897 requeues 0)
+ backlog 0b 0p requeues 0
+ capacity estimate: 458832bit
+  pk_delay        157ms
+  av_delay       82.7ms
+  sp_delay       20.5ms
+  backlog            0b
+20:48:45
+qdisc cake 802a: root refcnt 2 bandwidth 430152bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 4637289548 bytes 5144501 pkt (dropped 24911, overlimits 4464897 requeues 0)
+ backlog 0b 0p requeues 0
+ capacity estimate: 458832bit
+  pk_delay        157ms
+  av_delay       82.7ms
+  sp_delay       20.5ms
+  backlog            0b
+20:48:46
+qdisc cake 802a: root refcnt 2 bandwidth 430152bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 4637289548 bytes 5144501 pkt (dropped 24911, overlimits 4464897 requeues 0)
+ backlog 0b 0p requeues 0
+ capacity estimate: 458832bit
+  pk_delay        157ms
+  av_delay       82.7ms
+  sp_delay       20.5ms
+  backlog            0b
+20:48:47
+qdisc cake 802a: root refcnt 2 bandwidth 430152bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 4637289548 bytes 5144501 pkt (dropped 24911, overlimits 4464897 requeues 0)
+ backlog 0b 0p requeues 0
+ capacity estimate: 458832bit
+  pk_delay        157ms
+  av_delay       82.7ms
+  sp_delay       20.5ms
+  backlog            0b
+20:48:48
+qdisc cake 802a: root refcnt 2 bandwidth 430152bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 4637289548 bytes 5144501 pkt (dropped 24911, overlimits 4464897 requeues 0)
+ backlog 0b 0p requeues 0
+ capacity estimate: 458832bit
+  pk_delay        157ms
+  av_delay       82.7ms
+  sp_delay       20.5ms
+  backlog            0b
+20:48:49
+qdisc cake 802a: root refcnt 2 bandwidth 426808bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 4637290158 bytes 5144505 pkt (dropped 24911, overlimits 4464901 requeues 0)
+ backlog 0b 0p requeues 0
+ capacity estimate: 455264bit
+  pk_delay        155ms
+  av_delay       81.5ms
+  sp_delay       7.03ms
+  backlog            0b
+20:48:50
+qdisc cake 802a: root refcnt 2 bandwidth 426808bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 4637290158 bytes 5144505 pkt (dropped 24911, overlimits 4464901 requeues 0)
+ backlog 0b 0p requeues 0
+ capacity estimate: 455264bit
+  pk_delay        155ms
+  av_delay       81.5ms
+  sp_delay       7.03ms
+  backlog            0b
+20:48:51
+qdisc cake 802a: root refcnt 2 bandwidth 425144bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 4637290294 bytes 5144507 pkt (dropped 24911, overlimits 4464903 requeues 0)
+ backlog 0b 0p requeues 0
+ capacity estimate: 453488bit
+  pk_delay        154ms
+  av_delay       80.8ms
+  sp_delay       4.26ms
+  backlog            0b
+20:48:52
+qdisc cake 802a: root refcnt 2 bandwidth 423480bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 4637290371 bytes 5144508 pkt (dropped 24911, overlimits 4464903 requeues 0)
+ backlog 0b 0p requeues 0
+ capacity estimate: 451720bit
+  pk_delay        153ms
+  av_delay       80.5ms
+  sp_delay       3.25ms
+  backlog            0b
+20:48:53
+qdisc cake 802a: root refcnt 2 bandwidth 423480bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 4637290371 bytes 5144508 pkt (dropped 24911, overlimits 4464903 requeues 0)
+ backlog 0b 0p requeues 0
+ capacity estimate: 451720bit
+  pk_delay        153ms
+  av_delay       80.5ms
+  sp_delay       3.25ms
+  backlog            0b
+20:48:54
+qdisc cake 802a: root refcnt 2 bandwidth 423480bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 4637290371 bytes 5144508 pkt (dropped 24911, overlimits 4464903 requeues 0)
+ backlog 0b 0p requeues 0
+ capacity estimate: 451720bit
+  pk_delay        153ms
+  av_delay       80.5ms
+  sp_delay       3.25ms
+  backlog            0b
+20:48:55
+qdisc cake 802a: root refcnt 2 bandwidth 421832bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 4637290489 bytes 5144509 pkt (dropped 24911, overlimits 4464903 requeues 0)
+ backlog 0b 0p requeues 0
+ capacity estimate: 449960bit
+  pk_delay        153ms
+  av_delay       80.2ms
+  sp_delay        2.5ms
+  backlog            0b
+20:48:56
+qdisc cake 802a: root refcnt 2 bandwidth 421832bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 4637290489 bytes 5144509 pkt (dropped 24911, overlimits 4464903 requeues 0)
+ backlog 0b 0p requeues 0
+ capacity estimate: 449960bit
+  pk_delay        153ms
+  av_delay       80.2ms
+  sp_delay        2.5ms
+  backlog            0b
+20:48:57
+qdisc cake 802a: root refcnt 2 bandwidth 421832bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 4637290489 bytes 5144509 pkt (dropped 24911, overlimits 4464903 requeues 0)
+ backlog 0b 0p requeues 0
+ capacity estimate: 449960bit
+  pk_delay        153ms
+  av_delay       80.2ms
+  sp_delay        2.5ms
+  backlog            0b
+20:48:58
+qdisc cake 802a: root refcnt 2 bandwidth 421832bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 4637290489 bytes 5144509 pkt (dropped 24911, overlimits 4464903 requeues 0)
+ backlog 0b 0p requeues 0
+ capacity estimate: 449960bit
+  pk_delay        153ms
+  av_delay       80.2ms
+  sp_delay        2.5ms
+  backlog            0b
+20:48:59
+qdisc cake 802a: root refcnt 2 bandwidth 420192bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 4637290616 bytes 5144511 pkt (dropped 24911, overlimits 4464903 requeues 0)
+ backlog 0b 0p requeues 0
+ capacity estimate: 448208bit
+  pk_delay        151ms
+  av_delay       79.6ms
+  sp_delay       1.46ms
+  backlog            0b
+20:49:00
+qdisc cake 802a: root refcnt 2 bandwidth 420192bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 4637290616 bytes 5144511 pkt (dropped 24911, overlimits 4464903 requeues 0)
+ backlog 0b 0p requeues 0
+ capacity estimate: 448208bit
+  pk_delay        151ms
+  av_delay       79.6ms
+  sp_delay       1.46ms
+  backlog            0b
+20:49:01
+qdisc cake 802a: root refcnt 2 bandwidth 420192bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 4637290616 bytes 5144511 pkt (dropped 24911, overlimits 4464903 requeues 0)
+ backlog 0b 0p requeues 0
+ capacity estimate: 448208bit
+  pk_delay        151ms
+  av_delay       79.6ms
+  sp_delay       1.46ms
+  backlog            0b
+20:49:02
+qdisc cake 802a: root refcnt 2 bandwidth 420192bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 4637290616 bytes 5144511 pkt (dropped 24911, overlimits 4464903 requeues 0)
+ backlog 0b 0p requeues 0
+ capacity estimate: 448208bit
+  pk_delay        151ms
+  av_delay       79.6ms
+  sp_delay       1.46ms
+  backlog            0b
+20:49:03
+qdisc cake 802a: root refcnt 2 bandwidth 420192bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 4637290616 bytes 5144511 pkt (dropped 24911, overlimits 4464903 requeues 0)
+ backlog 0b 0p requeues 0
+ capacity estimate: 448208bit
+  pk_delay        151ms
+  av_delay       79.6ms
+  sp_delay       1.46ms
+  backlog            0b
+20:49:04
+qdisc cake 802a: root refcnt 2 bandwidth 420192bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 4637290616 bytes 5144511 pkt (dropped 24911, overlimits 4464903 requeues 0)
+ backlog 0b 0p requeues 0
+ capacity estimate: 448208bit
+  pk_delay        151ms
+  av_delay       79.6ms
+  sp_delay       1.46ms
+  backlog            0b
+20:49:05
+qdisc cake 802a: root refcnt 2 bandwidth 420192bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 4637290616 bytes 5144511 pkt (dropped 24911, overlimits 4464903 requeues 0)
+ backlog 0b 0p requeues 0
+ capacity estimate: 448208bit
+  pk_delay        151ms
+  av_delay       79.6ms
+  sp_delay       1.46ms
+  backlog            0b
+20:49:06
+qdisc cake 802a: root refcnt 2 bandwidth 420192bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 4637290616 bytes 5144511 pkt (dropped 24911, overlimits 4464903 requeues 0)
+ backlog 0b 0p requeues 0
+ capacity estimate: 448208bit
+  pk_delay        151ms
+  av_delay       79.6ms
+  sp_delay       1.46ms
+  backlog            0b
+20:49:07
+qdisc cake 802a: root refcnt 2 bandwidth 420192bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 4637290616 bytes 5144511 pkt (dropped 24911, overlimits 4464903 requeues 0)
+ backlog 0b 0p requeues 0
+ capacity estimate: 448208bit
+  pk_delay        151ms
+  av_delay       79.6ms
+  sp_delay       1.46ms
+  backlog            0b
+20:49:08
+qdisc cake 802a: root refcnt 2 bandwidth 420192bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 4637290616 bytes 5144511 pkt (dropped 24911, overlimits 4464903 requeues 0)
+ backlog 0b 0p requeues 0
+ capacity estimate: 448208bit
+  pk_delay        151ms
+  av_delay       79.6ms
+  sp_delay       1.46ms
+  backlog            0b
+20:49:09
+qdisc cake 802a: root refcnt 2 bandwidth 420192bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 4637290616 bytes 5144511 pkt (dropped 24911, overlimits 4464903 requeues 0)
+ backlog 0b 0p requeues 0
+ capacity estimate: 448208bit
+  pk_delay        151ms
+  av_delay       79.6ms
+  sp_delay       1.46ms
+  backlog            0b
+20:49:10
+qdisc cake 802a: root refcnt 2 bandwidth 416920bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 4637290864 bytes 5144514 pkt (dropped 24911, overlimits 4464905 requeues 0)
+ backlog 0b 0p requeues 0
+ capacity estimate: 444720bit
+  pk_delay        150ms
+  av_delay       78.7ms
+  sp_delay        950us
+  backlog            0b
+20:49:11
+qdisc cake 802a: root refcnt 2 bandwidth 416920bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 4637291292 bytes 5144518 pkt (dropped 24911, overlimits 4464909 requeues 0)
+ backlog 0b 0p requeues 0
+ capacity estimate: 444720bit
+  pk_delay        147ms
+  av_delay       77.5ms
+  sp_delay        563us
+  backlog            0b
+20:49:12
+qdisc cake 802a: root refcnt 2 bandwidth 416920bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 4637291292 bytes 5144518 pkt (dropped 24911, overlimits 4464909 requeues 0)
+ backlog 0b 0p requeues 0
+ capacity estimate: 444720bit
+  pk_delay        147ms
+  av_delay       77.5ms
+  sp_delay        563us
+  backlog            0b
+20:49:13
+qdisc cake 802a: root refcnt 2 bandwidth 416920bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 4637291292 bytes 5144518 pkt (dropped 24911, overlimits 4464909 requeues 0)
+ backlog 0b 0p requeues 0
+ capacity estimate: 444720bit
+  pk_delay        147ms
+  av_delay       77.5ms
+  sp_delay        563us
+  backlog            0b
+20:49:14
+qdisc cake 802a: root refcnt 2 bandwidth 416920bit autorate-ingress besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 4637291292 bytes 5144518 pkt (dropped 24911, overlimits 4464909 requeues 0)
+ backlog 0b 0p requeues 0
+ capacity estimate: 444720bit
+  pk_delay        147ms
+  av_delay       77.5ms
+  sp_delay        563us
+  backlog            0b

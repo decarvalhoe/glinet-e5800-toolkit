@@ -1,0 +1,5 @@
+collected_at=2026-08-06T21:19:47Z
+purpose=publish a self-contained successful throughput sample under the final fixed 5 Mbit/s SQM configuration
+method=Windows curl.exe source-bound to router Wi-Fi downloaded exactly 1000000 bytes while a 100-packet WSL ping ran through the router path; router SQM state was sampled read-only
+safety=bounded 1 MB download; no configuration change
+limitation=cellular measurements vary and one short run does not establish long-term capacity
