@@ -26,6 +26,7 @@ api/
   ubus-list.txt            73 services ubus avec signatures (dump `ubus -v list`)
 tools/
   glinet.py                client CLI JSON-RPC, zéro dépendance
+  radio-monitor.py         télémétrie radio passive (historique RSRP/RSRQ/SINR + dashboard)
   at-probe.sh              relevé radio complet (serving cell, CA, bandes, températures)
   bufferbloat.sh           mesure de latence à vide / sous charge
   band-lock-b20.sh         tentative de lock de bande (échoue — voir docs)
@@ -33,6 +34,7 @@ etc/hotplug.d/iface/
   99-sqm-modem             réattache SQM quand le l3_device du modem change
 docs/
   COUNTER-EXPERTISE.md     nouvelle baseline, preuves et feuille de route sûre
+  RADIO-MONITOR.md         télémétrie radio passive + revalidation glinet.py (OBSERVÉ)
   EXPERIMENT-PROTOCOL.md   règles de mesure, barrières et critères d'arrêt
   DIAGNOSTIC.md            relevés radio/Wi-Fi + résultats négatifs
   CUSTOM.md                surface de personnalisation réelle, paquets, méthode
