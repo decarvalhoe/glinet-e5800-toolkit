@@ -29,11 +29,20 @@ au WAN, n'active pas le modem. Gère l'état « no fix ».
 ```sh
 python3 tools/gps-fix.py --once           # un relevé (position, ou "no fix")
 python3 tools/gps-fix.py --json            # JSON
-python3 tools/gps-fix.py --watch --tag     # boucle : log + tague heatmap.jsonl (position+signal)
+python3 tools/gps-fix.py --sats            # CHERCHEUR : satellites en vue + SNR, en boucle
+python3 tools/gps-fix.py --watch --tag     # GUETTEUR : boucle, tague heatmap.jsonl si fix
 ```
+
+`--sats` interroge la trame `GSV` et affiche, en continu, le **nombre de satellites en vue
+par constellation** (GPS/GLONASS/Galileo/BeiDou), le nombre suivis (SNR>0) et le SNR max —
+pratique pour **trouver le meilleur emplacement** (approche une fenêtre, regarde les chiffres monter).
 
 `--tag` lit le signal courant dans le `state.json` de radio-monitor et écrit un enregistrement
 `{lat, lon, alt, sats, hdop, rsrp, sinr, net}` dans `heatmap.jsonl` à chaque fix.
+
+**Guetteur automatique (persistant).** Le service procd `etc/init.d/radio-monitor` inclut une
+instance `gps` qui lance `gps-fix.py --watch --tag` : dès qu'un fix apparaît (fenêtre/extérieur),
+la heatmap se remplit toute seule, sans intervention, et ça survit au reboot.
 
 ## `gps-heatmap.py` — carte de couverture
 
