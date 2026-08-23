@@ -1,0 +1,28 @@
+#!/bin/sh /etc/rc.common
+# onion-dashboard — service caché Tor (v3, client-auth) exposant le dashboard radio-monitor
+# (127.0.0.1:8090) en .onion, joignable de partout malgré le CGNAT.
+#
+# Instance Tor AUTONOME : SocksPort 0, pas de TransPort → ne touche NI au routage NI au
+# firewall du routeur. N'affecte pas le trafic des clients LAN. Réversible :
+#   /etc/init.d/onion-dashboard stop; /etc/init.d/onion-dashboard disable
+#   rm /etc/init.d/onion-dashboard; rm -rf /root/tor-onion
+#
+# Runtime attendu (hors dépôt) : /root/tor-onion/torrc (+ data/, hs/). Voir docs/ONION-DASHBOARD.md.
+# La clé de service (adresse .onion) et les authorized_clients vivent dans /root/tor-onion/hs
+# et NE SONT PAS versionnés.
+
+START=96
+STOP=09
+USE_PROCD=1
+TORRC=/root/tor-onion/torrc
+TOR=/usr/sbin/tor
+
+start_service() {
+    [ -f "$TORRC" ] || { echo "torrc absent ($TORRC) — voir docs/ONION-DASHBOARD.md" >&2; return 1; }
+    procd_open_instance onion
+    procd_set_param command "$TOR" -f "$TORRC"
+    procd_set_param respawn 3600 10 0
+    procd_set_param stdout 1
+    procd_set_param stderr 1
+    procd_close_instance
+}
