@@ -68,9 +68,39 @@ Statut des affirmations : l'exactitude du hash `glinet.py` et l'accès aux méth
 sont `OBSERVÉ`. Les seuils de qualité restent `SOURCE EXTERNE`. Aucune corrélation débit
 n'est encore mesurée (voir ci-dessous).
 
+## Alertes — `radio-alert.py`
+
+Couche d'alerte au-dessus de l'historique. **Lecture seule et découplée** : elle n'appelle
+jamais le routeur, elle analyse `history.jsonl`. Conditions :
+
+- **seuils** RSRP / SINR (WARN puis CRIT) ;
+- **anomalie** : chute rapide vs baseline glissante (écart en dB ou z-score) — alerte
+  *avant* la coupure franche ;
+- **péremption** : plus aucun nouvel échantillon depuis `RA_STALE_S` s ⇒ buffer figé,
+  coupure probable.
+
+Hystérésis : émission uniquement aux transitions (montée d'alerte, changement de
+conditions, rétablissement), via `alert-state.json`. Journal dans `alerts.jsonl`. Codes de
+sortie `0/1/2` = OK/WARN/CRIT (pratique en cron).
+
+```bash
+python3 tools/radio-alert.py --check          # une évaluation puis quitte (cron)
+python3 tools/radio-alert.py --watch          # démon : évalue en boucle
+python3 tools/radio-alert.py --check --json   # sortie structurée (stdout JSON pur)
+```
+
+**Notification opt-in.** Par défaut : log seul (`alerts.jsonl` + stderr). Pour *envoyer*
+réellement (SMS via `sendsms`, push, webhook), fournir une commande qui reçoit la ligne
+d'alerte sur stdin : `--notify-cmd '…'` ou `RA_NOTIFY_CMD`. C'est une **action sortante** :
+la brancher est un choix explicite, hors du périmètre lecture seule.
+
+Réglages (env) : `RA_RSRP_WARN` (−105), `RA_RSRP_CRIT` (−113), `RA_SINR_WARN` (3),
+`RA_SINR_CRIT` (0), `RA_DROP_DB` (8), `RA_ZSCORE` (2.5), `RA_WINDOW` (60), `RA_STALE_S` (120).
+
 ## Limites et suites
 
 - Pas encore de corrélation avec le **débit** : il faudrait une source de trafic
   (`/proc/net/dev` du modem, ou une méthode RPC de compteurs) échantillonnée en parallèle.
-- Pas d'alerte encore (seuil / anomalie). Prévu comme couche au-dessus de `state.json`.
 - `get_signals` expose un horodatage modem ; l'agent ne corrige pas de dérive d'horloge.
+- La péremption s'appuie sur l'avancée de `max_ts` en temps réel : robuste au décalage
+  d'horloge modem, mais suppose que `radio-monitor` tourne pour alimenter l'historique.
