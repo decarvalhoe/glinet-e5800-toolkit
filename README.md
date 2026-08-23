@@ -28,6 +28,7 @@ tools/
   glinet.py                client CLI JSON-RPC, zéro dépendance
   radio-monitor.py         télémétrie radio passive (historique RSRP/RSRQ/SINR + dashboard)
   radio-alert.py           alertes/anomalies au-dessus de radio-monitor (seuils, anomalie, péremption)
+  radio-digest.py          synthèse (quotidienne) : dispo, RSRP/SINR, pire créneau, bilan alertes
   at-probe.sh              relevé radio complet (serving cell, CA, bandes, températures)
   bufferbloat.sh           mesure de latence à vide / sous charge
   band-lock-b20.sh         tentative de lock de bande (échoue — voir docs)

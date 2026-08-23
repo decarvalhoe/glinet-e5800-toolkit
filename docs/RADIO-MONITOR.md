@@ -97,6 +97,24 @@ la brancher est un choix explicite, hors du périmètre lecture seule.
 Réglages (env) : `RA_RSRP_WARN` (−105), `RA_RSRP_CRIT` (−113), `RA_SINR_WARN` (3),
 `RA_SINR_CRIT` (0), `RA_DROP_DB` (8), `RA_ZSCORE` (2.5), `RA_WINDOW` (60), `RA_STALE_S` (120).
 
+## Synthèse — `radio-digest.py`
+
+Agrège `history.jsonl` + `alerts.jsonl` sur une fenêtre et produit un rapport lisible
+(lecture seule, n'appelle pas le routeur) : disponibilité estimée (part d'échantillons de
+qualité ≥ moyenne), RSRP/SINR min/p10/moy/max, distribution de qualité, types réseau,
+**pire créneau de 10 min** (RSRP moyen le plus bas), et bilan des alertes (levées/rétablies,
+temps dégradé cumulé, pire dégradation).
+
+```bash
+python3 tools/radio-digest.py                  # 24 dernières heures
+python3 tools/radio-digest.py --since 7d        # fenêtre glissante
+python3 tools/radio-digest.py --day 2026-08-23  # une journée UTC
+python3 tools/radio-digest.py --json            # sortie structurée
+```
+
+La fenêtre glissante prend « maintenant » = dernier `ts` de l'historique (robuste au décalage
+d'horloge modem). Notification opt-in : `--notify-cmd` / `RD_NOTIFY_CMD` (envoi mail/SMS/push).
+
 ## Limites et suites
 
 - Pas encore de corrélation avec le **débit** : il faudrait une source de trafic
