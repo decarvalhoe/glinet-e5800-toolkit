@@ -1,0 +1,56 @@
+#!/bin/sh /etc/rc.common
+# radio-monitor — télémétrie radio (LECTURE SEULE) lancée au boot dans le chroot Alpine.
+#
+# Installe sur le HOST OpenWrt (pas dans le chroot) :
+#   cp etc/init.d/radio-monitor /etc/init.d/radio-monitor
+#   chmod +x /etc/init.d/radio-monitor
+#   /etc/init.d/radio-monitor enable && /etc/init.d/radio-monitor start
+# Réversible :
+#   /etc/init.d/radio-monitor stop; /etc/init.d/radio-monitor disable; rm /etc/init.d/radio-monitor
+#
+# SÛRETÉ : ne touche jamais au réseau. Les deux services n'appellent que
+# `modem get_signals` (lecture) et analysent des fichiers locaux. Aucune action WAN.
+# Pré-requis : chroot Alpine en /opt/alpine (python3), runtime en /opt/alpine/opt/radio-monitor,
+# identifiants dans /opt/alpine/root/gltools/config.json (clé "password").
+
+START=95
+STOP=10
+USE_PROCD=1
+
+CHROOT=/opt/alpine
+APP=/opt/radio-monitor                       # chemin vu DEPUIS le chroot
+CRED="$CHROOT/root/gltools/config.json"
+STATE=/root/.radio-monitor                    # chemin vu depuis le chroot
+
+ensure_mounts() {
+    for m in proc sys dev; do
+        grep -q " $CHROOT/$m " /proc/mounts 2>/dev/null && continue
+        mkdir -p "$CHROOT/$m"; mount -o bind "/$m" "$CHROOT/$m" 2>/dev/null
+    done
+}
+
+read_pass() {
+    sed -n 's/.*"password"[[:space:]]*:[[:space:]]*"\([^"]*\)".*/\1/p' "$CRED" 2>/dev/null
+}
+
+start_service() {
+    ensure_mounts
+    PW=$(read_pass)
+
+    procd_open_instance monitor
+    procd_set_param command chroot "$CHROOT" /usr/bin/python3 "$APP/radio-monitor.py" --serve
+    procd_set_param env HOME=/root RM_STATE="$STATE" RM_PORT=8090 \
+        GLINET_HOST=192.168.8.1 GLINET_PASSWORD="$PW"
+    procd_set_param respawn 3600 15 0          # retry infini : tolère un WAN pas encore prêt au boot
+    procd_set_param stdout 1
+    procd_set_param stderr 1
+    procd_close_instance
+
+    procd_open_instance alert
+    procd_set_param command chroot "$CHROOT" /usr/bin/python3 "$APP/radio-alert.py" --watch
+    procd_set_param env HOME=/root RM_STATE="$STATE"
+    procd_set_param respawn 3600 20 0
+    procd_set_param stdout 1
+    procd_set_param stderr 1
+    procd_close_instance
+}
