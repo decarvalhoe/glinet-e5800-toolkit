@@ -41,6 +41,8 @@ docs/
   COUNTER-EXPERTISE.md     nouvelle baseline, preuves et feuille de route sûre
   RADIO-MONITOR.md         télémétrie radio passive + revalidation glinet.py (OBSERVÉ)
   GPS-HEATMAP.md           GPS (fix via AT) + heatmap de couverture signal↔position
+  DEVICE-SURVEY.md         inventaire matériel + features (Tor/VPN/NAS/batterie/écran/GPS)
+  ALPINE-CHROOT.md         runtime chroot Alpine sur le routeur + accès hôte /proc/1/root
   EXPERIMENT-PROTOCOL.md   règles de mesure, barrières et critères d'arrêt
   DIAGNOSTIC.md            relevés radio/Wi-Fi + résultats négatifs
   CUSTOM.md                surface de personnalisation réelle, paquets, méthode
