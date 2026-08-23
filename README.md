@@ -29,6 +29,8 @@ tools/
   radio-monitor.py         télémétrie radio passive (historique RSRP/RSRQ/SINR + dashboard)
   radio-alert.py           alertes/anomalies au-dessus de radio-monitor (seuils, anomalie, péremption)
   radio-digest.py          synthèse (quotidienne) : dispo, RSRP/SINR, pire créneau, bilan alertes
+  gps-fix.py               lit le fix GNSS (AT, lecture seule) + tague la position sur le signal
+  gps-heatmap.py           agrège position+signal en carte de couverture (résumé + GeoJSON)
   at-probe.sh              relevé radio complet (serving cell, CA, bandes, températures)
   bufferbloat.sh           mesure de latence à vide / sous charge
   band-lock-b20.sh         tentative de lock de bande (échoue — voir docs)
@@ -37,6 +39,7 @@ etc/hotplug.d/iface/
 docs/
   COUNTER-EXPERTISE.md     nouvelle baseline, preuves et feuille de route sûre
   RADIO-MONITOR.md         télémétrie radio passive + revalidation glinet.py (OBSERVÉ)
+  GPS-HEATMAP.md           GPS (fix via AT) + heatmap de couverture signal↔position
   EXPERIMENT-PROTOCOL.md   règles de mesure, barrières et critères d'arrêt
   DIAGNOSTIC.md            relevés radio/Wi-Fi + résultats négatifs
   CUSTOM.md                surface de personnalisation réelle, paquets, méthode
