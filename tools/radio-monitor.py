@@ -41,6 +41,10 @@ from glinet import Glinet, GlinetError  # noqa: E402
 BUS = os.environ.get("RM_BUS", "cpu")
 INTERVAL = float(os.environ.get("RM_INTERVAL", "30"))     # s entre deux relevés
 PORT = int(os.environ.get("RM_PORT", "8090"))
+# Loopback par defaut : le dashboard n'a aucune authentification. Elargir sciemment
+# via RM_BIND / --bind (ex. 192.168.8.1 pour le LAN). Le service .onion passe par
+# 127.0.0.1 et n'a donc pas besoin d'un bind plus large.
+BIND = os.environ.get("RM_BIND", "127.0.0.1")
 STATE_DIR = Path(os.environ.get("RM_STATE", Path.home() / ".radio-monitor"))
 RECENT_MAX = 240                                          # points gardés pour le graphe
 
@@ -221,7 +225,7 @@ small{{color:#6e7681}}svg{{background:#010409;border-radius:4px}}</style></head>
     )
 
 
-def serve(hist, port):
+def serve(hist, port, bind=BIND):
     import http.server
     import socketserver
     import threading
@@ -247,10 +251,12 @@ def serve(hist, port):
             self.end_headers()
             self.wfile.write(body)
 
-    srv = socketserver.ThreadingTCPServer(("0.0.0.0", port), H)
+    srv = socketserver.ThreadingTCPServer((bind, port), H)
     srv.daemon_threads = True
     threading.Thread(target=srv.serve_forever, daemon=True).start()
-    print("radio-monitor : dashboard http://0.0.0.0:%d (LAN)" % port)
+    print("radio-monitor : dashboard http://%s:%d" % (bind, port))
+    if bind not in ("127.0.0.1", "localhost", "::1"):
+        print("  ATTENTION : ecoute sur %s - dashboard sans authentification, joignable au-dela du loopback." % bind)
 
 
 def main():
@@ -261,6 +267,8 @@ def main():
     ap.add_argument("--interval", type=float, default=INTERVAL, help="secondes entre relevés")
     ap.add_argument("--host", default=os.environ.get("GLINET_HOST", "192.168.8.1"))
     ap.add_argument("--port", type=int, default=PORT)
+    ap.add_argument("--bind", default=BIND,
+                    help="adresse d'ecoute du dashboard (defaut 127.0.0.1)")
     args = ap.parse_args()
 
     g = Glinet(host=args.host)
@@ -295,7 +303,7 @@ def main():
         return
 
     if args.serve:
-        serve(hist, args.port)
+        serve(hist, args.port, args.bind)
     print("radio-monitor : collecte toutes les %gs (Ctrl-C pour arrêter)" % args.interval)
     while True:
         try:

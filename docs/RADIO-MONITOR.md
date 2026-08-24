@@ -30,11 +30,22 @@ export GLINET_PASSWORD='...'
 python3 tools/radio-monitor.py --once      # un relevé + résumé
 python3 tools/radio-monitor.py --json      # un relevé, JSON brut (pipeline)
 python3 tools/radio-monitor.py             # démon : collecte en continu
-python3 tools/radio-monitor.py --serve     # démon + dashboard http://<hôte>:8090
+python3 tools/radio-monitor.py --serve     # démon + dashboard http://127.0.0.1:8090
+python3 tools/radio-monitor.py --serve --bind 192.168.8.1   # exposer au LAN (voir ci-dessous)
 ```
 
 Variables : `GLINET_PASSWORD`, `GLINET_HOST` (défaut `192.168.8.1`), `RM_INTERVAL` (30 s),
-`RM_PORT` (8090), `RM_BUS` (`cpu`), `RM_STATE` (défaut `~/.radio-monitor/`).
+`RM_PORT` (8090), `RM_BIND` (`127.0.0.1`), `RM_BUS` (`cpu`), `RM_STATE` (défaut
+`~/.radio-monitor/`).
+
+### Adresse d'écoute
+
+Le dashboard **n'a aucune authentification**. Il écoute donc sur `127.0.0.1` par défaut :
+seuls les processus locaux — dont le service caché Tor, qui se connecte à
+`127.0.0.1:8090` — y accèdent. L'exposer au LAN est un choix explicite
+(`--bind 192.168.8.1` ou `RM_BIND`), et l'agent affiche alors un avertissement au
+démarrage. Ne jamais binder `0.0.0.0` sur un routeur : la restriction ne reposerait
+plus que sur le pare-feu.
 
 État runtime, **non versionné** (`~/.radio-monitor/` par défaut, hors du dépôt) :
 - `history.jsonl` — un échantillon unique par ligne, dédupliqué par `timestamp` ;
