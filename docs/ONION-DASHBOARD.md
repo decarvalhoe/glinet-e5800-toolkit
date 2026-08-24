@@ -59,6 +59,21 @@ Redémarrer : `/etc/init.d/onion-dashboard restart`.
 
 Puis ouvrir `http://‹onion56›.onion`.
 
+## Résilience aux coupures (lien cellulaire instable)
+
+Trois niveaux, pour que tout revienne **seul** après une coupure :
+
+1. **WAN cellulaire** — auto-redialé par le routeur (`carrier-monitor`, `quectel_monitor_daemon`,
+   et `kmwan` qui pinge 1.1.1.1/8.8.8.8/OpenDNS en `track_mode=force`). Non modifié (WAN-critique).
+2. **Services de monitoring** — procd `respawn` (redémarrage infini) + boucles tolérantes aux
+   erreurs : ils encaissent l'outage et reprennent dès le retour.
+3. **Service `.onion`** — [`tools/onion-watchdog.py`](../tools/onion-watchdog.py) (instance du
+   service `radio-monitor`, pas de `onion-dashboard`, pour ne pas s'auto-redémarrer) : après
+   `WD_DOWN_THRESHOLD` sondes ratées il déclare une coupure, et **au retour de la connectivité
+   il redémarre `onion-dashboard`** pour re-publier vite le descripteur (l'IP cellulaire ayant
+   changé). Sûr : ne touche NI WAN NI firewall. Réglages : `WD_PROBE_URL`, `WD_INTERVAL`,
+   `WD_DOWN_THRESHOLD`.
+
 ## Installation du service
 
 ```sh

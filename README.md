@@ -32,6 +32,7 @@ tools/
   gps-fix.py               lit le fix GNSS (AT, lecture seule) + tague la position sur le signal
   gps-heatmap.py           agrège position+signal en carte de couverture (résumé + GeoJSON)
   device-monitor.py        télémétrie matérielle : batterie (MCU) + température, alertes seuils
+  onion-watchdog.py        redémarre le service .onion quand la connectivité revient après coupure
   at-probe.sh              relevé radio complet (serving cell, CA, bandes, températures)
   bufferbloat.sh           mesure de latence à vide / sous charge
   band-lock-b20.sh         tentative de lock de bande (échoue — voir docs)
