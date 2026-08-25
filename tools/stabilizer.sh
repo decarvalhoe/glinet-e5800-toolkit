@@ -26,8 +26,12 @@ WANT_SA_BAND="38:41:75:76:77:78"    # idem pour la 5G SA
 WANT_SQM_ENABLED="0"                # CAKE casse l'accélération IPA (voir SQM-VS-IPA)
 WANT_KMWAN_WWAN_DISABLED="1"        # le répéteur hors du pool WAN : pas d'ECMP silencieux
 WANT_6G_IFACE="wifi6g"              # AP 6 GHz dédié au poste
-WANT_6G_SSID="GORKINOO6"
+WANT_6G_SSID="MY-SSID"              # remplacé par la valeur réelle via desired.conf
 # -------------------------------------------------------------------------------
+
+# Valeurs locales (SSID réel, etc.) : hors du dépôt, pour ne rien publier par accident.
+# Fichier optionnel, format shell :  WANT_6G_SSID="mon-ssid"
+[ -r /opt/stabilizer/desired.conf ] && . /opt/stabilizer/desired.conf
 
 while [ $# -gt 0 ]; do
     case "$1" in

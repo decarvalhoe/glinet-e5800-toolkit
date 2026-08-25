@@ -31,7 +31,7 @@ Le journal est le vrai produit : il dit **ce qui bouge tout seul** sur cet appar
 | `sqm.modem.enabled` | `0` | CAKE casse l'IPA — voir [`SQM-VS-IPA-20260825.md`](SQM-VS-IPA-20260825.md) |
 | qdisc du `l3_device` WAN | aucun `cake` | rattrape une réattache par hotplug |
 | `kmwan.wwan.disabled` | `1` | le répéteur hors du pool WAN, pas d'ECMP silencieux |
-| `wireless.wifi6g` | actif, SSID `GORKINOO6` | radio dédiée au poste, séparée du répéteur |
+| `wireless.wifi6g` | actif, SSID de l'AP 6 GHz | radio dédiée au poste, séparée du répéteur |
 
 ## Sûreté
 
@@ -43,6 +43,15 @@ Inspecter sans rien écrire :
 
 ```sh
 /opt/stabilizer/stabilizer.sh --check     # signale les écarts, ne corrige rien
+```
+
+## Valeurs locales
+
+Le SSID réel n'est pas dans le dépôt. Le script lit, s'il existe,
+`/opt/stabilizer/desired.conf` — un fichier shell hors versionnement :
+
+```sh
+WANT_6G_SSID="mon-ssid-reel"
 ```
 
 ## Un défaut de lecture qu'il a fallu corriger
