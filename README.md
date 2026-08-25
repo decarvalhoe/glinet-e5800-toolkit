@@ -54,6 +54,7 @@ docs/
   UNTHROTTLE-20260808.md   retrait du plafond CAKE fixe : 3,6 -> 39 Mbit/s, preuves et limites
   STABILITY-20260817.md    diagnostic de stabilité : pourquoi le post-mortem embarqué est impossible
   THROUGHPUT-PROBE.md      sonde de débit + deux artefacts de mesure du modem (QCAINFO, pont AT)
+  NR-BAND-20260825.md      la bande NR décide du débit, pas le signal : 2,2 -> 16,6 Mbit/s
 ```
 
 ## Hypothèse historique : index API public incomplet
