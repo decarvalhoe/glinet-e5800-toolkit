@@ -1,0 +1,351 @@
+===== SAMPLE 2026-08-17T14:30:44Z =====
+
++CSQ: 23,99
+
+OK
+
+
++QNWINFO: "FDD LTE","22802","LTE BAND 7",2850
++QNWINFO: "TDD NR5G","22802","NR5G BAND 78",0
+
+OK
+
+rmnet_data1 Link encap:UNSPEC  HWaddr 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00
+          inet addr:[IPv4]  Mask:[IPv4]
+          UP RUNNING NOARP  MTU:1500  Metric:1
+          RX packets:1242 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:1264 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+rx_bytes=684745
+rx_dropped=0
+tx_bytes=627078
+tx_dropped=0
+===== SAMPLE 2026-08-17T14:30:54Z =====
+
++CSQ: 23,99
+
+OK
+
+
++QNWINFO: "FDD LTE","22802","LTE BAND 7",2850
++QNWINFO: "TDD NR5G","22802","NR5G BAND 78",0
+
+OK
+
+rmnet_data1 Link encap:UNSPEC  HWaddr 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00
+          inet addr:[IPv4]  Mask:[IPv4]
+          UP RUNNING NOARP  MTU:1500  Metric:1
+          RX packets:1402 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:1427 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+rx_bytes=747720
+rx_dropped=0
+tx_bytes=661246
+tx_dropped=0
+===== SAMPLE 2026-08-17T14:31:04Z =====
+
++CSQ: 18,99
+
+OK
+
+
++QNWINFO: "FDD LTE","22802","LTE BAND 7",2850
++QNWINFO: "TDD NR5G","22802","NR5G BAND 78",0
+
+OK
+
+rmnet_data1 Link encap:UNSPEC  HWaddr 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00
+          inet addr:[IPv4]  Mask:[IPv4]
+          UP RUNNING NOARP  MTU:1500  Metric:1
+          RX packets:1530 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:1586 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+rx_bytes=787616
+rx_dropped=0
+tx_bytes=703415
+tx_dropped=0
+===== SAMPLE 2026-08-17T14:31:14Z =====
+
++CSQ: 17,99
+
+OK
+
+
++QNWINFO: "FDD LTE","22802","LTE BAND 7",2850
++QNWINFO: "TDD NR5G","22802","NR5G BAND 78",0
+
+OK
+
+rmnet_data1 Link encap:UNSPEC  HWaddr 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00
+          inet addr:[IPv4]  Mask:[IPv4]
+          UP RUNNING NOARP  MTU:1500  Metric:1
+          RX packets:1729 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:1787 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+rx_bytes=854024
+rx_dropped=0
+tx_bytes=732478
+tx_dropped=0
+===== SAMPLE 2026-08-17T14:31:24Z =====
+
++CSQ: 18,99
+
+OK
+
+
++QNWINFO: "FDD LTE","22802","LTE BAND 7",2850
++QNWINFO: "TDD NR5G","22802","NR5G BAND 78",0
+
+OK
+
+rmnet_data1 Link encap:UNSPEC  HWaddr 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00
+          inet addr:[IPv4]  Mask:[IPv4]
+          UP RUNNING NOARP  MTU:1500  Metric:1
+          RX packets:3589 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:4873 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+rx_bytes=1699976
+rx_dropped=0
+tx_bytes=4761766
+tx_dropped=0
+===== SAMPLE 2026-08-17T14:31:34Z =====
+
++CSQ: 19,99
+
+OK
+
+
++QNWINFO: "FDD LTE","22802","LTE BAND 7",2850
++QNWINFO: "TDD NR5G","22802","NR5G BAND 78",0
+
+OK
+
+rmnet_data1 Link encap:UNSPEC  HWaddr 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00
+          inet addr:[IPv4]  Mask:[IPv4]
+          UP RUNNING NOARP  MTU:1500  Metric:1
+          RX packets:5186 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:7659 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+rx_bytes=2538648
+rx_dropped=0
+tx_bytes=8316692
+tx_dropped=0
+===== SAMPLE 2026-08-17T14:31:44Z =====
+
++CSQ: 18,99
+
+OK
+
+
++QNWINFO: "FDD LTE","22802","LTE BAND 7",2850
++QNWINFO: "TDD NR5G","22802","NR5G BAND 78",0
+
+OK
+
+rmnet_data1 Link encap:UNSPEC  HWaddr 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00
+          inet addr:[IPv4]  Mask:[IPv4]
+          UP RUNNING NOARP  MTU:1500  Metric:1
+          RX packets:6199 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:9004 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+rx_bytes=3039336
+rx_dropped=0
+tx_bytes=9843128
+tx_dropped=0
+===== SAMPLE 2026-08-17T14:31:55Z =====
+
++CSQ: 23,99
+
+OK
+
+
++QNWINFO: "FDD LTE","22802","LTE BAND 7",2850
++QNWINFO: "TDD NR5G","22802","NR5G BAND 78",0
+
+OK
+
+rmnet_data1 Link encap:UNSPEC  HWaddr 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00
+          inet addr:[IPv4]  Mask:[IPv4]
+          UP RUNNING NOARP  MTU:1500  Metric:1
+          RX packets:7387 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:11450 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+rx_bytes=3167639
+rx_dropped=0
+tx_bytes=13165372
+tx_dropped=0
+===== SAMPLE 2026-08-17T14:32:05Z =====
+
++CSQ: 18,99
+
+OK
+
+
++QNWINFO: No Service
+
+OK
+
+rmnet_data1 Link encap:UNSPEC  HWaddr 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00
+          inet addr:[IPv4]  Mask:[IPv4]
+          UP RUNNING NOARP  MTU:1500  Metric:1
+          RX packets:8049 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:12730 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+rx_bytes=3241125
+rx_dropped=0
+tx_bytes=14810324
+tx_dropped=0
+===== SAMPLE 2026-08-17T14:32:15Z =====
+
++CSQ: 23,99
+
+OK
+
+
++QNWINFO: "FDD LTE","22802","LTE BAND 7",2850
++QNWINFO: "FDD NR5G","22802","NR5G BAND 8",0
+
+OK
+
+rmnet_data1 Link encap:UNSPEC  HWaddr 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00
+          inet addr:[IPv4]  Mask:[IPv4]
+          UP RUNNING NOARP  MTU:1500  Metric:1
+          RX packets:9049 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:14657 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+rx_bytes=3394039
+rx_dropped=0
+tx_bytes=17344807
+tx_dropped=0
+===== SAMPLE 2026-08-17T14:32:25Z =====
+
++CSQ: 23,99
+
+OK
+
+
++QNWINFO: "FDD LTE","22802","LTE BAND 7",2850
++QNWINFO: "TDD NR5G","22802","NR5G BAND 78",0
+
+OK
+
+rmnet_data1 Link encap:UNSPEC  HWaddr 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00
+          inet addr:[IPv4]  Mask:[IPv4]
+          UP RUNNING NOARP  MTU:1500  Metric:1
+          RX packets:9852 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:16284 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+rx_bytes=3482164
+rx_dropped=0
+tx_bytes=19398704
+tx_dropped=0
+===== SAMPLE 2026-08-17T14:32:35Z =====
+
++CSQ: 24,99
+
+OK
+
+
++QNWINFO: "FDD LTE","22802","LTE BAND 7",2850
++QNWINFO: "TDD NR5G","22802","NR5G BAND 78",0
+
+OK
+
+rmnet_data1 Link encap:UNSPEC  HWaddr 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00
+          inet addr:[IPv4]  Mask:[IPv4]
+          UP RUNNING NOARP  MTU:1500  Metric:1
+          RX packets:12009 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:20872 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+rx_bytes=3735291
+rx_dropped=0
+tx_bytes=25510624
+tx_dropped=0
+===== SAMPLE 2026-08-17T14:32:54Z =====
+
++CSQ: 23,99
+
+OK
+
+
++QNWINFO: "FDD LTE","22802","LTE BAND 7",2850
++QNWINFO: "TDD NR5G","22802","NR5G BAND 78",0
+
+OK
+
+rmnet_data1 Link encap:UNSPEC  HWaddr 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00
+          inet addr:[IPv4]  Mask:[IPv4]
+          UP RUNNING NOARP  MTU:1500  Metric:1
+          RX packets:12341 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:21348 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+rx_bytes=3782078
+rx_dropped=0
+tx_bytes=25973175
+tx_dropped=0
+===== SAMPLE 2026-08-17T14:33:04Z =====
+
++CSQ: 22,99
+
+OK
+
+
++QNWINFO: "FDD LTE","22802","LTE BAND 7",2850
++QNWINFO: "TDD NR5G","22802","NR5G BAND 78",0
+
+OK
+
+rmnet_data1 Link encap:UNSPEC  HWaddr 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00
+          inet addr:[IPv4]  Mask:[IPv4]
+          UP RUNNING NOARP  MTU:1500  Metric:1
+          RX packets:12915 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:22457 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+rx_bytes=3881033
+rx_dropped=0
+tx_bytes=27321965
+tx_dropped=0
+===== SAMPLE 2026-08-17T14:33:14Z =====
+
++CSQ: 22,99
+
+OK
+
+
++QNWINFO: "FDD LTE","22802","LTE BAND 7",2850
++QNWINFO: "TDD NR5G","22802","NR5G BAND 78",0
+
+OK
+
+rmnet_data1 Link encap:UNSPEC  HWaddr 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00
+          inet addr:[IPv4]  Mask:[IPv4]
+          UP RUNNING NOARP  MTU:1500  Metric:1
+          RX packets:14135 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:24872 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+rx_bytes=4289312
+rx_dropped=0
+tx_bytes=30624752
+tx_dropped=0
+===== SAMPLE 2026-08-17T14:33:24Z =====
+
++CSQ: 22,99
+
+OK
+
+
++QNWINFO: "FDD LTE","22802","LTE BAND 7",2850
++QNWINFO: "TDD NR5G","22802","NR5G BAND 78",0
+
+OK
+
+rmnet_data1 Link encap:UNSPEC  HWaddr 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00
+          inet addr:[IPv4]  Mask:[IPv4]
+          UP RUNNING NOARP  MTU:1500  Metric:1
+          RX packets:15101 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:26645 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+rx_bytes=4413804
+rx_dropped=0
+tx_bytes=32905180
+tx_dropped=0

@@ -1,0 +1,778 @@
+[912924.790991][T13033] [schedu][0xff11f45d8ed][16:04:00.776125] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[912929.910052][T12326] [kworke][0xff12521927f][16:04:05.895202] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[912929.923854][T13033] [schedu][0xff125259da5][16:04:05.909004] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[912934.915625][T15190] [kworke][0xff12adc0c81][16:04:10.900792] wlan: [15190:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[912934.929247][T13033] [schedu][0xff12ae007e5][16:04:10.914384] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[912936.623789][    C2] [soft_i][0xff12cd07cab][16:04:12.608960] wlan: [0:I:WMI] extract_reg_ch_avoid_event_tlv: Channel avoid event received with 0 ranges
+[912936.637890][    C2] [soft_i][0xff12cd49e60][16:04:12.623063] wlan: [0:I:REGULATORY] reg_process_ch_avoid_event: band count 0
+[912936.650009][    C2] [soft_i][0xff12cd82b33][16:04:12.635181] wlan: [0:I:REGULATORY] reg_dump_valid_6ghz_cur_chan_list: sta freq:state:ispsd:pwr:psd:flags(hex):
+[912936.664921][    C2] [soft_i][0xff12cdc89d2][16:04:12.650096] wlan: [0:I:REGULATORY] reg_dump_valid_6ghz_cur_chan_list: sap freq:state:ispsd:pwr:psd:flags(hex):
+[912936.679864][    C2] [soft_i][0xff12ce0ea72][16:04:12.665037] wlan: [0:I:REGULATORY] reg_modify_chan_list_for_avoid_chan_ext: Don't disable reg channels for Coex unsafe channels
+[912937.815830][    C2] [soft_i][0xff12e2db7d4][16:04:13.801006] wlan: [0:I:WMI] extract_reg_ch_avoid_event_tlv: Channel avoid event received with 1 ranges
+[912937.829958][    C2] [soft_i][0xff12e31db4d][16:04:13.815133] wlan: [0:I:WMI] extract_reg_ch_avoid_event_tlv: range 0 tlv id 4718600, start freq 2457, end freq 2472
+[912937.845117][    C2] [soft_i][0xff12e364c5b][16:04:13.830294] wlan: [0:I:REGULATORY] reg_process_ch_avoid_event: band count 1
+[912937.856795][    C2] [soft_i][0xff12e39b83a][16:04:13.841972] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: start: freq 2457, ch 10, end: freq 2472, ch 13
+[912937.871381][    C2] [soft_i][0xff12e3dfe43][16:04:13.856559] wlan: [0:E:REGULATORY] hdd_get_band_adapter: ifname:wlan0, band:1, unsafe:0
+[912937.884093][    C2] [soft_i][0xff12e41b79f][16:04:13.869271] wlan: [0:E:REGULATORY] reg_process_ch_avoid_freq: this adapter is null or  adapter->clean_unsafechan is 0
+[912937.899482][    C2] [soft_i][0xff12e463912][16:04:13.884650] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2457
+[912937.911389][    C2] [soft_i][0xff12e49b6de][16:04:13.896567] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2462
+[912937.923288][    C2] [soft_i][0xff12e4d3345][16:04:13.908466] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2467
+[912937.935200][    C2] [soft_i][0xff12e50b0a9][16:04:13.920378] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2472
+[912937.947483][    C2] [soft_i][0xff12e5449c2][16:04:13.932659] wlan: [0:I:REGULATORY] reg_dump_valid_6ghz_cur_chan_list: sta freq:state:ispsd:pwr:psd:flags(hex):
+[912937.962496][    C2] [soft_i][0xff12e58aff0][16:04:13.947675] wlan: [0:I:REGULATORY] reg_dump_valid_6ghz_cur_chan_list: sap freq:state:ispsd:pwr:psd:flags(hex):
+[912937.977388][    C2] [soft_i][0xff12e5d0c02][16:04:13.962556] wlan: [0:I:REGULATORY] reg_modify_chan_list_for_avoid_chan_ext: Don't disable reg channels for Coex unsafe channels
+[912940.354853][T15190] [kworke][0xff13115928b][16:04:16.340038] wlan: [15190:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[912940.368181][T13033] [schedu][0xff1311978d2][16:04:16.353348] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[912945.360811][ T7674] [kworke][0xff136d02958][16:04:21.346011] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[912945.374260][T13033] [schedu][0xff136d41a14][16:04:21.359461] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[912950.492130][T15190] [kworke][0xff13caf78e6][16:04:26.477329] wlan: [15190:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[912950.506041][T13033] [schedu][0xff13cb38da5][16:04:26.491259] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[912955.505395][T15190] [kworke][0xff1426c3522][16:04:31.490629] wlan: [15190:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[912955.519061][T13033] [schedu][0xff14270362c][16:04:31.504296] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[912960.427179][ T7674] [kworke][0xff1480e22f9][16:04:36.412430] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[912960.440481][T13033] [schedu][0xff1481208ad][16:04:36.425732] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[912965.434615][T12326] [kworke][0xff14dc928bc][16:04:41.419883] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[912965.447910][T13033] [schedu][0xff14dcd0dda][16:04:41.433178] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[912970.665429][T15190] [kworke][0xff153c59fb0][16:04:46.650713] wlan: [15190:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[912970.679245][T13033] [schedu][0xff153c9ab4b][16:04:46.664521] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[912975.668715][ T7674] [kworke][0xff1597f6e27][16:04:51.654016] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[912975.681763][T13033] [schedu][0xff1598340d7][16:04:51.667065] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[912978.758516][ T7674] [kworke][0xff15d08a54c][16:04:54.743828] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[912978.771483][T13033] [schedu][0xff15d0c71d6][16:04:54.756795] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[912983.762532][T15190] [kworke][0xff162c2aa60][16:04:59.747859] wlan: [15190:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[912983.775670][T13033] [schedu][0xff162c683d3][16:04:59.760998] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[912989.920244][ T7674] [kworke][0xff169ceaf15][16:05:05.905595] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[912989.933545][T13033] [schedu][0xff169d29498][16:05:05.918895] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[912994.924186][T12326] [kworke][0xff16f88ae88][16:05:10.909551] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[912994.937277][T13033] [schedu][0xff16f8c846a][16:05:10.922643] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913001.692059][ T7674] [kworke][0xff177477502][16:05:17.677446] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913001.705205][T13033] [schedu][0xff1774b4f01][16:05:17.690593] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913006.696977][T15190] [kworke][0xff17d01be08][16:05:22.682383] wlan: [15190:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913006.710830][T13033] [schedu][0xff17d05cbf0][16:05:22.696222] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913011.830913][T12326] [kworke][0xff182e1d2fb][16:05:27.816333] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913011.844136][T13033] [schedu][0xff182e5b2e3][16:05:27.829558] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913016.832997][ T7674] [kworke][0xff1889b4799][16:05:32.818437] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913016.846617][T13033] [schedu][0xff1889f4522][16:05:32.832058] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913022.274978][ T7674] [kworke][0xff18ed59bee][16:05:38.260433] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913022.287974][T13033] [schedu][0xff18ed96951][16:05:38.273412] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913027.280648][ T7674] [kworke][0xff194901d2f][16:05:43.266120] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913027.293833][T13033] [schedu][0xff19493fa0d][16:05:43.279305] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913032.413063][T12326] [kworke][0xff19a6fc04d][16:05:48.398551] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913032.426387][T13033] [schedu][0xff19a73a79e][16:05:48.411876] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913037.419499][T15190] [kworke][0xff1a02a7af1][16:05:53.405003] wlan: [15190:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913037.432889][T13033] [schedu][0xff1a02e6744][16:05:53.418394] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913042.550971][ T7674] [kworke][0xff1a609d75a][16:05:58.536492] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913042.564240][T13033] [schedu][0xff1a60dba87][16:05:58.549761] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913047.557195][T15190] [kworke][0xff1abc4822f][16:06:03.542733] wlan: [15190:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913047.570540][T13033] [schedu][0xff1abc86b07][16:06:03.556078] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913052.996119][T24269] [kworke][0xff1b1fdf189][16:06:08.981676] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913053.009266][T13033] [schedu][0xff1b201cb92][16:06:08.994823] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913055.907824][    C1] [soft_i][0xff1b552f9a5][16:06:11.893367] wlan: [0:I:WMI] extract_reg_ch_avoid_event_tlv: Channel avoid event received with 1 ranges
+[913055.921980][    C1] [soft_i][0xff1b5572100][16:06:11.907546] wlan: [0:I:WMI] extract_reg_ch_avoid_event_tlv: range 0 tlv id 4718600, start freq 2457, end freq 2472
+[913055.937125][    C1] [soft_i][0xff1b55b90f4][16:06:11.922691] wlan: [0:I:REGULATORY] reg_process_ch_avoid_event: band count 1
+[913055.948778][    C1] [soft_i][0xff1b55efaff][16:06:11.934345] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: start: freq 2457, ch 10, end: freq 2472, ch 13
+[913055.963364][    C1] [soft_i][0xff1b56340fd][16:06:11.948932] wlan: [0:E:REGULATORY] hdd_get_band_adapter: ifname:wlan0, band:1, unsafe:0
+[913055.976112][    C1] [soft_i][0xff1b566fd00][16:06:11.961679] wlan: [0:E:REGULATORY] reg_process_ch_avoid_freq: this adapter is null or  adapter->clean_unsafechan is 0
+[913055.991487][    C1] [soft_i][0xff1b56b7e49][16:06:11.977056] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2457
+[913056.003381][    C1] [soft_i][0xff1b56efa5f][16:06:11.988950] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2462
+[913056.015297][    C1] [soft_i][0xff1b5727807][16:06:12.000866] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2467
+[913056.027182][    C1] [soft_i][0xff1b575f38d][16:06:12.012753] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2472
+[913056.039309][    C1] [soft_i][0xff1b5798104][16:06:12.024879] wlan: [0:I:REGULATORY] reg_dump_valid_6ghz_cur_chan_list: sta freq:state:ispsd:pwr:psd:flags(hex):
+[913056.054119][    C1] [soft_i][0xff1b57dd745][16:06:12.039682] wlan: [0:I:REGULATORY] reg_dump_valid_6ghz_cur_chan_list: sap freq:state:ispsd:pwr:psd:flags(hex):
+[913056.068916][    C1] [soft_i][0xff1b5822d90][16:06:12.054486] wlan: [0:I:REGULATORY] reg_modify_chan_list_for_avoid_chan_ext: Don't disable reg channels for Coex unsafe channels
+[913056.085384][T13033] [schedu][0xff1b58700bd][16:06:12.070955] wlan: [13033:I:HDD] hdd_local_unsafe_channel_updated: unsafe chan list same
+[913058.001916][T15190] [kworke][0xff1b7b87c37][16:06:13.987488] wlan: [15190:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913058.015141][T13033] [schedu][0xff1b7bc5c2b][16:06:14.000714] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913063.133586][T15190] [kworke][0xff1bd97e76e][16:06:19.119175] wlan: [15190:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913063.146826][T13033] [schedu][0xff1bd9bc88b][16:06:19.132416] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913068.137817][T24269] [kworke][0xff1c351fcd4][16:06:24.123423] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913068.151058][T13033] [schedu][0xff1c355ddf3][16:06:24.136665] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913073.270338][T12326] [kworke][0xff1c931a7df][16:06:29.255961] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913073.283593][T13033] [schedu][0xff1c9358a20][16:06:29.269217] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913078.275906][T12326] [kworke][0xff1ceec2185][16:06:34.261546] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913078.289266][T13033] [schedu][0xff1cef00a09][16:06:34.274886] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913083.715465][ T7674] [kworke][0xff1d525c04e][16:06:39.701121] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913083.729208][T13033] [schedu][0xff1d529c71b][16:06:39.714865] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913085.522347][T27168] Deleting wan Conntrack IP:[IPv4]
+[913085.749419][T27197] kmwan: Delete node:modem_cpu
+[913088.720340][T24269] [kworke][0xff1dae00652][16:06:44.706018] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913088.733594][T13033] [schedu][0xff1dae3e872][16:06:44.719272] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913089.039071][T13033] [schedu][0xff1db3d673a][16:06:45.024751] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913094.040638][T15190] [kworke][0xff1e0f6b4b6][16:06:50.026334] wlan: [15190:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913094.053697][T13033] [schedu][0xff1e0fa8818][16:06:50.039392] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913095.523490][T12326] [kworke][0xff1e2a9228f][16:06:51.509190] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913095.536484][T13033] [schedu][0xff1e2acf10d][16:06:51.522183] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913096.490154][    C2] [soft_i][0xff1e3c4566e][16:06:52.475858] wlan: [0:I:WMI] extract_reg_ch_avoid_event_tlv: Channel avoid event received with 0 ranges
+[913096.504230][    C2] [soft_i][0xff1e3c8762b][16:06:52.489935] wlan: [0:I:REGULATORY] reg_process_ch_avoid_event: band count 0
+[913096.516092][    C2] [soft_i][0xff1e3cbeeec][16:06:52.501785] wlan: [0:I:REGULATORY] reg_dump_valid_6ghz_cur_chan_list: sta freq:state:ispsd:pwr:psd:flags(hex):
+[913096.530910][    C2] [soft_i][0xff1e3d0473b][16:06:52.516615] wlan: [0:I:REGULATORY] reg_dump_valid_6ghz_cur_chan_list: sap freq:state:ispsd:pwr:psd:flags(hex):
+[913096.545702][    C2] [soft_i][0xff1e3d49cab][16:06:52.531408] wlan: [0:I:REGULATORY] reg_modify_chan_list_for_avoid_chan_ext: Don't disable reg channels for Coex unsafe channels
+[913100.527160][ T7674] [kworke][0xff1e8630d71][16:06:56.512871] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913100.540287][T13033] [schedu][0xff1e866e600][16:06:56.525999] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913102.253091][T12326] [kworke][0xff1ea5cb27d][16:06:58.238811] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913102.266052][T13033] [schedu][0xff1ea607e9d][16:06:58.251773] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913107.257461][ T7674] [kworke][0xff1f016d207][16:07:03.243195] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913107.270772][T13033] [schedu][0xff1f01ab857][16:07:03.256506] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913107.301650][T13033] [schedu][0xff1f023c3ee][16:07:03.287380] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913112.303378][T12326] [kworke][0xff1f5dd1db5][16:07:08.289127] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913112.316819][T13033] [schedu][0xff1f5e10df9][16:07:08.302571] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913112.596718][T13033] [schedu][0xff1f6330cb4][16:07:08.582448] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913117.601234][ T7674] [kworke][0xff1fbed38f9][16:07:13.587002] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913117.614566][T13033] [schedu][0xff1fbf120d7][16:07:13.600333] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913118.638952][T15190] [kworke][0xff1fd1d3de0][16:07:14.624724] wlan: [15190:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913118.652445][T13033] [schedu][0xff1fd2131e6][16:07:14.638217] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913122.048677][    C2] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=51007 DF PROTO=TCP SPT=59335 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913122.070380][    C2] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=51009 DF PROTO=TCP SPT=63444 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913122.091552][    C2] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=51010 DF PROTO=TCP SPT=53028 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913122.210605][    C3] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=51029 DF PROTO=TCP SPT=63066 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913122.232269][    C3] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=51033 DF PROTO=TCP SPT=49158 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913123.507035][    C2] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=51247 DF PROTO=TCP SPT=58092 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913123.642382][ T7674] [kworke][0xff202d71768][16:07:19.628174] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913123.655242][T13033] [schedu][0xff202dadbef][16:07:19.641034] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913124.368889][T15190] [kworke][0xff203abef42][16:07:20.354681] wlan: [15190:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913124.382184][T13033] [schedu][0xff203afd455][16:07:20.367975] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913124.667618][    C2] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=51435 DF PROTO=TCP SPT=50854 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913126.166939][    C3] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=51670 DF PROTO=TCP SPT=57632 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913126.189512][    C3] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=51675 DF PROTO=TCP SPT=50329 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913127.235857][    C3] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=51856 DF PROTO=TCP SPT=58610 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913128.390232][    C2] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=52039 DF PROTO=TCP SPT=55444 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913129.372600][T24269] [kworke][0xff20965dd73][16:07:25.358407] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913129.385992][T13033] [schedu][0xff20969c9d2][16:07:25.371798] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913129.602179][T13033] [schedu][0xff209a91ff1][16:07:25.587987] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913129.635330][    C3] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=52252 DF PROTO=TCP SPT=58002 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913130.823726][    C2] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=52436 DF PROTO=TCP SPT=56031 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913133.319251][    C2] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=52853 DF PROTO=TCP SPT=50108 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913133.373709][    C2] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=52867 DF PROTO=TCP SPT=56458 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913133.373728][    C3] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=52868 DF PROTO=TCP SPT=53210 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913134.604795][ T7674] [kworke][0xff20f62bc33][16:07:30.590621] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913134.618183][T13033] [schedu][0xff20f66a84a][16:07:30.604009] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913134.916065][T13033] [schedu][0xff20fbdeda9][16:07:30.901894] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913134.928670][    C3] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=53119 DF PROTO=TCP SPT=57277 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913139.918372][T24269] [kworke][0xff215777290][16:07:35.904216] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913139.931845][T13033] [schedu][0xff2157b64d4][16:07:35.917687] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913141.873944][T24269] [kworke][0xff217b45e38][16:07:37.859792] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913141.887373][T13033] [schedu][0xff217b84d7f][16:07:37.873222] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913142.874712][    C2] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=54078 DF PROTO=TCP SPT=61109 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913143.351828][    C2] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=54151 DF PROTO=TCP SPT=58591 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913146.877755][T24269] [kworke][0xff21d6e5405][16:07:42.863619] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913146.891153][T13033] [schedu][0xff21d724111][16:07:42.877019] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913148.642896][T15190] [kworke][0xff21f7375ae][16:07:44.628767] wlan: [15190:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913148.656811][T13033] [schedu][0xff21f778958][16:07:44.642682] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913150.868271][    C2] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=54723 DF PROTO=TCP SPT=52841 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913150.870179][    C3] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=54729 DF PROTO=TCP SPT=57671 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913150.889562][    C2] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=54724 DF PROTO=TCP SPT=49291 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913150.932160][    C2] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=54733 DF PROTO=TCP SPT=65431 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913150.973680][    C3] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=54756 DF PROTO=TCP SPT=51833 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913152.011941][    C2] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=54919 DF PROTO=TCP SPT=56731 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913153.647100][T24269] [kworke][0xff2252d88ec][16:07:49.632987] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913153.660493][T13033] [schedu][0xff2253175b5][16:07:49.646384] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913155.294420][ T7674] [kworke][0xff2271025ff][16:07:51.280313] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913155.307723][T13033] [schedu][0xff227140bc3][16:07:51.293617] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913160.299059][T15190] [kworke][0xff22cca59cc][16:07:56.284967] wlan: [15190:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913160.312452][T13033] [schedu][0xff22cce466d][16:07:56.298362] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913161.441390][T24269] [kworke][0xff22e1904bb][16:07:57.427303] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913161.454899][T13033] [schedu][0xff22e1cfa23][16:07:57.440815] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913166.443712][T24269] [kworke][0xff233d28ad9][16:08:02.429641] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913166.457123][T13033] [schedu][0xff233d678b9][16:08:02.443053] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913171.786841][T15190] [kworke][0xff239efe820][16:08:07.772769] wlan: [15190:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913171.799960][T13033] [schedu][0xff239f3c18f][16:08:07.785908] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913176.789236][T24269] [kworke][0xff23fa97560][16:08:12.775202] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913176.802630][T13033] [schedu][0xff23fad608b][16:08:12.788578] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913178.235804][T15190] [kworke][0xff2415141bf][16:08:14.221772] wlan: [15190:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913178.249180][T13033] [schedu][0xff241552cf7][16:08:14.235148] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913178.376350][T13033] [schedu][0xff2417a6ec8][16:08:14.362320] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913183.237000][T24269] [kworke][0xff2470a7370][16:08:19.222984] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913183.250342][T13033] [schedu][0xff2470e5c2c][16:08:19.236328] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913183.380003][T13033] [schedu][0xff2473458af][16:08:19.365988] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913185.720092][T24269] [kworke][0xff249e1ebae][16:08:21.706089] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913185.733361][T13033] [schedu][0xff249e5ced1][16:08:21.719358] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913185.913690][T13033] [schedu][0xff24a1aa348][16:08:21.899685] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913190.724801][T15190] [kworke][0xff24f9c2480][16:08:26.710810] wlan: [15190:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913190.738211][T13033] [schedu][0xff24fa01245][16:08:26.724220] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913190.916897][T13033] [schedu][0xff24fd46aa2][16:08:26.902892] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913193.230272][    C2] [soft_i][0xff2527a2ada][16:08:29.216290] wlan: [0:I:WMI] extract_reg_ch_avoid_event_tlv: Channel avoid event received with 1 ranges
+[913193.244423][    C2] [soft_i][0xff2527e5033][16:08:29.230442] wlan: [0:I:WMI] extract_reg_ch_avoid_event_tlv: range 0 tlv id 4718600, start freq 2457, end freq 2472
+[913193.259571][    C2] [soft_i][0xff25282c066][16:08:29.245591] wlan: [0:I:REGULATORY] reg_process_ch_avoid_event: band count 1
+[913193.271235][    C2] [soft_i][0xff252862b31][16:08:29.257254] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: start: freq 2457, ch 10, end: freq 2472, ch 13
+[913193.285859][    C2] [soft_i][0xff2528a73fb][16:08:29.271878] wlan: [0:E:REGULATORY] hdd_get_band_adapter: ifname:wlan0, band:1, unsafe:0
+[913193.298599][    C2] [soft_i][0xff2528e2f8a][16:08:29.284619] wlan: [0:E:REGULATORY] reg_process_ch_avoid_freq: this adapter is null or  adapter->clean_unsafechan is 0
+[913193.314006][    C2] [soft_i][0xff25292b307][16:08:29.300026] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2457
+[913193.325968][    C2] [soft_i][0xff252963245][16:08:29.311962] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2462
+[913193.337907][    C2] [soft_i][0xff25299b3c2][16:08:29.323929] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2467
+[913193.349805][    C2] [soft_i][0xff2529d3035][16:08:29.335828] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2472
+[913193.361965][    C2] [soft_i][0xff252a0c011][16:08:29.347986] wlan: [0:I:REGULATORY] reg_dump_valid_6ghz_cur_chan_list: sta freq:state:ispsd:pwr:psd:flags(hex):
+[913193.376933][    C2] [soft_i][0xff252a522c7][16:08:29.362956] wlan: [0:I:REGULATORY] reg_dump_valid_6ghz_cur_chan_list: sap freq:state:ispsd:pwr:psd:flags(hex):
+[913193.391875][    C2] [soft_i][0xff252a9836a][16:08:29.377898] wlan: [0:I:REGULATORY] reg_modify_chan_list_for_avoid_chan_ext: Don't disable reg channels for Coex unsafe channels
+[913194.665590][T24269] [kworke][0xff2541eaa1b][16:08:30.651591] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913194.678946][T13033] [schedu][0xff254229587][16:08:30.664970] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913196.055189][T24269] [kworke][0xff255b5c7b2][16:08:32.041217] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913196.068564][T13033] [schedu][0xff255b9b2e4][16:08:32.054593] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913199.668504][T24269] [kworke][0xff259d85e51][16:08:35.654544] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913199.682106][T13033] [schedu][0xff259dc5a78][16:08:35.668146] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913201.056762][ T7674] [kworke][0xff25b6f15a5][16:08:37.042806] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913201.069780][T13033] [schedu][0xff25b72e608][16:08:37.055824] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913206.596514][T24269] [kworke][0xff261c60f04][16:08:42.582576] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913206.609738][T13033] [schedu][0xff261c9ed6c][16:08:42.595781] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913211.600052][T12326] [kworke][0xff2677ff05b][16:08:47.586130] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913211.613404][T13033] [schedu][0xff26783d860][16:08:47.599464] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913212.558785][T12326] [kworke][0xff26898d15e][16:08:48.544867] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913212.572134][T13033] [schedu][0xff2689cba96][16:08:48.558217] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913216.124011][    C2] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=58198 DF PROTO=TCP SPT=58426 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913216.126554][    C3] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=58207 DF PROTO=TCP SPT=56743 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913216.172088][    C3] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=58219 DF PROTO=TCP SPT=64711 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913216.193456][    C2] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=58222 DF PROTO=TCP SPT=54387 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913217.150169][    C2] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=58380 DF PROTO=TCP SPT=51852 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913217.171428][    C2] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=58381 DF PROTO=TCP SPT=51919 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913217.560818][T24269] [kworke][0xff26e5241e0][16:08:53.546917] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913217.574111][T13033] [schedu][0xff26e5626e1][16:08:53.560210] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913218.241648][    C2] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=58564 DF PROTO=TCP SPT=51206 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913219.331331][    C3] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=58754 DF PROTO=TCP SPT=50375 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913220.372459][    C2] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=58917 DF PROTO=TCP SPT=61401 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913222.568198][    C3] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=59265 DF PROTO=TCP SPT=63404 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913223.693183][    C3] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=59442 DF PROTO=TCP SPT=52434 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913223.762025][    C3] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=59459 DF PROTO=TCP SPT=51420 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913225.094653][    C3] SYN_FLOODIN=br-lan OUT= MAC=[MAC]:[MAC]:08:00 SRC=[IPv4] DST=[IPv4] LEN=52 TOS=0x00 PREC=0x00 TTL=128 ID=59674 DF PROTO=TCP SPT=62145 DPT=53 WINDOW=65535 RES=0x00 SYN URGP=0
+[913226.871865][ T1860] [kworke][0xff278fa1a75][16:09:02.857995] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913226.885097][T13033] [schedu][0xff278fdfac4][16:09:02.871226] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913231.876770][ T1860] [kworke][0xff27eb46044][16:09:07.862889] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913231.889982][T13033] [schedu][0xff27eb8411f][16:09:07.876127] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913237.111861][ T1860] [kworke][0xff284b219fd][16:09:13.098023] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913237.125187][T13033] [schedu][0xff284b60178][16:09:13.111349] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913242.115226][T24269] [kworke][0xff28a6bee74][16:09:18.101406] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913242.128578][T13033] [schedu][0xff28a6fd7d8][16:09:18.114757] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913245.307479][T12326] [kworke][0xff28e132973][16:09:21.293669] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913245.320589][T13033] [schedu][0xff28e1700aa][16:09:21.306779] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913246.453058][    C2] [soft_i][0xff28f62c7c7][16:09:22.439251] wlan: [0:I:WMI] extract_reg_ch_avoid_event_tlv: Channel avoid event received with 0 ranges
+[913246.467194][    C2] [soft_i][0xff28f66ebfe][16:09:22.453387] wlan: [0:I:REGULATORY] reg_process_ch_avoid_event: band count 0
+[913246.479273][    C2] [soft_i][0xff28f6a7600][16:09:22.465468] wlan: [0:I:REGULATORY] reg_dump_valid_6ghz_cur_chan_list: sta freq:state:ispsd:pwr:psd:flags(hex):
+[913246.494205][    C2] [soft_i][0xff28f6ed41e][16:09:22.480376] wlan: [0:I:REGULATORY] reg_dump_valid_6ghz_cur_chan_list: sap freq:state:ispsd:pwr:psd:flags(hex):
+[913246.509090][    C2] [soft_i][0xff28f733265][16:09:22.495286] wlan: [0:I:REGULATORY] reg_modify_chan_list_for_avoid_chan_ext: Don't disable reg channels for Coex unsafe channels
+[913250.309613][T12326] [kworke][0xff293cca175][16:09:26.295819] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913250.322638][T13033] [schedu][0xff293d0725e][16:09:26.308845] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913257.592345][T24269] [kworke][0xff29c223e5d][16:09:33.578576] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913257.605687][T13033] [schedu][0xff29c262700][16:09:33.591917] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913262.596493][T24269] [kworke][0xff2a1dc4d55][16:09:38.582738] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913262.609845][T13033] [schedu][0xff2a1e036d3][16:09:38.596091] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913268.036140][T24269] [kworke][0xff2a815f30a][16:09:44.022406] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913268.049264][T13033] [schedu][0xff2a819cb4e][16:09:44.035529] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913273.040533][T24269] [kworke][0xff2add0145b][16:09:49.026813] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913273.053961][T13033] [schedu][0xff2add40384][16:09:49.040242] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913276.398416][    C3] [soft_i][0xff2b1a7d5b9][16:09:52.384709] wlan: [0:I:WMI] extract_reg_ch_avoid_event_tlv: Channel avoid event received with 1 ranges
+[913276.412612][    C3] [soft_i][0xff2b1abfe58][16:09:52.398904] wlan: [0:I:WMI] extract_reg_ch_avoid_event_tlv: range 0 tlv id 4718600, start freq 2457, end freq 2472
+[913276.427795][    C3] [soft_i][0xff2b1b0712e][16:09:52.414089] wlan: [0:I:REGULATORY] reg_process_ch_avoid_event: band count 1
+[913276.439526][    C3] [soft_i][0xff2b1b3e0f2][16:09:52.425819] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: start: freq 2457, ch 10, end: freq 2472, ch 13
+[913276.454168][    C3] [soft_i][0xff2b1b82b26][16:09:52.440462] wlan: [0:E:REGULATORY] hdd_get_band_adapter: ifname:wlan0, band:1, unsafe:0
+[913276.466912][    C3] [soft_i][0xff2b1bbe712][16:09:52.453207] wlan: [0:E:REGULATORY] reg_process_ch_avoid_freq: this adapter is null or  adapter->clean_unsafechan is 0
+[913276.482360][    C3] [soft_i][0xff2b1c06d23][16:09:52.468648] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2457
+[913276.494286][    C3] [soft_i][0xff2b1c3ec22][16:09:52.480582] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2462
+[913276.506200][    C3] [soft_i][0xff2b1c769c2][16:09:52.492497] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2467
+[913276.518244][    C3] [soft_i][0xff2b1caf115][16:09:52.504541] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2472
+[913276.530377][    C3] [soft_i][0xff2b1ce7f11][16:09:52.516674] wlan: [0:I:REGULATORY] reg_dump_valid_6ghz_cur_chan_list: sta freq:state:ispsd:pwr:psd:flags(hex):
+[913276.545162][    C3] [soft_i][0xff2b1d2d412][16:09:52.531461] wlan: [0:I:REGULATORY] reg_dump_valid_6ghz_cur_chan_list: sap freq:state:ispsd:pwr:psd:flags(hex):
+[913276.559983][    C3] [soft_i][0xff2b1d72bab][16:09:52.546282] wlan: [0:I:REGULATORY] reg_modify_chan_list_for_avoid_chan_ext: Don't disable reg channels for Coex unsafe channels
+[913278.277894][T24269] [kworke][0xff2b3ce767e][16:09:54.264192] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913278.291185][T13033] [schedu][0xff2b3d25a0a][16:09:54.277466] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913283.279813][ T1860] [kworke][0xff2b987dd55][16:09:59.266113] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913283.292857][T13033] [schedu][0xff2b98bb0e6][16:09:59.279174] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913288.414924][T24269] [kworke][0xff2bf684bc2][16:10:04.401256] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913288.428307][T13033] [schedu][0xff2bf6c3783][16:10:04.414639] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913291.551185][    C0] [soft_i][0xff2c2ff1fa0][16:10:07.537531] wlan: [0:I:WMI] extract_reg_ch_avoid_event_tlv: Channel avoid event received with 0 ranges
+[913291.565326][    C0] [soft_i][0xff2c3034193][16:10:07.551637] wlan: [0:I:REGULATORY] reg_process_ch_avoid_event: band count 0
+[913291.577538][    C0] [soft_i][0xff2c306d7c9][16:10:07.563880] wlan: [0:I:REGULATORY] reg_dump_valid_6ghz_cur_chan_list: sta freq:state:ispsd:pwr:psd:flags(hex):
+[913291.592399][    C0] [soft_i][0xff2c30b32c8][16:10:07.578746] wlan: [0:I:REGULATORY] reg_dump_valid_6ghz_cur_chan_list: sap freq:state:ispsd:pwr:psd:flags(hex):
+[913291.607230][    C0] [soft_i][0xff2c30f8b04][16:10:07.593576] wlan: [0:I:REGULATORY] reg_modify_chan_list_for_avoid_chan_ext: Don't disable reg channels for Coex unsafe channels
+[913293.420564][ T7674] [kworke][0xff2c522caa6][16:10:09.406911] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913293.433884][T13033] [schedu][0xff2c526b1b9][16:10:09.420232] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913298.551847][T24269] [kworke][0xff2cb0218fa][16:10:14.538212] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913298.565360][T13033] [schedu][0xff2cb060e60][16:10:14.551725] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913303.556306][T24269] [kworke][0xff2d0bc3f5b][16:10:19.542687] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913303.569644][T13033] [schedu][0xff2d0c027cd][16:10:19.556026] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913304.336615][T13033] [schedu][0xff2d1a0da85][16:10:20.322998] wlan: [13033:I:PE] Auth RX: vdev 1 sys role 1 lim_state 4 from 38:18:68:**:**:79 rssi -48 auth_alg 3 seq 14
+[913304.352533][T13033] [schedu][0xff2d1a58466][16:10:20.338917] wlan: [13033:I:PE] vdev:1 SAE Auth RX type 0 subtype 11 trans_seq_num:1 from 38:18:68:**:**:79
+[913304.379127][T13033] [schedu][0xff2d1ad4f09][16:10:20.365512] wlan: [13033:I:PE] Auth TX: success (0)
+[913304.399708][T13033] [schedu][0xff2d1b35698][16:10:20.386093] wlan: [13033:W:PE] lim_process_for_spectrum_mgmt: LIM Info: Missing Supported channel IE in Assoc Req from 38:18:68:**:**:79
+[913304.420311][T13033] [schedu][0xff2d1b95fed][16:10:20.406697] wlan: [13033:I:WMI] wma_add_sta: sap d0 wow
+[913304.436583][T13033] [schedu][0xff2d1be2392][16:10:20.422959] wlan: [13033:I:PE] lim_process_ap_mlm_add_sta_rsp: 2085 vdev_id:1, assoc_id:15, old_mlm_state:21, new_mlm_state:5, sta_deletion_in_progress:0, sta_mac:[MAC]
+[913304.457974][T13033] [schedu][0xff2d1c468b7][16:10:20.444361] wlan: [13033:I:PE] __lim_process_sme_assoc_cnf_new: 7810 vdev_id:1, assoc_id:15, old_mlm_state:15, old_sta_deletion_in_progress:0
+[913304.478671][T13033] [schedu][0xff2d1ca7908][16:10:20.465059] wlan: [13033:I:HDD] hdd_hostapd_sap_event_cb: Vdev 1, STA 38:18:68:**:**:79 associated
+[913304.480475][ T1860] [kworke][0xff2d1cb005b][16:10:20.466863] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913304.492735][T13033] [schedu][0xff2d1ce97cf][16:10:20.479123] wlan: [13033:I:IPA] wlan_ipa_set_peer_id: Num of attribute set to: 2
+[913304.517367][T13033] [schedu][0xff2d1d5cf46][16:10:20.503756] wlan: [13033:I:IPA] wlan_ipa_set_peer_id: ta_peer_id set to: 33
+[913304.550819][T13033] [schedu][0xff2d1df9c3f][16:10:20.537209] wlan: [13033:E:HDD] hdd_son_deliver_peer_authorize_event: ALD ASSOCIATED Event failed for38:18:68:**:**:79
+[913304.556691][ T3513] QCMAP: HW Address for dev wlan1: [MAC]
+[913308.794298][T24269] [kworke][0xff2d6bad0b8][16:10:24.780696] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913308.807706][T13033] [schedu][0xff2d6bebe64][16:10:24.794105] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913313.798329][ T1860] [kworke][0xff2dc74d71e][16:10:29.784744] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913313.811453][T13033] [schedu][0xff2dc78af67][16:10:29.797868] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913319.237852][T24269] [kworke][0xff2e2ae7348][16:10:35.224284] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913319.251274][T13033] [schedu][0xff2e2b261ff][16:10:35.237707] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913320.614500][T13033] [schedu][0xff2e441c3ed][16:10:36.600938] wlan: [13033:I:PE] Deauth RX: vdev 1 from 38:18:68:**:**:79 for 0e:ac:d1:**:**:08 RSSI = -48 reason 1 mlm state = 4, sme state = 16 systemrole = 1
+[913320.634021][T13033] [schedu][0xff2e4477c0a][16:10:36.620459] wlan: [13033:I:PE] lim_perform_deauth: 592 vdev_id:1, assoc_id:15, mlm_state:14, sta_deletion_in_progress_before:0, cleanup_trigger:5, reason_code:1, sta_mac:[MAC]
+[913320.658606][ T7674] [kworke][0xff2e44eb009][16:10:36.645046] wlan: [7674:E:CP_STATS] tgt_mc_cp_stats_extract_peer_extd_stats: peer not found stats
+[913320.672894][T13033] [schedu][0xff2e452df98][16:10:36.659333] wlan: [13033:I:PE] lim_cleanup_rx_path: 421 vdev_id:1, assoc_id:15, mlm_state:14, sta_deletion_in_progress:1, is_valid:1, is_added:1, delete_peer:1, sta_mac:[MAC]
+[913320.694554][T13033] [schedu][0xff2e459359e][16:10:36.680960] wlan: [13033:I:PE] lim_cleanup_rx_path: 472 vdev_id:1, assoc_id:15, old_mlm_state:14, new_mlm_state:14, sta_deletion_in_progress:1, sta_mac:[MAC]
+[913320.714780][T13033] [schedu][0xff2e45f2534][16:10:36.701222] wlan: [13033:I:PE] lim_del_sta: 2875 vdev_id:1, session_id:1, assoc_id:15, response_required:1, sta_mac:[MAC], mlm_state:22, sta_deletion_in_progress:1
+[913320.740420][T13033] [schedu][0xff2e466a83d][16:10:36.726862] wlan: [13033:I:WMI] wma_delete_sta: sap d0 wow
+[913320.740855][    C2] [soft_i][0xff2e466c80e][16:10:36.727287] wlan: [0:I:TXRX] HTT_T2H_MSG_TYPE_PEER_UNMAP msg for peer id 33 vdev id 1 n
+[913320.763604][    C2] [soft_i][0xff2e46d7308][16:10:36.750046] wlan: [0:F:DP] dp_peer_update_state: Invalid state shift from 2 to 4 peer 38:18:68:**:**:79
+[913320.779543][T13033] [schedu][0xff2e4721e7d][16:10:36.765986] wlan: [13033:I:PE] lim_process_ap_mlm_del_sta_rsp: 1911 vdev_id:1, assoc_id:15, status:0, mlm_state:22, sta_deletion_in_progress:1
+[913320.797261][T13033] [schedu][0xff2e4774f6b][16:10:36.783705] wlan: [13033:I:PE] dph_delete_hash_entry: 396 assoc_id:15, hash_index:0, sta_mac:[MAC]
+[913320.812188][T13033] [schedu][0xff2e47baee8][16:10:36.798631] wlan: [13033:I:HDD] SAP(1) Peer 38:18:68:**:**:79 disassociated reason 1 status code 520
+[913320.826137][T13033] [schedu][0xff2e47fc52f][16:10:36.812582] wlan: [13033:E:DP] ucfg_dp_update_dhcp_state_on_disassoc: Peer object not found mac:38:18:68:**:**:79
+[913320.878568][T13033] [schedu][0xff2e48f214f][16:10:36.865010] wlan: [13033:I:PE] Auth RX: vdev 1 sys role 1 lim_state 4 from 38:18:68:**:**:79 rssi -48 auth_alg 0 seq 21
+[913320.894263][T13033] [schedu][0xff2e493ba8e][16:10:36.880707] wlan: [13033:I:PE] Auth TX: vdev 1 seq 2 seq num 3153 status 0 WEP 0 to 38:18:68:**:**:79
+[913320.910970][T13033] [schedu][0xff2e4989f79][16:10:36.897413] wlan: [13033:I:PE] Auth TX: success (0)
+[913320.921141][T13033] [schedu][0xff2e49b9a6f][16:10:36.907585] wlan: [13033:W:PE] lim_process_for_spectrum_mgmt: LIM Info: Missing Supported channel IE in ReAssoc Req from 38:18:68:**:**:79
+[913320.940348][T13033] [schedu][0xff2e4a13af1][16:10:36.926792] wlan: [13033:I:WMI] wma_add_sta: sap d0 wow
+[913320.950738][T13033] [schedu][0xff2e4a44638][16:10:36.937183] wlan: [13033:I:PE] lim_process_ap_mlm_add_sta_rsp: 2085 vdev_id:1, assoc_id:16, old_mlm_state:21, new_mlm_state:5, sta_deletion_in_progress:0, sta_mac:[MAC]
+[913320.972150][T13033] [schedu][0xff2e4aa8c20][16:10:36.958595] wlan: [13033:I:PE] __lim_process_sme_assoc_cnf_new: 7810 vdev_id:1, assoc_id:16, old_mlm_state:15, old_sta_deletion_in_progress:0
+[913320.992141][T13033] [schedu][0xff2e4b06768][16:10:36.978585] wlan: [13033:I:HDD] hdd_hostapd_sap_event_cb: Vdev 1, STA 38:18:68:**:**:79 associated
+[913320.993628][ T7674] [kworke][0xff2e4b0d707][16:10:36.980073] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913321.006088][T13033] [schedu][0xff2e4b47d7f][16:10:36.992533] wlan: [13033:I:IPA] wlan_ipa_set_peer_id: Num of attribute set to: 2
+[913321.030832][T13033] [schedu][0xff2e4bbbcdb][16:10:37.017271] wlan: [13033:I:IPA] wlan_ipa_set_peer_id: ta_peer_id set to: 34
+[913321.060080][T13033] [schedu][0xff2e4c44ec7][16:10:37.046524] wlan: [13033:E:HDD] hdd_son_deliver_peer_authorize_event: ALD ASSOCIATED Event failed for38:18:68:**:**:79
+[913324.243766][ T7674] [kworke][0xff2e86906d2][16:10:40.230215] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913324.257084][T13033] [schedu][0xff2e86cedbf][16:10:40.243534] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913329.374876][ T7674] [kworke][0xff2ee484817][16:10:45.361342] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913329.388205][T13033] [schedu][0xff2ee4c2fd9][16:10:45.374672] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913334.378853][ T1860] [kworke][0xff2f4024a68][16:10:50.365336] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913334.392087][T13033] [schedu][0xff2f4062aff][16:10:50.378571] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913336.806511][T13033] [schedu][0xff2f6c984b0][16:10:52.793001] wlan: [13033:I:PE] Deauth RX: vdev 1 from 38:18:68:**:**:79 for 0e:ac:d1:**:**:08 RSSI = -48 reason 1 mlm state = 4, sme state = 16 systemrole = 1
+[913336.825887][T13033] [schedu][0xff2f6cf3216][16:10:52.812380] wlan: [13033:I:PE] lim_perform_deauth: 592 vdev_id:1, assoc_id:16, mlm_state:14, sta_deletion_in_progress_before:0, cleanup_trigger:5, reason_code:1, sta_mac:[MAC]
+[913336.850357][ T1860] [kworke][0xff2f6d65d4d][16:10:52.836850] wlan: [1860:E:CP_STATS] tgt_mc_cp_stats_extract_peer_extd_stats: peer not found stats
+[913336.864782][T13033] [schedu][0xff2f6da971e][16:10:52.851274] wlan: [13033:I:PE] lim_cleanup_rx_path: 421 vdev_id:1, assoc_id:16, mlm_state:14, sta_deletion_in_progress:1, is_valid:1, is_added:1, delete_peer:1, sta_mac:[MAC]
+[913336.886394][T13033] [schedu][0xff2f6e0ec21][16:10:52.872887] wlan: [13033:I:PE] lim_cleanup_rx_path: 472 vdev_id:1, assoc_id:16, old_mlm_state:14, new_mlm_state:14, sta_deletion_in_progress:1, sta_mac:[MAC]
+[913336.906490][T13033] [schedu][0xff2f6e6cf74][16:10:52.892985] wlan: [13033:I:PE] lim_del_sta: 2875 vdev_id:1, session_id:1, assoc_id:16, response_required:1, sta_mac:[MAC], mlm_state:22, sta_deletion_in_progress:1
+[913336.931734][T13033] [schedu][0xff2f6ee34c7][16:10:52.918230] wlan: [13033:I:WMI] wma_delete_sta: sap d0 wow
+[913336.932151][    C2] [soft_i][0xff2f6ee53e0][16:10:52.918644] wlan: [0:I:TXRX] HTT_T2H_MSG_TYPE_PEER_UNMAP msg for peer id 34 vdev id 1 n
+[913336.954723][    C2] [soft_i][0xff2f6f4f0eb][16:10:52.941218] wlan: [0:F:DP] dp_peer_update_state: Invalid state shift from 2 to 4 peer 38:18:68:**:**:79
+[913336.970158][T13033] [schedu][0xff2f6f976a3][16:10:52.956654] wlan: [13033:I:PE] lim_process_ap_mlm_del_sta_rsp: 1911 vdev_id:1, assoc_id:16, status:0, mlm_state:22, sta_deletion_in_progress:1
+[913336.988084][T13033] [schedu][0xff2f6feb71f][16:10:52.974581] wlan: [13033:I:PE] dph_delete_hash_entry: 396 assoc_id:16, hash_index:0, sta_mac:[MAC]
+[913337.003006][T13033] [schedu][0xff2f7031642][16:10:52.989503] wlan: [13033:I:HDD] SAP(1) Peer 38:18:68:**:**:79 disassociated reason 1 status code 520
+[913337.018488][T13033] [schedu][0xff2f7079f2e][16:10:53.004982] wlan: [13033:E:DP] ucfg_dp_update_dhcp_state_on_disassoc: Peer object not found mac:38:18:68:**:**:79
+[913339.512232][ T1860] [kworke][0xff2f9e235d0][16:10:55.498732] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913339.525484][T13033] [schedu][0xff2f9e617ca][16:10:55.511985] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913340.899154][T13033] [schedu][0xff2fb78876e][16:10:56.885638] wlan: [13033:I:PE] Auth RX: vdev 1 sys role 1 lim_state 4 from 38:18:68:**:**:79 rssi -50 auth_alg 3 seq 0
+[913340.914924][T13033] [schedu][0xff2fb7d27a4][16:10:56.901428] wlan: [13033:I:PE] vdev:1 SAE Auth RX type 0 subtype 11 trans_seq_num:1 from 38:18:68:**:**:79
+[913340.941592][T13033] [schedu][0xff2fb84f7f2][16:10:56.928098] wlan: [13033:I:PE] Auth TX: success (0)
+[913340.970203][T13033] [schedu][0xff2fb8d58e3][16:10:56.956698] wlan: [13033:W:PE] lim_process_for_spectrum_mgmt: LIM Info: Missing Supported channel IE in Assoc Req from 38:18:68:**:**:79
+[913340.991617][T13033] [schedu][0xff2fb939fdb][16:10:56.978124] wlan: [13033:I:WMI] wma_add_sta: sap d0 wow
+[913341.002747][T13033] [schedu][0xff2fb96e2a3][16:10:56.989255] wlan: [13033:I:PE] lim_process_ap_mlm_add_sta_rsp: 2085 vdev_id:1, assoc_id:17, old_mlm_state:21, new_mlm_state:5, sta_deletion_in_progress:0, sta_mac:[MAC]
+[913341.024436][T13033] [schedu][0xff2fb9d3d67][16:10:57.010945] wlan: [13033:I:PE] __lim_process_sme_assoc_cnf_new: 7810 vdev_id:1, assoc_id:17, old_mlm_state:15, old_sta_deletion_in_progress:0
+[913341.047390][T13033] [schedu][0xff2fba3f6f7][16:10:57.033899] wlan: [13033:I:HDD] hdd_hostapd_sap_event_cb: Vdev 1, STA 38:18:68:**:**:79 associated
+[913341.048584][T24269] [kworke][0xff2fba4509d][16:10:57.035094] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913341.061479][T13033] [schedu][0xff2fba817c1][16:10:57.047989] wlan: [13033:I:IPA] wlan_ipa_set_peer_id: Num of attribute set to: 2
+[913341.086606][T13033] [schedu][0xff2fbaf743c][16:10:57.073116] wlan: [13033:I:IPA] wlan_ipa_set_peer_id: ta_peer_id set to: 35
+[913341.121301][T13033] [schedu][0xff2fbb99e68][16:10:57.107812] wlan: [13033:E:HDD] hdd_son_deliver_peer_authorize_event: ALD ASSOCIATED Event failed for38:18:68:**:**:79
+[913344.515248][ T1860] [kworke][0xff2ff9bf050][16:11:00.501768] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913344.528333][T13033] [schedu][0xff2ff9fc5c4][16:11:00.514854] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913349.856050][ T7674] [kworke][0xff305b8a01b][16:11:05.842583] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913349.869348][T13033] [schedu][0xff305bc8592][16:11:05.855883] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913354.857708][ T7674] [kworke][0xff30b71f48a][16:11:10.844259] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913354.870807][T13033] [schedu][0xff30b75cb0e][16:11:10.857359] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913360.196831][ T1860] [kworke][0xff3118e26ba][16:11:16.183399] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913360.210187][T13033] [schedu][0xff311921071][16:11:16.196755] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913365.200616][ T7674] [kworke][0xff317481a96][16:11:21.187200] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913365.213998][T13033] [schedu][0xff3174c04e3][16:11:21.200564] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913368.560322][    C0] [soft_i][0xff31b206486][16:11:24.546917] wlan: [0:I:WMI] extract_reg_ch_avoid_event_tlv: Channel avoid event received with 1 ranges
+[913368.574424][    C0] [soft_i][0xff31b24864a][16:11:24.561021] wlan: [0:I:WMI] extract_reg_ch_avoid_event_tlv: range 0 tlv id 4718600, start freq 2457, end freq 2472
+[913368.589616][    C0] [soft_i][0xff31b28f9b9][16:11:24.576213] wlan: [0:I:REGULATORY] reg_process_ch_avoid_event: band count 1
+[913368.601326][    C0] [soft_i][0xff31b2c6807][16:11:24.587924] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: start: freq 2457, ch 10, end: freq 2472, ch 13
+[913368.615963][    C0] [soft_i][0xff31b30b1c2][16:11:24.602561] wlan: [0:E:REGULATORY] hdd_get_band_adapter: ifname:wlan0, band:1, unsafe:0
+[913368.628731][    C0] [soft_i][0xff31b346e78][16:11:24.615317] wlan: [0:E:REGULATORY] reg_process_ch_avoid_freq: this adapter is null or  adapter->clean_unsafechan is 0
+[913368.644134][    C0] [soft_i][0xff31b38f2b6][16:11:24.630733] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2457
+[913368.656059][    C0] [soft_i][0xff31b3c7128][16:11:24.642659] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2462
+[913368.667983][    C0] [soft_i][0xff31b3fef82][16:11:24.654584] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2467
+[913368.679917][    C0] [soft_i][0xff31b436e7a][16:11:24.666517] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2472
+[913368.692130][    C0] [soft_i][0xff31b47028a][16:11:24.678731] wlan: [0:I:REGULATORY] reg_dump_valid_6ghz_cur_chan_list: sta freq:state:ispsd:pwr:psd:flags(hex):
+[913368.706936][    C0] [soft_i][0xff31b4b5916][16:11:24.693538] wlan: [0:I:REGULATORY] reg_dump_valid_6ghz_cur_chan_list: sap freq:state:ispsd:pwr:psd:flags(hex):
+[913368.721750][    C0] [soft_i][0xff31b4fafba][16:11:24.708347] wlan: [0:I:REGULATORY] reg_modify_chan_list_for_avoid_chan_ext: Don't disable reg channels for Coex unsafe channels
+[913370.539372][T24269] [kworke][0xff31d643166][16:11:26.525975] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913370.552670][T13033] [schedu][0xff31d6816bc][16:11:26.539273] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913375.545837][ T1860] [kworke][0xff3231eee2b][16:11:31.532456] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913375.559173][T13033] [schedu][0xff32322d67f][16:11:31.545793] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913379.698348][    C0] [soft_i][0xff327df7c68][16:11:35.684979] wlan: [0:I:WMI] extract_reg_ch_avoid_event_tlv: Channel avoid event received with 0 ranges
+[913379.712611][    C0] [soft_i][0xff327e3aa4b][16:11:35.699244] wlan: [0:I:REGULATORY] reg_process_ch_avoid_event: band count 0
+[913379.724675][    C0] [soft_i][0xff327e7320a][16:11:35.711295] wlan: [0:I:REGULATORY] reg_dump_valid_6ghz_cur_chan_list: sta freq:state:ispsd:pwr:psd:flags(hex):
+[913379.739687][    C0] [soft_i][0xff327eb992c][16:11:35.726323] wlan: [0:I:REGULATORY] reg_dump_valid_6ghz_cur_chan_list: sap freq:state:ispsd:pwr:psd:flags(hex):
+[913379.754550][    C0] [soft_i][0xff327eff410][16:11:35.741188] wlan: [0:I:REGULATORY] reg_modify_chan_list_for_avoid_chan_ext: Don't disable reg channels for Coex unsafe channels
+[913380.396946][ T7674] [kworke][0xff328ac274b][16:11:36.383580] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913380.410259][T13033] [schedu][0xff328b00c3f][16:11:36.396873] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913385.400826][ T1860] [kworke][0xff32e662254][16:11:41.387477] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913385.414181][T13033] [schedu][0xff32e6a0c01][16:11:41.400833] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913390.918251][T12326] [kworke][0xff334b6913a][16:11:46.904920] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913390.931453][T13033] [schedu][0xff334ba6f5e][16:11:46.918122] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913395.922413][T12326] [kworke][0xff33a709ffa][16:11:51.909080] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913395.935862][T13033] [schedu][0xff33a74920b][16:11:51.922548] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913400.751370][T12326] [kworke][0xff33ff75d2f][16:11:56.738072] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913400.764566][T13033] [schedu][0xff33ffb396f][16:11:56.751249] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913405.385288][T13033] [schedu][0xff34544f55d][16:12:01.372010] wlan: [13033:I:PE] Deauth RX: vdev 1 from 38:18:68:**:**:79 for 0e:ac:d1:**:**:08 RSSI = -48 reason 1 mlm state = 4, sme state = 16 systemrole = 1
+[913405.404952][T13033] [schedu][0xff3454ab7c3][16:12:01.391669] wlan: [13033:I:PE] lim_perform_deauth: 592 vdev_id:1, assoc_id:17, mlm_state:14, sta_deletion_in_progress_before:0, cleanup_trigger:5, reason_code:1, sta_mac:[MAC]
+[913405.429699][ T7674] [kworke][0xff34551f7c8][16:12:01.416416] wlan: [7674:E:CP_STATS] tgt_mc_cp_stats_extract_peer_extd_stats: peer not found stats
+[913405.443833][T13033] [schedu][0xff345561bf6][16:12:01.430551] wlan: [13033:I:PE] lim_cleanup_rx_path: 421 vdev_id:1, assoc_id:17, mlm_state:14, sta_deletion_in_progress:1, is_valid:1, is_added:1, delete_peer:1, sta_mac:[MAC]
+[913405.467008][T13033] [schedu][0xff3455ce62a][16:12:01.453728] wlan: [13033:I:PE] lim_cleanup_rx_path: 472 vdev_id:1, assoc_id:17, old_mlm_state:14, new_mlm_state:14, sta_deletion_in_progress:1, sta_mac:[MAC]
+[913405.487815][T13033] [schedu][0xff34562fed0][16:12:01.474536] wlan: [13033:I:PE] lim_del_sta: 2875 vdev_id:1, session_id:1, assoc_id:17, response_required:1, sta_mac:[MAC], mlm_state:22, sta_deletion_in_progress:1
+[913405.511980][T13033] [schedu][0xff3456a1345][16:12:01.498702] wlan: [13033:I:WMI] wma_delete_sta: sap d0 wow
+[913405.515742][    C2] [soft_i][0xff3456b2d45][16:12:01.502463] wlan: [0:I:TXRX] HTT_T2H_MSG_TYPE_PEER_UNMAP msg for peer id 35 vdev id 1 n
+[913405.535015][    C2] [soft_i][0xff34570d2d4][16:12:01.521737] wlan: [0:F:DP] dp_peer_update_state: Invalid state shift from 2 to 4 peer 38:18:68:**:**:79
+[913405.551194][T13033] [schedu][0xff345759049][16:12:01.537916] wlan: [13033:I:PE] lim_process_ap_mlm_del_sta_rsp: 1911 vdev_id:1, assoc_id:17, status:0, mlm_state:22, sta_deletion_in_progress:1
+[913405.568944][T13033] [schedu][0xff3457ac39a][16:12:01.555667] wlan: [13033:I:PE] dph_delete_hash_entry: 396 assoc_id:17, hash_index:0, sta_mac:[MAC]
+[913405.583874][T13033] [schedu][0xff3457f2364][16:12:01.570598] wlan: [13033:I:HDD] SAP(1) Peer 38:18:68:**:**:79 disassociated reason 1 status code 520
+[913405.597856][T13033] [schedu][0xff345833c0a][16:12:01.584580] wlan: [13033:E:DP] ucfg_dp_update_dhcp_state_on_disassoc: Peer object not found mac:38:18:68:**:**:79
+[913405.755653][ T7674] [kworke][0xff345b17674][16:12:01.742372] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913405.768566][T13033] [schedu][0xff345b53f3b][16:12:01.755289] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913411.397101][ T7674] [kworke][0xff34c263aff][16:12:07.383838] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913411.410590][T13033] [schedu][0xff34c2a2ea3][16:12:07.397327] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913416.400478][ T7674] [kworke][0xff351e01053][16:12:12.387232] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913416.413449][T13033] [schedu][0xff351e3dc22][16:12:12.400190] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913421.161258][ T1860] [kworke][0xff35752d2bb][16:12:17.148027] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913421.174397][T13033] [schedu][0xff35756ac33][16:12:17.161167] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913426.165459][T12326] [kworke][0xff35d0ce5cd][16:12:22.152244] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913426.178963][T13033] [schedu][0xff35d10d8fc][16:12:22.165727] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913431.672229][ T7674] [kworke][0xff3635a35ec][16:12:27.659037] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913431.685297][T13033] [schedu][0xff3635e09cd][16:12:27.672103] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913436.676745][T12326] [kworke][0xff36914603c][16:12:32.663565] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913436.690112][T13033] [schedu][0xff3691849a3][16:12:32.676917] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913437.662560][ T1860] [kworke][0xff36a353062][16:12:33.649383] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913437.676236][T13033] [schedu][0xff36a393224][16:12:33.663060] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913442.665891][ T1860] [kworke][0xff36fef0235][16:12:38.652731] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913442.679234][T13033] [schedu][0xff36ff2eaf9][16:12:38.666074] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913452.357677][ T7674] [kworke][0xff37b06661d][16:12:48.344548] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913452.370969][T13033] [schedu][0xff37b0a4b1c][16:12:48.357842] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913457.363674][T12326] [kworke][0xff380c0fff0][16:12:53.350562] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913457.377033][T13033] [schedu][0xff380c4ea01][16:12:53.363923] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913462.495880][T12326] [kworke][0xff386a0935d][16:12:58.482785] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913462.509284][T13033] [schedu][0xff386a480b6][16:12:58.496190] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913467.500733][T24269] [kworke][0xff38c5ad578][16:13:03.487630] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913467.514189][T13033] [schedu][0xff38c5ec892][16:13:03.501111] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913471.562874][T13033] [schedu][0xff39100ebe8][16:13:07.549809] wlan: [13033:I:PE] Auth RX: vdev 1 sys role 1 lim_state 4 from 38:18:68:**:**:79 rssi -50 auth_alg 3 seq 8
+[913471.578611][T13033] [schedu][0xff39105884a][16:13:07.565548] wlan: [13033:I:PE] vdev:1 SAE Auth RX type 0 subtype 11 trans_seq_num:1 from 38:18:68:**:**:79
+[913471.604803][T13033] [schedu][0xff3910d34af][16:13:07.591739] wlan: [13033:I:PE] Auth TX: success (0)
+[913471.624829][T13033] [schedu][0xff39113129c][16:13:07.611765] wlan: [13033:W:PE] lim_process_for_spectrum_mgmt: LIM Info: Missing Supported channel IE in Assoc Req from 38:18:68:**:**:79
+[913471.645588][T13033] [schedu][0xff39119279c][16:13:07.632525] wlan: [13033:I:WMI] wma_add_sta: sap d0 wow
+[913471.656000][T13033] [schedu][0xff3911c33e1][16:13:07.642929] wlan: [13033:I:PE] lim_process_ap_mlm_add_sta_rsp: 2085 vdev_id:1, assoc_id:18, old_mlm_state:21, new_mlm_state:5, sta_deletion_in_progress:0, sta_mac:[MAC]
+[913471.677354][T13033] [schedu][0xff39122765b][16:13:07.664295] wlan: [13033:I:PE] __lim_process_sme_assoc_cnf_new: 7810 vdev_id:1, assoc_id:18, old_mlm_state:15, old_sta_deletion_in_progress:0
+[913471.697724][T13033] [schedu][0xff391286e1f][16:13:07.684665] wlan: [13033:I:HDD] hdd_hostapd_sap_event_cb: Vdev 1, STA 38:18:68:**:**:79 associated
+[913471.699203][ T7674] [kworke][0xff39128dd15][16:13:07.686145] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913471.711602][T13033] [schedu][0xff3912c7efc][16:13:07.698544] wlan: [13033:I:IPA] wlan_ipa_set_peer_id: Num of attribute set to: 2
+[913471.736210][T13033] [schedu][0xff39133b48e][16:13:07.723151] wlan: [13033:I:IPA] wlan_ipa_set_peer_id: ta_peer_id set to: 29
+[913471.768490][T13033] [schedu][0xff3913d298e][16:13:07.755431] wlan: [13033:E:HDD] hdd_son_deliver_peer_authorize_event: ALD ASSOCIATED Event failed for38:18:68:**:**:79
+[913472.633782][ T7674] [kworke][0xff3923aaa12][16:13:08.620721] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913472.647107][T13033] [schedu][0xff3923e915a][16:13:08.634045] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913477.637853][T12326] [kworke][0xff397f4b36e][16:13:13.624809] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913477.651143][T13033] [schedu][0xff397f8982d][16:13:13.638099] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913479.278025][    C1] [soft_i][0xff399d53857][16:13:15.264987] wlan: [0:I:WMI] extract_reg_ch_avoid_event_tlv: Channel avoid event received with 1 ranges
+[913479.292116][    C1] [soft_i][0xff399d9593a][16:13:15.279079] wlan: [0:I:WMI] extract_reg_ch_avoid_event_tlv: range 0 tlv id 4718600, start freq 2457, end freq 2472
+[913479.307258][    C1] [soft_i][0xff399ddc8ca][16:13:15.294220] wlan: [0:I:REGULATORY] reg_process_ch_avoid_event: band count 1
+[913479.318944][    C1] [soft_i][0xff399e13543][16:13:15.305906] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: start: freq 2457, ch 10, end: freq 2472, ch 13
+[913479.333560][    C1] [soft_i][0xff399e57d84][16:13:15.320523] wlan: [0:E:REGULATORY] hdd_get_band_adapter: ifname:wlan0, band:1, unsafe:0
+[913479.346264][    C1] [soft_i][0xff399e93672][16:13:15.333229] wlan: [0:E:REGULATORY] reg_process_ch_avoid_freq: this adapter is null or  adapter->clean_unsafechan is 0
+[913479.361638][    C1] [soft_i][0xff399edb772][16:13:15.348602] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2457
+[913479.373540][    C1] [soft_i][0xff399f13426][16:13:15.360505] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2462
+[913479.385433][    C1] [soft_i][0xff399f4b01b][16:13:15.372397] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2467
+[913479.397331][    C1] [soft_i][0xff399f82c75][16:13:15.384295] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2472
+[913479.409680][    C1] [soft_i][0xff399fbca83][16:13:15.396643] wlan: [0:I:REGULATORY] reg_dump_valid_6ghz_cur_chan_list: sta freq:state:ispsd:pwr:psd:flags(hex):
+[913479.424536][    C1] [soft_i][0xff39a0024d9][16:13:15.411501] wlan: [0:I:REGULATORY] reg_dump_valid_6ghz_cur_chan_list: sap freq:state:ispsd:pwr:psd:flags(hex):
+[913479.439378][    C1] [soft_i][0xff39a047dff][16:13:15.426343] wlan: [0:I:REGULATORY] reg_modify_chan_list_for_avoid_chan_ext: Don't disable reg channels for Coex unsafe channels
+[913483.077721][T24269] [kworke][0xff39e2e697b][16:13:19.064695] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913483.091086][T13033] [schedu][0xff39e3253f9][16:13:19.078061] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913488.082027][T24269] [kworke][0xff3a3e88454][16:13:24.069016] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913488.095356][T13033] [schedu][0xff3a3ec6c36][16:13:24.082348] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913490.464015][    C1] [soft_i][0xff3a6a25d6c][16:13:26.451012] wlan: [0:I:WMI] extract_reg_ch_avoid_event_tlv: Channel avoid event received with 0 ranges
+[913490.478131][    C1] [soft_i][0xff3a6a68058][16:13:26.465131] wlan: [0:I:REGULATORY] reg_process_ch_avoid_event: band count 0
+[913490.490234][    C1] [soft_i][0xff3a6aa0afa][16:13:26.477219] wlan: [0:I:REGULATORY] reg_dump_valid_6ghz_cur_chan_list: sta freq:state:ispsd:pwr:psd:flags(hex):
+[913490.505114][    C1] [soft_i][0xff3a6ae6818][16:13:26.492114] wlan: [0:I:REGULATORY] reg_dump_valid_6ghz_cur_chan_list: sap freq:state:ispsd:pwr:psd:flags(hex):
+[913490.519972][    C1] [soft_i][0xff3a6b2c279][16:13:26.506972] wlan: [0:I:REGULATORY] reg_modify_chan_list_for_avoid_chan_ext: Don't disable reg channels for Coex unsafe channels
+[913493.215834][ T1860] [kworke][0xff3a9c89045][16:13:29.202845] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913493.229144][T13033] [schedu][0xff3a9cc7645][16:13:29.216152] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913498.220560][T12326] [kworke][0xff3af82ca61][16:13:34.207583] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913498.233942][T13033] [schedu][0xff3af86b60c][16:13:34.220965] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913503.353046][T24269] [kworke][0xff3b56272c5][16:13:39.340085] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913503.366405][T13033] [schedu][0xff3b5665cce][16:13:39.353446] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913508.356245][T24269] [kworke][0xff3bb1c3ad8][16:13:44.343303] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913508.369548][T13033] [schedu][0xff3bb2020a0][16:13:44.356607] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913508.747397][    C1] [soft_i][0xff3bb8ed330][16:13:44.734455] wlan: [0:I:WMI] extract_reg_ch_avoid_event_tlv: Channel avoid event received with 1 ranges
+[913508.761547][    C1] [soft_i][0xff3bb92f88b][16:13:44.748607] wlan: [0:I:WMI] extract_reg_ch_avoid_event_tlv: range 0 tlv id 4718600, start freq 2457, end freq 2472
+[913508.776687][    C1] [soft_i][0xff3bb9766ea][16:13:44.763732] wlan: [0:I:REGULATORY] reg_process_ch_avoid_event: band count 1
+[913508.788335][    C1] [soft_i][0xff3bb9ad1a8][16:13:44.775395] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: start: freq 2457, ch 10, end: freq 2472, ch 13
+[913508.802915][    C1] [soft_i][0xff3bb9f1721][16:13:44.789975] wlan: [0:E:REGULATORY] hdd_get_band_adapter: ifname:wlan0, band:1, unsafe:0
+[913508.815618][    C1] [soft_i][0xff3bba2cfe6][16:13:44.802679] wlan: [0:E:REGULATORY] reg_process_ch_avoid_freq: this adapter is null or  adapter->clean_unsafechan is 0
+[913508.830995][    C1] [soft_i][0xff3bba75132][16:13:44.818056] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2457
+[913508.842897][    C1] [soft_i][0xff3bbaacdda][16:13:44.829958] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2462
+[913508.854800][    C1] [soft_i][0xff3bbae4a94][16:13:44.841861] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2467
+[913508.866704][    C1] [soft_i][0xff3bbb1c760][16:13:44.853765] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2472
+[913508.878988][    C1] [soft_i][0xff3bbb56085][16:13:44.866047] wlan: [0:I:REGULATORY] reg_dump_valid_6ghz_cur_chan_list: sta freq:state:ispsd:pwr:psd:flags(hex):
+[913508.893846][    C1] [soft_i][0xff3bbb9bb0b][16:13:44.880907] wlan: [0:I:REGULATORY] reg_dump_valid_6ghz_cur_chan_list: sap freq:state:ispsd:pwr:psd:flags(hex):
+[913508.908708][    C1] [soft_i][0xff3bbbe15b4][16:13:44.895769] wlan: [0:I:REGULATORY] reg_modify_chan_list_for_avoid_chan_ext: Don't disable reg channels for Coex unsafe channels
+[913513.797402][T24269] [kworke][0xff3c15651ab][16:13:49.784479] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913513.810645][T13033] [schedu][0xff3c15a32d9][16:13:49.797721] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913518.807762][ T7674] [kworke][0xff3c71232a4][16:13:54.794855] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913518.821094][T13033] [schedu][0xff3c7161a83][16:13:54.808186] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913524.038322][ T7674] [kworke][0xff3cd0e9693][16:14:00.025431] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913524.051330][T13033] [schedu][0xff3cd126638][16:14:00.038440] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913529.041510][ T1860] [kworke][0xff3d2c85da3][16:14:05.028635] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913529.054532][T13033] [schedu][0xff3d2cc2e55][16:14:05.041658] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913534.175745][T12326] [kworke][0xff3d8a8894a][16:14:10.162887] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913534.189313][T13033] [schedu][0xff3d8ac832f][16:14:10.176459] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913534.918912][    C1] [soft_i][0xff3d98242b0][16:14:10.906055] wlan: [0:I:WMI] extract_reg_ch_avoid_event_tlv: Channel avoid event received with 0 ranges
+[913534.933022][    C1] [soft_i][0xff3d9866510][16:14:10.920167] wlan: [0:I:REGULATORY] reg_process_ch_avoid_event: band count 0
+[913534.945076][    C1] [soft_i][0xff3d989ed0d][16:14:10.932220] wlan: [0:I:REGULATORY] reg_dump_valid_6ghz_cur_chan_list: sta freq:state:ispsd:pwr:psd:flags(hex):
+[913534.959994][    C1] [soft_i][0xff3d98e4c1f][16:14:10.947141] wlan: [0:I:REGULATORY] reg_dump_valid_6ghz_cur_chan_list: sap freq:state:ispsd:pwr:psd:flags(hex):
+[913534.975016][    C1] [soft_i][0xff3d992b2be][16:14:10.962163] wlan: [0:I:REGULATORY] reg_modify_chan_list_for_avoid_chan_ext: Don't disable reg channels for Coex unsafe channels
+[913539.213914][T24269] [kworke][0xff3de6c8fe5][16:14:15.201072] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913539.227071][T13033] [schedu][0xff3de706ac4][16:14:15.214230] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913544.315480][ T1860] [kworke][0xff3e443295a][16:14:20.302655] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913544.328493][T13033] [schedu][0xff3e446f971][16:14:20.315670] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913549.333241][T12326] [kworke][0xff3ea01357d][16:14:25.320433] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913549.346513][T13033] [schedu][0xff3ea05190f][16:14:25.333708] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913554.758929][T24269] [kworke][0xff3f036c41f][16:14:30.746140] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913554.772212][T13033] [schedu][0xff3f03aa85f][16:14:30.759423] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913559.762584][T12326] [kworke][0xff3f5f0ae21][16:14:35.749810] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913559.777661][T13033] [schedu][0xff3f5f518f0][16:14:35.764887] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913564.997446][T12326] [kworke][0xff3fbee54f6][16:14:40.984691] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913565.011725][T13033] [schedu][0xff3fbf283dd][16:14:40.998970] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913570.000710][T12326] [kworke][0xff401a82195][16:14:45.987970] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913570.014048][T13033] [schedu][0xff401ac0a0e][16:14:46.001309] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913575.136286][T24269] [kworke][0xff40788b01c][16:14:51.123540] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913575.149680][T13033] [schedu][0xff4078c9e5b][16:14:51.136957] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913580.139232][T12326] [kworke][0xff40d4266c0][16:14:56.126525] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913580.152550][T13033] [schedu][0xff40d464db0][16:14:56.139844] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913585.273751][T12326] [kworke][0xff41322a7a1][16:15:01.261061] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913585.287255][T13033] [schedu][0xff413269c8d][16:15:01.274566] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913590.275949][T24269] [kworke][0xff418dc2490][16:15:06.263276] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913590.289171][T13033] [schedu][0xff418e00442][16:15:06.276499] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913595.718599][T12326] [kworke][0xff41f16ab3c][16:15:11.705943] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913595.732008][T13033] [schedu][0xff41f1a9911][16:15:11.719354] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913600.721656][T24269] [kworke][0xff424d06888][16:15:16.709017] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913600.735052][T13033] [schedu][0xff424d45542][16:15:16.722413] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913605.857089][ T1860] [kworke][0xff42ab0ee04][16:15:21.844467] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913605.870362][T13033] [schedu][0xff42ab4d19a][16:15:21.857741] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913610.858659][T24269] [kworke][0xff4306a3bba][16:15:26.846053] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913610.872147][T13033] [schedu][0xff4306e2f62][16:15:26.859542] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913615.993559][T12326] [kworke][0xff4364a994a][16:15:31.980971] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913616.007027][T13033] [schedu][0xff4364e8b5c][16:15:31.994438] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913620.995623][T24269] [kworke][0xff43c040c26][16:15:36.983052] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913621.009480][T13033] [schedu][0xff43c081b7f][16:15:36.996910] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913626.438155][ T7674] [kworke][0xff4423e8a1d][16:15:42.425603] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913626.451210][T13033] [schedu][0xff442425d3f][16:15:42.438658] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913631.441630][ T7674] [kworke][0xff447f86686][16:15:47.429092] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913631.454998][T13033] [schedu][0xff447fc4ff4][16:15:47.442444] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913636.678186][T12326] [kworke][0xff44df68c6e][16:15:52.665668] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913636.691252][T13033] [schedu][0xff44dfa6064][16:15:52.678734] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913641.683727][T12326] [kworke][0xff453b103da][16:15:57.671223] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913641.697147][T13033] [schedu][0xff453b4f25b][16:15:57.684643] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913646.815955][ T1860] [kworke][0xff4599098f4][16:16:02.803468] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913646.829250][T13033] [schedu][0xff459947e26][16:16:02.816764] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913651.817877][T12326] [kworke][0xff45f4a010b][16:16:07.805406] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913651.831257][T13033] [schedu][0xff45f4decae][16:16:07.818788] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913657.056876][T12326] [kworke][0xff46548de04][16:16:13.044423] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913657.070281][T13033] [schedu][0xff4654ccb71][16:16:13.057828] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913662.059911][ T7674] [kworke][0xff46b0299ac][16:16:18.047475] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913662.072983][T13033] [schedu][0xff46b066e1f][16:16:18.060547] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913667.194345][ T7674] [kworke][0xff470e2d424][16:16:23.181925] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913667.207434][T13033] [schedu][0xff470e6a9ef][16:16:23.195015] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913672.200978][ T7674] [kworke][0xff4769d9dc7][16:16:28.188576] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913672.214119][T13033] [schedu][0xff476a17758][16:16:28.201717] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913677.639247][T12326] [kworke][0xff47cd6dc2f][16:16:33.626866] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913677.653058][T13033] [schedu][0xff47cdae7b5][16:16:33.640673] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913682.650348][ T7674] [kworke][0xff48292f45e][16:16:38.637979] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913682.663754][T13033] [schedu][0xff48296e1e1][16:16:38.651385] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913687.878394][ T7674] [kworke][0xff4888e9bec][16:16:43.866043] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913687.891407][T13033] [schedu][0xff488926c37][16:16:43.879060] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913692.885162][T24269] [kworke][0xff48e496f6a][16:16:48.872826] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913692.898305][T13033] [schedu][0xff48e4d4946][16:16:48.885971] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913698.016992][ T1860] [kworke][0xff49428e6bd][16:16:54.004674] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913698.030303][T13033] [schedu][0xff4942ccd0a][16:16:54.017985] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913703.022833][T24269] [kworke][0xff499e374c5][16:16:59.010531] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913703.035992][T13033] [schedu][0xff499e74fbc][16:16:59.023691] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913708.153962][ T1860] [kworke][0xff49fc2b5f8][16:17:04.141657] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913708.167276][T13033] [schedu][0xff49fc69e14][16:17:04.154992] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913713.160102][ T7674] [kworke][0xff4a57d5c08][16:17:09.147835] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913713.174323][T13033] [schedu][0xff4a58186a7][16:17:09.162056] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913718.906216][T24269] [kworke][0xff4ac10cab7][16:17:14.893969] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913718.919254][T13033] [schedu][0xff4ac149cb4][16:17:14.907010] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913723.915608][T12326] [kworke][0xff4b1cc62f7][16:17:19.903376] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913723.929071][T13033] [schedu][0xff4b1d054b1][16:17:19.916839] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913728.737498][T12326] [kworke][0xff4b7510cad][16:17:24.725281] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913728.750712][T13033] [schedu][0xff4b754ebfe][16:17:24.738499] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913730.186995][ T9028] QCMAP:bringup v4
+[913730.216136][ T9032] QCMAP:bringup v6
+[913730.458002][    C1] [soft_i][0xff4b9491a80][16:17:26.445791] wlan: [0:I:WMI] extract_reg_ch_avoid_event_tlv: Channel avoid event received with 1 ranges
+[913730.472096][    C1] [soft_i][0xff4b94d3ba4][16:17:26.459887] wlan: [0:I:WMI] extract_reg_ch_avoid_event_tlv: range 0 tlv id 4718600, start freq 2457, end freq 2472
+[913730.487230][    C1] [soft_i][0xff4b951aabf][16:17:26.475022] wlan: [0:I:REGULATORY] reg_process_ch_avoid_event: band count 1
+[913730.498883][    C1] [soft_i][0xff4b95514bd][16:17:26.486675] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: start: freq 2457, ch 10, end: freq 2472, ch 13
+[913730.513464][    C1] [soft_i][0xff4b9595a4a][16:17:26.501256] wlan: [0:E:REGULATORY] hdd_get_band_adapter: ifname:wlan0, band:1, unsafe:0
+[913730.526168][    C1] [soft_i][0xff4b95d131b][16:17:26.513960] wlan: [0:E:REGULATORY] reg_process_ch_avoid_freq: this adapter is null or  adapter->clean_unsafechan is 0
+[913730.541842][    C1] [soft_i][0xff4b961aa8d][16:17:26.529633] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2457
+[913730.553758][    C1] [soft_i][0xff4b9652851][16:17:26.541549] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2462
+[913730.565662][    C1] [soft_i][0xff4b968a527][16:17:26.553454] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2467
+[913730.577609][    C1] [soft_i][0xff4b96c2555][16:17:26.565403] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2472
+[913730.589698][    C1] [soft_i][0xff4b96fb001][16:17:26.577492] wlan: [0:I:REGULATORY] reg_dump_valid_6ghz_cur_chan_list: sta freq:state:ispsd:pwr:psd:flags(hex):
+[913730.604503][    C1] [soft_i][0xff4b9740682][16:17:26.592299] wlan: [0:I:REGULATORY] reg_dump_valid_6ghz_cur_chan_list: sap freq:state:ispsd:pwr:psd:flags(hex):
+[913730.619279][    C1] [soft_i][0xff4b9785abd][16:17:26.607075] wlan: [0:I:REGULATORY] reg_modify_chan_list_for_avoid_chan_ext: Don't disable reg channels for Coex unsafe channels
+[913730.928494][ T9062] QCMAP:WAN connected v4 on sub id:0profile:1
+[913733.741389][ T1860] [kworke][0xff4bd0b08eb][16:17:29.729194] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913733.754188][T13033] [schedu][0xff4bd0ec8e5][16:17:29.741994] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913734.189542][T10173] [add_dev_config 319]add node success. iface:modem_cpu, dev:rmnet_data1, ifindex:29
+[913735.191063][ T1860] [kworke][0xff4beb3be66][16:17:31.178872] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913735.203953][T13033] [schedu][0xff4beb78537][16:17:31.191763] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913740.193764][T12326] [kworke][0xff4c46d60f4][16:17:36.181589] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913740.206851][T13033] [schedu][0xff4c4713681][16:17:36.194677] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913749.420580][T24269] [kworke][0xff4cefc8bf3][16:17:45.408433] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913749.435480][T13033] [schedu][0xff4cf00e9b1][16:17:45.423336] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913754.423959][ T7674] [kworke][0xff4d4b65fcb][16:17:50.411808] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913754.437155][T13033] [schedu][0xff4d4ba3f18][16:17:50.425025] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913759.353479][T24269] [kworke][0xff4da5a9342][16:17:55.341363] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913759.366860][T13033] [schedu][0xff4da5e7eec][16:17:55.354746] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913764.361250][ T1860] [kworke][0xff4e015b225][16:18:00.349152] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913764.374540][T13033] [schedu][0xff4e01996dc][16:18:00.362441] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913769.799655][T24269] [kworke][0xff4e64efa86][16:18:05.787575] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913769.813093][T13033] [schedu][0xff4e652ea6d][16:18:05.801014] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913774.803376][T24269] [kworke][0xff4ec08e99b][16:18:10.791312] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913774.817222][T13033] [schedu][0xff4ec0cf81b][16:18:10.805159] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913779.936849][ T1860] [kworke][0xff4f1e8dc15][16:18:15.924802] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913779.950024][T13033] [schedu][0xff4f1ecb682][16:18:15.937955] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913784.940695][T24269] [kworke][0xff4f7a2d489][16:18:20.928665] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913784.954208][T13033] [schedu][0xff4f7a6ca0b][16:18:20.942179] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913790.073862][ T7674] [kworke][0xff4fd82aff2][16:18:26.061847] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913790.087370][T13033] [schedu][0xff4fd86a519][16:18:26.075356] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913795.087031][T24269] [kworke][0xff5033f63b0][16:18:31.075034] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913795.100291][T13033] [schedu][0xff503434648][16:18:31.088295] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913800.314004][T15595] [kworke][0xff5093abab6][16:18:36.302025] wlan: [15595:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913800.327251][T13033] [schedu][0xff5093e9c3f][16:18:36.315272] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913805.319643][T15595] [kworke][0xff50ef53986][16:18:41.307679] wlan: [15595:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913805.332934][T13033] [schedu][0xff50ef91e7c][16:18:41.320972] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913810.758797][T12326] [kworke][0xff5152eba14][16:18:46.746851] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913810.772244][T13033] [schedu][0xff51532aa9c][16:18:46.760298] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913815.762819][T12326] [kworke][0xff51ae8bfd1][16:18:51.750890] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913815.776039][T13033] [schedu][0xff51aec9f4c][16:18:51.764110] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913820.896636][T15595] [kworke][0xff520c8cc0b][16:18:56.884724] wlan: [15595:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913820.910140][T13033] [schedu][0xff520ccc0f1][16:18:56.898229] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913825.901419][T12326] [kworke][0xff526830ac6][16:19:01.889523] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913825.914601][T13033] [schedu][0xff52686e78c][16:19:01.902707] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913831.035929][ T1860] [kworke][0xff52c634b0e][16:19:07.024051] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913831.048946][T13033] [schedu][0xff52c671b67][16:19:07.037069] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913836.040756][T12326] [kworke][0xff5321d8d1f][16:19:12.028895] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913836.053950][T13033] [schedu][0xff532216ac1][16:19:12.042090] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913841.479652][ T7674] [kworke][0xff53856fa4b][16:19:17.467808] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913841.492711][T13033] [schedu][0xff5385acdcd][16:19:17.480868] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913846.484780][ T1860] [kworke][0xff53e1152dd][16:19:22.472952] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913846.498198][T13033] [schedu][0xff53e154184][16:19:22.486374] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913851.616536][ T1860] [kworke][0xff543f0c4a2][16:19:27.604726] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913851.629838][T13033] [schedu][0xff543f4aa3a][16:19:27.618028] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913856.631951][ T1860] [kworke][0xff549ae20bd][16:19:32.620158] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913856.644857][T13033] [schedu][0xff549b1e8ea][16:19:32.633067] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913861.610201][T12326] [kworke][0xff54f6099c7][16:19:37.598428] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913861.623372][T13033] [schedu][0xff54f647598][16:19:37.611599] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913863.096626][ T1860] [kworke][0xff55114138e][16:19:39.084856] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913863.110340][T13033] [schedu][0xff55118181a][16:19:39.098570] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913866.613092][ T1860] [kworke][0xff5551a4a9c][16:19:42.601335] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913866.626640][T13033] [schedu][0xff5551e42a7][16:19:42.614883] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913868.099075][ T1860] [kworke][0xff556cda33f][16:19:44.087322] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913868.111999][T13033] [schedu][0xff556d16c9d][16:19:44.100247] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913868.515396][T13033] [schedu][0xff557479b52][16:19:44.503645] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913872.096873][T24269] [kworke][0xff55b60dde7][16:19:48.085131] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913872.110113][T13033] [schedu][0xff55b64bece][16:19:48.098370] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913873.517884][T24269] [kworke][0xff55d012df8][16:19:49.506150] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913873.530866][T13033] [schedu][0xff55d04fb60][16:19:49.519129] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913877.099542][T24269] [kworke][0xff5611a7e03][16:19:53.087815] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913877.112875][T13033] [schedu][0xff5611e661a][16:19:53.101150] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913881.930813][ T1860] [kworke][0xff566a1e56c][16:19:57.919077] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913881.944016][T13033] [schedu][0xff566a5c5a4][16:19:57.932307] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913886.936494][T15595] [kworke][0xff56c5c6971][16:20:02.924800] wlan: [15595:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913886.949636][T13033] [schedu][0xff56c604320][16:20:02.937943] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913892.442383][T15595] [kworke][0xff572a97722][16:20:08.430708] wlan: [15595:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913892.456784][T13033] [schedu][0xff572adaf23][16:20:08.445108] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913897.446170][ T7674] [kworke][0xff578636b2e][16:20:13.434512] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913897.459236][T13033] [schedu][0xff578673f18][16:20:13.447577] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913898.012829][ T7674] [kworke][0xff579096e7d][16:20:14.001171] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913898.026026][T13033] [schedu][0xff5790d4c5b][16:20:14.014369] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913903.014152][ T7674] [kworke][0xff57ec2a9ba][16:20:19.002511] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913903.027234][T13033] [schedu][0xff57ec67dbd][16:20:19.015577] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913907.530970][ T7674] [kworke][0xff583edf318][16:20:23.519344] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913907.544524][T13033] [schedu][0xff583f1eba6][16:20:23.532898] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913912.533583][T24269] [kworke][0xff589a78d65][16:20:28.521951] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913912.549930][T13033] [schedu][0xff589ac594b][16:20:28.538323] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913912.955304][T13033] [schedu][0xff58a231aa5][16:20:28.943676] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913917.958888][T15595] [kworke][0xff58fdd00fb][16:20:33.947297] wlan: [15595:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913917.972295][T13033] [schedu][0xff58fe0ee7d][16:20:33.960703] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913923.196159][T24269] [kworke][0xff595db5c4f][16:20:39.184585] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913923.209787][T13033] [schedu][0xff595df5a71][16:20:39.198213] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913928.199030][ T1860] [kworke][0xff59b950ba5][16:20:44.187473] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913928.212510][T13033] [schedu][0xff59b98feaa][16:20:44.200953] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913933.639720][T15595] [kworke][0xff5a1ceff59][16:20:49.628180] wlan: [15595:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913933.653178][T13033] [schedu][0xff5a1d2e348][16:20:49.641459] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913938.650388][ T1860] [kworke][0xff5a78af772][16:20:54.638864] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913938.664099][T13033] [schedu][0xff5a78efbcf][16:20:54.652576] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913943.777528][T15595] [kworke][0xff5ad690ef6][16:20:59.766022] wlan: [15595:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913943.790809][T13033] [schedu][0xff5ad6cf314][16:20:59.779303] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913948.781706][ T1860] [kworke][0xff5b3232056][16:21:04.770216] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913948.798027][T13033] [schedu][0xff5b327e863][16:21:04.786537] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913953.914990][T24269] [kworke][0xff5b90304aa][16:21:09.903518] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913953.928825][T13033] [schedu][0xff5b9071243][16:21:09.917352] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913958.919942][T15595] [kworke][0xff5bebd4fe5][16:21:14.908484] wlan: [15595:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913958.933501][T13033] [schedu][0xff5bec148ec][16:21:14.922044] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913964.155222][ T7674] [kworke][0xff5c4bb1601][16:21:20.143783] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913964.168205][T13033] [schedu][0xff5c4bee3c7][16:21:20.156766] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913969.160951][T15595] [kworke][0xff5ca759bb1][16:21:25.149528] wlan: [15595:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913969.174222][T13033] [schedu][0xff5ca797f0d][16:21:25.162800] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913974.599151][T15595] [kworke][0xff5d0aed4ed][16:21:30.587749] wlan: [15595:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913974.612350][T13033] [schedu][0xff5d0b2b2d8][16:21:30.600948] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913979.602476][T15595] [kworke][0xff5d668a60a][16:21:35.591088] wlan: [15595:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913979.615600][T13033] [schedu][0xff5d66c7e6c][16:21:35.604213] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913984.839351][ T7674] [kworke][0xff5dc66e3eb][16:21:40.827983] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913984.853265][T13033] [schedu][0xff5dc6af75c][16:21:40.841896] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913989.845524][ T1860] [kworke][0xff5e2218aee][16:21:45.834173] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913989.858587][T13033] [schedu][0xff5e2255e8d][16:21:45.847235] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913994.977926][ T1860] [kworke][0xff5e8012cbf][16:21:50.966588] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913994.991055][T13033] [schedu][0xff5e8050590][16:21:50.979719] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[913999.982426][ T1860] [kworke][0xff5edbb5535][16:21:55.971090] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[913999.995716][T13033] [schedu][0xff5edbf3b57][16:21:55.984399] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[914005.114841][ T7674] [kworke][0xff5f39af992][16:22:01.103539] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[914005.128342][T13033] [schedu][0xff5f39eee08][16:22:01.117038] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[914010.120762][ T7674] [kworke][0xff5f9558d7f][16:22:06.109474] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[914010.135115][T13033] [schedu][0xff5f959c0d4][16:22:06.123812] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[914015.560546][T15595] [kworke][0xff5ff8f3d4f][16:22:11.549276] wlan: [15595:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[914015.574779][T13033] [schedu][0xff5ff9368d3][16:22:11.563510] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[914020.566623][T24269] [kworke][0xff60549dd1b][16:22:16.555370] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[914020.579920][T13033] [schedu][0xff6054dc262][16:22:16.568667] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[914025.697849][T24269] [kworke][0xff60b29270d][16:22:21.686613] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[914025.711392][T13033] [schedu][0xff60b2d1ec4][16:22:21.700156] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[914030.704132][T24269] [kworke][0xff610e3d643][16:22:26.692912] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[914030.717221][T13033] [schedu][0xff610e7aa6f][16:22:26.705981] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[914035.835234][ T1860] [kworke][0xff616c316d8][16:22:31.824030] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[914035.848528][T13033] [schedu][0xff616c6fbf1][16:22:31.837325] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[914040.841193][ T1860] [kworke][0xff61c7dae01][16:22:36.830009] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[914040.854417][T13033] [schedu][0xff61c818dcf][16:22:36.843233] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[914046.280274][T24269] [kworke][0xff622b728e7][16:22:42.269106] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[914046.293619][T13033] [schedu][0xff622bb11d1][16:22:42.282451] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[914051.285698][ T7674] [kworke][0xff6287197b2][16:22:47.274546] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[914051.300059][T13033] [schedu][0xff62875ccb4][16:22:47.288906] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[914056.437889][ T7674] [kworke][0xff62e5705ff][16:22:52.426754] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[914056.451018][T13033] [schedu][0xff62e5adef9][16:22:52.439887] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[914061.442577][ T1860] [kworke][0xff634113de3][16:22:57.431462] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[914061.455827][T13033] [schedu][0xff634151f74][16:22:57.444710] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[914066.657885][T24269] [kworke][0xff63a0929b5][16:23:02.646784] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[914066.671361][T13033] [schedu][0xff63a0d1c5c][16:23:02.660259] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[914071.662264][T15595] [kworke][0xff63fc34a22][16:23:07.651179] wlan: [15595:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[914071.675481][T13033] [schedu][0xff63fc729b6][16:23:07.664400] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[914076.897283][ T7674] [kworke][0xff645c0fc8f][16:23:12.886216] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[914076.910264][T13033] [schedu][0xff645c4ca65][16:23:12.899200] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[914081.902554][ T7674] [kworke][0xff64b7b5fdb][16:23:17.891503] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[914081.916253][T13033] [schedu][0xff64b7f6354][16:23:17.905202] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[914087.036437][ T7674] [kworke][0xff6515b7112][16:23:23.025403] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[914087.049586][T13033] [schedu][0xff6515f4b46][16:23:23.038552] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[914092.043610][ T7674] [kworke][0xff65716627d][16:23:28.032584] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[914092.057853][T13033] [schedu][0xff6571a8fac][16:23:28.046840] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[914097.275638][T24269] [kworke][0xff65d133510][16:23:33.264636] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[914097.288926][T13033] [schedu][0xff65d1719cc][16:23:33.277926] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[914102.283506][T24269] [kworke][0xff662ce5a03][16:23:38.272505] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[914102.296569][T13033] [schedu][0xff662d22f04][16:23:38.285585] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[914107.617996][T15595] [kworke][0xff668e93202][16:23:43.607030] wlan: [15595:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[914107.631098][T13033] [schedu][0xff668ed08af][16:23:43.620132] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[914112.624396][T15595] [kworke][0xff66ea3ea08][16:23:48.613446] wlan: [15595:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[914112.638881][T13033] [schedu][0xff66ea8285a][16:23:48.627931] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[914114.685923][T24269] [kworke][0xff670ffe09d][16:23:50.674981] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[914114.699456][T13033] [schedu][0xff67103d793][16:23:50.688514] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+[914119.690552][T24269] [kworke][0xff676ba13b1][16:23:55.679625] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+[914119.703859][T13033] [schedu][0xff676bdf9be][16:23:55.692933] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled

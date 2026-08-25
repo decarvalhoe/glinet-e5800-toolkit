@@ -1,0 +1,421 @@
+Mon Aug 17 16:17:33 2026 daemon.info dnsmasq[10621]: using nameserver [IPv4]#53
+Mon Aug 17 16:17:33 2026 daemon.info dnsmasq[10621]: using nameserver [IPv4]#53
+Mon Aug 17 16:17:33 2026 daemon.info dnsmasq[10621]: using only locally-known addresses for test
+Mon Aug 17 16:17:33 2026 daemon.info dnsmasq[10621]: using only locally-known addresses for onion
+Mon Aug 17 16:17:33 2026 daemon.info dnsmasq[10621]: using only locally-known addresses for localhost
+Mon Aug 17 16:17:33 2026 daemon.info dnsmasq[10621]: using only locally-known addresses for local
+Mon Aug 17 16:17:33 2026 daemon.info dnsmasq[10621]: using only locally-known addresses for invalid
+Mon Aug 17 16:17:33 2026 daemon.info dnsmasq[10621]: using only locally-known addresses for bind
+Mon Aug 17 16:17:33 2026 daemon.info dnsmasq[10621]: using only locally-known addresses for lan
+Mon Aug 17 16:17:33 2026 user.notice kmwan: config json str={ "op": 6, "data": { } }
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:33 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci -q get qcmap_lan.@profile[0].bh_present_v6
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_wlan.@stamodeconfig[0].bridge_mode
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@no_of_configs[0].default_pdn
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get glipv6.globals.enabled
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get glipv6.lan.mode
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][update_dhcpv6_relay_mode][2157] enter update_dhcpv6_relay_mode, new_backhaul:modem_cpu
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get dhcp.lan.ndp
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get dhcp.wan6.ndp
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][update_dhcpv6_relay_mode][2187] dhcpv6 relay was not set and no need set(ipv6 backhaul not up), break
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@no_of_configs[0].default_pdn
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@lan[0].default_waneth_profile_num
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@profile[0].bh_present
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@profile[0].bh_present_v6
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@no_of_configs[0].no_of_vlans
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_wlan.@stamodeconfig[0].bridge_mode
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][update_vlan_default_backhaul_status][2325] Enter update_vlan_default_backhaul_status
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][update_vlan_default_backhaul_status][2329] No VLAN is configured
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][run_combine_backhaul_with_lock][2656] Releasing lock, after function execution
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][add_second_default_route_for_load_balance][2596] Enter add_second_default_route_for_load_balance
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get kmwan.modem_cpu.metric
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get kmwan.wan.metric
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][get_bh_load_balance_status][2585]  backhaul load balance status: 0
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][util_execute_uci][2599]  uci set qcmap_lan.profile_.bh_present=
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@profile[0].bh_previous
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@profile[0].bh_present
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][:switch_backhaul:][1567] current_bh:;previous_bh:;new_bh:modem_cpu
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][firewall_cleanup][550] previous_bh:, current_bh:modem_cpu
+Mon Aug 17 16:17:34 2026 user.notice radio: Invalid option
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][firewall_cleanup][556] wan_interface_index: 1
+Mon Aug 17 16:17:34 2026 user.notice radio: backhaulCommonConfig.sh:3929:Invalid option
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci show firewall
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get firewall.@zone[].network
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get network.modem_cpu.downstream
+Mon Aug 17 16:17:34 2026 user.notice radio: Invalid option
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get firewall.@zone[3].network
+Mon Aug 17 16:17:34 2026 user.notice radio: backhaulCommonConfig.sh:3929:Invalid option
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get firewall.@zone[1].network
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][][722] :Invalid option
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@profile[0].firewall_enabled
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][is_firewall_up_on_default_pdn][531] firewall_enable_flag:0, defaultProfileId:1 , profile_idx: 0
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][firewall_cleanup][607] firewall_enable_flag:0
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][firewall_cleanup][609] current_bh:modem_cpu not listed to wan_all
+Mon Aug 17 16:17:34 2026 user.notice radio: Invalid option
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci add_list firewall.@zone[3].network=modem_cpu
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci commit firewall
+Mon Aug 17 16:17:34 2026 user.notice radio: backhaulCommonConfig.sh:3929:Invalid option
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][case: Invalid][105] Invalid option
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][firewall_cleanup][637] current_bh:modem_cpu not listed to wan
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci add_list firewall.@zone[1].network=modem_cpu
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci commit firewall
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get network..proto
+Mon Aug 17 16:17:34 2026 user.notice radio: Invalid option
+Mon Aug 17 16:17:34 2026 user.notice radio: backhaulCommonConfig.sh:3929:Invalid option
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][][3219] :Invalid option
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@no_of_configs[0].default_pdn
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@no_of_configs[0].no_of_profiles
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@profile[0].profile_id
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@profile[0].bh_present
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@profile[0].bh_present_v6
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: 2026-08-17 16:17:34 [backhaulCommonConfig.sh][read_current_backhaul][5038]
+Mon Aug 17 16:17:34 2026 user.info LocSvc_LocNetIface[25353]: setCurrentBackHaulStatus:749] Type:  1-WWAN, 2-USB Cradle, 3-WLAN , 4-Ethernet, 5-BT
+Mon Aug 17 16:17:34 2026 user.info LocSvc_LocNetIface[25353]: setCurrentBackHaulStatus:750] BackhaulStatus Type: 1, IPv4 avail:1, IPv6 avail:0
+Mon Aug 17 16:17:34 2026 user.info LocSvc_SystemStatusOsObserver[25353]: sendCachedDataItems:471] DataItem: ACTIVE_NETWORK_INFO[IPv6]TYPEs_MASK: 1, TYPE_NAME: , SUB_TYPE_NAME: , IS_AVAILABLE: true, IS_CONNECTED: true, IS_ROAMING: false, NETWORK_HANDLE_0: [LONG_ID]:0, NETWORK_HANDLE_1: [LONG_ID]:10, NETWORK_HANDLE_2: [LONG_ID]:10, NETWORK_HANDLE_3: [LONG_ID]:10, NETWORK_HANDLE_4: [LONG_ID]:10, NETWORK_HANDLE_5: [LONG_ID]:10, NETWORK_HANDLE_6: [LONG_ID]:10, NETWORK_HANDLE_7: [LONG_ID]:10, NETWORK_HANDLE_8: [LONG_ID]:10, NETWORK_HANDLE_9: [LONG_ID]:10, APN_NAME:  >> XtraSystemStatusObserver
+Mon Aug 17 16:17:34 2026 user.info LocSvc_SystemStatusOsObserver[25353]: sendCachedDataItems:471] DataItem: ACTIVE_NETWORK_INFO[IPv6]TYPEs_MASK: 1, TYPE_NAME: , SUB_TYPE_NAME: , IS_AVAILABLE: true, IS_CONNECTED: true, IS_ROAMING: false, NETWORK_HANDLE_0: [LONG_ID]:0, NETWORK_HANDLE_1: [LONG_ID]:10, NETWORK_HANDLE_2: [LONG_ID]:10, NETWORK_HANDLE_3: [LONG_ID]:10, NETWORK_HANDLE_4: [LONG_ID]:10, NETWORK_HANDLE_5: [LONG_ID]:10, NETWORK_HANDLE_6: [LONG_ID]:10, NETWORK_HANDLE_7: [LONG_ID]:10, NETWORK_HANDLE_8: [LONG_ID]:10, NETWORK_HANDLE_9: [LONG_ID]:10, APN_NAME:  >> NativeAgpsHandler
+Mon Aug 17 16:17:34 2026 user.notice QCMAP: hotplug-iface event: ql_cdt_board_id=0x02010022 eipv6= ql_pcie_ssc=0 USER=root ACTION=ifup SHLVL=1 HOME=/ data_interface=[0,0] ql_switch_usb=0 HOTPLUG_TYPE=iface ql_pcie_mode=1 LOGNAME=root DEVICENAME= TERM=linux ethmac=000000000000000000000000 PATH=/usr/sbin:/usr/bin:/sbin:/bin eqos= ql_overlay_rootfs=1 INTERFACE=modem_cpu ql_pcie_id=[0x0000,0x0000,0x0000,0x0000,0] PWD=/ eipv4= DEVICE=rmnet_data1
+Mon Aug 17 16:17:36 2026 user.notice QCMAP: 2026-08-17 16:17:36 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_wlan.@stamodeconfig[0].bridge_mode
+Mon Aug 17 16:17:36 2026 user.notice QCMAP: 2026-08-17 16:17:36 [wlanConfig_hmt.sh][case:get_sta_associcated_status][2074] get_sta_associcated_status
+Mon Aug 17 16:17:36 2026 user.notice QCMAP: 2026-08-17 16:17:36 [wlanConfig_hmt.sh][util_execute_uci][28]  uci get wireless.wifi0_STA.ifname
+Mon Aug 17 16:17:36 2026 user.notice QCMAP: 2026-08-17 16:17:36 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_wlan.@wlanconfig[0].mode
+Mon Aug 17 16:17:36 2026 user.notice QCMAP: 2026-08-17 16:17:36 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_wlan.@stamodeconfig[0].bridge_mode
+Mon Aug 17 16:17:36 2026 kern.err kernel: [913740.193764][T12326] [kworke][0xff4c46d60f4][16:17:36.181589] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:17:36 2026 kern.err kernel: [913740.206851][T13033] [schedu][0xff4c4713681][16:17:36.194677] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:17:36 2026 user.notice QCMAP: 2026-08-17 16:17:36 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_wlan.@stamodeconfig[0].sta_mode_conn_type
+Mon Aug 17 16:17:36 2026 user.notice QCMAP: 2026-08-17 16:17:36 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@no_of_configs[0].enable_tinyproxy
+Mon Aug 17 16:17:36 2026 user.notice QCMAP: 2026-08-17 16:17:36 [backhaulCommonConfig.sh][:update_dnsv4:][300] Updating dnsv4 at Bh Switch
+Mon Aug 17 16:17:36 2026 user.notice QCMAP: 2026-08-17 16:17:36 [backhaulCommonConfig.sh][:update_dnsv6:][385] Updating dnsv6 at Bh Switch
+Mon Aug 17 16:17:36 2026 user.notice QCMAP: 2026-08-17 16:17:36 [backhaulCommonConfig.sh][update_firewall_zone_for_load_balance][771] Enter update_firewall_zone_for_load_balance
+Mon Aug 17 16:17:36 2026 user.notice QCMAP: 2026-08-17 16:17:36 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get kmwan.modem_cpu.metric
+Mon Aug 17 16:17:36 2026 user.notice QCMAP: 2026-08-17 16:17:36 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get kmwan.wan.metric
+Mon Aug 17 16:17:36 2026 user.notice QCMAP: 2026-08-17 16:17:36 [backhaulCommonConfig.sh][get_bh_load_balance_status][2585]  backhaul load balance status: 0
+Mon Aug 17 16:17:36 2026 user.notice QCMAP: 2026-08-17 16:17:36 [wlanConfig_hmt.sh][case: Invalid][2084] Invalid option
+Mon Aug 17 16:17:36 2026 user.notice QCMAP: 2026-08-17 16:17:36 [wlanConfig_hmt.sh][case:delete_guest_ap_access_rules][1989] delete_guest_ap_access_rules
+Mon Aug 17 16:17:36 2026 daemon.info gl-repeater[18119]: (repeater.lua:1762) disabled
+Mon Aug 17 16:17:36 2026 user.err Diag_Lib[13205]: diag: Diag_LSM_Init: invoked for pid: 13205 with init_count: 0
+Mon Aug 17 16:17:36 2026 user.err Diag_Lib[13205]: diag:successfully connected to socket 4
+Mon Aug 17 16:17:36 2026 user.err Diag-Router[4274]: diag: unix_listen: dm with pid: 13205 and fd: 101 is registered, socket_counter: 22
+Mon Aug 17 16:17:36 2026 user.err Diag_Lib[13205]: diag: Diag_LSM_Init: done for pid: 13205 with init_count: 1
+Mon Aug 17 16:17:36 2026 user.err Diag-Router[4274]: diag: Empty read, Close logging pid: 13205, fd 101
+Mon Aug 17 16:17:36 2026 user.err Diag-Router[4274]: diag: diag_close_logging_process: Exiting client (pid: 0) is not an MD client
+Mon Aug 17 16:17:36 2026 user.err Diag-Router[4274]: diag: While empty read socket counter:21
+Mon Aug 17 16:17:36 2026 user.err Diag_Lib[13213]: diag: Diag_LSM_Init: invoked for pid: 13213 with init_count: 0
+Mon Aug 17 16:17:36 2026 user.err Diag_Lib[13213]: diag:successfully connected to socket 4
+Mon Aug 17 16:17:36 2026 user.err Diag-Router[4274]: diag: unix_listen: dm with pid: 13213 and fd: 101 is registered, socket_counter: 22
+Mon Aug 17 16:17:36 2026 user.err Diag_Lib[13213]: diag: Diag_LSM_Init: done for pid: 13213 with init_count: 1
+Mon Aug 17 16:17:36 2026 user.err Diag-Router[4274]: diag: Empty read, Close logging pid: 13213, fd 101
+Mon Aug 17 16:17:36 2026 user.err Diag-Router[4274]: diag: diag_close_logging_process: Exiting client (pid: 0) is not an MD client
+Mon Aug 17 16:17:36 2026 user.err Diag-Router[4274]: diag: While empty read socket counter:21
+Mon Aug 17 16:17:36 2026 user.err Diag_Lib[13221]: diag: Diag_LSM_Init: invoked for pid: 13221 with init_count: 0
+Mon Aug 17 16:17:36 2026 user.err Diag_Lib[13221]: diag:successfully connected to socket 4
+Mon Aug 17 16:17:36 2026 user.err Diag-Router[4274]: diag: unix_listen: dm with pid: 13221 and fd: 101 is registered, socket_counter: 22
+Mon Aug 17 16:17:36 2026 user.err Diag_Lib[13221]: diag: Diag_LSM_Init: done for pid: 13221 with init_count: 1
+Mon Aug 17 16:17:36 2026 user.err Diag-Router[4274]: diag: Empty read, Close logging pid: 13221, fd 101
+Mon Aug 17 16:17:36 2026 user.err Diag-Router[4274]: diag: diag_close_logging_process: Exiting client (pid: 0) is not an MD client
+Mon Aug 17 16:17:36 2026 user.err Diag-Router[4274]: diag: While empty read socket counter:21
+Mon Aug 17 16:17:36 2026 user.err Diag_Lib[13229]: diag: Diag_LSM_Init: invoked for pid: 13229 with init_count: 0
+Mon Aug 17 16:17:36 2026 user.err Diag_Lib[13229]: diag:successfully connected to socket 4
+Mon Aug 17 16:17:36 2026 user.err Diag-Router[4274]: diag: unix_listen: dm with pid: 13229 and fd: 101 is registered, socket_counter: 22
+Mon Aug 17 16:17:36 2026 user.err Diag_Lib[13229]: diag: Diag_LSM_Init: done for pid: 13229 with init_count: 1
+Mon Aug 17 16:17:36 2026 user.err Diag-Router[4274]: diag: Empty read, Close logging pid: 13229, fd 101
+Mon Aug 17 16:17:36 2026 user.err Diag-Router[4274]: diag: diag_close_logging_process: Exiting client (pid: 0) is not an MD client
+Mon Aug 17 16:17:36 2026 user.err Diag-Router[4274]: diag: While empty read socket counter:21
+Mon Aug 17 16:17:36 2026 user.notice QCMAP: 2026-08-17 16:17:36 [wlanConfig_hmt.sh][case:install_guest_ap_access_rules][1984] install_guest_ap_access_rules
+Mon Aug 17 16:17:36 2026 user.notice QCMAP: 2026-08-17 16:17:36 [wlanConfig_hmt.sh][get_total_ap_number][591]  begin !!!
+Mon Aug 17 16:17:36 2026 user.notice QCMAP: 2026-08-17 16:17:36 [wlanConfig_hmt.sh][util_execute_uci][28]  uci get qcmap_wlan.@wlanconfig[0].mode
+Mon Aug 17 16:17:36 2026 user.notice QCMAP: 2026-08-17 16:17:36 [wlanConfig_hmt.sh][get_total_ap_number][609]  total 0 !!!
+Mon Aug 17 16:17:36 2026 user.notice QCMAP: 2026-08-17 16:17:36 [wlanConfig_hmt.sh][util_execute_uci][28]  uci get qcmap_wlan.@wlanconfig[0].mode
+Mon Aug 17 16:17:36 2026 user.notice QCMAP: 2026-08-17 16:17:36 [wlanConfig_hmt.sh][install_guest_ap_access_rules][1092]  no Guest AP found.
+Mon Aug 17 16:17:36 2026 user.notice QCMAP: 2026-08-17 16:17:36 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@profile[0].bh_previous
+Mon Aug 17 16:17:36 2026 user.notice QCMAP: 2026-08-17 16:17:36 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@profile[0].bh_present
+Mon Aug 17 16:17:36 2026 user.notice QCMAP: 2026-08-17 16:17:36 [backhaulCommonConfig.sh][delete_conntrack_on_switch_bh][2989] previous_bh= new_bh=modem_cpu
+Mon Aug 17 16:17:36 2026 user.notice QCMAP: 2026-08-17 16:17:36 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@lan[0].default_waneth_profile_num
+Mon Aug 17 16:17:36 2026 user.notice QCMAP: 2026-08-17 16:17:36 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@no_of_configs[0].default_pdn
+Mon Aug 17 16:17:36 2026 user.notice QCMAP: 2026-08-17 16:17:36 [backhaulCommonConfig.sh][run_switch_backhaul_with_lock_backhaul_with_lock][1465] Releasing lock, after function execution
+Mon Aug 17 16:17:36 2026 user.notice QCMAP: 2026-08-17 16:17:36 [rmnet.script][setup_ipv4_lan][255] wan_iface_ipv4=:profile=1
+Mon Aug 17 16:17:36 2026 user.notice QCMAP: 2026-08-17 16:17:36 [rmnet.script][setup_ipv4_lan][256] wan_iface_ipv6=:profile=1
+Mon Aug 17 16:17:37 2026 user.notice root: Invalid option
+Mon Aug 17 16:17:37 2026 user.notice root: nat_alg_vpn_config.sh:3929:Invalid option
+Mon Aug 17 16:17:37 2026 user.notice root: Invalid option
+Mon Aug 17 16:17:37 2026 user.notice root: nat_alg_vpn_config.sh:3929:Invalid option
+Mon Aug 17 16:17:37 2026 user.notice QCMAP: 2026-08-17 16:17:37 [nat_alg_vpn_config.sh][][3219] :Invalid option
+Mon Aug 17 16:17:37 2026 user.notice QCMAP: interface is up with devname=rmnet_data1, addr=[IPv4], reset=0
+Mon Aug 17 16:17:37 2026 user.notice QCMAP: enable nat for SYM
+Mon Aug 17 16:17:37 2026 user.notice QCMAP: loop backhaullist
+Mon Aug 17 16:17:37 2026 user.notice sqm-hotplug: l3_device change: 'rmnet_data0' -> 'rmnet_data1', config mise a jour
+Mon Aug 17 16:17:37 2026 user.notice QCMAP: get backhaul_pref.use_member failed:
+Mon Aug 17 16:17:37 2026 user.notice QCMAP: 2026-08-17 16:17:37 [nat_alg_vpn_config.sh][util_execute_uci][2606]  uci get qcmap_lan.@no_of_configs[0].no_of_profiles
+Mon Aug 17 16:17:37 2026 user.notice QCMAP: 2026-08-17 16:17:37 [nat_alg_vpn_config.sh][util_execute_uci][2606]  uci get qcmap_lan.@profile[0].profile_id
+Mon Aug 17 16:17:37 2026 user.notice QCMAP: 2026-08-17 16:17:37 [nat_alg_vpn_config.sh][util_execute_uci][2599]  uci set qcmap_lan.@lan[0].firewallreload=1
+Mon Aug 17 16:17:37 2026 user.notice QCMAP: 2026-08-17 16:17:37 [nat_alg_vpn_config.sh][util_execute_uci][2606]  uci commit qcmap_lan
+Mon Aug 17 16:17:37 2026 user.notice QCMAP: 2026-08-17 16:17:37 [nat_alg_vpn_config.sh][util_run_command][2630] uci commit firewall
+Mon Aug 17 16:17:37 2026 user.notice QCMAP: 2026-08-17 16:17:37 [nat_alg_vpn_config.sh][util_run_command][2630] /etc/init.d/firewall reload
+Mon Aug 17 16:17:37 2026 user.notice SQM: Stopping SQM on rmnet_data0
+Mon Aug 17 16:17:37 2026 user.notice SQM: ERROR: cmd_wrapper: tc: FAILURE (2): /sbin/tc qdisc del dev rmnet_data0 root
+Mon Aug 17 16:17:37 2026 user.notice SQM: ERROR: cmd_wrapper: tc: LAST ERROR: RTNETLINK answers: No such file or directory
+Mon Aug 17 16:17:37 2026 user.notice SQM: Starting SQM script: piece_of_cake.qos on rmnet_data1, in: 45000 Kbps, out: 0 Kbps
+Mon Aug 17 16:17:37 2026 user.notice SQM: piece_of_cake.qos was started on rmnet_data1 successfully
+Mon Aug 17 16:17:38 2026 user.notice QCMAP: enable nat done
+Mon Aug 17 16:17:38 2026 user.notice root: Invalid option
+Mon Aug 17 16:17:38 2026 user.notice root: firewallConfig.sh:3929:Invalid option
+Mon Aug 17 16:17:38 2026 user.notice QCMAP: 2026-08-17 16:17:38 [firewallConfig.sh][enable_fw][1721] profile_handle=1 profile_idx=0
+Mon Aug 17 16:17:38 2026 user.notice QCMAP: 2026-08-17 16:17:38 [firewallConfig.sh][enable_fw][1724] Firewall is Not Enabled for this particular profile_handle
+Mon Aug 17 16:17:38 2026 user.notice QCMAP: 2026-08-17 16:17:38 [rmnet.script][setup_vpn_passthrough_on_bh_up][35] ip_version=ipv4:profile=1
+Mon Aug 17 16:17:38 2026 user.notice root: Invalid option
+Mon Aug 17 16:17:38 2026 user.notice root: nat_alg_vpn_config.sh:3929:Invalid option
+Mon Aug 17 16:17:38 2026 user.notice root: Invalid option
+Mon Aug 17 16:17:38 2026 user.notice root: nat_alg_vpn_config.sh:3929:Invalid option
+Mon Aug 17 16:17:38 2026 user.notice QCMAP: 2026-08-17 16:17:38 [nat_alg_vpn_config.sh][][3219] :Invalid option
+Mon Aug 17 16:17:39 2026 user.notice root: Invalid option
+Mon Aug 17 16:17:39 2026 user.notice root: nat_alg_vpn_config.sh:3929:Invalid option
+Mon Aug 17 16:17:39 2026 user.notice root: Invalid option
+Mon Aug 17 16:17:39 2026 user.notice root: nat_alg_vpn_config.sh:3929:Invalid option
+Mon Aug 17 16:17:39 2026 user.notice QCMAP: 2026-08-17 16:17:39 [nat_alg_vpn_config.sh][][3219] :Invalid option
+Mon Aug 17 16:17:40 2026 user.notice sqm-hotplug: SQM actif sur rmnet_data1
+Mon Aug 17 16:17:40 2026 user.notice root: Invalid option
+Mon Aug 17 16:17:40 2026 user.notice root: QCMAP_ipsec.sh:3929:Invalid option
+Mon Aug 17 16:17:40 2026 user.info LocSvc_LocationClientApi[18185]: proc:3475] >-- onReceive Rcvd msg id: 99 E_LOCAPI_PINGTEST_MSG_ID, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:17:40 2026 user.info LocSvc_LocationIntegrationApiIm[18185]: proc:466] >-- onReceive Rcvd msg id: 99, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:17:40 2026 user.warn LocSvc_LocationIntegrationApiIm[18185]: proc:614] <<< unknown message 99
+Mon Aug 17 16:17:40 2026 user.notice root: Invalid option
+Mon Aug 17 16:17:40 2026 user.notice root: ippt.sh:3929:Invalid option
+Mon Aug 17 16:17:40 2026 user.notice root: Invalid option
+Mon Aug 17 16:17:40 2026 user.notice root: ippt.sh:3929:Invalid option
+Mon Aug 17 16:17:40 2026 user.notice root: Invalid option
+Mon Aug 17 16:17:40 2026 user.notice QCMAP: 2026-08-17 16:17:40 [ippt.sh][util_execute_uci][2606]  uci get qcmap_lan.@lan[0].default_waneth_profile_num
+Mon Aug 17 16:17:40 2026 user.notice root: Invalid option
+Mon Aug 17 16:17:41 2026 user.notice root: backhaulCommonConfig.sh:3929:Invalid option
+Mon Aug 17 16:17:41 2026 user.notice root: Invalid option
+Mon Aug 17 16:17:41 2026 user.notice root: backhaulCommonConfig.sh:3929:Invalid option
+Mon Aug 17 16:17:41 2026 user.notice QCMAP: 2026-08-17 16:17:41 [backhaulCommonConfig.sh][][722] :Invalid option
+Mon Aug 17 16:17:41 2026 user.notice root: Invalid option
+Mon Aug 17 16:17:41 2026 user.notice root: backhaulCommonConfig.sh:3929:Invalid option
+Mon Aug 17 16:17:41 2026 user.notice QCMAP: 2026-08-17 16:17:41 [backhaulCommonConfig.sh][case: Invalid][105] Invalid option
+Mon Aug 17 16:17:41 2026 user.notice root: Invalid option
+Mon Aug 17 16:17:41 2026 user.notice root: backhaulCommonConfig.sh:3929:Invalid option
+Mon Aug 17 16:17:41 2026 user.notice QCMAP: 2026-08-17 16:17:41 [backhaulCommonConfig.sh][][3219] :Invalid option
+Mon Aug 17 16:17:41 2026 user.notice QCMAP: 2026-08-17 16:17:41 [backhaulCommonConfig.sh][is_wwan_prefer_backhaul][5043]
+Mon Aug 17 16:17:41 2026 user.notice QCMAP: 2026-08-17 16:17:41 [ippt.sh][check_ippt_enable][48] isWWANAPrefered=0
+Mon Aug 17 16:17:41 2026 user.notice QCMAP: 2026-08-17 16:17:41 [ippt.sh][check_ippt_enable][54]  wwan is not most prefered active backhaul.
+Mon Aug 17 16:17:41 2026 user.notice QCMAP: 2026-08-17 16:17:41 [ippt.sh][add_ippt_sw_path_filters][2389] profile=1:profile_idx=0:total=0
+Mon Aug 17 16:17:41 2026 user.notice QCMAP: 2026-08-17 16:17:41 [ippt.sh][util_execute_uci][2606]  uci commit qcmap_lan
+Mon Aug 17 16:17:41 2026 user.err Diag_Lib[15025]: diag: Diag_LSM_Init: invoked for pid: 15025 with init_count: 0
+Mon Aug 17 16:17:41 2026 user.err Diag_Lib[15025]: diag:successfully connected to socket 4
+Mon Aug 17 16:17:41 2026 user.err Diag-Router[4274]: diag: unix_listen: dm with pid: 15025 and fd: 101 is registered, socket_counter: 22
+Mon Aug 17 16:17:41 2026 user.err Diag_Lib[15025]: diag: Diag_LSM_Init: done for pid: 15025 with init_count: 1
+Mon Aug 17 16:17:41 2026 user.err Diag-Router[4274]: diag: Empty read, Close logging pid: 15025, fd 101
+Mon Aug 17 16:17:41 2026 user.err Diag-Router[4274]: diag: diag_close_logging_process: Exiting client (pid: 0) is not an MD client
+Mon Aug 17 16:17:41 2026 user.err Diag-Router[4274]: diag: While empty read socket counter:21
+Mon Aug 17 16:17:41 2026 user.notice QCMAP: 2026-08-17 16:17:41 [ippt.sh][ql_update_ipa_sw_path_filters][2283] IPsForSWPathFilters=
+Mon Aug 17 16:17:41 2026 user.notice QCMAP: 2026-08-17 16:17:41 [ippt.sh][add_ippt_sw_path_filters][2425] add_ippt_sw_path_filters completed
+Mon Aug 17 16:17:41 2026 user.notice root: update rmnet done
+Mon Aug 17 16:17:45 2026 kern.err kernel: [913749.420580][T24269] [kworke][0xff4cefc8bf3][16:17:45.408433] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:17:45 2026 kern.err kernel: [913749.435480][T13033] [schedu][0xff4cf00e9b1][16:17:45.423336] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:17:50 2026 kern.err kernel: [913754.423959][ T7674] [kworke][0xff4d4b65fcb][16:17:50.411808] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:17:50 2026 kern.err kernel: [913754.437155][T13033] [schedu][0xff4d4ba3f18][16:17:50.425025] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:17:55 2026 kern.err kernel: [913759.353479][T24269] [kworke][0xff4da5a9342][16:17:55.341363] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:17:55 2026 kern.err kernel: [913759.366860][T13033] [schedu][0xff4da5e7eec][16:17:55.354746] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:18:00 2026 kern.err kernel: [913764.361250][ T1860] [kworke][0xff4e015b225][16:18:00.349152] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:18:00 2026 kern.err kernel: [913764.374540][T13033] [schedu][0xff4e01996dc][16:18:00.362441] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:18:05 2026 kern.err kernel: [913769.799655][T24269] [kworke][0xff4e64efa86][16:18:05.787575] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:18:05 2026 kern.err kernel: [913769.813093][T13033] [schedu][0xff4e652ea6d][16:18:05.801014] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:18:10 2026 kern.err kernel: [913774.803376][T24269] [kworke][0xff4ec08e99b][16:18:10.791312] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:18:10 2026 kern.err kernel: [913774.817222][T13033] [schedu][0xff4ec0cf81b][16:18:10.805159] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:18:15 2026 kern.err kernel: [913779.936849][ T1860] [kworke][0xff4f1e8dc15][16:18:15.924802] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:18:15 2026 kern.err kernel: [913779.950024][T13033] [schedu][0xff4f1ecb682][16:18:15.937955] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:18:20 2026 kern.err kernel: [913784.940695][T24269] [kworke][0xff4f7a2d489][16:18:20.928665] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:18:20 2026 kern.err kernel: [913784.954208][T13033] [schedu][0xff4f7a6ca0b][16:18:20.942179] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:18:26 2026 kern.err kernel: [913790.073862][ T7674] [kworke][0xff4fd82aff2][16:18:26.061847] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:18:26 2026 kern.err kernel: [913790.087370][T13033] [schedu][0xff4fd86a519][16:18:26.075356] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:18:31 2026 kern.err kernel: [913795.087031][T24269] [kworke][0xff5033f63b0][16:18:31.075034] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:18:31 2026 kern.err kernel: [913795.100291][T13033] [schedu][0xff503434648][16:18:31.088295] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:18:36 2026 kern.err kernel: [913800.314004][T15595] [kworke][0xff5093abab6][16:18:36.302025] wlan: [15595:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:18:36 2026 kern.err kernel: [913800.327251][T13033] [schedu][0xff5093e9c3f][16:18:36.315272] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:18:40 2026 user.info LocSvc_LocationIntegrationApiIm[18185]: proc:466] >-- onReceive Rcvd msg id: 99, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:18:40 2026 user.warn LocSvc_LocationIntegrationApiIm[18185]: proc:614] <<< unknown message 99
+Mon Aug 17 16:18:40 2026 user.info LocSvc_LocationClientApi[18185]: proc:3475] >-- onReceive Rcvd msg id: 99 E_LOCAPI_PINGTEST_MSG_ID, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:18:41 2026 kern.err kernel: [913805.319643][T15595] [kworke][0xff50ef53986][16:18:41.307679] wlan: [15595:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:18:41 2026 kern.err kernel: [913805.332934][T13033] [schedu][0xff50ef91e7c][16:18:41.320972] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:18:46 2026 kern.err kernel: [913810.758797][T12326] [kworke][0xff5152eba14][16:18:46.746851] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:18:46 2026 kern.err kernel: [913810.772244][T13033] [schedu][0xff51532aa9c][16:18:46.760298] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:18:51 2026 kern.err kernel: [913815.762819][T12326] [kworke][0xff51ae8bfd1][16:18:51.750890] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:18:51 2026 kern.err kernel: [913815.776039][T13033] [schedu][0xff51aec9f4c][16:18:51.764110] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:18:56 2026 user.notice vendor.rmt_storage[10037]: INFO:rmt_storage_connect_cb: clnt_h=0x4e5 conn_h=0x7fb9d75b80
+Mon Aug 17 16:18:56 2026 user.notice vendor.rmt_storage[10037]: INFO:rmt_storage_rw_iovec_cb: /boot/modem_fs1: req_h=0x4e5 msg_id=3: R/W request received (wr_count 1245)
+Mon Aug 17 16:18:56 2026 user.notice vendor.rmt_storage[10037]: INFO:wakelock acquired: 1, error no: 11
+Mon Aug 17 16:18:56 2026 user.notice vendor.rmt_storage[10037]: INFO:rmt_storage_client_thread: /boot/modem_fs1: Unblock worker thread (th_id: 548571286264)
+Mon Aug 17 16:18:56 2026 user.notice vendor.rmt_storage[10037]: INFO:rmt_storage_client_thread: /boot/modem_fs1: req_h=0x4e5 msg_id=3: Bytes written = 4194304, wr_count 1245
+Mon Aug 17 16:18:56 2026 user.notice vendor.rmt_storage[10037]: INFO:rmt_storage_client_thread: /boot/modem_fs1: req_h=0x4e5 msg_id=3: Send response: res=0 err=0, wr_count 1245
+Mon Aug 17 16:18:56 2026 user.notice vendor.rmt_storage[10037]: INFO:rmt_storage_client_thread: /boot/modem_fs1: About to block rmt_storage client thread (th_id: 548571286264) wakelock released: 1, error no: 0
+Mon Aug 17 16:18:56 2026 user.notice vendor.rmt_storage[10037]: INFO:rmt_storage_disconnect_cb: clnt_h=0x4e5 conn_h=0x7fb9d75b80
+Mon Aug 17 16:18:56 2026 kern.err kernel: [913820.896636][T15595] [kworke][0xff520c8cc0b][16:18:56.884724] wlan: [15595:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:18:56 2026 kern.err kernel: [913820.910140][T13033] [schedu][0xff520ccc0f1][16:18:56.898229] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:19:01 2026 kern.err kernel: [913825.901419][T12326] [kworke][0xff526830ac6][16:19:01.889523] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:19:01 2026 kern.err kernel: [913825.914601][T13033] [schedu][0xff52686e78c][16:19:01.902707] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:19:07 2026 kern.err kernel: [913831.035929][ T1860] [kworke][0xff52c634b0e][16:19:07.024051] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:19:07 2026 kern.err kernel: [913831.048946][T13033] [schedu][0xff52c671b67][16:19:07.037069] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:19:12 2026 kern.err kernel: [913836.040756][T12326] [kworke][0xff5321d8d1f][16:19:12.028895] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:19:12 2026 kern.err kernel: [913836.053950][T13033] [schedu][0xff532216ac1][16:19:12.042090] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:19:17 2026 kern.err kernel: [913841.479652][ T7674] [kworke][0xff53856fa4b][16:19:17.467808] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:19:17 2026 kern.err kernel: [913841.492711][T13033] [schedu][0xff5385acdcd][16:19:17.480868] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:19:22 2026 kern.err kernel: [913846.484780][ T1860] [kworke][0xff53e1152dd][16:19:22.472952] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:19:22 2026 kern.err kernel: [913846.498198][T13033] [schedu][0xff53e154184][16:19:22.486374] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:19:27 2026 kern.err kernel: [913851.616536][ T1860] [kworke][0xff543f0c4a2][16:19:27.604726] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:19:27 2026 kern.err kernel: [913851.629838][T13033] [schedu][0xff543f4aa3a][16:19:27.618028] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:19:32 2026 kern.err kernel: [913856.631951][ T1860] [kworke][0xff549ae20bd][16:19:32.620158] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:19:32 2026 kern.err kernel: [913856.644857][T13033] [schedu][0xff549b1e8ea][16:19:32.633067] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:19:37 2026 kern.err kernel: [913861.610201][T12326] [kworke][0xff54f6099c7][16:19:37.598428] wlan: [12326:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:19:37 2026 kern.err kernel: [913861.623372][T13033] [schedu][0xff54f647598][16:19:37.611599] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:19:39 2026 kern.err kernel: [913863.096626][ T1860] [kworke][0xff55114138e][16:19:39.084856] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:19:39 2026 kern.err kernel: [913863.110340][T13033] [schedu][0xff55118181a][16:19:39.098570] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:19:40 2026 user.info LocSvc_LocationClientApi[18185]: proc:3475] >-- onReceive Rcvd msg id: 99 E_LOCAPI_PINGTEST_MSG_ID, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:19:40 2026 user.info LocSvc_LocationIntegrationApiIm[18185]: proc:466] >-- onReceive Rcvd msg id: 99, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:19:40 2026 user.warn LocSvc_LocationIntegrationApiIm[18185]: proc:614] <<< unknown message 99
+Mon Aug 17 16:19:42 2026 kern.err kernel: [913866.613092][ T1860] [kworke][0xff5551a4a9c][16:19:42.601335] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:19:42 2026 kern.err kernel: [913866.626640][T13033] [schedu][0xff5551e42a7][16:19:42.614883] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:19:44 2026 kern.err kernel: [913868.099075][ T1860] [kworke][0xff556cda33f][16:19:44.087322] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:19:44 2026 kern.err kernel: [913868.111999][T13033] [schedu][0xff556d16c9d][16:19:44.100247] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:19:44 2026 kern.err kernel: [913868.515396][T13033] [schedu][0xff557479b52][16:19:44.503645] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:19:48 2026 kern.err kernel: [913872.096873][T24269] [kworke][0xff55b60dde7][16:19:48.085131] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:19:48 2026 kern.err kernel: [913872.110113][T13033] [schedu][0xff55b64bece][16:19:48.098370] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:19:49 2026 kern.err kernel: [913873.517884][T24269] [kworke][0xff55d012df8][16:19:49.506150] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:19:49 2026 kern.err kernel: [913873.530866][T13033] [schedu][0xff55d04fb60][16:19:49.519129] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:19:53 2026 kern.err kernel: [913877.099542][T24269] [kworke][0xff5611a7e03][16:19:53.087815] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:19:53 2026 kern.err kernel: [913877.112875][T13033] [schedu][0xff5611e661a][16:19:53.101150] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:19:57 2026 kern.err kernel: [913881.930813][ T1860] [kworke][0xff566a1e56c][16:19:57.919077] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:19:57 2026 kern.err kernel: [913881.944016][T13033] [schedu][0xff566a5c5a4][16:19:57.932307] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:20:02 2026 kern.err kernel: [913886.936494][T15595] [kworke][0xff56c5c6971][16:20:02.924800] wlan: [15595:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:20:02 2026 kern.err kernel: [913886.949636][T13033] [schedu][0xff56c604320][16:20:02.937943] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:20:08 2026 kern.err kernel: [913892.442383][T15595] [kworke][0xff572a97722][16:20:08.430708] wlan: [15595:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:20:08 2026 kern.err kernel: [913892.456784][T13033] [schedu][0xff572adaf23][16:20:08.445108] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:20:13 2026 kern.err kernel: [913897.446170][ T7674] [kworke][0xff578636b2e][16:20:13.434512] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:20:13 2026 kern.err kernel: [913897.459236][T13033] [schedu][0xff578673f18][16:20:13.447577] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:20:14 2026 kern.err kernel: [913898.012829][ T7674] [kworke][0xff579096e7d][16:20:14.001171] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:20:14 2026 kern.err kernel: [913898.026026][T13033] [schedu][0xff5790d4c5b][16:20:14.014369] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:20:19 2026 kern.err kernel: [913903.014152][ T7674] [kworke][0xff57ec2a9ba][16:20:19.002511] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:20:19 2026 kern.err kernel: [913903.027234][T13033] [schedu][0xff57ec67dbd][16:20:19.015577] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:20:23 2026 kern.err kernel: [913907.530970][ T7674] [kworke][0xff583edf318][16:20:23.519344] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:20:23 2026 kern.err kernel: [913907.544524][T13033] [schedu][0xff583f1eba6][16:20:23.532898] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:20:28 2026 kern.err kernel: [913912.533583][T24269] [kworke][0xff589a78d65][16:20:28.521951] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:20:28 2026 kern.err kernel: [913912.549930][T13033] [schedu][0xff589ac594b][16:20:28.538323] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:20:28 2026 kern.err kernel: [913912.955304][T13033] [schedu][0xff58a231aa5][16:20:28.943676] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:20:33 2026 kern.err kernel: [913917.958888][T15595] [kworke][0xff58fdd00fb][16:20:33.947297] wlan: [15595:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:20:33 2026 kern.err kernel: [913917.972295][T13033] [schedu][0xff58fe0ee7d][16:20:33.960703] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:20:39 2026 kern.err kernel: [913923.196159][T24269] [kworke][0xff595db5c4f][16:20:39.184585] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:20:39 2026 kern.err kernel: [913923.209787][T13033] [schedu][0xff595df5a71][16:20:39.198213] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:20:40 2026 user.info LocSvc_LocationClientApi[18185]: proc:3475] >-- onReceive Rcvd msg id: 99 E_LOCAPI_PINGTEST_MSG_ID, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:20:40 2026 user.info LocSvc_LocationIntegrationApiIm[18185]: proc:466] >-- onReceive Rcvd msg id: 99, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:20:40 2026 user.warn LocSvc_LocationIntegrationApiIm[18185]: proc:614] <<< unknown message 99
+Mon Aug 17 16:20:41 2026 user.notice vendor.rmt_storage[10037]: INFO:rmt_storage_connect_cb: clnt_h=0x4e6 conn_h=0x7fb9d75be0
+Mon Aug 17 16:20:41 2026 user.notice vendor.rmt_storage[10037]: INFO:rmt_storage_rw_iovec_cb: /boot/modem_fs2: req_h=0x4e6 msg_id=3: R/W request received (wr_count 1246)
+Mon Aug 17 16:20:41 2026 user.notice vendor.rmt_storage[10037]: INFO:wakelock acquired: 1, error no: 11
+Mon Aug 17 16:20:41 2026 user.notice vendor.rmt_storage[10037]: INFO:rmt_storage_client_thread: /boot/modem_fs2: Unblock worker thread (th_id: 548571142904)
+Mon Aug 17 16:20:42 2026 user.notice vendor.rmt_storage[10037]: INFO:rmt_storage_client_thread: /boot/modem_fs2: req_h=0x4e6 msg_id=3: Bytes written = 4194304, wr_count 1246
+Mon Aug 17 16:20:42 2026 user.notice vendor.rmt_storage[10037]: INFO:rmt_storage_client_thread: /boot/modem_fs2: req_h=0x4e6 msg_id=3: Send response: res=0 err=0, wr_count 1246
+Mon Aug 17 16:20:42 2026 user.notice vendor.rmt_storage[10037]: INFO:rmt_storage_client_thread: /boot/modem_fs2: About to block rmt_storage client thread (th_id: 548571142904) wakelock released: 1, error no: 0
+Mon Aug 17 16:20:42 2026 user.notice vendor.rmt_storage[10037]: INFO:rmt_storage_disconnect_cb: clnt_h=0x4e6 conn_h=0x7fb9d75be0
+Mon Aug 17 16:20:44 2026 kern.err kernel: [913928.199030][ T1860] [kworke][0xff59b950ba5][16:20:44.187473] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:20:44 2026 kern.err kernel: [913928.212510][T13033] [schedu][0xff59b98feaa][16:20:44.200953] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:20:49 2026 kern.err kernel: [913933.639720][T15595] [kworke][0xff5a1ceff59][16:20:49.628180] wlan: [15595:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:20:49 2026 kern.err kernel: [913933.653178][T13033] [schedu][0xff5a1d2e348][16:20:49.641459] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:20:54 2026 kern.err kernel: [913938.650388][ T1860] [kworke][0xff5a78af772][16:20:54.638864] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:20:54 2026 kern.err kernel: [913938.664099][T13033] [schedu][0xff5a78efbcf][16:20:54.652576] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:20:59 2026 kern.err kernel: [913943.777528][T15595] [kworke][0xff5ad690ef6][16:20:59.766022] wlan: [15595:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:20:59 2026 kern.err kernel: [913943.790809][T13033] [schedu][0xff5ad6cf314][16:20:59.779303] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:21:04 2026 kern.err kernel: [913948.781706][ T1860] [kworke][0xff5b3232056][16:21:04.770216] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:21:04 2026 kern.err kernel: [913948.798027][T13033] [schedu][0xff5b327e863][16:21:04.786537] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:21:09 2026 kern.err kernel: [913953.914990][T24269] [kworke][0xff5b90304aa][16:21:09.903518] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:21:09 2026 kern.err kernel: [913953.928825][T13033] [schedu][0xff5b9071243][16:21:09.917352] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:21:14 2026 kern.err kernel: [913958.919942][T15595] [kworke][0xff5bebd4fe5][16:21:14.908484] wlan: [15595:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:21:14 2026 kern.err kernel: [913958.933501][T13033] [schedu][0xff5bec148ec][16:21:14.922044] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:21:20 2026 kern.err kernel: [913964.155222][ T7674] [kworke][0xff5c4bb1601][16:21:20.143783] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:21:20 2026 kern.err kernel: [913964.168205][T13033] [schedu][0xff5c4bee3c7][16:21:20.156766] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:21:25 2026 kern.err kernel: [913969.160951][T15595] [kworke][0xff5ca759bb1][16:21:25.149528] wlan: [15595:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:21:25 2026 kern.err kernel: [913969.174222][T13033] [schedu][0xff5ca797f0d][16:21:25.162800] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:21:30 2026 kern.err kernel: [913974.599151][T15595] [kworke][0xff5d0aed4ed][16:21:30.587749] wlan: [15595:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:21:30 2026 kern.err kernel: [913974.612350][T13033] [schedu][0xff5d0b2b2d8][16:21:30.600948] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:21:35 2026 kern.err kernel: [913979.602476][T15595] [kworke][0xff5d668a60a][16:21:35.591088] wlan: [15595:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:21:35 2026 kern.err kernel: [913979.615600][T13033] [schedu][0xff5d66c7e6c][16:21:35.604213] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:21:40 2026 user.info LocSvc_LocationClientApi[18185]: proc:3475] >-- onReceive Rcvd msg id: 99 E_LOCAPI_PINGTEST_MSG_ID, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:21:40 2026 user.info LocSvc_LocationIntegrationApiIm[18185]: proc:466] >-- onReceive Rcvd msg id: 99, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:21:40 2026 user.warn LocSvc_LocationIntegrationApiIm[18185]: proc:614] <<< unknown message 99
+Mon Aug 17 16:21:40 2026 kern.err kernel: [913984.839351][ T7674] [kworke][0xff5dc66e3eb][16:21:40.827983] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:21:40 2026 kern.err kernel: [913984.853265][T13033] [schedu][0xff5dc6af75c][16:21:40.841896] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:21:45 2026 kern.err kernel: [913989.845524][ T1860] [kworke][0xff5e2218aee][16:21:45.834173] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:21:45 2026 kern.err kernel: [913989.858587][T13033] [schedu][0xff5e2255e8d][16:21:45.847235] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:21:50 2026 kern.err kernel: [913994.977926][ T1860] [kworke][0xff5e8012cbf][16:21:50.966588] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:21:50 2026 kern.err kernel: [913994.991055][T13033] [schedu][0xff5e8050590][16:21:50.979719] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:21:55 2026 kern.err kernel: [913999.982426][ T1860] [kworke][0xff5edbb5535][16:21:55.971090] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:21:55 2026 kern.err kernel: [913999.995716][T13033] [schedu][0xff5edbf3b57][16:21:55.984399] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:22:01 2026 kern.err kernel: [914005.114841][ T7674] [kworke][0xff5f39af992][16:22:01.103539] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:22:01 2026 kern.err kernel: [914005.128342][T13033] [schedu][0xff5f39eee08][16:22:01.117038] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:22:06 2026 kern.err kernel: [914010.120762][ T7674] [kworke][0xff5f9558d7f][16:22:06.109474] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:22:06 2026 kern.err kernel: [914010.135115][T13033] [schedu][0xff5f959c0d4][16:22:06.123812] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:22:11 2026 kern.err kernel: [914015.560546][T15595] [kworke][0xff5ff8f3d4f][16:22:11.549276] wlan: [15595:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:22:11 2026 kern.err kernel: [914015.574779][T13033] [schedu][0xff5ff9368d3][16:22:11.563510] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:22:16 2026 kern.err kernel: [914020.566623][T24269] [kworke][0xff60549dd1b][16:22:16.555370] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:22:16 2026 kern.err kernel: [914020.579920][T13033] [schedu][0xff6054dc262][16:22:16.568667] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:22:21 2026 kern.err kernel: [914025.697849][T24269] [kworke][0xff60b29270d][16:22:21.686613] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:22:21 2026 kern.err kernel: [914025.711392][T13033] [schedu][0xff60b2d1ec4][16:22:21.700156] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:22:26 2026 kern.err kernel: [914030.704132][T24269] [kworke][0xff610e3d643][16:22:26.692912] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:22:26 2026 kern.err kernel: [914030.717221][T13033] [schedu][0xff610e7aa6f][16:22:26.705981] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:22:31 2026 kern.err kernel: [914035.835234][ T1860] [kworke][0xff616c316d8][16:22:31.824030] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:22:31 2026 kern.err kernel: [914035.848528][T13033] [schedu][0xff616c6fbf1][16:22:31.837325] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:22:36 2026 kern.err kernel: [914040.841193][ T1860] [kworke][0xff61c7dae01][16:22:36.830009] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:22:36 2026 kern.err kernel: [914040.854417][T13033] [schedu][0xff61c818dcf][16:22:36.843233] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:22:40 2026 user.info LocSvc_LocationClientApi[18185]: proc:3475] >-- onReceive Rcvd msg id: 99 E_LOCAPI_PINGTEST_MSG_ID, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:22:40 2026 user.info LocSvc_LocationIntegrationApiIm[18185]: proc:466] >-- onReceive Rcvd msg id: 99, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:22:40 2026 user.warn LocSvc_LocationIntegrationApiIm[18185]: proc:614] <<< unknown message 99
+Mon Aug 17 16:22:42 2026 kern.err kernel: [914046.280274][T24269] [kworke][0xff622b728e7][16:22:42.269106] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:22:42 2026 kern.err kernel: [914046.293619][T13033] [schedu][0xff622bb11d1][16:22:42.282451] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:22:47 2026 kern.err kernel: [914051.285698][ T7674] [kworke][0xff6287197b2][16:22:47.274546] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:22:47 2026 kern.err kernel: [914051.300059][T13033] [schedu][0xff62875ccb4][16:22:47.288906] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:22:52 2026 kern.err kernel: [914056.437889][ T7674] [kworke][0xff62e5705ff][16:22:52.426754] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:22:52 2026 kern.err kernel: [914056.451018][T13033] [schedu][0xff62e5adef9][16:22:52.439887] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:22:57 2026 kern.err kernel: [914061.442577][ T1860] [kworke][0xff634113de3][16:22:57.431462] wlan: [1860:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:22:57 2026 kern.err kernel: [914061.455827][T13033] [schedu][0xff634151f74][16:22:57.444710] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:23:02 2026 kern.err kernel: [914066.657885][T24269] [kworke][0xff63a0929b5][16:23:02.646784] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:23:02 2026 kern.err kernel: [914066.671361][T13033] [schedu][0xff63a0d1c5c][16:23:02.660259] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:23:07 2026 kern.err kernel: [914071.662264][T15595] [kworke][0xff63fc34a22][16:23:07.651179] wlan: [15595:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:23:07 2026 kern.err kernel: [914071.675481][T13033] [schedu][0xff63fc729b6][16:23:07.664400] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:23:09 2026 daemon.info dnsmasq-dhcp[10621]: DHCPREQUEST(br-lan) [IPv4] [MAC]
+Mon Aug 17 16:23:09 2026 daemon.info dnsmasq-dhcp[10621]: DHCPACK(br-lan) [IPv4] [MAC] Samsung
+Mon Aug 17 16:23:12 2026 kern.err kernel: [914076.897283][ T7674] [kworke][0xff645c0fc8f][16:23:12.886216] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:23:12 2026 kern.err kernel: [914076.910264][T13033] [schedu][0xff645c4ca65][16:23:12.899200] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:23:17 2026 kern.err kernel: [914081.902554][ T7674] [kworke][0xff64b7b5fdb][16:23:17.891503] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:23:17 2026 kern.err kernel: [914081.916253][T13033] [schedu][0xff64b7f6354][16:23:17.905202] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:23:22 2026 authpriv.info dropbear[24448]: Child connection from [IPv4]:45244
+Mon Aug 17 16:23:22 2026 authpriv.notice dropbear[24448]: Pubkey auth succeeded for 'root' with ssh-ed25519 key SHA256:DnLgce2ry57YNmilacL0BTgwFsfK4GUr3B2yaL9X6tQ from [IPv4]:45244
+Mon Aug 17 16:23:22 2026 authpriv.info dropbear[24448]: Exit (root) from <[IPv4]:45244>: Disconnect received
+Mon Aug 17 16:23:22 2026 authpriv.info dropbear[24469]: Child connection from [IPv4]:45248
+Mon Aug 17 16:23:23 2026 kern.err kernel: [914087.036437][ T7674] [kworke][0xff6515b7112][16:23:23.025403] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:23:23 2026 kern.err kernel: [914087.049586][T13033] [schedu][0xff6515f4b46][16:23:23.038552] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:23:23 2026 authpriv.notice dropbear[24469]: Pubkey auth succeeded for 'root' with ssh-ed25519 key SHA256:DnLgce2ry57YNmilacL0BTgwFsfK4GUr3B2yaL9X6tQ from [IPv4]:45248
+Mon Aug 17 16:23:23 2026 authpriv.info dropbear[24469]: Exit (root) from <[IPv4]:45248>: Disconnect received
+Mon Aug 17 16:23:23 2026 authpriv.info dropbear[24532]: Child connection from [IPv4]:45256
+Mon Aug 17 16:23:23 2026 authpriv.notice dropbear[24532]: Pubkey auth succeeded for 'root' with ssh-ed25519 key SHA256:DnLgce2ry57YNmilacL0BTgwFsfK4GUr3B2yaL9X6tQ from [IPv4]:45256
+Mon Aug 17 16:23:24 2026 authpriv.info dropbear[24532]: Exit (root) from <[IPv4]:45256>: Disconnect received
+Mon Aug 17 16:23:24 2026 authpriv.info dropbear[24734]: Child connection from [IPv4]:45272
+Mon Aug 17 16:23:24 2026 authpriv.notice dropbear[24734]: Pubkey auth succeeded for 'root' with ssh-ed25519 key SHA256:DnLgce2ry57YNmilacL0BTgwFsfK4GUr3B2yaL9X6tQ from [IPv4]:45272
+Mon Aug 17 16:23:28 2026 kern.err kernel: [914092.043610][ T7674] [kworke][0xff65716627d][16:23:28.032584] wlan: [7674:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:23:28 2026 kern.err kernel: [914092.057853][T13033] [schedu][0xff6571a8fac][16:23:28.046840] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:23:29 2026 authpriv.info dropbear[24734]: Exit (root) from <[IPv4]:45272>: Disconnect received
+Mon Aug 17 16:23:33 2026 kern.err kernel: [914097.275638][T24269] [kworke][0xff65d133510][16:23:33.264636] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:23:33 2026 kern.err kernel: [914097.288926][T13033] [schedu][0xff65d1719cc][16:23:33.277926] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:23:38 2026 kern.err kernel: [914102.283506][T24269] [kworke][0xff662ce5a03][16:23:38.272505] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:23:38 2026 kern.err kernel: [914102.296569][T13033] [schedu][0xff662d22f04][16:23:38.285585] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:23:40 2026 user.info LocSvc_LocationClientApi[18185]: proc:3475] >-- onReceive Rcvd msg id: 99 E_LOCAPI_PINGTEST_MSG_ID, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:23:40 2026 user.info LocSvc_LocationIntegrationApiIm[18185]: proc:466] >-- onReceive Rcvd msg id: 99, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:23:40 2026 user.warn LocSvc_LocationIntegrationApiIm[18185]: proc:614] <<< unknown message 99
+Mon Aug 17 16:23:43 2026 kern.err kernel: [914107.617996][T15595] [kworke][0xff668e93202][16:23:43.607030] wlan: [15595:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:23:43 2026 kern.err kernel: [914107.631098][T13033] [schedu][0xff668ed08af][16:23:43.620132] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:23:46 2026 authpriv.info dropbear[25256]: Child connection from [IPv4]:47946
+Mon Aug 17 16:23:46 2026 authpriv.notice dropbear[25256]: Pubkey auth succeeded for 'root' with ssh-ed25519 key SHA256:DnLgce2ry57YNmilacL0BTgwFsfK4GUr3B2yaL9X6tQ from [IPv4]:47946
+Mon Aug 17 16:23:48 2026 kern.err kernel: [914112.624396][T15595] [kworke][0xff66ea3ea08][16:23:48.613446] wlan: [15595:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:23:48 2026 kern.err kernel: [914112.638881][T13033] [schedu][0xff66ea8285a][16:23:48.627931] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:23:50 2026 kern.err kernel: [914114.685923][T24269] [kworke][0xff670ffe09d][16:23:50.674981] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:23:50 2026 kern.err kernel: [914114.699456][T13033] [schedu][0xff67103d793][16:23:50.688514] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:23:55 2026 kern.err kernel: [914119.690552][T24269] [kworke][0xff676ba13b1][16:23:55.679625] wlan: [24269:E:WMA] wma_process_rmf_frame: Rx unprotected unicast mgmt frame
+Mon Aug 17 16:23:55 2026 kern.err kernel: [914119.703859][T13033] [schedu][0xff676bdf9be][16:23:55.692933] wlan: [13033:E:PE] lim_drop_unprotected_action_frame: Dropping unprotected Action category: 3 frame since RMF is enabled
+Mon Aug 17 16:23:55 2026 authpriv.info dropbear[25256]: Exit (root) from <[IPv4]:47946>: Disconnect received
+Mon Aug 17 16:23:55 2026 authpriv.info dropbear[25390]: Child connection from [IPv4]:47952
+Mon Aug 17 16:23:56 2026 authpriv.notice dropbear[25390]: Pubkey auth succeeded for 'root' with ssh-ed25519 key SHA256:DnLgce2ry57YNmilacL0BTgwFsfK4GUr3B2yaL9X6tQ from [IPv4]:47952

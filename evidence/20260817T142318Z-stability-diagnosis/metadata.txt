@@ -1,0 +1,15 @@
+collected_at=2026-08-17T14:23:18Z (baseline) puis 14:30Z-14:44Z (fenetre live)
+git_commit=e56c116ab2d015dab917900b76ba3e4fd2ea48d2
+firmware=GL.iNet 4.8.5 (OpenWrt 23.05.4 r24012-d8dd03c46f), kernel 5.15.170-perf, GL-E5800 (Mudi 7)
+uptime=10 jours 13 h 54 au moment de la capture
+purpose=chercher la cause des coupures ressenties du lien cellulaire, et etablir ce que les journaux embarques permettent d'affirmer apres coup
+hypothesis=une coupure WAN recente a laisse une trace exploitable dans logread/dmesg, ou se lit dans une degradation radio concomitante
+variable_changed=aucune - session strictement en lecture seule
+variables_held=configuration inchangee ; SQM laisse a download=45000 ; aucun redemarrage de service ; aucune commande AT d'ecriture
+max_size_duration=~21 min de collecte ; boucle AT de 16 echantillons a 10 s ; guet de reconnexion de 6 min ; surveillance modem+ping de 5 min a 5 s
+stop_criteria=toute commande sortant de la lecture seule, ou toute perte du lien SSH, arrete la session ; l'uplink unique interdit tout test coupant
+rollback=sans objet - aucune ecriture
+protocol_deviation=aucune ; la session tient dans les tests autorises de EXPERIMENT-PROTOCOL.md §1 (lecture seule)
+safety=read-only; sole-uplink protected
+limitation=aucune coupure ne s'est produite pendant la fenetre d'observation ; la cause des coupures ressenties reste NON TESTEE
+note=les fichiers .json ont ete republies avec le suffixe .txt pour passer par tools/sanitize-evidence.py, qui ne traite que *.txt ; contenu inchange hors expurgation

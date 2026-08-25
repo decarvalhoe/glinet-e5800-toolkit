@@ -1,0 +1,86 @@
+{
+	"up": true,
+	"pending": false,
+	"available": true,
+	"autostart": false,
+	"dynamic": false,
+	"uptime": 845,
+	"l3_device": "rmnet_data1",
+	"proto": "rmnet",
+	"updated": [
+		"addresses",
+		"routes"
+	],
+	"metric": 40,
+	"dns_metric": 0,
+	"delegation": true,
+	"ipv4-address": [
+		{
+			"address": "[IPv4]",
+			"mask": 29
+		}
+	],
+	"ipv6-address": [
+
+	],
+	"ipv6-prefix": [
+
+	],
+	"ipv6-prefix-assignment": [
+
+	],
+	"route": [
+		{
+			"target": "[IPv4]",
+			"mask": 32,
+			"nexthop": "[IPv4]",
+			"source": "[IPv4]"
+		},
+		{
+			"target": "[IPv4]",
+			"mask": 32,
+			"nexthop": "[IPv4]",
+			"source": "[IPv4]"
+		},
+		{
+			"target": "[IPv4]",
+			"mask": 0,
+			"nexthop": "[IPv4]",
+			"mtu": 1500,
+			"source": "[IPv4]"
+		}
+	],
+	"dns-server": [
+		"[IPv4]",
+		"[IPv4]"
+	],
+	"dns-search": [
+
+	],
+	"neighbors": [
+
+	],
+	"inactive": {
+		"ipv4-address": [
+
+		],
+		"ipv6-address": [
+
+		],
+		"route": [
+
+		],
+		"dns-server": [
+
+		],
+		"dns-search": [
+
+		],
+		"neighbors": [
+
+		]
+	},
+	"data": {
+
+	}
+}

@@ -1,0 +1,49 @@
+
+--- AT+QENG="servingcell"
++QENG: "servingcell","NOCONN"
++QENG: "LTE","FDD",228,02,4E9E09,107,2850,7,5,5,A474,-99,-11,-67,12,8,-,-
++QENG: "NR5G-NSA",228,02,983,-103,11,-10,647424,78,12,1
+OK
+
+--- AT+QCAINFO
+OK
+
+--- AT+QNWPREFCFG="mode_pref"
++QNWPREFCFG: "mode_pref",AUTO
+OK
+
+--- AT+QNWPREFCFG="nr5g_disable_mode"
++QNWPREFCFG: "nr5g_disable_mode",0
+OK
+
+--- AT+QNWPREFCFG="lte_band"
++QNWPREFCFG: "lte_band",1:3:5:7:8:[MAC]:42:43
+OK
+
+--- AT+QNWPREFCFG="nr5g_band"
++QNWPREFCFG: "nr5g_band",1:3:5:7:8:[MAC]:75:76:77:78
+OK
+
+--- AT+QTEMP
++QTEMP: "sdr0","27"
++QTEMP: "mmw0","27"
++QTEMP: "aoss-0","44"
++QTEMP: "cpuss-0","47"
++QTEMP: "cpuss-1","47"
++QTEMP: "cpuss-2","47"
++QTEMP: "cpuss-3","46"
++QTEMP: "ethphy-0","45"
++QTEMP: "mvmss-0","44"
++QTEMP: "mdmq6-0","46"
++QTEMP: "ctile","44"
++QTEMP: "mdmss-0","43"
++QTEMP: "mdmss-1","44"
++QTEMP: "mdmss-2","44"
++QTEMP: "sys-therm-1","43"
++QTEMP: "sys-therm-2","43"
++QTEMP: "sys-therm-4","43"
+OK
+
+--- AT+CSQ
++CSQ: 23,99
+OK

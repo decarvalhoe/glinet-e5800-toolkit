@@ -1,0 +1,345 @@
+PID   USER     COMMAND
+    1 root     /sbin/procd
+    2 root     [kthreadd]
+    3 root     [rcu_gp]
+    4 root     [rcu_par_gp]
+    5 root     [slub_flushwq]
+    6 root     [netns]
+   10 root     [mm_percpu_wq]
+   11 root     [rcu_tasks_kthre]
+   12 root     [rcu_tasks_trace]
+   13 root     [ksoftirqd/0]
+   14 root     [rcu_preempt]
+   15 root     [migration/0]
+   17 root     [cpuhp/0]
+   18 root     [cpuhp/1]
+   19 root     [migration/1]
+   20 root     [ksoftirqd/1]
+   23 root     [cpuhp/2]
+   24 root     [migration/2]
+   25 root     [ksoftirqd/2]
+   28 root     [cpuhp/3]
+   29 root     [migration/3]
+   30 root     [ksoftirqd/3]
+   33 root     [kdevtmpfs]
+   34 root     [inet_frag_wq]
+   38 root     [kauditd]
+   39 root     [qrtr_ns]
+   41 root     [irq/15-qcom-scm]
+   42 root     [gh-watchdog]
+   43 root     [oom_reaper]
+   44 root     [writeback]
+   45 root     [kcompactd0]
+   46 root     [kblockd]
+   47 root     [blkcg_punt_bio]
+   48 root     [irq/80-arm-smmu]
+   49 root     [md]
+   50 root     [edac-poller]
+   51 root     [devfreq_wq]
+   53 root     [mpcie_wq]
+   54 root     [watchdogd]
+   56 root     [cfg80211]
+   58 root     [kswapd0]
+   59 root     [irq/81-arm-smmu]
+   60 root     [irq/82-arm-smmu]
+   63 root     [irq/127-qcom,sm]
+   68 root     [dmabuf-deferred]
+   69 root     [iscsi_eh]
+   70 root     [iscsi_conn_clea]
+   71 root     [atlantic-fwd]
+   72 root     [uas]
+   73 root     [k_ipa_usb]
+   75 root     [irq/113-c271000]
+   76 root     [irq/114-c271000]
+   77 root     [irq/129-c271000]
+   81 root     [dm_bufio_cache]
+   82 root     [irq/30-KRYO L3-]
+   83 root     [irq/130-qcom,qm]
+   84 root     [irq/28-q6v5 wdo]
+   87 root     [irq/83-arm-smmu]
+   89 root     [irq/84-arm-smmu]
+  123 root     [mld]
+  124 root     [ipv6_addrconf]
+  125 root     [kstrp]
+  136 root     [rq_stats]
+  137 root     [msm_perf:events]
+  138 root     [memlat_wq]
+  139 root     [irq/22-dcvsh-ir]
+  141 root     [irq/85-arm-smmu]
+  142 root     [irq/31-int_glob]
+  144 root     [stmmac_wq]
+  146 root     [bwmon_wq]
+  147 root     [irq/19-19091000]
+  148 root     [irq/147-regulat]
+  149 root     [spi0]
+  150 root     [work_queue_cust]
+  151 root     [irq/150-chsc_ca]
+  152 root     [irq/151-2-006f]
+  153 root     [irq/152-sgm4154]
+  154 root     [sgm-monitor-wq]
+  155 root     [irq/153-cw2217-]
+  156 root     [cwfg_gauge]
+  157 root     [byte-cntr]
+  158 root     [tmc_pcie]
+  161 root     [irq/137-pmic_pw]
+  162 root     [irq/138-pmic_re]
+  163 root     [irq/144-c42d000]
+  164 root     [irq/86-arm-smmu]
+  165 root     [irq/24-8804000.]
+  166 root     [sdhci_msm_gener]
+  167 root     [sdhci]
+  168 root     [irq/23-mmc0]
+  169 root     [mmc_complete]
+  170 root     [irq/67-pwr_even]
+  171 root     [irq/154-dp_hs_p]
+  172 root     [irq/155-dm_hs_p]
+  173 root     [irq/156-ss_phy_]
+  174 root     [irq/87-arm-smmu]
+  175 root     [jbd2/mmcblk0p58]
+  176 root     [ext4-rsv-conver]
+  178 root     [irq/158-soc:gpi]
+  187 root     [jbd2/mmcblk0p59]
+  188 root     [ext4-rsv-conver]
+  366 root     {emergencyalert_} /sbin/ujail -t 5 -n emergencyalert_daemon -U radio -G radio -C /etc/capabilities/emergencyalert_daemon.json -c -- /usr/bin/emergencyalert_daemon
+  383 radio    /usr/bin/emergencyalert_daemon
+  451 root     /usr/bin/lpa_rg650_v1.53 -at=ubus.r65
+  465 root     /sbin/ubusd
+  475 root     /sbin/askfirst /usr/libexec/login.sh
+  566 root     /usr/bin/eco /usr/bin/alarm_event_report
+  658 root     /sbin/urngd
+  739 root     {check_modem_cra} /bin/sh /usr/bin/check_modem_crash.sh
+  876 root     /usr/bin/lua /usr/bin/gl_clients_update
+ 1254 root     [kworker/0:2-pm]
+ 1740 root     /usr/bin/perf-hal-service
+ 1794 root     /usr/bin/ql_nw_service
+ 1860 root     [kworker/u8:2-bw]
+ 2607 root     [jbd2/mmcblk0p60]
+ 2608 root     [ext4-rsv-conver]
+ 2684 root     [jbd2/mmcblk0p61]
+ 2685 root     [ext4-rsv-conver]
+ 2838 root     [kworker/3:1H]
+ 2897 root     [jbd2/mmcblk0p66]
+ 2898 root     [ext4-rsv-conver]
+ 3104 root     {usb_check_statu} /bin/sh /usr/bin/usb_check_status
+ 3124 root     [ipa_power_mgmt]
+ 3125 root     [transport_power]
+ 3126 root     [page_recycle_st]
+ 3127 root     [ipa_pm_activate]
+ 3128 root     [irq/88-arm-smmu]
+ 3129 root     [irq/89-arm-smmu]
+ 3130 root     [irq/90-arm-smmu]
+ 3131 root     [irq/91-arm-smmu]
+ 3132 root     [ipa_interrupt_w]
+ 3133 root     [irq/34-ipa]
+ 3134 root     [ipawq36]
+ 3135 root     [iparepwq36]
+ 3136 root     [ipawq33]
+ 3137 root     [iparepwq33]
+ 3138 root     [ipafreepagewq33]
+ 3139 root     [ipawq32]
+ 3140 root     [iparepwq32]
+ 3141 root     [ipa_uc_ipsec_wq]
+ 3142 root     [ipa_ipsec_wq]
+ 3151 root     [clnt_req]
+ 3160 root     [ipa_usb_wq]
+ 3207 root     [kworker/u9:0-qm]
+ 3311 root     /usr/bin/ql_wdt_service
+ 3413 system   /usr/sbin/tftp_server
+ 3576 root     /usr/bin/quec_battery
+ 3800 root     [at_usb0]
+ 3808 root     [at_usb1]
+ 3819 root     [at_usb2]
+ 3823 root     [irq/157-dwc3]
+ 3843 root     [rmnet_ctrl]
+ 3850 root     [android_mbim]
+ 3864 root     [dpl_ctrl]
+ 3867 root     [gps]
+ 3882 root     [qdss]
+ 3889 root     [qdss_mdm]
+ 3892 root     [qdss_sw]
+ 4266 root     {diag-router} /sbin/ujail -t 5 -n diag-router -U system -G system -C /etc/capabilities/diag-router.json -c -- /usr/bin/diag-router
+ 4274 system   /usr/bin/diag-router
+ 4349 root     /usr/sbin/msm-irqbalance -f /etc/msm_irqbalance.conf
+ 4420 root     [hwrng]
+ 4609 root     {mbim} /sbin/ujail -t 5 -n mbim -U radio -G radio -C /etc/capabilities/mbim.json -c -- /usr/bin/mbimd
+ 4614 radio    /usr/bin/mbimd
+ 4703 root     [smcinvoke_shmbr]
+ 4709 root     [smcinvoke_objec]
+ 4710 root     [smcinvoke_adci_]
+ 4814 root     [irq/92-arm-smmu]
+ 4965 root     [kworker/2:0-eve]
+ 5129 root     [kworker/3:1-mm_]
+ 5234 root     [kworker/0:2H]
+ 5691 root     [kworker/0:0-eve]
+ 5936 root     [kworker/1:1-eve]
+ 6015 root     {hostapd_log_che} /bin/bash /bin/hostapd_log_check.sh /data/vendor/wifi/ 20
+ 6016 root     {ipacm_log_check} /bin/bash /bin/ipacm_log_check.sh 125
+ 6086 root     [kworker/2:1H]
+ 6429 system   /usr/bin/qseecomd
+ 6529 system   /usr/bin/ssgtzd
+ 6729 root     {QCMAP_Connectio} /sbin/ujail -t 5 -n QCMAP_ConnectionManager -U radio -G radio -C /etc/capabilities/QCMAP_ConnectionManager.json -- /usr/bin/QCMAP_ConnectionManager /etc/data/mobileap_cfg.xml d
+ 6734 radio    /usr/bin/QCMAP_ConnectionManager /etc/data/mobileap_cfg.xml d
+ 7411 root     /usr/bin/fcgiwrap -c 4 -s unix:/var/run/fcgiwrap.socket
+ 7421 root     /usr/bin/fcgiwrap -c 4 -s unix:/var/run/fcgiwrap.socket
+ 7422 root     /usr/bin/fcgiwrap -c 4 -s unix:/var/run/fcgiwrap.socket
+ 7423 root     /usr/bin/fcgiwrap -c 4 -s unix:/var/run/fcgiwrap.socket
+ 7425 root     /usr/bin/fcgiwrap -c 4 -s unix:/var/run/fcgiwrap.socket
+ 7538 root     eco /usr/sbin/gl-ngx-session
+ 7660 leprop   /sbin/leprop-service
+ 7674 root     [kworker/u8:3-me]
+ 7890 root     [kworker/1:1H-kb]
+ 7927 root     {port-bridge} /sbin/ujail -t 5 -n port-bridge -U root -G root -C /etc/capabilities/port-bridge.json -c -- /usr/bin/port-bridge at_mdm0 at_usb0 0
+ 7962 root     /usr/bin/port-bridge at_mdm0 at_usb0 0
+ 8827 root     [kworker/3:2H-kb]
+ 9018 root     [kworker/u9:1-qm]
+ 9021 root     /usr/bin/gl_modem -B cpu -S 2 connect-auto
+ 9242 root     [irq/93-arm-smmu]
+ 9707 radio    /usr/bin/ipacmdiag
+ 9904 root     [kworker/2:1-eve]
+ 9917 root     {logd.sh} /bin/bash /sbin/logd.sh -S 64
+ 9918 root     /sbin/logread -f -F /etc/sys_log -p /var/run/logread.1.pid -S 262144
+ 9927 logd     /sbin/logd -S 64
+10037 root     /usr/sbin/rmt_storage
+10158 root     /sbin/rpcd -s /var/run/ubus/ubus.sock -t 30
+10300 root     /usr/bin/ssreq_server
+10621 dnsmasq  /usr/sbin/dnsmasq -C /var/etc/dnsmasq.conf.cfg01411c -k -x /var/run/dnsmasq/dnsmasq.cfg01411c.pid
+10644 root     /usr/sbin/dnsmasq -C /var/etc/dnsmasq.conf.cfg01411c -k -x /var/run/dnsmasq/dnsmasq.cfg01411c.pid
+12224 root     [cds_recovery_wo]
+12225 root     [wlan_logging_th]
+12319 root     [irq/164-bhi]
+12326 root     [kworker/u8:4-wm]
+12556 root     [kworker/1:0-eve]
+12791 root     [qrtr_rx]
+12871 root     [kworker/3:0-eve]
+13033 root     [scheduler_threa]
+13132 root     [dp_refill_threa]
+13136 root     [dp_rx_thread_0]
+13137 root     [dp_rx_thread_1]
+13138 root     [dp_rx_thread_2]
+13825 root     /usr/bin/smsd -n MAINPROCESS -p/var/run/smsd.pid -i/var/run/smsd.working -c/tmp/smstools.cfg
+13827 root     /usr/bin/smsd -n GMS1_______ -p/var/run/smsd.pid -i/var/run/smsd.working -c/tmp/smstools.cfg
+13828 root     /usr/bin/smsd -n GMS2_______ -p/var/run/smsd.pid -i/var/run/smsd.working -c/tmp/smstools.cfg
+14620 root     {wlan0} /sbin/ujail -t 5 -n wlan0 -U wifi -G wifi -C /etc/capabilities/hostapd-daemon.json -c -- /usr/sbin/hostapd -P /data/vendor/wifi/hostapd-wlan0.pid -f /data/vendor/wifi/hostapd-wlan0.log -d /data/vendor/wifi/hostapd-wlan0.conf
+14626 wifi     /usr/sbin/hostapd -P /data/vendor/wifi/hostapd-wlan0.pid -f /data/vendor/wifi/hostapd-wlan0.log -d /data/vendor/wifi/hostapd-wlan0.conf
+15121 root     {wlan1} /sbin/ujail -t 5 -n wlan1 -U wifi -G wifi -C /etc/capabilities/hostapd-daemon.json -c -- /usr/sbin/hostapd -P /data/vendor/wifi/hostapd-wlan1.pid -f /data/vendor/wifi/hostapd-wlan1.log -d /data/vendor/wifi/hostapd-wlan1.conf
+15127 wifi     /usr/sbin/hostapd -P /data/vendor/wifi/hostapd-wlan1.pid -f /data/vendor/wifi/hostapd-wlan1.log -d /data/vendor/wifi/hostapd-wlan1.conf
+15300 root     [kworker/1:0H]
+15595 root     [kworker/u8:0+cw]
+15645 root     /sbin/netifd -l 5 -d 255 -S
+15790 ubi      /usr/sbin/fs-scrub-daemon
+15844 system   /usr/bin/servicemanager
+15903 root     /usr/bin/afc -d vendorcmd
+15913 root     [kworker/1:2-eve]
+15924 root     [kworker/2:2H]
+16187 chrony   /usr/sbin/chronyd -n -l /dev/null
+16234 root     [glink_modem]
+16329 root     [kworker/3:3]
+17366 root     [kworker/2:3-eve]
+17758 root     [kworker/2:4-eve]
+17962 root     [irq/196-glink-n]
+17972 root     [qrtr_rx]
+18054 root     /usr/bin/kpi_gen
+18119 root     /usr/bin/eco /usr/sbin/gl-repeater
+18185 root     /usr/bin/atfwd-daemon
+18230 diag     /usr/bin/diagrebootapp
+18250 root     [ipawq129]
+18251 root     [irq/197-aw_sar1]
+18257 root     [iparepwq129]
+18260 root     [ipafreepagewq12]
+18264 root     [ipawq131]
+18265 root     [iparepwq131]
+18266 root     [ipafreepagewq13]
+18267 root     [ipawq133]
+18268 root     [iparepwq133]
+18273 root     [ipafreepagewq13]
+18285 root     [ipawq135]
+18286 root     [iparepwq135]
+18287 root     [ipafreepagewq13]
+18295 root     [irq/198-aw_sar0]
+18357 radio    /usr/bin/qmuxbridge
+18437 root     [kworker/1:3-eve]
+18439 root     [kworker/1:4]
+18451 root     /usr/bin/quectel_daemon
+18538 root     /usr/bin/quectel_monitor_daemon
+18627 root     /usr/bin/ql_atc_service
+18656 root     /sbin/adbd
+18844 root     /usr/sbin/dropbear -F -P /var/run/dropbear.main.pid -p 22 -K 300 -T 3 -W 262144
+19780 root     /usr/bin/carrier-monitor
+19923 root     /usr/bin/ql_remotefs_service
+19992 root     /sbin/reboot-daemon
+20272 root     {netmgrd} /sbin/ujail -t 5 -n netmgrd -U radio -G radio -C /etc/capabilities/netmgrd.json -c -- /usr/bin/netmgrd
+20280 radio    /usr/bin/netmgrd
+20382 root     /usr/bin/cellular_manager
+20564 root     /usr/bin/modem_AT -B cpu -P /dev/smd9 -O-1
+20756 root     {stmfd} /sbin/ujail -t 5 -n stmfd -U radio -G radio -C /etc/capabilities/stmfd.json -c -- /usr/bin/stmfd
+20767 radio    /usr/bin/stmfd
+20843 root     /usr/bin/cellular_device_manager
+20968 root     [ipawq34]
+20969 root     [iparepwq34]
+20973 root     [ipawq130]
+20975 root     [iparepwq130]
+20981 root     [ipawq128]
+20985 root     [iparepwq128]
+20987 root     [ipawq95]
+20988 root     [iparepwq95]
+20989 root     [ipafreepagewq95]
+21014 root     [ipawq35]
+21015 root     [iparepwq35]
+21341 root     /usr/bin/eco /usr/bin/mcu
+21583 root     [kworker/0:1-mm_]
+21796 root     [kworker/0:3]
+22496 root     /usr/sbin/crond -f -c /tmp/gl_crontabs -l 10
+23094 root     /usr/sbin/nlbwmon -o /var/lib/nlbwmon -b 524288 -i 24h -r 30s -p /usr/share/nlbwmon/protocols -G 10 -I 1 -L 10000 -Z -s [IPv4] -s [IPv4] -s [IPv4] -s [IPv4]
+23412 root     /usr/sbin/uhttpd -f -h /www -r GL-E5800 -x /cgi-bin -u /ubus -t 60 -T 30 -k 20 -A 1 -n 3 -N 100 -p [IPv4]:8080 -p [[IPv6]]:8080 -C /etc/uhttpd.crt -K /etc/uhttpd.key -s [IPv4]:8443 -s [[IPv6]]:8443
+24269 root     [kworker/u8:1-me]
+24410 root     /usr/bin/lpm-monitor
+24498 root     /usr/bin/dbus-daemon --system --nofork
+24644 root     {ipa_lnx_agent} /sbin/ujail -t 5 -n ipa_lnx_agent -U radio -G radio -C /etc/capabilities/ipa_lnx_agent.json -- /usr/bin/ipa_lnx_agent
+24647 radio    /usr/bin/ipa_lnx_agent
+24714 root     {dlsc} /sbin/ujail -t 5 -n dlsc -U radio -G radio -C /etc/capabilities/dlsc_ext.json -c -- /usr/bin/dlsc
+24718 radio    /usr/bin/dlsc
+24784 root     {ethagent} /sbin/ujail -t 5 -n ethagent -U radio -G radio -C /etc/capabilities/ethagent.json -- /usr/bin/ethagent
+24788 radio    /usr/bin/ethagent
+24851 root     [kworker/2:2-eve]
+24881 root     {qms} /sbin/ujail -t 5 -n qms -U radio -G radio -C /etc/capabilities/qms.json -- /usr/bin/qms
+24885 radio    /usr/bin/qms
+24962 root     {tlpd} /sbin/ujail -t 5 -n tlpd -U radio -G radio -C /etc/capabilities/tlpd_ext.json -c -- /usr/bin/tlpd boot
+24968 radio    /usr/bin/tlpd boot
+24988 root     [kworker/2:0H-kb]
+25016 radio    {tlpd_diag} /usr/bin/tlpd 00000000
+25017 radio    {tlpd_qmi} /usr/bin/tlpd 01000000
+25107 root     sleep 60
+25110 root     sleep 30
+25145 root     sleep 60
+25168 root     [kworker/0:1H-kb]
+25233 root     {loc_launcher} /sbin/ujail -t 5 -n loc_launcher -U gps -G gps -C /etc/capabilities/loc-launcher.json -c -- /usr/bin/loc_launcher
+25244 gps      /usr/bin/loc_launcher
+25271 root     sleep 10
+25285 gps      lowi-server
+25342 root     {location_hal_da} /sbin/ujail -t 5 -n location_hal_daemon -U gps -G gps -C /etc/capabilities/location-hal-daemon.json -c -- /usr/bin/location_hal_daemon
+25353 gps      /usr/bin/location_hal_daemon
+25382 root     sleep 1
+25396 root     /usr/sbin/dropbear -F -P /var/run/dropbear.main.pid -p 22 -K 300 -T 3 -W 262144 -2 9
+25397 root     ps w
+25416 root     {bt-property} /sbin/ujail -t 5 -n bt-property -U qbt -G qbt -C /etc/capabilities/bt-property.json -c -- /usr/bin/btproperty
+25428 qbt      /usr/bin/btproperty
+25593 root     [kworker/0:0H-kb]
+25647 minidlna /usr/sbin/minidlnad -S -f /var/etc/minidlna.conf
+25671 root     /usr/bin/thermal-engine
+25934 root     /usr/bin/gl_screen -c /tmp/gl_screen/config
+25975 root     [soc:qcom,ioss]
+25976 root     [ipa_eth_wq]
+27558 root     [kworker/3:2-mm_]
+29354 root     nginx: master process /usr/sbin/nginx -c /etc/nginx/nginx.conf -g daemon off;
+29410 root     {qti_adpld} /sbin/ujail -t 5 -n qti_adpld -U radio -G radio -C /etc/capabilities/qti_adpld.json -- /usr/bin/qti_adpl
+29413 radio    /usr/bin/qti_adpl
+30099 root     /usr/bin/sms_manager
+30362 root     nginx: worker process
+30363 root     nginx: worker process
+30364 root     nginx: worker process
+30365 root     nginx: worker process
+32144 root     /usr/bin/ql_ril_service
+32211 root     MCM_atcop_svc
+32470 root     /usr/bin/subsystem_ramdump
+32546 root     {wlan_services} /sbin/ujail -t 5 -n wlan_services -U wifi -G wifi -C /etc/capabilities/wlan_services.json -- /usr/sbin/wlan_services -n -b 30 -c 1 -f /data/vendor/wifi/wlan_services.log
+32566 wifi     /usr/sbin/wlan_services -n -b 30 -c 1 -f /data/vendor/wifi/wlan_services.log

@@ -1,0 +1,486 @@
+Mon Aug 17 16:29:48 2026 user.notice root: backhaulCommonConfig.sh:3929:Invalid option
+Mon Aug 17 16:29:48 2026 user.notice QCMAP: 2026-08-17 16:29:48 [backhaulCommonConfig.sh][][3219] :Invalid option
+Mon Aug 17 16:29:48 2026 user.notice QCMAP: 2026-08-17 16:29:48 [backhaulCommonConfig.sh][is_wwan_prefer_backhaul][5043]
+Mon Aug 17 16:29:48 2026 user.notice QCMAP: 2026-08-17 16:29:48 [rmnet.script][check_ippt_enable][48] isWWANAPrefered=0
+Mon Aug 17 16:29:48 2026 user.notice QCMAP: 2026-08-17 16:29:48 [rmnet.script][check_ippt_enable][54]  wwan is not most prefered active backhaul.
+Mon Aug 17 16:29:48 2026 user.notice QCMAP: 2026-08-17 16:29:48 [rmnet.script][perform_ippt_check][1792] IPPT is not enabled.
+Mon Aug 17 16:29:48 2026 user.notice QCMAP: 2026-08-17 16:29:48 [rmnet.script][util_execute_uci][2606]  uci get qcmap_lan.@profile[0].ip_collision_active
+Mon Aug 17 16:29:48 2026 user.notice QCMAP: 2026-08-17 16:29:48 [rmnet.script][PerformStartStopDHCPDOnNonIPPTVLANS][1731] start_dhcp=1 profile=1 cfg=modem_cpu setup_ipv4=1
+Mon Aug 17 16:29:48 2026 user.notice QCMAP: 2026-08-17 16:29:48 [rmnet.script][util_get_with_nat][330] with_nat 1
+Mon Aug 17 16:29:48 2026 user.notice QCMAP: 2026-08-17 16:29:48 [rmnet.script][util_get_ipv4_nat_config][2896] Enter profile_id=1
+Mon Aug 17 16:29:48 2026 user.notice QCMAP: 2026-08-17 16:29:48 [rmnet.script][util_get_ipv4_nat_config][2906] ipv4_nat_status=0
+Mon Aug 17 16:29:48 2026 user.notice QCMAP: 2026-08-17 16:29:48 [rmnet.script][PerformStartStopDHCPDOnNonIPPTVLANS][1746] cfg=modem_cpu:profile=1:bh_status=
+Mon Aug 17 16:29:48 2026 user.notice QCMAP: 2026-08-17 16:29:48 [rmnet.script][PerformStartStopDHCPDOnNonIPPTVLANS][1776] perform_toggle=0
+Mon Aug 17 16:29:49 2026 user.notice root: rmnet.script:util_add_mtu_options:946: 1 4
+Mon Aug 17 16:29:49 2026 user.notice root: rmnet.script:util_add_mtu_options:958: profile :1 iptype: 4
+Mon Aug 17 16:29:49 2026 user.notice root: rmnet.script:util_add_mtu_options:987: adding MTU:1500/ for lan
+Mon Aug 17 16:29:49 2026 user.notice QCMAP: 2026-08-17 16:29:49 [rmnet.script][util_get_with_nat][330] with_nat 1
+Mon Aug 17 16:29:49 2026 user.notice kmwan: config json str={ "op": 2, "data": { "cells": [ { "interface": "modem_cpu", "netdev": "rmnet_data1", "track_mode": "passive", "addr_type": 4, "force_ip": "[IPv4]", "tracks": [ { "type": "ping", "ip": "[IPv4]" }, { "type": "ping", "ip": "[IPv4]" }, { "type": "ping", "ip": "[IPv4]" }, { "type": "ping", "ip": "[IPv4]" } ] } ] } }
+Mon Aug 17 16:29:49 2026 kern.warn kernel: [  129.625065][ T7569] [add_dev_config 319]add node success. iface:modem_cpu, dev:rmnet_data1, ifindex:27
+Mon Aug 17 16:29:49 2026 daemon.info gl-repeater[12186]: (repeater.lua:2163) interface modem_cpu offline
+Mon Aug 17 16:29:49 2026 daemon.info gl-repeater[12186]: (repeater.lua:1849) switch in 3 seconds...
+Mon Aug 17 16:29:49 2026 user.notice QCMAP: enable nat done
+Mon Aug 17 16:29:49 2026 daemon.info procd: service name: test_27639.init[IPv6]instance1
+Mon Aug 17 16:29:49 2026 daemon.info procd: Removed dir: /sys/fs/cgroup/services/test_27639.init/instance1
+Mon Aug 17 16:29:49 2026 daemon.info procd: Removed dir: /sys/fs/cgroup/services/test_27639.init
+Mon Aug 17 16:29:49 2026 daemon.info dnsmasq[3248]: exiting on receipt of SIGTERM
+Mon Aug 17 16:29:49 2026 daemon.warn dnsmasq[8013]: ignore set hostname for hwaddr=[MAC] since different hwaddr
+Mon Aug 17 16:29:49 2026 daemon.info dnsmasq[8013]: started, version 2.90 cachesize 1000
+Mon Aug 17 16:29:49 2026 daemon.info dnsmasq[8013]: DNS service limited to local subnets
+Mon Aug 17 16:29:49 2026 daemon.info dnsmasq[8013]: compile time options: IPv6 GNU-getopt no-DBus UBus no-i18n no-IDN DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth cryptohash DNSSEC no-ID loop-detect inotify dumpfile
+Mon Aug 17 16:29:49 2026 daemon.info dnsmasq[8013]: UBus support enabled: connected to system bus
+Mon Aug 17 16:29:49 2026 daemon.info dnsmasq-dhcp[8013]: DHCP, IP range [IPv4] -- [IPv4], lease time 12h
+Mon Aug 17 16:29:49 2026 daemon.info dnsmasq-dhcp[8013]: IPv6 router advertisement enabled
+Mon Aug 17 16:29:49 2026 daemon.info dnsmasq[8013]: using only locally-known addresses for test
+Mon Aug 17 16:29:49 2026 daemon.info dnsmasq[8013]: using only locally-known addresses for onion
+Mon Aug 17 16:29:49 2026 daemon.info dnsmasq[8013]: using only locally-known addresses for localhost
+Mon Aug 17 16:29:49 2026 daemon.info dnsmasq[8013]: using only locally-known addresses for local
+Mon Aug 17 16:29:49 2026 daemon.info dnsmasq[8013]: using only locally-known addresses for invalid
+Mon Aug 17 16:29:49 2026 daemon.info dnsmasq[8013]: using only locally-known addresses for bind
+Mon Aug 17 16:29:49 2026 daemon.info dnsmasq[8013]: using only locally-known addresses for lan
+Mon Aug 17 16:29:49 2026 daemon.warn dnsmasq[8013]: no servers found in /tmp/resolv.conf.d/resolv.conf.auto, will retry
+Mon Aug 17 16:29:49 2026 daemon.info dnsmasq[8013]: read /etc/hosts - 14 names
+Mon Aug 17 16:29:49 2026 daemon.info dnsmasq[8013]: read /tmp/hosts/dhcp.cfg01411c - 4 names
+Mon Aug 17 16:29:49 2026 daemon.info dnsmasq-dhcp[8013]: read /etc/ethers - 0 addresses
+Mon Aug 17 16:29:49 2026 daemon.info dnsmasq[8013]: read /etc/hosts - 14 names
+Mon Aug 17 16:29:49 2026 daemon.info dnsmasq[8013]: read /tmp/hosts/dhcp.cfg01411c - 4 names
+Mon Aug 17 16:29:49 2026 daemon.info dnsmasq-dhcp[8013]: read /etc/ethers - 0 addresses
+Mon Aug 17 16:29:49 2026 user.notice root: Invalid option
+Mon Aug 17 16:29:49 2026 user.notice root: backhaulCommonConfig.sh:3929:Invalid option
+Mon Aug 17 16:29:49 2026 user.notice root: Invalid option
+Mon Aug 17 16:29:49 2026 user.notice root: backhaulCommonConfig.sh:3929:Invalid option
+Mon Aug 17 16:29:49 2026 user.notice firewall: Reloading firewall due to ifup of modem_cpu (rmnet_data1)
+Mon Aug 17 16:29:49 2026 user.notice QCMAP: 2026-08-17 16:29:49 [backhaulCommonConfig.sh][][722] :Invalid option
+Mon Aug 17 16:29:49 2026 user.notice root: Invalid option
+Mon Aug 17 16:29:49 2026 user.notice root: backhaulCommonConfig.sh:3929:Invalid option
+Mon Aug 17 16:29:49 2026 user.notice QCMAP: 2026-08-17 16:29:49 [backhaulCommonConfig.sh][case: Invalid][105] Invalid option
+Mon Aug 17 16:29:49 2026 user.notice root: Invalid option
+Mon Aug 17 16:29:49 2026 user.notice root: backhaulCommonConfig.sh:3929:Invalid option
+Mon Aug 17 16:29:49 2026 user.notice QCMAP: 2026-08-17 16:29:49 [backhaulCommonConfig.sh][][3219] :Invalid option
+Mon Aug 17 16:29:49 2026 user.notice QCMAP: 2026-08-17 16:29:49 [backhaulCommonConfig.sh][run_switch_backhaul_with_lock][5022] Ayush rmnet1 1
+Mon Aug 17 16:29:49 2026 user.notice QCMAP: 2026-08-17 16:29:49 [backhaulCommonConfig.sh][run_switch_backhaul_with_lock_backhaul_with_lock][1430] Acquired lock, running switch_backhaul
+Mon Aug 17 16:29:49 2026 user.notice QCMAP: 2026-08-17 16:29:49 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get network.rmnet1.proto
+Mon Aug 17 16:29:49 2026 user.notice QCMAP: 2026-08-17 16:29:49 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_wlan.@stamodeconfig[0].bridge_mode
+Mon Aug 17 16:29:49 2026 user.notice QCMAP: 2026-08-17 16:29:49 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@lan[0].default_waneth_profile_num
+Mon Aug 17 16:29:49 2026 user.notice QCMAP: 2026-08-17 16:29:49 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@global[0].brwan
+Mon Aug 17 16:29:49 2026 user.notice QCMAP: 2026-08-17 16:29:49 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get network.wan.proto
+Mon Aug 17 16:29:49 2026 user.notice QCMAP: 2026-08-17 16:29:49 [backhaulCommonConfig.sh][:switch_backhaul:][1488] Enter switch_backhaul backhaul_name=rmnet1 link_state=1
+Mon Aug 17 16:29:49 2026 user.notice QCMAP: 2026-08-17 16:29:49 [backhaulCommonConfig.sh][switch_backhaul][1547] pppoe feature not enabled
+Mon Aug 17 16:29:49 2026 user.notice QCMAP: 2026-08-17 16:29:49 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@no_of_configs[0].default_pdn
+Mon Aug 17 16:29:50 2026 user.notice QCMAP: 2026-08-17 16:29:50 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@profile[0].bh_present
+Mon Aug 17 16:29:50 2026 user.notice QCMAP: 2026-08-17 16:29:50 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@lan[0].default_waneth_profile_num
+Mon Aug 17 16:29:50 2026 user.notice QCMAP: 2026-08-17 16:29:50 [backhaulCommonConfig.sh][update_present_backhaul][2671] Enter update_present_backhaul backhaulname=rmnet1 linkstate=1 iptype=ipv4
+Mon Aug 17 16:29:50 2026 user.notice QCMAP: 2026-08-17 16:29:50 [backhaulCommonConfig.sh][:update_present_backhaul:][2678] :profile_idx: 0
+Mon Aug 17 16:29:50 2026 user.notice QCMAP: 2026-08-17 16:29:50 [backhaulCommonConfig.sh][update_present_backhaul][2702] current_IPv4_backhaul:
+Mon Aug 17 16:29:50 2026 user.notice QCMAP: 2026-08-17 16:29:50 [backhaulCommonConfig.sh][util_execute_uci][2599]  uci set qcmap_lan.@profile[0].bh_present=
+Mon Aug 17 16:29:50 2026 user.notice QCMAP: 2026-08-17 16:29:50 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci -q get qcmap_wlan.@stamodeconfig[0].bridge_mode
+Mon Aug 17 16:29:50 2026 user.notice QCMAP: 2026-08-17 16:29:50 [backhaulCommonConfig.sh][update_present_backhaul][2719] :Backhaul not up since /tmp/ipv4config.wan not present
+Mon Aug 17 16:29:50 2026 user.notice QCMAP: 2026-08-17 16:29:50 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci -q get qcmap_wlan.@stamodeconfig[0].bridge_mode
+Mon Aug 17 16:29:50 2026 user.notice QCMAP: 2026-08-17 16:29:50 [backhaulCommonConfig.sh][update_present_backhaul][2719] :Backhaul not up since /tmp/ipv4config.wwan not present
+Mon Aug 17 16:29:50 2026 user.notice QCMAP: 2026-08-17 16:29:50 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci -q get qcmap_wlan.@stamodeconfig[0].bridge_mode
+Mon Aug 17 16:29:50 2026 user.notice QCMAP: 2026-08-17 16:29:50 [backhaulCommonConfig.sh][update_present_backhaul][2722] :file present: /tmp/ipv4config1
+Mon Aug 17 16:29:50 2026 user.notice QCMAP: 2026-08-17 16:29:50 [backhaulCommonConfig.sh][update_present_backhaul][2734] :modem_cpu is up with devname=rmnet_data1, addr=[IPv4]
+Mon Aug 17 16:29:50 2026 user.notice QCMAP: 2026-08-17 16:29:50 [backhaulCommonConfig.sh][util_execute_uci][2599]  uci set qcmap_lan.@profile[0].bh_present=modem_cpu
+Mon Aug 17 16:29:50 2026 user.notice QCMAP: 2026-08-17 16:29:50 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci commit qcmap_lan
+Mon Aug 17 16:29:50 2026 user.notice QCMAP: 2026-08-17 16:29:50 [backhaulCommonConfig.sh][util_add_mtu_option_in_firewall][301] add TCP MSS rule to /tmp/data/firewall.user.tcpmss4_profile1 profile=1
+Mon Aug 17 16:29:50 2026 user.notice QCMAP: 2026-08-17 16:29:50 [backhaulCommonConfig.sh][enable_tcpmss][277]  Installing TCP MSS rule ifname:rmnet_data1 mtu:1500 ip_type:4
+Mon Aug 17 16:29:50 2026 user.notice QCMAP: 2026-08-17 16:29:50 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@no_of_configs[0].no_of_profiles
+Mon Aug 17 16:29:50 2026 user.notice QCMAP: 2026-08-17 16:29:50 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@profile[0].profile_id
+Mon Aug 17 16:29:50 2026 user.notice QCMAP: 2026-08-17 16:29:50 [backhaulCommonConfig.sh][util_execute_uci][2599]  uci set qcmap_lan.@lan[0].firewallreload=1
+Mon Aug 17 16:29:50 2026 user.notice QCMAP: 2026-08-17 16:29:50 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci commit qcmap_lan
+Mon Aug 17 16:29:51 2026 user.notice nlbwmon: Reloading nlbwmon due to ifup of modem_cpu (rmnet_data1)
+Mon Aug 17 16:29:51 2026 user.notice root: Invalid option
+Mon Aug 17 16:29:52 2026 user.notice QCMAP: 2026-08-17 16:29:52 [backhaulCommonConfig.sh][run_combine_backhaul_with_lock][2654] Acquired lock, running combine_backhaul_ipv4ipv6
+Mon Aug 17 16:29:52 2026 user.notice QCMAP: 2026-08-17 16:29:52 [backhaulCommonConfig.sh][combine_backhaul_ipv4ipv6][2393] combine_backhaul_ipv4ipv6 enter profile_idx=0
+Mon Aug 17 16:29:52 2026 user.notice QCMAP: 2026-08-17 16:29:52 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@profile[0].bh_present
+Mon Aug 17 16:29:52 2026 user.notice QCMAP: 2026-08-17 16:29:52 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@profile[0].bh_present_v6
+Mon Aug 17 16:29:52 2026 user.notice QCMAP: 2026-08-17 16:29:52 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get network.wwan.proto
+Mon Aug 17 16:29:52 2026 daemon.info gl-repeater[12186]: (repeater.lua:1762) disabled
+Mon Aug 17 16:29:52 2026 user.notice QCMAP: 2026-08-17 16:29:52 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get network.wan.proto
+Mon Aug 17 16:29:52 2026 user.notice QCMAP: 2026-08-17 16:29:52 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get network.wan.defaultroute
+Mon Aug 17 16:29:52 2026 user.notice QCMAP: 2026-08-17 16:29:52 [backhaulCommonConfig.sh][combine_backhaul_ipv4ipv6][2420] [QL] backhaulname:wan; waneth_proto:dhcp
+Mon Aug 17 16:29:52 2026 user.notice QCMAP: 2026-08-17 16:29:52 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get network.wan.proto
+Mon Aug 17 16:29:52 2026 user.notice QCMAP: 2026-08-17 16:29:52 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci set network.wan6.defaultroute=0
+Mon Aug 17 16:29:52 2026 user.notice QCMAP: 2026-08-17 16:29:52 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci set network.wan.defaultroute=0
+Mon Aug 17 16:29:52 2026 user.notice QCMAP: 2026-08-17 16:29:52 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci -q get qcmap_wlan.@stamodeconfig[0].bridge_mode
+Mon Aug 17 16:29:52 2026 user.notice QCMAP: 2026-08-17 16:29:52 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get network.wwan.defaultroute
+Mon Aug 17 16:29:52 2026 user.notice QCMAP: 2026-08-17 16:29:52 [backhaulCommonConfig.sh][combine_backhaul_ipv4ipv6][2420] [QL] backhaulname:wwan; waneth_proto:dhcp
+Mon Aug 17 16:29:52 2026 user.notice QCMAP: 2026-08-17 16:29:52 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get network.wwan.proto
+Mon Aug 17 16:29:52 2026 user.notice QCMAP: 2026-08-17 16:29:52 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci set network.wwan6.defaultroute=0
+Mon Aug 17 16:29:52 2026 user.notice QCMAP: 2026-08-17 16:29:52 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci set network.wwan.defaultroute=0
+Mon Aug 17 16:29:52 2026 user.notice QCMAP: 2026-08-17 16:29:52 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci -q get qcmap_wlan.@stamodeconfig[0].bridge_mode
+Mon Aug 17 16:29:52 2026 user.notice QCMAP: 2026-08-17 16:29:52 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get network.modem_cpu.defaultroute
+Mon Aug 17 16:29:52 2026 user.notice QCMAP: 2026-08-17 16:29:52 [backhaulCommonConfig.sh][combine_backhaul_ipv4ipv6][2420] [QL] backhaulname:modem_cpu; waneth_proto:dhcp
+Mon Aug 17 16:29:52 2026 user.notice QCMAP: 2026-08-17 16:29:52 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get network.modem_cpu.proto
+Mon Aug 17 16:29:52 2026 user.notice QCMAP: 2026-08-17 16:29:52 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci set network.modem_cpu6.defaultroute=0
+Mon Aug 17 16:29:52 2026 user.notice QCMAP: 2026-08-17 16:29:52 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci set network.modem_cpu.defaultroute=0
+Mon Aug 17 16:29:52 2026 user.notice QCMAP: 2026-08-17 16:29:52 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci -q get qcmap_wlan.@stamodeconfig[0].bridge_mode
+Mon Aug 17 16:29:52 2026 user.notice QCMAP: 2026-08-17 16:29:52 [backhaulCommonConfig.sh][combine_backhaul_ipv4ipv6][2453] ipv4_bh=modem_cpu, ipv6_bh=no, loop on wan
+Mon Aug 17 16:29:52 2026 user.notice QCMAP: 2026-08-17 16:29:52 [backhaulCommonConfig.sh][combine_backhaul_ipv4ipv6][2453] ipv4_bh=modem_cpu, ipv6_bh=no, loop on wwan
+Mon Aug 17 16:29:52 2026 user.notice QCMAP: 2026-08-17 16:29:52 [backhaulCommonConfig.sh][combine_backhaul_ipv4ipv6][2453] ipv4_bh=modem_cpu, ipv6_bh=no, loop on modem_cpu
+Mon Aug 17 16:29:52 2026 user.notice QCMAP: 2026-08-17 16:29:52 [backhaulCommonConfig.sh][combine_backhaul_ipv4ipv6][2480] modem_cpu is highest priority
+Mon Aug 17 16:29:52 2026 user.notice QCMAP: 2026-08-17 16:29:52 [backhaulCommonConfig.sh][util_execute_uci][2599]  uci set network.modem_cpu6.defaultroute=1
+Mon Aug 17 16:29:52 2026 user.notice QCMAP: 2026-08-17 16:29:52 [backhaulCommonConfig.sh][util_execute_uci][2599]  uci set network.modem_cpu.defaultroute=1
+Mon Aug 17 16:29:52 2026 user.notice QCMAP: 2026-08-17 16:29:52 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci -q get qcmap_wlan.@stamodeconfig[0].bridge_mode
+Mon Aug 17 16:29:52 2026 user.notice QCMAP: 2026-08-17 16:29:52 [backhaulCommonConfig.sh][util_execute_uci][2599]  uci set qcmap_lan.@profile[0].bh_present_v6=
+Mon Aug 17 16:29:52 2026 daemon.info gl-repeater[12186]: (repeater.lua:2163) interface modem_cpu online
+Mon Aug 17 16:29:52 2026 daemon.info gl-repeater[12186]: (repeater.lua:1849) switch in 3 seconds...
+Mon Aug 17 16:29:52 2026 user.notice timesync: NTP sync already running, exiting
+Mon Aug 17 16:29:52 2026 user.notice QCMAP: 2026-08-17 16:29:52 [backhaulCommonConfig.sh][combine_backhaul_ipv4ipv6][2547] modem_cpu is up, set wwan defaultroute as 1
+Mon Aug 17 16:29:52 2026 user.notice QCMAP: 2026-08-17 16:29:52 [backhaulCommonConfig.sh][util_execute_uci][2599]  uci set network.modem_cpu.defaultroute=1
+Mon Aug 17 16:29:52 2026 user.notice QCMAP: 2026-08-17 16:29:52 [backhaulCommonConfig.sh][util_execute_uci][2599]  uci set network.modem_cpu6.defaultroute=1
+Mon Aug 17 16:29:52 2026 user.notice QCMAP: 2026-08-17 16:29:52 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci commit qcmap_lan
+Mon Aug 17 16:29:52 2026 user.notice QCMAP: 2026-08-17 16:29:52 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci commit network
+Mon Aug 17 16:29:52 2026 daemon.info dnsmasq[8013]: reading /tmp/resolv.conf.d/resolv.conf.auto
+Mon Aug 17 16:29:52 2026 daemon.info dnsmasq[8013]: using nameserver [IPv4]#53
+Mon Aug 17 16:29:52 2026 daemon.info dnsmasq[8013]: using nameserver [IPv4]#53
+Mon Aug 17 16:29:52 2026 daemon.info dnsmasq[8013]: using only locally-known addresses for test
+Mon Aug 17 16:29:52 2026 daemon.info dnsmasq[8013]: using only locally-known addresses for onion
+Mon Aug 17 16:29:52 2026 daemon.info dnsmasq[8013]: using only locally-known addresses for localhost
+Mon Aug 17 16:29:52 2026 daemon.info dnsmasq[8013]: using only locally-known addresses for local
+Mon Aug 17 16:29:52 2026 daemon.info dnsmasq[8013]: using only locally-known addresses for invalid
+Mon Aug 17 16:29:52 2026 daemon.info dnsmasq[8013]: using only locally-known addresses for bind
+Mon Aug 17 16:29:52 2026 daemon.info dnsmasq[8013]: using only locally-known addresses for lan
+Mon Aug 17 16:29:52 2026 kern.err kernel: [  133.141329][ T7951] ipa-wan ipa3_wwan_set_modem_state:5031 nlmsg: <ALERT_NAME=upstreamEvent> <UPSTREAM=rmnet_data1> <STATE=UP>
+Mon Aug 17 16:29:52 2026 kern.err kernel: [  133.155592][ T7951] ipa-wan ipa3_wwan_set_modem_state:5031 nlmsg: <ALERT_NAME=upstreamEvent> <UPSTREAM=rmnet_data1> <STATE=UP>
+Mon Aug 17 16:29:52 2026 user.notice kmwan: config json str={ "op": 6, "data": { } }
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci -q get qcmap_lan.@profile[0].bh_present_v6
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_wlan.@stamodeconfig[0].bridge_mode
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@no_of_configs[0].default_pdn
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get glipv6.globals.enabled
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get glipv6.lan.mode
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][update_dhcpv6_relay_mode][2157] enter update_dhcpv6_relay_mode, new_backhaul:modem_cpu
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get dhcp.lan.ndp
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get dhcp.wan6.ndp
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][update_dhcpv6_relay_mode][2187] dhcpv6 relay was not set and no need set(ipv6 backhaul not up), break
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@no_of_configs[0].default_pdn
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@lan[0].default_waneth_profile_num
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@profile[0].bh_present
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@profile[0].bh_present_v6
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@no_of_configs[0].no_of_vlans
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_wlan.@stamodeconfig[0].bridge_mode
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][update_vlan_default_backhaul_status][2325] Enter update_vlan_default_backhaul_status
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][update_vlan_default_backhaul_status][2329] No VLAN is configured
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][run_combine_backhaul_with_lock][2656] Releasing lock, after function execution
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][add_second_default_route_for_load_balance][2596] Enter add_second_default_route_for_load_balance
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get kmwan.modem_cpu.metric
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get kmwan.wan.metric
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][get_bh_load_balance_status][2585]  backhaul load balance status: 0
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][util_execute_uci][2599]  uci set qcmap_lan.profile_.bh_present=
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@profile[0].bh_previous
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@profile[0].bh_present
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][:switch_backhaul:][1567] current_bh:;previous_bh:;new_bh:modem_cpu
+Mon Aug 17 16:29:53 2026 user.notice radio: Invalid option
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][firewall_cleanup][550] previous_bh:, current_bh:modem_cpu
+Mon Aug 17 16:29:53 2026 user.notice radio: backhaulCommonConfig.sh:3929:Invalid option
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][firewall_cleanup][556] wan_interface_index: 1
+Mon Aug 17 16:29:53 2026 user.notice radio: Invalid option
+Mon Aug 17 16:29:53 2026 user.notice radio: backhaulCommonConfig.sh:3929:Invalid option
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci show firewall
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][][722] :Invalid option
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get firewall.@zone[].network
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get network.modem_cpu.downstream
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get firewall.@zone[3].network
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get firewall.@zone[1].network
+Mon Aug 17 16:29:53 2026 user.notice radio: Invalid option
+Mon Aug 17 16:29:53 2026 user.notice radio: backhaulCommonConfig.sh:3929:Invalid option
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@profile[0].firewall_enabled
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][case: Invalid][105] Invalid option
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][is_firewall_up_on_default_pdn][531] firewall_enable_flag:0, defaultProfileId:1 , profile_idx: 0
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][firewall_cleanup][607] firewall_enable_flag:0
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][firewall_cleanup][609] current_bh:modem_cpu not listed to wan_all
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci add_list firewall.@zone[3].network=modem_cpu
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci commit firewall
+Mon Aug 17 16:29:53 2026 user.notice radio: Invalid option
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][firewall_cleanup][637] current_bh:modem_cpu not listed to wan
+Mon Aug 17 16:29:53 2026 user.notice radio: backhaulCommonConfig.sh:3929:Invalid option
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci add_list firewall.@zone[1].network=modem_cpu
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci commit firewall
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][][3219] :Invalid option
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get network..proto
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@no_of_configs[0].default_pdn
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@no_of_configs[0].no_of_profiles
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@profile[0].profile_id
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@profile[0].bh_present
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@profile[0].bh_present_v6
+Mon Aug 17 16:29:53 2026 user.notice QCMAP: 2026-08-17 16:29:53 [backhaulCommonConfig.sh][read_current_backhaul][5038]
+Mon Aug 17 16:29:53 2026 user.info LocSvc_LocNetIface[20770]: setCurrentBackHaulStatus:749] Type:  1-WWAN, 2-USB Cradle, 3-WLAN , 4-Ethernet, 5-BT
+Mon Aug 17 16:29:53 2026 user.info LocSvc_LocNetIface[20770]: setCurrentBackHaulStatus:750] BackhaulStatus Type: 1, IPv4 avail:1, IPv6 avail:0
+Mon Aug 17 16:29:53 2026 user.info LocSvc_SystemStatusOsObserver[20770]: sendCachedDataItems:471] DataItem: ACTIVE_NETWORK_INFO[IPv6]TYPEs_MASK: 1, TYPE_NAME: , SUB_TYPE_NAME: , IS_AVAILABLE: true, IS_CONNECTED: true, IS_ROAMING: false, NETWORK_HANDLE_0: [LONG_ID]:0, NETWORK_HANDLE_1: [LONG_ID]:10, NETWORK_HANDLE_2: [LONG_ID]:10, NETWORK_HANDLE_3: [LONG_ID]:10, NETWORK_HANDLE_4: [LONG_ID]:10, NETWORK_HANDLE_5: [LONG_ID]:10, NETWORK_HANDLE_6: [LONG_ID]:10, NETWORK_HANDLE_7: [LONG_ID]:10, NETWORK_HANDLE_8: [LONG_ID]:10, NETWORK_HANDLE_9: [LONG_ID]:10, APN_NAME:  >> XtraSystemStatusObserver
+Mon Aug 17 16:29:53 2026 user.info LocSvc_SystemStatusOsObserver[20770]: sendCachedDataItems:471] DataItem: ACTIVE_NETWORK_INFO[IPv6]TYPEs_MASK: 1, TYPE_NAME: , SUB_TYPE_NAME: , IS_AVAILABLE: true, IS_CONNECTED: true, IS_ROAMING: false, NETWORK_HANDLE_0: [LONG_ID]:0, NETWORK_HANDLE_1: [LONG_ID]:10, NETWORK_HANDLE_2: [LONG_ID]:10, NETWORK_HANDLE_3: [LONG_ID]:10, NETWORK_HANDLE_4: [LONG_ID]:10, NETWORK_HANDLE_5: [LONG_ID]:10, NETWORK_HANDLE_6: [LONG_ID]:10, NETWORK_HANDLE_7: [LONG_ID]:10, NETWORK_HANDLE_8: [LONG_ID]:10, NETWORK_HANDLE_9: [LONG_ID]:10, APN_NAME:  >> NativeAgpsHandler
+Mon Aug 17 16:29:54 2026 user.notice QCMAP: hotplug-iface event: ql_cdt_board_id=0x02010022 eipv6= ql_pcie_ssc=0 USER=root ACTION=ifup SHLVL=1 HOME=/ data_interface=[0,0] ql_switch_usb=0 HOTPLUG_TYPE=iface ql_pcie_mode=1 LOGNAME=root DEVICENAME= TERM=linux ethmac=000000000000000000000000 PATH=/usr/sbin:/usr/bin:/sbin:/bin eqos= ql_overlay_rootfs=1 INTERFACE=modem_cpu ql_pcie_id=[0x0000,0x0000,0x0000,0x0000,0] PWD=/ eipv4= DEVICE=rmnet_data1
+Mon Aug 17 16:29:55 2026 user.notice QCMAP: 2026-08-17 16:29:55 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_wlan.@stamodeconfig[0].bridge_mode
+Mon Aug 17 16:29:55 2026 user.notice QCMAP: 2026-08-17 16:29:55 [wlanConfig_hmt.sh][case:get_sta_associcated_status][2074] get_sta_associcated_status
+Mon Aug 17 16:29:55 2026 user.notice QCMAP: 2026-08-17 16:29:55 [wlanConfig_hmt.sh][util_execute_uci][28]  uci get wireless.wifi0_STA.ifname
+Mon Aug 17 16:29:55 2026 user.notice QCMAP: 2026-08-17 16:29:55 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_wlan.@wlanconfig[0].mode
+Mon Aug 17 16:29:55 2026 user.notice QCMAP: 2026-08-17 16:29:55 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_wlan.@stamodeconfig[0].bridge_mode
+Mon Aug 17 16:29:55 2026 user.notice QCMAP: 2026-08-17 16:29:55 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_wlan.@stamodeconfig[0].sta_mode_conn_type
+Mon Aug 17 16:29:55 2026 user.notice QCMAP: 2026-08-17 16:29:55 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@no_of_configs[0].enable_tinyproxy
+Mon Aug 17 16:29:55 2026 user.notice QCMAP: 2026-08-17 16:29:55 [backhaulCommonConfig.sh][:update_dnsv4:][300] Updating dnsv4 at Bh Switch
+Mon Aug 17 16:29:55 2026 user.notice QCMAP: 2026-08-17 16:29:55 [backhaulCommonConfig.sh][:update_dnsv6:][385] Updating dnsv6 at Bh Switch
+Mon Aug 17 16:29:55 2026 user.notice QCMAP: 2026-08-17 16:29:55 [backhaulCommonConfig.sh][update_firewall_zone_for_load_balance][771] Enter update_firewall_zone_for_load_balance
+Mon Aug 17 16:29:55 2026 user.notice QCMAP: 2026-08-17 16:29:55 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get kmwan.modem_cpu.metric
+Mon Aug 17 16:29:55 2026 user.notice QCMAP: 2026-08-17 16:29:55 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get kmwan.wan.metric
+Mon Aug 17 16:29:55 2026 user.notice QCMAP: 2026-08-17 16:29:55 [backhaulCommonConfig.sh][get_bh_load_balance_status][2585]  backhaul load balance status: 0
+Mon Aug 17 16:29:55 2026 user.notice QCMAP: 2026-08-17 16:29:55 [wlanConfig_hmt.sh][case: Invalid][2084] Invalid option
+Mon Aug 17 16:29:55 2026 daemon.info gl-repeater[12186]: (repeater.lua:1762) disabled
+Mon Aug 17 16:29:55 2026 user.notice QCMAP: 2026-08-17 16:29:55 [wlanConfig_hmt.sh][case:delete_guest_ap_access_rules][1989] delete_guest_ap_access_rules
+Mon Aug 17 16:29:55 2026 user.err Diag_Lib[10610]: diag: Diag_LSM_Init: invoked for pid: 10610 with init_count: 0
+Mon Aug 17 16:29:55 2026 user.err Diag-Router[3630]: diag: unix_listen: dm with pid: 10610 and fd: 101 is registered, socket_counter: 22
+Mon Aug 17 16:29:55 2026 user.err Diag_Lib[10610]: diag:successfully connected to socket 4
+Mon Aug 17 16:29:55 2026 user.err Diag_Lib[10610]: diag: Diag_LSM_Init: done for pid: 10610 with init_count: 1
+Mon Aug 17 16:29:55 2026 user.err Diag-Router[3630]: diag: Empty read, Close logging pid: 10610, fd 101
+Mon Aug 17 16:29:55 2026 user.err Diag-Router[3630]: diag: diag_close_logging_process: Exiting client (pid: 0) is not an MD client
+Mon Aug 17 16:29:55 2026 user.err Diag-Router[3630]: diag: While empty read socket counter:21
+Mon Aug 17 16:29:55 2026 user.err Diag_Lib[10620]: diag: Diag_LSM_Init: invoked for pid: 10620 with init_count: 0
+Mon Aug 17 16:29:55 2026 user.err Diag_Lib[10620]: diag:successfully connected to socket 4
+Mon Aug 17 16:29:55 2026 user.err Diag-Router[3630]: diag: unix_listen: dm with pid: 10620 and fd: 101 is registered, socket_counter: 22
+Mon Aug 17 16:29:55 2026 user.err Diag_Lib[10620]: diag: Diag_LSM_Init: done for pid: 10620 with init_count: 1
+Mon Aug 17 16:29:55 2026 user.err Diag-Router[3630]: diag: Empty read, Close logging pid: 10620, fd 101
+Mon Aug 17 16:29:55 2026 user.err Diag-Router[3630]: diag: diag_close_logging_process: Exiting client (pid: 0) is not an MD client
+Mon Aug 17 16:29:55 2026 user.err Diag-Router[3630]: diag: While empty read socket counter:21
+Mon Aug 17 16:29:55 2026 user.err Diag_Lib[10628]: diag: Diag_LSM_Init: invoked for pid: 10628 with init_count: 0
+Mon Aug 17 16:29:55 2026 user.err Diag_Lib[10628]: diag:successfully connected to socket 4
+Mon Aug 17 16:29:55 2026 user.err Diag-Router[3630]: diag: unix_listen: dm with pid: 10628 and fd: 101 is registered, socket_counter: 22
+Mon Aug 17 16:29:55 2026 user.err Diag_Lib[10628]: diag: Diag_LSM_Init: done for pid: 10628 with init_count: 1
+Mon Aug 17 16:29:55 2026 user.err Diag-Router[3630]: diag: Empty read, Close logging pid: 10628, fd 101
+Mon Aug 17 16:29:55 2026 user.err Diag-Router[3630]: diag: diag_close_logging_process: Exiting client (pid: 0) is not an MD client
+Mon Aug 17 16:29:55 2026 user.err Diag-Router[3630]: diag: While empty read socket counter:21
+Mon Aug 17 16:29:55 2026 user.err Diag_Lib[10643]: diag: Diag_LSM_Init: invoked for pid: 10643 with init_count: 0
+Mon Aug 17 16:29:55 2026 user.err Diag-Router[3630]: diag: unix_listen: dm with pid: 10643 and fd: 101 is registered, socket_counter: 22
+Mon Aug 17 16:29:55 2026 user.err Diag_Lib[10643]: diag:successfully connected to socket 4
+Mon Aug 17 16:29:55 2026 user.err Diag_Lib[10643]: diag: Diag_LSM_Init: done for pid: 10643 with init_count: 1
+Mon Aug 17 16:29:55 2026 user.err Diag-Router[3630]: diag: Empty read, Close logging pid: 10643, fd 101
+Mon Aug 17 16:29:55 2026 user.err Diag-Router[3630]: diag: diag_close_logging_process: Exiting client (pid: 0) is not an MD client
+Mon Aug 17 16:29:55 2026 user.err Diag-Router[3630]: diag: While empty read socket counter:21
+Mon Aug 17 16:29:55 2026 user.notice QCMAP: 2026-08-17 16:29:55 [wlanConfig_hmt.sh][case:install_guest_ap_access_rules][1984] install_guest_ap_access_rules
+Mon Aug 17 16:29:55 2026 user.notice QCMAP: 2026-08-17 16:29:55 [wlanConfig_hmt.sh][get_total_ap_number][591]  begin !!!
+Mon Aug 17 16:29:55 2026 user.notice QCMAP: 2026-08-17 16:29:55 [wlanConfig_hmt.sh][util_execute_uci][28]  uci get qcmap_wlan.@wlanconfig[0].mode
+Mon Aug 17 16:29:55 2026 user.notice QCMAP: 2026-08-17 16:29:55 [wlanConfig_hmt.sh][get_total_ap_number][609]  total 0 !!!
+Mon Aug 17 16:29:55 2026 user.notice QCMAP: 2026-08-17 16:29:55 [wlanConfig_hmt.sh][util_execute_uci][28]  uci get qcmap_wlan.@wlanconfig[0].mode
+Mon Aug 17 16:29:56 2026 user.notice QCMAP: 2026-08-17 16:29:56 [wlanConfig_hmt.sh][install_guest_ap_access_rules][1092]  no Guest AP found.
+Mon Aug 17 16:29:56 2026 user.notice QCMAP: 2026-08-17 16:29:56 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@profile[0].bh_previous
+Mon Aug 17 16:29:56 2026 user.notice QCMAP: 2026-08-17 16:29:56 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@profile[0].bh_present
+Mon Aug 17 16:29:56 2026 user.notice QCMAP: 2026-08-17 16:29:56 [backhaulCommonConfig.sh][delete_conntrack_on_switch_bh][2989] previous_bh= new_bh=modem_cpu
+Mon Aug 17 16:29:56 2026 user.notice QCMAP: 2026-08-17 16:29:56 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@lan[0].default_waneth_profile_num
+Mon Aug 17 16:29:56 2026 user.notice QCMAP: 2026-08-17 16:29:56 [backhaulCommonConfig.sh][util_execute_uci][2606]  uci get qcmap_lan.@no_of_configs[0].default_pdn
+Mon Aug 17 16:29:56 2026 user.notice QCMAP: 2026-08-17 16:29:56 [backhaulCommonConfig.sh][run_switch_backhaul_with_lock_backhaul_with_lock][1465] Releasing lock, after function execution
+Mon Aug 17 16:29:56 2026 user.notice QCMAP: 2026-08-17 16:29:56 [rmnet.script][setup_ipv4_lan][255] wan_iface_ipv4=:profile=1
+Mon Aug 17 16:29:56 2026 user.notice QCMAP: 2026-08-17 16:29:56 [rmnet.script][setup_ipv4_lan][256] wan_iface_ipv6=:profile=1
+Mon Aug 17 16:29:56 2026 user.notice root: Invalid option
+Mon Aug 17 16:29:56 2026 user.notice root: nat_alg_vpn_config.sh:3929:Invalid option
+Mon Aug 17 16:29:56 2026 user.notice sqm-hotplug: l3_device change: 'rmnet_data0' -> 'rmnet_data1', config mise a jour
+Mon Aug 17 16:29:56 2026 user.notice root: Invalid option
+Mon Aug 17 16:29:56 2026 user.notice root: nat_alg_vpn_config.sh:3929:Invalid option
+Mon Aug 17 16:29:56 2026 user.notice QCMAP: 2026-08-17 16:29:56 [nat_alg_vpn_config.sh][][3219] :Invalid option
+Mon Aug 17 16:29:56 2026 user.notice SQM: Stopping SQM on rmnet_data0
+Mon Aug 17 16:29:56 2026 user.notice SQM: ERROR: cmd_wrapper: tc: FAILURE (2): /sbin/tc qdisc del dev rmnet_data0 root
+Mon Aug 17 16:29:56 2026 user.notice SQM: ERROR: cmd_wrapper: tc: LAST ERROR: RTNETLINK answers: No such file or directory
+Mon Aug 17 16:29:56 2026 daemon.err sh[7060]: call_ioctl_on_dev: ioctl fail[IPv6] No such device
+Mon Aug 17 16:29:56 2026 daemon.err sh[7060]: call_ioctl_on_dev: ioctl fail[IPv6] No such device
+Mon Aug 17 16:29:56 2026 daemon.err sh[7060]: call_ioctl_on_dev: ioctl fail[IPv6] No such device
+Mon Aug 17 16:29:56 2026 user.notice QCMAP: interface is up with devname=rmnet_data1, addr=[IPv4], reset=0
+Mon Aug 17 16:29:56 2026 user.notice QCMAP: enable nat for SYM
+Mon Aug 17 16:29:56 2026 user.notice QCMAP: loop backhaullist
+Mon Aug 17 16:29:56 2026 user.notice QCMAP: get backhaul_pref.use_member failed:
+Mon Aug 17 16:29:56 2026 user.notice QCMAP: 2026-08-17 16:29:56 [nat_alg_vpn_config.sh][util_execute_uci][2606]  uci get qcmap_lan.@no_of_configs[0].no_of_profiles
+Mon Aug 17 16:29:56 2026 user.notice QCMAP: 2026-08-17 16:29:56 [nat_alg_vpn_config.sh][util_execute_uci][2606]  uci get qcmap_lan.@profile[0].profile_id
+Mon Aug 17 16:29:56 2026 user.notice QCMAP: 2026-08-17 16:29:56 [nat_alg_vpn_config.sh][util_execute_uci][2599]  uci set qcmap_lan.@lan[0].firewallreload=1
+Mon Aug 17 16:29:56 2026 user.notice QCMAP: 2026-08-17 16:29:56 [nat_alg_vpn_config.sh][util_execute_uci][2606]  uci commit qcmap_lan
+Mon Aug 17 16:29:56 2026 user.notice QCMAP: 2026-08-17 16:29:56 [nat_alg_vpn_config.sh][util_run_command][2630] uci commit firewall
+Mon Aug 17 16:29:56 2026 user.notice QCMAP: 2026-08-17 16:29:56 [nat_alg_vpn_config.sh][util_run_command][2630] /etc/init.d/firewall reload
+Mon Aug 17 16:29:56 2026 user.notice SQM: Starting SQM script: piece_of_cake.qos on rmnet_data1, in: 45000 Kbps, out: 0 Kbps
+Mon Aug 17 16:29:56 2026 daemon.err sh[7060]: call_ioctl_on_dev: ioctl fail[IPv6] No such device
+Mon Aug 17 16:29:56 2026 daemon.err sh[7060]: call_ioctl_on_dev: ioctl fail[IPv6] No such device
+Mon Aug 17 16:29:56 2026 daemon.err sh[7060]: call_ioctl_on_dev: ioctl fail[IPv6] No such device
+Mon Aug 17 16:29:56 2026 daemon.err sh[7060]: call_ioctl_on_dev: ioctl fail[IPv6] No such device
+Mon Aug 17 16:29:56 2026 daemon.err sh[7060]: call_ioctl_on_dev: ioctl fail[IPv6] No such device
+Mon Aug 17 16:29:56 2026 daemon.err sh[7060]: call_ioctl_on_dev: ioctl fail[IPv6] No such device
+Mon Aug 17 16:29:57 2026 user.notice SQM: piece_of_cake.qos was started on rmnet_data1 successfully
+Mon Aug 17 16:29:57 2026 kern.info kernel: [  137.767040][ T8075] [schedu][0xa5acd13d][16:29:57.358839] wlan: [8075:I:PE] Deauth RX: vdev 1 from 38:18:68:**:**:79 for 4e:64:5d:**:**:55 RSSI = -47 reason 1 mlm state = 4, sme state = 16 systemrole = 1
+Mon Aug 17 16:29:57 2026 kern.info kernel: [  137.786131][ T8075] [schedu][0xa5b269be][16:29:57.377939] wlan: [8075:I:PE] lim_perform_deauth: 592 vdev_id:1, assoc_id:5, mlm_state:14, sta_deletion_in_progress_before:0, cleanup_trigger:5, reason_code:1, sta_mac:[MAC]
+Mon Aug 17 16:29:57 2026 kern.err kernel: [  137.809000][   T57] [kworke][0xa5b91cea][16:29:57.400808] wlan: [57:E:CP_STATS] tgt_mc_cp_stats_extract_peer_extd_stats: peer not found stats
+Mon Aug 17 16:29:57 2026 kern.info kernel: [  137.823302][ T8075] [schedu][0xa5bd4d98][16:29:57.415110] wlan: [8075:I:PE] lim_cleanup_rx_path: 421 vdev_id:1, assoc_id:5, mlm_state:14, sta_deletion_in_progress:1, is_valid:1, is_added:1, delete_peer:1, sta_mac:[MAC]
+Mon Aug 17 16:29:57 2026 kern.info kernel: [  137.845308][ T8075] [schedu][0xa5c3bed2][16:29:57.437100] wlan: [8075:I:PE] lim_cleanup_rx_path: 472 vdev_id:1, assoc_id:5, old_mlm_state:14, new_mlm_state:14, sta_deletion_in_progress:1, sta_mac:[MAC]
+Mon Aug 17 16:29:57 2026 kern.info kernel: [  137.865944][ T8075] [schedu][0xa5c9cbce][16:29:57.457753] wlan: [8075:I:PE] lim_del_sta: 2875 vdev_id:1, session_id:1, assoc_id:5, response_required:1, sta_mac:[MAC], mlm_state:22, sta_deletion_in_progress:1
+Mon Aug 17 16:29:57 2026 kern.info kernel: [  137.888249][ T8075] [schedu][0xa5d054b2][16:29:57.480058] wlan: [8075:I:WMI] wma_delete_sta: sap d0 wow
+Mon Aug 17 16:29:57 2026 kern.info kernel: [  137.898288][    C3] [soft_i][0xa5d34565][16:29:57.490095] wlan: [0:I:TXRX] HTT_T2H_MSG_TYPE_PEER_UNMAP msg for peer id 22 vdev id 1 n
+Mon Aug 17 16:29:57 2026 kern.alert kernel: [  137.898320][    C3] [soft_i][0xa5d3481c][16:29:57.490130] wlan: [0:F:DP] dp_peer_update_state: Invalid state shift from 2 to 4 peer 38:18:68:**:**:79
+Mon Aug 17 16:29:57 2026 kern.info kernel: [  137.925165][ T8075] [schedu][0xa5db2568][16:29:57.516974] wlan: [8075:I:PE] lim_process_ap_mlm_del_sta_rsp: 1911 vdev_id:1, assoc_id:5, status:0, mlm_state:22, sta_deletion_in_progress:1
+Mon Aug 17 16:29:57 2026 kern.info kernel: [  137.942565][ T8075] [schedu][0xa5e03e69][16:29:57.534374] wlan: [8075:I:PE] dph_delete_hash_entry: 396 assoc_id:5, hash_index:0, sta_mac:[MAC]
+Mon Aug 17 16:29:57 2026 kern.info kernel: [  137.957450][ T8075] [schedu][0xa5e49ac0][16:29:57.549259] wlan: [8075:I:HDD] SAP(1) Peer 38:18:68:**:**:79 disassociated reason 1 status code 520
+Mon Aug 17 16:29:57 2026 kern.err kernel: [  137.971208][ T8075] [schedu][0xa5e8a2ad][16:29:57.563018] wlan: [8075:E:DP] ucfg_dp_update_dhcp_state_on_disassoc: Peer object not found mac:38:18:68:**:**:79
+Mon Aug 17 16:29:57 2026 daemon.info hostapd: wlan1: STA [MAC] IEEE 802.11: disassociated
+Mon Aug 17 16:29:57 2026 user.notice QCMAP: enable nat done
+Mon Aug 17 16:29:57 2026 user.notice root: Invalid option
+Mon Aug 17 16:29:57 2026 user.notice root: firewallConfig.sh:3929:Invalid option
+Mon Aug 17 16:29:57 2026 user.notice QCMAP: 2026-08-17 16:29:57 [firewallConfig.sh][enable_fw][1721] profile_handle=1 profile_idx=0
+Mon Aug 17 16:29:57 2026 user.notice QCMAP: 2026-08-17 16:29:57 [firewallConfig.sh][enable_fw][1724] Firewall is Not Enabled for this particular profile_handle
+Mon Aug 17 16:29:57 2026 user.notice QCMAP: 2026-08-17 16:29:57 [rmnet.script][setup_vpn_passthrough_on_bh_up][35] ip_version=ipv4:profile=1
+Mon Aug 17 16:29:58 2026 user.notice root: Invalid option
+Mon Aug 17 16:29:58 2026 user.notice root: nat_alg_vpn_config.sh:3929:Invalid option
+Mon Aug 17 16:29:58 2026 user.notice root: Invalid option
+Mon Aug 17 16:29:58 2026 user.notice root: nat_alg_vpn_config.sh:3929:Invalid option
+Mon Aug 17 16:29:58 2026 user.notice QCMAP: 2026-08-17 16:29:58 [nat_alg_vpn_config.sh][][3219] :Invalid option
+Mon Aug 17 16:29:58 2026 user.notice root: Invalid option
+Mon Aug 17 16:29:58 2026 user.notice root: nat_alg_vpn_config.sh:3929:Invalid option
+Mon Aug 17 16:29:58 2026 user.notice root: Invalid option
+Mon Aug 17 16:29:58 2026 user.notice root: nat_alg_vpn_config.sh:3929:Invalid option
+Mon Aug 17 16:29:58 2026 user.notice QCMAP: 2026-08-17 16:29:58 [nat_alg_vpn_config.sh][][3219] :Invalid option
+Mon Aug 17 16:29:59 2026 user.notice sqm-hotplug: SQM actif sur rmnet_data1
+Mon Aug 17 16:29:59 2026 user.notice root: Invalid option
+Mon Aug 17 16:29:59 2026 user.notice root: QCMAP_ipsec.sh:3929:Invalid option
+Mon Aug 17 16:30:00 2026 user.notice root: Invalid option
+Mon Aug 17 16:30:00 2026 user.notice root: ippt.sh:3929:Invalid option
+Mon Aug 17 16:30:00 2026 user.notice root: Invalid option
+Mon Aug 17 16:30:00 2026 user.notice root: ippt.sh:3929:Invalid option
+Mon Aug 17 16:30:00 2026 user.notice root: Invalid option
+Mon Aug 17 16:30:00 2026 user.notice QCMAP: 2026-08-17 16:30:00 [ippt.sh][util_execute_uci][2606]  uci get qcmap_lan.@lan[0].default_waneth_profile_num
+Mon Aug 17 16:30:00 2026 user.notice root: Invalid option
+Mon Aug 17 16:30:00 2026 user.notice root: backhaulCommonConfig.sh:3929:Invalid option
+Mon Aug 17 16:30:00 2026 user.notice root: Invalid option
+Mon Aug 17 16:30:00 2026 user.notice root: backhaulCommonConfig.sh:3929:Invalid option
+Mon Aug 17 16:30:00 2026 user.notice QCMAP: 2026-08-17 16:30:00 [backhaulCommonConfig.sh][][722] :Invalid option
+Mon Aug 17 16:30:00 2026 user.notice root: Invalid option
+Mon Aug 17 16:30:00 2026 user.notice root: backhaulCommonConfig.sh:3929:Invalid option
+Mon Aug 17 16:30:00 2026 user.notice QCMAP: 2026-08-17 16:30:00 [backhaulCommonConfig.sh][case: Invalid][105] Invalid option
+Mon Aug 17 16:30:00 2026 user.notice root: Invalid option
+Mon Aug 17 16:30:00 2026 user.notice root: backhaulCommonConfig.sh:3929:Invalid option
+Mon Aug 17 16:30:00 2026 user.notice QCMAP: 2026-08-17 16:30:00 [backhaulCommonConfig.sh][][3219] :Invalid option
+Mon Aug 17 16:30:00 2026 user.notice QCMAP: 2026-08-17 16:30:00 [backhaulCommonConfig.sh][is_wwan_prefer_backhaul][5043]
+Mon Aug 17 16:30:00 2026 user.notice QCMAP: 2026-08-17 16:30:00 [ippt.sh][check_ippt_enable][48] isWWANAPrefered=0
+Mon Aug 17 16:30:00 2026 user.notice QCMAP: 2026-08-17 16:30:00 [ippt.sh][check_ippt_enable][54]  wwan is not most prefered active backhaul.
+Mon Aug 17 16:30:00 2026 user.notice QCMAP: 2026-08-17 16:30:00 [ippt.sh][add_ippt_sw_path_filters][2389] profile=1:profile_idx=0:total=0
+Mon Aug 17 16:30:00 2026 user.notice QCMAP: 2026-08-17 16:30:00 [ippt.sh][util_execute_uci][2606]  uci commit qcmap_lan
+Mon Aug 17 16:30:00 2026 user.err Diag_Lib[12504]: diag: Diag_LSM_Init: invoked for pid: 12504 with init_count: 0
+Mon Aug 17 16:30:00 2026 user.err Diag_Lib[12504]: diag:successfully connected to socket 4
+Mon Aug 17 16:30:00 2026 user.err Diag-Router[3630]: diag: unix_listen: dm with pid: 12504 and fd: 101 is registered, socket_counter: 22
+Mon Aug 17 16:30:00 2026 user.err Diag_Lib[12504]: diag: Diag_LSM_Init: done for pid: 12504 with init_count: 1
+Mon Aug 17 16:30:00 2026 user.err Diag-Router[3630]: diag: Empty read, Close logging pid: 12504, fd 101
+Mon Aug 17 16:30:00 2026 user.err Diag-Router[3630]: diag: diag_close_logging_process: Exiting client (pid: 0) is not an MD client
+Mon Aug 17 16:30:00 2026 user.err Diag-Router[3630]: diag: While empty read socket counter:21
+Mon Aug 17 16:30:00 2026 user.notice QCMAP: 2026-08-17 16:30:00 [ippt.sh][ql_update_ipa_sw_path_filters][2283] IPsForSWPathFilters=
+Mon Aug 17 16:30:00 2026 user.notice QCMAP: 2026-08-17 16:30:00 [ippt.sh][add_ippt_sw_path_filters][2425] add_ippt_sw_path_filters completed
+Mon Aug 17 16:30:00 2026 user.notice root: update rmnet done
+Mon Aug 17 16:30:31 2026 user.notice timesync: time sync success via chrony
+Mon Aug 17 16:30:31 2026 daemon.info gl-repeater[12186]: (repeater.lua:1556) ntp been valid
+Mon Aug 17 16:30:35 2026 authpriv.info dropbear[12667]: Child connection from [IPv4]:45238
+Mon Aug 17 16:30:36 2026 authpriv.notice dropbear[12667]: Pubkey auth succeeded for 'root' with ssh-ed25519 key SHA256:DnLgce2ry57YNmilacL0BTgwFsfK4GUr3B2yaL9X6tQ from [IPv4]:45238
+Mon Aug 17 16:30:44 2026 authpriv.info dropbear[12667]: Exit (root) from <[IPv4]:45238>: Disconnect received
+Mon Aug 17 16:30:44 2026 authpriv.info dropbear[12806]: Child connection from [IPv4]:46724
+Mon Aug 17 16:30:44 2026 authpriv.notice dropbear[12806]: Pubkey auth succeeded for 'root' with ssh-ed25519 key SHA256:DnLgce2ry57YNmilacL0BTgwFsfK4GUr3B2yaL9X6tQ from [IPv4]:46724
+Mon Aug 17 16:30:52 2026 user.info LocSvc_LocationIntegrationApiIm[12298]: proc:466] >-- onReceive Rcvd msg id: 99, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:30:52 2026 user.warn LocSvc_LocationIntegrationApiIm[12298]: proc:614] <<< unknown message 99
+Mon Aug 17 16:30:52 2026 user.info LocSvc_LocationClientApi[12298]: proc:3475] >-- onReceive Rcvd msg id: 99 E_LOCAPI_PINGTEST_MSG_ID, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:31:52 2026 user.info LocSvc_LocationIntegrationApiIm[12298]: proc:466] >-- onReceive Rcvd msg id: 99, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:31:52 2026 user.warn LocSvc_LocationIntegrationApiIm[12298]: proc:614] <<< unknown message 99
+Mon Aug 17 16:31:52 2026 user.info LocSvc_LocationClientApi[12298]: proc:3475] >-- onReceive Rcvd msg id: 99 E_LOCAPI_PINGTEST_MSG_ID, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:32:52 2026 user.info LocSvc_LocationClientApi[12298]: proc:3475] >-- onReceive Rcvd msg id: 99 E_LOCAPI_PINGTEST_MSG_ID, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:32:52 2026 user.info LocSvc_LocationIntegrationApiIm[12298]: proc:466] >-- onReceive Rcvd msg id: 99, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:32:52 2026 user.warn LocSvc_LocationIntegrationApiIm[12298]: proc:614] <<< unknown message 99
+Mon Aug 17 16:33:32 2026 authpriv.info dropbear[12806]: Exit (root) from <[IPv4]:46724>: Disconnect received
+Mon Aug 17 16:33:52 2026 user.info LocSvc_LocationIntegrationApiIm[12298]: proc:466] >-- onReceive Rcvd msg id: 99, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:33:52 2026 user.warn LocSvc_LocationIntegrationApiIm[12298]: proc:614] <<< unknown message 99
+Mon Aug 17 16:33:52 2026 user.info LocSvc_LocationClientApi[12298]: proc:3475] >-- onReceive Rcvd msg id: 99 E_LOCAPI_PINGTEST_MSG_ID, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:34:52 2026 user.info LocSvc_LocationIntegrationApiIm[12298]: proc:466] >-- onReceive Rcvd msg id: 99, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:34:52 2026 user.warn LocSvc_LocationIntegrationApiIm[12298]: proc:614] <<< unknown message 99
+Mon Aug 17 16:34:52 2026 user.info LocSvc_LocationClientApi[12298]: proc:3475] >-- onReceive Rcvd msg id: 99 E_LOCAPI_PINGTEST_MSG_ID, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:34:58 2026 authpriv.info dropbear[15725]: Child connection from [IPv4]:48048
+Mon Aug 17 16:34:58 2026 authpriv.notice dropbear[15725]: Pubkey auth succeeded for 'root' with ssh-ed25519 key SHA256:DnLgce2ry57YNmilacL0BTgwFsfK4GUr3B2yaL9X6tQ from [IPv4]:48048
+Mon Aug 17 16:35:52 2026 user.info LocSvc_LocationIntegrationApiIm[12298]: proc:466] >-- onReceive Rcvd msg id: 99, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:35:52 2026 user.warn LocSvc_LocationIntegrationApiIm[12298]: proc:614] <<< unknown message 99
+Mon Aug 17 16:35:52 2026 user.info LocSvc_LocationClientApi[12298]: proc:3475] >-- onReceive Rcvd msg id: 99 E_LOCAPI_PINGTEST_MSG_ID, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:36:45 2026 daemon.info procd: service name: gl_nas_sys[IPv6]gl_nas_sys
+Mon Aug 17 16:36:48 2026 daemon.info procd: service name: gl_nas_sys_dl[IPv6]gl_nas_sys_dl
+Mon Aug 17 16:36:48 2026 daemon.info procd: service name: gl_nas_sys_up[IPv6]gl_nas_sys_up
+Mon Aug 17 16:36:52 2026 user.info LocSvc_LocationIntegrationApiIm[12298]: proc:466] >-- onReceive Rcvd msg id: 99, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:36:52 2026 user.warn LocSvc_LocationIntegrationApiIm[12298]: proc:614] <<< unknown message 99
+Mon Aug 17 16:36:52 2026 user.info LocSvc_LocationClientApi[12298]: proc:3475] >-- onReceive Rcvd msg id: 99 E_LOCAPI_PINGTEST_MSG_ID, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:37:52 2026 user.info LocSvc_LocationClientApi[12298]: proc:3475] >-- onReceive Rcvd msg id: 99 E_LOCAPI_PINGTEST_MSG_ID, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:37:52 2026 user.info LocSvc_LocationIntegrationApiIm[12298]: proc:466] >-- onReceive Rcvd msg id: 99, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:37:52 2026 user.warn LocSvc_LocationIntegrationApiIm[12298]: proc:614] <<< unknown message 99
+Mon Aug 17 16:38:52 2026 user.info LocSvc_LocationClientApi[12298]: proc:3475] >-- onReceive Rcvd msg id: 99 E_LOCAPI_PINGTEST_MSG_ID, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:38:52 2026 user.info LocSvc_LocationIntegrationApiIm[12298]: proc:466] >-- onReceive Rcvd msg id: 99, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:38:52 2026 user.warn LocSvc_LocationIntegrationApiIm[12298]: proc:614] <<< unknown message 99
+Mon Aug 17 16:39:52 2026 user.info LocSvc_LocationIntegrationApiIm[12298]: proc:466] >-- onReceive Rcvd msg id: 99, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:39:52 2026 user.warn LocSvc_LocationIntegrationApiIm[12298]: proc:614] <<< unknown message 99
+Mon Aug 17 16:39:52 2026 user.info LocSvc_LocationClientApi[12298]: proc:3475] >-- onReceive Rcvd msg id: 99 E_LOCAPI_PINGTEST_MSG_ID, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:40:52 2026 user.info LocSvc_LocationIntegrationApiIm[12298]: proc:466] >-- onReceive Rcvd msg id: 99, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:40:52 2026 user.info LocSvc_LocationClientApi[12298]: proc:3475] >-- onReceive Rcvd msg id: 99 E_LOCAPI_PINGTEST_MSG_ID, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:40:52 2026 user.warn LocSvc_LocationIntegrationApiIm[12298]: proc:614] <<< unknown message 99
+Mon Aug 17 16:40:58 2026 authpriv.info dropbear[15725]: Exit (root) from <[IPv4]:48048>: Disconnect received
+Mon Aug 17 16:40:58 2026 authpriv.info dropbear[19091]: Child connection from [IPv4]:45902
+Mon Aug 17 16:40:58 2026 authpriv.notice dropbear[19091]: Pubkey auth succeeded for 'root' with ssh-ed25519 key SHA256:DnLgce2ry57YNmilacL0BTgwFsfK4GUr3B2yaL9X6tQ from [IPv4]:45902
+Mon Aug 17 16:41:52 2026 user.info LocSvc_LocationClientApi[12298]: proc:3475] >-- onReceive Rcvd msg id: 99 E_LOCAPI_PINGTEST_MSG_ID, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:41:52 2026 user.info LocSvc_LocationIntegrationApiIm[12298]: proc:466] >-- onReceive Rcvd msg id: 99, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:41:52 2026 user.warn LocSvc_LocationIntegrationApiIm[12298]: proc:614] <<< unknown message 99
+Mon Aug 17 16:42:45 2026 kern.info kernel: [  880.639524][    C0] [soft_i][0x3f7d33dbf][16:42:45.871228] wlan: [0:I:WMI] extract_reg_ch_avoid_event_tlv: Channel avoid event received with 0 ranges
+Mon Aug 17 16:42:45 2026 kern.info kernel: [  880.653392][    C0] [soft_i][0x3f7d74ddf][16:42:45.885097] wlan: [0:I:REGULATORY] reg_process_ch_avoid_event: band count 0
+Mon Aug 17 16:42:45 2026 kern.info kernel: [  880.665359][    C0] [soft_i][0x3f7dace01][16:42:45.897045] wlan: [0:I:REGULATORY] reg_dump_valid_6ghz_cur_chan_list: sta freq:state:ispsd:pwr:psd:flags(hex):
+Mon Aug 17 16:42:45 2026 kern.info kernel: [  880.680046][    C0] [soft_i][0x3f7df1cfd][16:42:45.911751] wlan: [0:I:REGULATORY] reg_dump_valid_6ghz_cur_chan_list: sap freq:state:ispsd:pwr:psd:flags(hex):
+Mon Aug 17 16:42:45 2026 kern.info kernel: [  880.694652][    C0] [soft_i][0x3f7e3647a][16:42:45.926358] wlan: [0:I:REGULATORY] reg_modify_chan_list_for_avoid_chan_ext: Don't disable reg channels for Coex unsafe channels
+Mon Aug 17 16:42:45 2026 user.info LocSvc_api_v02[20770]: ---> locClientSendReq line 2419 QMI_LOC_INJECT_WIFI_AP_DATA_REQ_V02
+Mon Aug 17 16:42:45 2026 user.info LocSvc_ApiV02[20770]: <--- globalRespCb line 287 QMI_LOC_INJECT_WIFI_AP_DATA_REQ_V02
+Mon Aug 17 16:42:45 2026 user.err LocSvc_ApiV02[20770]: locSyncSendReq:9248] req QMI_LOC_INJECT_WIFI_AP_DATA_REQ_V02, status eLOC_CLIENT_SUCCESS, qmi ind status eQMI_LOC_GENERAL_FAILURE_V02
+Mon Aug 17 16:42:46 2026 user.err : ql_ril - VOICE reg event : tech_domain=3GPP,radio_tech=LTE,roaming=OFF,deny_reason:None,state:FULL
+Mon Aug 17 16:42:46 2026 user.err : ql_ril - VOICE reg event 3gpp details : radio_tech=LTE,mcc=228,mnc=02,roaming=OFF,forbidden=0,cid=5152261,lac=0,psc=0,tac=42100
+Mon Aug 17 16:42:46 2026 user.err : ql_ril - DATA reg event : tech_domain=3GPP,radio_tech=LTE,roaming=OFF,deny_reason:None,state:FULL
+Mon Aug 17 16:42:46 2026 user.err : ql_ril - DATA reg event 3gpp details : radio_tech=LTE,mcc=228,mnc=02,roaming=OFF,forbidden=0,cid=5152261,lac=0,psc=0,tac=42100
+Mon Aug 17 16:42:46 2026 user.info Diag_Lib[14595]: ql_sdk_api - [mcli_ril_ind_cb_func_141] msg_id:0x50c
+Mon Aug 17 16:42:46 2026 user.crit Diag_Lib[14595]: ql_sdk_api - [mcli_nw_ind_cb_func_77] Recv ind, msg_id=0000050C
+Mon Aug 17 16:42:46 2026 user.err : ql_ril - VOICE reg event : tech_domain=3GPP,radio_tech=LTE,roaming=OFF,deny_reason:None,state:FULL
+Mon Aug 17 16:42:46 2026 user.err : ql_ril - VOICE reg event 3gpp details : radio_tech=LTE,mcc=228,mnc=02,roaming=OFF,forbidden=0,cid=5152265,lac=0,psc=0,tac=42100
+Mon Aug 17 16:42:46 2026 user.err : ql_ril - DATA reg event : tech_domain=3GPP,radio_tech=LTE,roaming=OFF,deny_reason:None,state:FULL
+Mon Aug 17 16:42:46 2026 user.err : ql_ril - DATA reg event 3gpp details : radio_tech=LTE,mcc=228,mnc=02,roaming=OFF,forbidden=0,cid=5152265,lac=0,psc=0,tac=42100
+Mon Aug 17 16:42:46 2026 user.info Diag_Lib[14595]: ql_sdk_api - [mcli_ril_ind_cb_func_141] msg_id:0x50c
+Mon Aug 17 16:42:46 2026 user.crit Diag_Lib[14595]: ql_sdk_api - [mcli_nw_ind_cb_func_77] Recv ind, msg_id=0000050C
+Mon Aug 17 16:42:47 2026 kern.info kernel: [  881.967370][    C0] [soft_i][0x3f958422a][16:42:47.199075] wlan: [0:I:WMI] extract_reg_ch_avoid_event_tlv: Channel avoid event received with 1 ranges
+Mon Aug 17 16:42:47 2026 kern.info kernel: [  881.981274][    C0] [soft_i][0x3f95c54f6][16:42:47.212979] wlan: [0:I:WMI] extract_reg_ch_avoid_event_tlv: range 0 tlv id 4718600, start freq 2457, end freq 2472
+Mon Aug 17 16:42:47 2026 kern.info kernel: [  881.996148][    C0] [soft_i][0x3f960b09e][16:42:47.227855] wlan: [0:I:REGULATORY] reg_process_ch_avoid_event: band count 1
+Mon Aug 17 16:42:47 2026 kern.info kernel: [  882.007571][    C0] [soft_i][0x3f96407b1][16:42:47.239256] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: start: freq 2457, ch 10, end: freq 2472, ch 13
+Mon Aug 17 16:42:47 2026 kern.err kernel: [  882.021939][    C0] [soft_i][0x3f9683ee2][16:42:47.253645] wlan: [0:E:REGULATORY] hdd_get_band_adapter: ifname:wlan0, band:1, unsafe:0
+Mon Aug 17 16:42:47 2026 kern.err kernel: [  882.034431][    C0] [soft_i][0x3f96be7d4][16:42:47.266138] wlan: [0:E:REGULATORY] reg_process_ch_avoid_freq: this adapter is null or  adapter->clean_unsafechan is 0
+Mon Aug 17 16:42:47 2026 kern.info kernel: [  882.049548][    C0] [soft_i][0x3f97055b3][16:42:47.281256] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2457
+Mon Aug 17 16:42:47 2026 kern.info kernel: [  882.061202][    C0] [soft_i][0x3f973bfcd][16:42:47.292910] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2462
+Mon Aug 17 16:42:47 2026 kern.info kernel: [  882.072906][    C0] [soft_i][0x3f9772d86][16:42:47.304614] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2467
+Mon Aug 17 16:42:47 2026 kern.info kernel: [  882.084531][    C0] [soft_i][0x3f97a959b][16:42:47.316241] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2472
+Mon Aug 17 16:42:47 2026 kern.info kernel: [  882.096427][    C0] [soft_i][0x3f97e11a4][16:42:47.328135] wlan: [0:I:REGULATORY] reg_dump_valid_6ghz_cur_chan_list: sta freq:state:ispsd:pwr:psd:flags(hex):
+Mon Aug 17 16:42:47 2026 kern.info kernel: [  882.111246][    C0] [soft_i][0x3f9826771][16:42:47.342932] wlan: [0:I:REGULATORY] reg_dump_valid_6ghz_cur_chan_list: sap freq:state:ispsd:pwr:psd:flags(hex):
+Mon Aug 17 16:42:47 2026 kern.info kernel: [  882.125856][    C0] [soft_i][0x3f986b103][16:42:47.357566] wlan: [0:I:REGULATORY] reg_modify_chan_list_for_avoid_chan_ext: Don't disable reg channels for Coex unsafe channels
+Mon Aug 17 16:42:47 2026 user.info LocSvc_api_v02[20770]: ---> locClientSendReq line 2419 QMI_LOC_INJECT_WIFI_AP_DATA_REQ_V02
+Mon Aug 17 16:42:47 2026 user.info LocSvc_ApiV02[20770]: <--- globalRespCb line 287 QMI_LOC_INJECT_WIFI_AP_DATA_REQ_V02
+Mon Aug 17 16:42:47 2026 user.err LocSvc_ApiV02[20770]: locSyncSendReq:9248] req QMI_LOC_INJECT_WIFI_AP_DATA_REQ_V02, status eLOC_CLIENT_SUCCESS, qmi ind status eQMI_LOC_GENERAL_FAILURE_V02
+Mon Aug 17 16:42:52 2026 user.info LocSvc_LocationIntegrationApiIm[12298]: proc:466] >-- onReceive Rcvd msg id: 99, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:42:52 2026 user.warn LocSvc_LocationIntegrationApiIm[12298]: proc:614] <<< unknown message 99
+Mon Aug 17 16:42:52 2026 user.info LocSvc_LocationClientApi[12298]: proc:3475] >-- onReceive Rcvd msg id: 99 E_LOCAPI_PINGTEST_MSG_ID, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:43:52 2026 user.info LocSvc_LocationClientApi[12298]: proc:3475] >-- onReceive Rcvd msg id: 99 E_LOCAPI_PINGTEST_MSG_ID, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:43:52 2026 user.info LocSvc_LocationIntegrationApiIm[12298]: proc:466] >-- onReceive Rcvd msg id: 99, sockname: locapiservice, payload size: 160
+Mon Aug 17 16:43:52 2026 user.warn LocSvc_LocationIntegrationApiIm[12298]: proc:614] <<< unknown message 99
+Mon Aug 17 16:44:03 2026 kern.info kernel: [  958.511578][    C2] [soft_i][0x450f151cf][16:44:03.743391] wlan: [0:I:WMI] extract_reg_ch_avoid_event_tlv: Channel avoid event received with 1 ranges
+Mon Aug 17 16:44:03 2026 kern.info kernel: [  958.525421][    C2] [soft_i][0x450f56006][16:44:03.757234] wlan: [0:I:WMI] extract_reg_ch_avoid_event_tlv: range 0 tlv id 4718600, start freq 2457, end freq 2472
+Mon Aug 17 16:44:03 2026 kern.info kernel: [  958.540308][    C2] [soft_i][0x450f9bc92][16:44:03.772121] wlan: [0:I:REGULATORY] reg_process_ch_avoid_event: band count 1
+Mon Aug 17 16:44:03 2026 kern.info kernel: [  958.551699][    C2] [soft_i][0x450fd12fa][16:44:03.783513] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: start: freq 2457, ch 10, end: freq 2472, ch 13
+Mon Aug 17 16:44:03 2026 kern.err kernel: [  958.566020][    C2] [soft_i][0x451014506][16:44:03.797834] wlan: [0:E:REGULATORY] hdd_get_band_adapter: ifname:wlan0, band:1, unsafe:0
+Mon Aug 17 16:44:03 2026 kern.err kernel: [  958.578469][    C2] [soft_i][0x45104eac1][16:44:03.810283] wlan: [0:E:REGULATORY] reg_process_ch_avoid_freq: this adapter is null or  adapter->clean_unsafechan is 0
+Mon Aug 17 16:44:03 2026 kern.info kernel: [  958.593572][    C2] [soft_i][0x451095790][16:44:03.825388] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2457
+Mon Aug 17 16:44:03 2026 kern.info kernel: [  958.605286][    C2] [soft_i][0x4510cc61d][16:44:03.837102] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2462
+Mon Aug 17 16:44:03 2026 kern.info kernel: [  958.617037][    C2] [soft_i][0x4511037a0][16:44:03.848855] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2467
+Mon Aug 17 16:44:03 2026 kern.info kernel: [  958.628655][    C2] [soft_i][0x451139f09][16:44:03.860474] wlan: [0:I:REGULATORY] reg_process_ch_avoid_freq: Unsafe freq 2472
+Mon Aug 17 16:44:03 2026 kern.info kernel: [  958.640464][    C2] [soft_i][0x45117149e][16:44:03.872282] wlan: [0:I:REGULATORY] reg_dump_valid_6ghz_cur_chan_list: sta freq:state:ispsd:pwr:psd:flags(hex):
+Mon Aug 17 16:44:03 2026 kern.info kernel: [  958.654974][    C2] [soft_i][0x4511b54fe][16:44:03.886793] wlan: [0:I:REGULATORY] reg_dump_valid_6ghz_cur_chan_list: sap freq:state:ispsd:pwr:psd:flags(hex):
+Mon Aug 17 16:44:03 2026 kern.info kernel: [  958.669491][    C2] [soft_i][0x4511f95c0][16:44:03.901310] wlan: [0:I:REGULATORY] reg_modify_chan_list_for_avoid_chan_ext: Don't disable reg channels for Coex unsafe channels
+Mon Aug 17 16:44:03 2026 user.info LocSvc_api_v02[20770]: ---> locClientSendReq line 2419 QMI_LOC_INJECT_WIFI_AP_DATA_REQ_V02
+Mon Aug 17 16:44:03 2026 user.info LocSvc_ApiV02[20770]: <--- globalRespCb line 287 QMI_LOC_INJECT_WIFI_AP_DATA_REQ_V02
+Mon Aug 17 16:44:03 2026 user.err LocSvc_ApiV02[20770]: locSyncSendReq:9248] req QMI_LOC_INJECT_WIFI_AP_DATA_REQ_V02, status eLOC_CLIENT_SUCCESS, qmi ind status eQMI_LOC_GENERAL_FAILURE_V02
+Mon Aug 17 16:44:03 2026 kern.info kernel: [  958.685694][ T8075] [schedu][0x4512454e1][16:44:03.917512] wlan: [8075:I:HDD] hdd_local_unsafe_channel_updated: unsafe chan list same
+Mon Aug 17 16:44:15 2026 user.notice vendor.rmt_storage[7366]: INFO:rmt_storage_connect_cb: clnt_h=0xc conn_h=0x7fb4d29be0
+Mon Aug 17 16:44:15 2026 user.notice vendor.rmt_storage[7366]: INFO:rmt_storage_rw_iovec_cb: /boot/modem_fs2: req_h=0xc msg_id=3: R/W request received (wr_count 4)
+Mon Aug 17 16:44:15 2026 user.notice vendor.rmt_storage[7366]: INFO:wakelock acquired: 1, error no: 11
+Mon Aug 17 16:44:15 2026 user.notice vendor.rmt_storage[7366]: INFO:rmt_storage_client_thread: /boot/modem_fs2: Unblock worker thread (th_id: 548486945528)
+Mon Aug 17 16:44:15 2026 user.notice vendor.rmt_storage[7366]: INFO:rmt_storage_client_thread: /boot/modem_fs2: req_h=0xc msg_id=3: Bytes written = 4194304, wr_count 4
+Mon Aug 17 16:44:15 2026 user.notice vendor.rmt_storage[7366]: INFO:rmt_storage_client_thread: /boot/modem_fs2: req_h=0xc msg_id=3: Send response: res=0 err=0, wr_count 4
+Mon Aug 17 16:44:15 2026 user.notice vendor.rmt_storage[7366]: INFO:rmt_storage_client_thread: /boot/modem_fs2: About to block rmt_storage client thread (th_id: 548486945528) wakelock released: 1, error no: 0
+Mon Aug 17 16:44:15 2026 user.notice vendor.rmt_storage[7366]: INFO:rmt_storage_disconnect_cb: clnt_h=0xc conn_h=0x7fb4d29be0
+Mon Aug 17 16:44:18 2026 authpriv.info dropbear[19091]: Exit (root) from <[IPv4]:45902>: Disconnect received
+Mon Aug 17 16:44:18 2026 authpriv.info dropbear[21008]: Child connection from [IPv4]:44644
+Mon Aug 17 16:44:19 2026 authpriv.notice dropbear[21008]: Pubkey auth succeeded for 'root' with ssh-ed25519 key SHA256:DnLgce2ry57YNmilacL0BTgwFsfK4GUr3B2yaL9X6tQ from [IPv4]:44644

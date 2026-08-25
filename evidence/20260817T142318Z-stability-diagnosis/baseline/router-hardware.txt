@@ -1,0 +1,89 @@
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+=== CPU ===
+processor	: 0
+BogoMIPS	: 38.40
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x2
+CPU part	: 0xd05
+CPU revision	: 0
+
+processor	: 1
+BogoMIPS	: 38.40
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x2
+CPU part	: 0xd05
+CPU revision	: 0
+
+processor	: 2
+BogoMIPS	: 38.40
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x2
+CPU part	: 0xd05
+CPU revision	: 0
+
+processor	: 3
+BogoMIPS	: 38.40
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x2
+CPU part	: 0xd05
+CPU revision	: 0
+
+=== cpufreq ===
+cpu0 governor=schedutil
+cpu0 current_khz=1516800
+cpu0 available_governors=conservative powersave performance schedutil
+cpu1 governor=schedutil
+cpu1 current_khz=1516800
+cpu1 available_governors=conservative powersave performance schedutil
+cpu2 governor=schedutil
+cpu2 current_khz=1516800
+cpu2 available_governors=conservative powersave performance schedutil
+cpu3 governor=schedutil
+cpu3 current_khz=1651200
+cpu3 available_governors=conservative powersave performance schedutil
+/sys/devices/system/cpu/cpufreq/policy0/scaling_driver=qcom-cpufreq-hw
+/sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq=691200
+/sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq=2208000
+/sys/devices/system/cpu/cpufreq/policy0/affected_cpus=0 1 2 3
+=== irq balancing ===
+ 4349 root     /usr/sbin/msm-irqbalance -f /etc/msm_irqbalance.conf
+=== USB ===
+=== USB Ethernet driver ===
+Settings for eth1:
+No data available
+=== USB Ethernet offloads/statistics ===
+=== kernel capability subset ===
+CONFIG_SWAP=y
+# CONFIG_POSIX_MQUEUE is not set
+CONFIG_BPF=y
+CONFIG_BPF_SYSCALL=y
+CONFIG_CGROUPS=y
+# CONFIG_MEMCG is not set
+CONFIG_BLK_CGROUP=y
+# CONFIG_CGROUP_PIDS is not set
+# CONFIG_CGROUP_DEVICE is not set
+CONFIG_ZSMALLOC=y
+CONFIG_NFT_TPROXY=y
+CONFIG_NETFILTER_XT_TARGET_TPROXY=y
+CONFIG_NET_SCH_CAKE=m
+CONFIG_RPS=y
+CONFIG_RFS_ACCEL=y
+CONFIG_ZRAM=y
+CONFIG_WIREGUARD=y
+CONFIG_IFB=y
+CONFIG_USB_STORAGE=y
+CONFIG_EXT4_FS=y
+CONFIG_F2FS_FS=y
+CONFIG_OVERLAY_FS=y
+=== cgroups ===
+cgroup2 on /sys/fs/cgroup type cgroup2 (rw,nosuid,nodev,noexec,relatime,nsdelegate)
