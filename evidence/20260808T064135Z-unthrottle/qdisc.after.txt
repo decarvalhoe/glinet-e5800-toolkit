@@ -1,0 +1,31 @@
+qdisc cake 8010: root refcnt 2 bandwidth 45Mbit besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 255932293 bytes 173777 pkt (dropped 8855, overlimits 346417 requeues 0)
+ backlog 0b 0p requeues 0
+ memory used: 603356b of 4Mb
+ capacity estimate: 45Mbit
+ min/max network layer size:           40 /    1500
+ min/max overhead-adjusted size:       40 /    1500
+ average network hdr offset:            0
+
+                  Tin 0
+  thresh         45Mbit
+  target            5ms
+  interval        100ms
+  pk_delay        461us
+  av_delay        196us
+  sp_delay          3us
+  backlog            0b
+  pkts           182632
+  bytes       269214211
+  way_inds           49
+  way_miss          199
+  way_cols            0
+  drops            8855
+  marks               0
+  ack_drop            0
+  sp_flows            3
+  bk_flows            1
+  un_flows            0
+  max_len          1500
+  quantum          1373
+

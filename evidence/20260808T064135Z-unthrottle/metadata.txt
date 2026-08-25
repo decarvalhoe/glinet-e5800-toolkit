@@ -1,0 +1,14 @@
+collected_at=2026-08-08T06:41:35Z
+git_commit=e56c116ab2d015dab917900b76ba3e4fd2ea48d2
+firmware=GL.iNet 4.8.5 (OpenWrt 23.05.4), GL-E5800 (Mudi 7)
+uptime=non releve au moment de la capture
+purpose=relever le plafond ingress fixe de SQM/CAKE sur sqm.modem et mesurer l'effet sur le debit descendant et la latence sous charge
+hypothesis=le plafond fixe de 5000 kbit/s, et non le lien cellulaire, borne le debit descendant ; le relever doit augmenter le debit sans reintroduire de perte
+variable_changed=sqm.modem.download : 5000 -> 45000 (kbit/s)
+variables_held=sqm.modem.iqdisc_opts inchange (nat dual-dsthost ingress, sans autorate-ingress) ; upload=0 inchange ; qdisc cake / piece_of_cake.qos inchanges ; interface rmnet_data1
+max_size_duration=5 telechargements de 25 Mo + 2 flux de charge (124,5 Mo passes dans le shaper) ; session unique de ~30 min
+stop_criteria=perte superieure a 1 % repetee, ou hausse durable de la latence sous charge ; retour arriere immediat par restauration de /etc/config/sqm
+rollback=cp /etc/config/sqm.bak-before-unthrottle /etc/config/sqm && /etc/init.d/sqm restart
+protocol_deviation=EXPERIMENT-PROTOCOL.md §2 preconditions 1 et 2 (lien Ethernet de secours) NON satisfaites ; aucun eth1 ni RTL8153 disponible ; procede sur demande explicite de l'operateur humain ; aucun minuteur de rollback arme
+safety=sauvegarde prise avant changement, sur le routeur et hors routeur ; empreintes SHA256 des deux etats de /etc/config/sqm consignees
+limitation=une seule session, une seule cellule, une seule heure ; upload jamais mesure ; plafond 45000 au-dessus de la capacite reelle (~39 Mbit/s), donc CAKE ne tient pas le goulot

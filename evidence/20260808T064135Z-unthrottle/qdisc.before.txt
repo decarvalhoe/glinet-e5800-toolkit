@@ -1,0 +1,31 @@
+qdisc cake 800d: root refcnt 2 bandwidth 5Mbit besteffort dual-dsthost nat wash ingress no-ack-filter split-gso rtt 100ms raw overhead 0
+ Sent 13656394274 bytes 13028971 pkt (dropped 2647773, overlimits 27737894 requeues 0)
+ backlog 0b 0p requeues 0
+ memory used: 4196983b of 4Mb
+ capacity estimate: 5Mbit
+ min/max network layer size:           21 /    1500
+ min/max overhead-adjusted size:       21 /    1500
+ average network hdr offset:            0
+
+                  Tin 0
+  thresh          5Mbit
+  target            5ms
+  interval        100ms
+  pk_delay       2.73ms
+  av_delay        338us
+  sp_delay         27us
+  backlog            0b
+  pkts         15676744
+  bytes     17092814017
+  way_inds      1863704
+  way_miss       251821
+  way_cols        26557
+  drops         2647773
+  marks            5546
+  ack_drop            0
+  sp_flows            1
+  bk_flows            2
+  un_flows            0
+  max_len          1500
+  quantum           300
+

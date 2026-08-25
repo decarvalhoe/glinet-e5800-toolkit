@@ -1,0 +1,14 @@
+c286fc35a9653122a8e6ccb293d10e281e2dbe684d66b0d2c020abafcee7c6ca  /etc/config/sqm
+---
+sqm.modem=queue
+sqm.modem.interface='rmnet_data1'
+sqm.modem.enabled='1'
+sqm.modem.qdisc='cake'
+sqm.modem.script='piece_of_cake.qos'
+sqm.modem.linklayer='none'
+sqm.modem.download='45000'
+sqm.modem.upload='0'
+sqm.modem.qdisc_advanced='1'
+sqm.modem.iqdisc_opts='nat dual-dsthost ingress'
+sqm.modem.eqdisc_opts='nat dual-srchost'
+sqm.modem.verbosity='5'

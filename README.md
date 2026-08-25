@@ -50,6 +50,7 @@ docs/
   DIAGNOSTIC.md            relevés radio/Wi-Fi + résultats négatifs
   CUSTOM.md                surface de personnalisation réelle, paquets, méthode
   SQM.md                   installation et réglage CAKE, avec mesures A/B
+  UNTHROTTLE-20260808.md   retrait du plafond CAKE fixe : 3,6 -> 39 Mbit/s, preuves et limites
 ```
 
 ## Hypothèse historique : index API public incomplet
