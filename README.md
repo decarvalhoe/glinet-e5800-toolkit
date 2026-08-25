@@ -35,6 +35,7 @@ tools/
   onion-watchdog.py        redémarre le service .onion quand la connectivité revient après coupure
   at-probe.sh              relevé radio complet (serving cell, CA, bandes, températures)
   monitor-radio.sh         moniteur radio live, 100 % on-router en SSH (AT lecture seule)
+  throughput-probe.sh      sonde de débit périodique + radio dans la même fenêtre (on-router)
   bufferbloat.sh           mesure de latence à vide / sous charge
   band-lock-b20.sh         tentative de lock de bande (échoue — voir docs)
 etc/hotplug.d/iface/
@@ -52,6 +53,7 @@ docs/
   SQM.md                   installation et réglage CAKE, avec mesures A/B
   UNTHROTTLE-20260808.md   retrait du plafond CAKE fixe : 3,6 -> 39 Mbit/s, preuves et limites
   STABILITY-20260817.md    diagnostic de stabilité : pourquoi le post-mortem embarqué est impossible
+  THROUGHPUT-PROBE.md      sonde de débit + deux artefacts de mesure du modem (QCAINFO, pont AT)
 ```
 
 ## Hypothèse historique : index API public incomplet
