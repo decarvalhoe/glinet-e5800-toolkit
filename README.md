@@ -34,6 +34,7 @@ tools/
   device-monitor.py        télémétrie matérielle : batterie (MCU) + température, alertes seuils
   onion-watchdog.py        redémarre le service .onion quand la connectivité revient après coupure
   at-probe.sh              relevé radio complet (serving cell, CA, bandes, températures)
+  monitor-radio.sh         moniteur radio live, 100 % on-router en SSH (AT lecture seule)
   bufferbloat.sh           mesure de latence à vide / sous charge
   band-lock-b20.sh         tentative de lock de bande (échoue — voir docs)
 etc/hotplug.d/iface/
