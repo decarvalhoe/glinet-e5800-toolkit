@@ -55,6 +55,7 @@ docs/
   STABILITY-20260817.md    diagnostic de stabilité : pourquoi le post-mortem embarqué est impossible
   THROUGHPUT-PROBE.md      sonde de débit + deux artefacts de mesure du modem (QCAINFO, pont AT)
   NR-BAND-20260825.md      la bande NR décide du débit, pas le signal : 2,2 -> 16,6 Mbit/s
+  SQM-VS-IPA-20260825.md   CAKE casse l'accélération IPA : désactiver SQM multiplie le débit par 2 à 5
 ```
 
 ## Hypothèse historique : index API public incomplet

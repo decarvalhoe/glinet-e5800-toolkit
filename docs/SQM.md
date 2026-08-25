@@ -1,5 +1,11 @@
 # SQM / CAKE sur GL-E5800 — installé et réglé le 2026-08-06
 
+> **INVALIDÉ pour cet appareil (2026-08-25).** Les mesures de ce document ont été prises
+> alors que SQM était attaché à `rmnet_data1`, qui ne portait presque aucun trafic — il ne
+> s'appliquait donc pas. Une fois correctement attaché à `rmnet_data0`, CAKE **divise le débit
+> par 2 à 5** en cassant l'accélération matérielle IPA. Voir
+> [`SQM-VS-IPA-20260825.md`](SQM-VS-IPA-20260825.md). SQM est désormais désactivé.
+
 > **ARCHIVE NON VALIDÉE.** Le qdisc courant est observable, mais les gains A/B ci-dessous
 > n'ont pas encore été reproduits avec sorties brutes et protocole contrôlé. Aucun test
 > WAN saturant ne sera relancé tant que le routeur reste l'unique accès Internet. Voir

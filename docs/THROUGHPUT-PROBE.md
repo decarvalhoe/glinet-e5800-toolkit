@@ -52,6 +52,22 @@ plus des réponses qui ne correspondent pas à la question posée.
 réponse contenant le motif attendu. La sonde le fait (jusqu'à 6 essais pour `QENG`) et écrit
 `null` plutôt qu'une valeur inventée quand elle échoue.
 
+Précision ajoutée le même jour : le pont ne fait pas que tronquer, **il rend parfois une
+valeur périmée**. Après écriture d'un masque, 8 lectures sur 10 donnaient la nouvelle valeur et
+2 sur 10 l'ancienne. La bonne règle de dépouillement est donc le **vote majoritaire**, pas
+« garder la réponse la plus longue » — cette dernière retient précisément la vieille valeur
+quand celle-ci est plus longue.
+
+### 3. Le point de mesure répond `429`
+
+Après une série de mesures, `speed.cloudflare.com` limite le client et renvoie `HTTP 429` avec
+un débit quasi nul. Consigné sans vérification, cela ressemble à un effondrement du lien.
+Le même test a donné 12-19 Mbit/s sur Cloudflare bridé et **46-48 Mbit/s sur `cachefly` dans
+la minute suivante**.
+
+La sonde alterne donc plusieurs sources et **enregistre le code HTTP** (`"http":200`) ; un code
+différent de 200 écrit `mbps: null` au lieu d'un faux zéro.
+
 ## Ce que la sonde a établi — `OBSERVÉ`
 
 Dix mesures en 90 secondes, depuis le routeur :

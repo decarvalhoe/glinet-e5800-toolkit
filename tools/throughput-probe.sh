@@ -20,20 +20,25 @@ INTERVAL=600
 DUR=10
 DIR=/opt/throughput-probe
 ONCE=0
-URL="https://speed.cloudflare.com/__down?bytes=50000000"
+# Plusieurs sources, utilisees en alternance : un point de mesure unique finit par
+# repondre 429 (constate le 2026-08-25 sur speed.cloudflare.com apres une serie de
+# mesures), ce qui se consigne sinon comme un debit effondre. Voir THROUGHPUT-PROBE.md.
+URLS="http://cachefly.cachefly.net/100mb.test https://proof.ovh.net/files/100Mb.dat https://speed.cloudflare.com/__down?bytes=50000000"
+URL=""
 
 while [ $# -gt 0 ]; do
     case "$1" in
         --interval) INTERVAL=$2; shift 2 ;;
         --dur)      DUR=$2; shift 2 ;;
         --dir)      DIR=$2; shift 2 ;;
-        --url)      URL=$2; shift 2 ;;
+        --url)      URLS=$2; shift 2 ;;
         --once)     ONCE=1; shift ;;
         *) echo "option inconnue : $1" >&2; exit 2 ;;
     esac
 done
 
 mkdir -p "$DIR" || exit 1
+SEQ=0
 OUT="$DIR/throughput.jsonl"
 
 # Une lecture AT, tolerante au pont ubus/AT : celui-ci tronque les reponses longues et
@@ -68,9 +73,14 @@ jnum() { # $1 = valeur ; vide ou non numerique -> null
 sample() {
     ts=$(date -u +%Y-%m-%dT%H:%M:%SZ)
 
+    # Source tournante : evite le 429 d un point de mesure sursollicite.
+    n=0; for u in $URLS; do n=$((n+1)); done
+    idx=$(( (SEQ % n) + 1 )); SEQ=$((SEQ+1))
+    k=0; for u in $URLS; do k=$((k+1)); [ $k -eq $idx ] && URL=$u; done
+
     # Telechargement en fond, sonde radio pendant la charge.
     spd_file=$(mktemp 2>/dev/null || echo /tmp/tp-spd.$$)
-    curl -s --max-time "$DUR" -o /dev/null -w '%{speed_download}' "$URL" > "$spd_file" 2>/dev/null &
+    curl -s --max-time "$DUR" -o /dev/null -w '%{speed_download} %{http_code}' "$URL" > "$spd_file" 2>/dev/null &
     dl_pid=$!
     # QCAINFO d'abord : il ne liste les porteuses que sous connexion RRC, donc il doit
     # imperativement tomber DANS la fenetre de charge. QENG, lui, repond aussi au repos.
@@ -78,8 +88,15 @@ sample() {
     ca=$(at 'AT+QCAINFO' 3 'QCAINFO')
     eng=$(at 'AT+QENG="servingcell"' 6 '"LTE"')
     wait "$dl_pid" 2>/dev/null
-    bps=$(cat "$spd_file" 2>/dev/null); rm -f "$spd_file"
-    mbps=$(awk -v b="$bps" 'BEGIN{ if (b=="") print ""; else printf "%.3f", b*8/1000000 }')
+    raw=$(cat "$spd_file" 2>/dev/null); rm -f "$spd_file"
+    bps=$(printf '%s' "$raw" | awk '{print $1}')
+    code=$(printf '%s' "$raw" | awk '{print $2}')
+    # Un code != 200 (429, 000...) ne mesure pas le lien : on ecrit null, pas un faux zero.
+    if [ "$code" = "200" ]; then
+        mbps=$(awk -v b="$bps" 'BEGIN{ if (b=="") print ""; else printf "%.3f", b*8/1000000 }')
+    else
+        mbps=""
+    fi
 
     lte=$(printf '%s' "$eng" | grep '"LTE"' | head -1)
     nr=$(printf '%s'  "$eng" | grep 'NR5G'  | head -1)
@@ -103,15 +120,15 @@ sample() {
     fi
     load=$(awk '{print $1}' /proc/loadavg)
 
-    printf '{"ts":"%s","mbps":%s,"carriers":%s,"bands":"%s","rrc":"%s",' \
-        "$ts" "$(jnum "$mbps")" "$(jnum "$carriers")" "$bands" "$conn" >> "$OUT"
+    printf '{"ts":"%s","mbps":%s,"http":%s,"src":"%s","carriers":%s,"bands":"%s","rrc":"%s",' \
+        "$ts" "$(jnum "$mbps")" "$(jnum "$code")" "${URL%%\?*}" "$(jnum "$carriers")" "$bands" "$conn" >> "$OUT"
     printf '"lte":{"band":%s,"rsrp":%s,"rsrq":%s,"sinr":%s},' \
         "$(jnum "$lte_band")" "$(jnum "$lte_rsrp")" "$(jnum "$lte_rsrq")" "$(jnum "$lte_sinr")" >> "$OUT"
     printf '"nr":{"band":%s,"arfcn":%s,"bw":%s,"rsrp":%s,"sinr":%s},"load":%s}\n' \
         "$(jnum "$nr_band")" "$(jnum "$nr_arfcn")" "$(jnum "$nr_bw")" \
         "$(jnum "$nr_rsrp")" "$(jnum "$nr_sinr")" "$(jnum "$load")" >> "$OUT"
 
-    echo "$ts  ${mbps:-?} Mbit/s  porteuses=$carriers ($bands)  NR ${nr_rsrp:-?}/${nr_sinr:-?}  LTE ${lte_rsrp:-?}/${lte_sinr:-?}"
+    echo "$ts  ${mbps:-HTTP$code} Mbit/s  porteuses=$carriers ($bands)  NR ${nr_rsrp:-?}/${nr_sinr:-?}  LTE ${lte_rsrp:-?}/${lte_sinr:-?}"
 }
 
 if [ "$ONCE" = "1" ]; then
