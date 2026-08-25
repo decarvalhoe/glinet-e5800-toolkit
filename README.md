@@ -36,6 +36,7 @@ tools/
   at-probe.sh              relevé radio complet (serving cell, CA, bandes, températures)
   monitor-radio.sh         moniteur radio live, 100 % on-router en SSH (AT lecture seule)
   throughput-probe.sh      sonde de débit périodique + radio dans la même fenêtre (on-router)
+  stabilizer.sh            maintient les réglages de perf et journalise les dérives (on-router)
   bufferbloat.sh           mesure de latence à vide / sous charge
   band-lock-b20.sh         tentative de lock de bande (échoue — voir docs)
 etc/hotplug.d/iface/
@@ -56,6 +57,7 @@ docs/
   THROUGHPUT-PROBE.md      sonde de débit + deux artefacts de mesure du modem (QCAINFO, pont AT)
   NR-BAND-20260825.md      la bande NR décide du débit, pas le signal : 2,2 -> 16,6 Mbit/s
   SQM-VS-IPA-20260825.md   CAKE casse l'accélération IPA : désactiver SQM multiplie le débit par 2 à 5
+  STABILIZER.md            empêcher la configuration de dériver, et journaliser ce qui bouge seul
 ```
 
 ## Hypothèse historique : index API public incomplet
