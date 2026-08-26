@@ -1,0 +1,50 @@
+#!/bin/sh
+# screenapps — lance/arrête les apps écran custom du GL-E5800 (chroot Alpine)
+# Usage: screenapps.sh {start|stop|mode|status}  mode = dashboard|clock
+RUN=/tmp/screenapp.pid
+CH=/opt/alpine
+STATE=$CH/tmp
+
+start() {
+    if [ -f "$RUN" ] && kill -0 "$(cat "$RUN")" 2>/dev/null; then
+        echo "déjà lancé (pid $(cat "$RUN"))"; return
+    fi
+    mkdir -p "$STATE"
+    rm -f "$STATE/screenapp.quit"
+    echo dashboard > "$STATE/screenapp.mode"
+    chroot "$CH" /usr/bin/python3 /opt/screenapps/app.py &
+    echo $! > "$RUN"
+    sleep 2
+    kill -0 "$(cat $RUN)" 2>/dev/null && echo "OK — app écran lancée (pid $(cat $RUN))" || echo "ERREUR au lancement"
+}
+
+stop() {
+    if [ -f "$RUN" ]; then
+        touch "$STATE/screenapp.quit"
+        sleep 3
+        kill "$(cat "$RUN")" 2>/dev/null
+        rm -f "$RUN" "$STATE/screenapp.mode"
+        echo "arrêté — UI native GL.iNet reprend l'écran"
+    else
+        echo "pas lancé"
+    fi
+}
+
+mode() {
+    if [ -f "$RUN" ] && kill -0 "$(cat "$RUN")" 2>/dev/null; then
+        echo "${1:-clock}" > "$STATE/screenapp.mode" && echo "mode -> ${1:-clock}"
+    else
+        echo "pas lancé"
+    fi
+}
+
+case "$1" in
+    start) start ;;
+    stop) stop ;;
+    clock|dashboard) mode "$1" ;;
+    status)
+        if [ -f "$RUN" ] && kill -0 "$(cat "$RUN")" 2>/dev/null; then
+            echo "actif (pid $(cat "$RUN")), mode=$(cat "$STATE/screenapp.mode" 2>/dev/null)"
+        else echo "inactif"; fi ;;
+    *) echo "usage: $0 {start|stop|clock|dashboard|status}" ;;
+esac

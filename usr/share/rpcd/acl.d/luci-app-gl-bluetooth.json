@@ -1,0 +1,26 @@
+{
+	"luci-app-gl-bluetooth": {
+		"description": "Manage the GL-E5800 Qualcomm Bluetooth service",
+		"read": {
+			"ubus": {
+				"file": [ "exec" ]
+			},
+			"file": {
+				"/usr/bin/gl-bluetooth-web status": [ "exec" ]
+			}
+		},
+		"write": {
+			"ubus": {
+				"file": [ "exec" ]
+			},
+			"file": {
+				"/usr/bin/gl-bluetooth-web start": [ "exec" ],
+				"/usr/bin/gl-bluetooth-web stop": [ "exec" ],
+				"/usr/bin/gl-bluetooth-web restart": [ "exec" ],
+				"/usr/bin/gl-bluetooth-web reconnect": [ "exec" ],
+				"/usr/bin/gl-bluetooth-web pair-keyboard": [ "exec" ],
+				"/usr/bin/gl-bluetooth-web scan": [ "exec" ]
+			}
+		}
+	}
+}

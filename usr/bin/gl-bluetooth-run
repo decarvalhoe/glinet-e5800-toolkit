@@ -1,0 +1,7 @@
+#!/bin/sh
+# Runner persistant btapp avec FIFO de commande locale
+FIFO=/var/run/gl-bluetooth.in
+rm -f "$FIFO"
+mkfifo -m 600 "$FIFO" || exit 1
+exec 3<>"$FIFO"
+exec /usr/bin/btapp <&3

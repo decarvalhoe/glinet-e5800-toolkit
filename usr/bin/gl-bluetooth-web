@@ -1,0 +1,134 @@
+#!/bin/sh
+# Backend strict pour l'application LuCI Bluetooth du GL-E5800.
+# Snapshot de session : interface HID spécialisée, gestion générique à poursuivre.
+
+FIFO=/var/run/gl-bluetooth.in
+CONF=/etc/bluetooth/gl-bluetooth-device.conf
+HID_MAC=''
+HID_NAME='Configured HID device'
+if [ -r "$CONF" ]; then
+    HID_MAC="$(sed -n 's/^HID_MAC=//p' "$CONF" | head -1)"
+    configured_name="$(sed -n 's/^HID_NAME=//p' "$CONF" | head -1)"
+    [ -n "$configured_name" ] && HID_NAME="$configured_name"
+fi
+
+json_escape() {
+    printf '%s' "$1" | sed 's/\\/\\\\/g; s/"/\\"/g'
+}
+
+json_error() {
+    message="$(json_escape "$1")"
+    printf '{"ok":false,"error":"%s"}\n' "$message"
+    exit "${2:-1}"
+}
+
+valid_mac() {
+    case "$1" in
+        [0-9A-Fa-f][0-9A-Fa-f]:[0-9A-Fa-f][0-9A-Fa-f]:[0-9A-Fa-f][0-9A-Fa-f]:[0-9A-Fa-f][0-9A-Fa-f]:[0-9A-Fa-f][0-9A-Fa-f]:[0-9A-Fa-f][0-9A-Fa-f]) return 0 ;;
+        *) return 1 ;;
+    esac
+}
+
+json_status() {
+    if pidof btapp >/dev/null 2>&1 && pidof qcbtdaemon >/dev/null 2>&1; then running=true; else running=false; fi
+    if [ -e /etc/rc.d/S99gl-bluetooth ]; then enabled=true; else enabled=false; fi
+
+    bonded=false
+    if valid_mac "$HID_MAC" && grep -qi "$HID_MAC" /data/misc/bluetooth/bt_config.conf 2>/dev/null; then
+        bonded=true
+    fi
+
+    connected=false
+    if valid_mac "$HID_MAC"; then
+        last_state="$(logread 2>/dev/null | grep -E 'CONNECTED!!|DISCONNECTED!!' | tail -1)"
+        case "$last_state" in
+            *DISCONNECTED*) connected=false ;;
+            *CONNECTED*) connected=true ;;
+        esac
+    fi
+
+    scan_mode="$(sed -n 's/^BtScanMode=//p' /etc/bluetooth/bt_app.conf 2>/dev/null | head -1)"
+    if [ "$scan_mode" = "2" ]; then discoverable=true; else discoverable=false; fi
+
+    name="$(sed -n 's/^BtLocalDeviceName=//p' /etc/bluetooth/bt_app.conf 2>/dev/null | head -1)"
+    [ -n "$name" ] || name='GL-E5800'
+
+    json_name="$(json_escape "$name")"
+    json_hid_name="$(json_escape "$HID_NAME")"
+    printf '{"ok":true,"running":%s,"enabled":%s,"bonded":%s,"connected":%s,"name":"%s","keyboard":"%s","discoverable":%s}\n' \
+        "$running" "$enabled" "$bonded" "$connected" "$json_name" "$json_hid_name" "$discoverable"
+}
+
+need_fifo() {
+    [ -p "$FIFO" ] || json_error "Bluetooth service control unavailable"
+}
+
+need_hid() {
+    valid_mac "$HID_MAC" || json_error "No valid HID_MAC configured"
+}
+
+case "${1:-status}" in
+    status)
+        json_status
+        ;;
+    start)
+        /etc/init.d/gl-bluetooth start >/dev/null 2>&1 || json_error "Bluetooth service failed to start"
+        sleep 15
+        if ! pidof btapp >/dev/null 2>&1 || ! pidof qcbtdaemon >/dev/null 2>&1; then
+            json_error "Bluetooth processes are not running after start"
+        fi
+        json_status
+        ;;
+    stop)
+        /etc/init.d/gl-bluetooth stop >/dev/null 2>&1 || json_error "Bluetooth service failed to stop"
+        sleep 2
+        if pidof btapp >/dev/null 2>&1 || pidof qcbtdaemon >/dev/null 2>&1; then
+            json_error "Bluetooth processes remain after stop"
+        fi
+        json_status
+        ;;
+    restart)
+        /etc/init.d/gl-bluetooth restart >/dev/null 2>&1 || json_error "Bluetooth service failed to restart"
+        sleep 15
+        if ! pidof btapp >/dev/null 2>&1 || ! pidof qcbtdaemon >/dev/null 2>&1; then
+            json_error "Bluetooth processes are not running after restart"
+        fi
+        json_status
+        ;;
+    reconnect)
+        need_fifo
+        need_hid
+        /usr/bin/gl-bt-keyboard-connect >/dev/null 2>&1 || json_error "HID reconnect command failed"
+        sleep 3
+        json_status
+        ;;
+    pair-keyboard)
+        need_fifo
+        need_hid
+        printf 'main_menu\ngattctest_menu\ngattctest_init\ngattctest_connect %s 2\n' "$HID_MAC" > "$FIFO" || json_error "Unable to request LE connection"
+        sleep 3
+        printf 'yes\n' > "$FIFO" || json_error "Unable to confirm pairing"
+        sleep 4
+        printf 'main_menu\nhid_menu\nconnect %s\n' "$HID_MAC" > "$FIFO" || json_error "Unable to request HID connection"
+        sleep 3
+        if ! grep -qi "$HID_MAC" /data/misc/bluetooth/bt_config.conf 2>/dev/null; then
+            json_error "Pairing completed without a persistent bond"
+        fi
+        json_status
+        ;;
+    scan)
+        need_fifo
+        marker="glbt-scan-$$"
+        logger -t gl-bluetooth "$marker" || json_error "Unable to create scan marker"
+        printf 'main_menu\ngap_menu\ninquiry\n' > "$FIFO" || json_error "Unable to start Bluetooth scan"
+        sleep 15
+        count="$(logread 2>/dev/null | awk -v marker="$marker" '
+            index($0, marker) { seen=1; next }
+            seen && /RemoteDevicesRemoteDevices: AddDeviceProperties/ { print $NF }
+        ' | sort -u | wc -l)"
+        printf '{"ok":true,"scan_count":%s}\n' "${count:-0}"
+        ;;
+    *)
+        json_error "Unsupported action" 2
+        ;;
+esac

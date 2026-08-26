@@ -1,0 +1,19 @@
+#!/bin/sh
+# Reconnecte le périphérique HID configuré dans /etc/bluetooth/gl-bluetooth-device.conf
+FIFO=/var/run/gl-bluetooth.in
+CONF=/etc/bluetooth/gl-bluetooth-device.conf
+
+[ -p "$FIFO" ] || { echo "Bluetooth service control unavailable" >&2; exit 1; }
+[ -r "$CONF" ] || { echo "Missing $CONF" >&2; exit 1; }
+HID_MAC="$(sed -n 's/^HID_MAC=//p' "$CONF" | head -1)"
+HID_NAME="$(sed -n 's/^HID_NAME=//p' "$CONF" | head -1)"
+
+case "${HID_MAC:-}" in
+    [0-9A-Fa-f][0-9A-Fa-f]:[0-9A-Fa-f][0-9A-Fa-f]:[0-9A-Fa-f][0-9A-Fa-f]:[0-9A-Fa-f][0-9A-Fa-f]:[0-9A-Fa-f][0-9A-Fa-f]:[0-9A-Fa-f][0-9A-Fa-f]) ;;
+    *) echo "Invalid HID_MAC in $CONF" >&2; exit 2 ;;
+esac
+
+printf 'main_menu\ngattctest_menu\ngattctest_init\ngattctest_connect %s 2\n' "$HID_MAC" > "$FIFO"
+sleep 5
+printf 'main_menu\nhid_menu\nconnect %s\n' "$HID_MAC" > "$FIFO"
+echo "GATT LE + HID reconnect requested for ${HID_NAME:-configured device}"

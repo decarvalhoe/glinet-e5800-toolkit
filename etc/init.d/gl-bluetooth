@@ -1,0 +1,34 @@
+#!/bin/sh /etc/rc.common
+# Qualcomm WCN7850 Bluetooth service for GL-E5800
+START=99
+STOP=10
+USE_PROCD=1
+
+start_service() {
+    killall btapp qcbtdaemon 2>/dev/null
+    mkdir -p /data/misc/bluetooth
+    rm -f /data/misc/bluetooth/btappsocket /data/misc/bluetooth/qcbtdaemon.pid /var/run/gl-bluetooth.in
+
+    # Réinitialise uniquement la radio Bluetooth, jamais le rfkill Wi-Fi.
+    for rf in /sys/class/rfkill/rfkill*; do
+        [ "$(cat "$rf/name" 2>/dev/null)" = "bt_power" ] || continue
+        echo 0 > "$rf/state"
+        sleep 1
+        echo 1 > "$rf/state"
+        sleep 1
+        break
+    done
+
+    procd_open_instance
+    procd_set_param command /usr/bin/gl-bluetooth-run
+    procd_set_param respawn 3600 5 0
+    procd_set_param stdout 1
+    procd_set_param stderr 1
+    procd_set_param term_timeout 15
+    procd_close_instance
+}
+
+stop_service() {
+    killall btapp qcbtdaemon 2>/dev/null
+    rm -f /data/misc/bluetooth/btappsocket /data/misc/bluetooth/qcbtdaemon.pid /var/run/gl-bluetooth.in
+}

@@ -1,0 +1,4 @@
+# Copiez ce fichier vers /etc/bluetooth/gl-bluetooth-device.conf sur le routeur.
+# Ne versionnez jamais le fichier réel : il contient un identifiant matériel local.
+HID_MAC=00:00:00:00:00:00
+HID_NAME=Bluetooth keyboard

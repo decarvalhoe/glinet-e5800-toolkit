@@ -26,6 +26,7 @@ api/
   ubus-list.txt            73 services ubus avec signatures (dump `ubus -v list`)
 tools/
   glinet.py                client CLI JSON-RPC, zéro dépendance
+  health-watchdog.sh       surveillance locale non intrusive (log uniquement)
   radio-monitor.py         télémétrie radio passive (historique RSRP/RSRQ/SINR + dashboard)
   radio-alert.py           alertes/anomalies au-dessus de radio-monitor (seuils, anomalie, péremption)
   radio-digest.py          synthèse (quotidienne) : dispo, RSRP/SINR, pire créneau, bilan alertes
@@ -41,6 +42,15 @@ tools/
   band-lock-b20.sh         tentative de lock de bande (échoue — voir docs)
 etc/hotplug.d/iface/
   99-sqm-modem             réattache SQM quand le l3_device du modem change
+screenapps/
+  app.py                   dashboard + horloge RGB565 pour l'écran 240×320
+  screenapps               lanceur dashboard/clock avec tactile
+etc/init.d/
+  gl-bluetooth             service QTI WCN7850 persistant
+usr/bin/
+  gl-bluetooth-*           runner, backend LuCI et reconnexion HID
+www/luci-static/
+  resources/view/system/bluetooth.js  page Système → Bluetooth
 docs/
   COUNTER-EXPERTISE.md     nouvelle baseline, preuves et feuille de route sûre
   RADIO-MONITOR.md         télémétrie radio passive + revalidation glinet.py (OBSERVÉ)
@@ -51,6 +61,7 @@ docs/
   EXPERIMENT-PROTOCOL.md   règles de mesure, barrières et critères d'arrêt
   DIAGNOSTIC.md            relevés radio/Wi-Fi + résultats négatifs
   CUSTOM.md                surface de personnalisation réelle, paquets, méthode
+  SESSION-20260826-SCREEN-BLUETOOTH.md  reprise écran, WCN7850, HID et LuCI
   SQM.md                   installation et réglage CAKE, avec mesures A/B
   UNTHROTTLE-20260808.md   retrait du plafond CAKE fixe : 3,6 -> 39 Mbit/s, preuves et limites
   STABILITY-20260817.md    diagnostic de stabilité : pourquoi le post-mortem embarqué est impossible
