@@ -227,7 +227,11 @@ Prochaine implémentation :
 6. ne présenter A2DP/HFP que si le profil est activé et testé ;
 7. ajouter tests adversariaux : MAC invalide, profil non allowlisté, injection shell,
    FIFO absente, service arrêté, timeout pairing, périphérique endormi ;
-8. vérifier après chaque action : processus, rfkill Wi-Fi, Internet et espace `/tmp`.
+8. vérifier après chaque action : processus, rfkill Wi-Fi, Internet et espace `/tmp` ;
+9. borner les écritures FIFO (timeout ou ouverture non bloquante) afin qu'une FIFO
+   présente sans lecteur ne bloque jamais un appel RPC LuCI ;
+10. étendre `json_escape` aux retours ligne et caractères de contrôle avant d'accepter
+    des noms de périphériques arbitraires dans le gestionnaire générique.
 
 ## 6. Pièges observés
 
